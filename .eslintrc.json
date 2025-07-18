@@ -1,0 +1,36 @@
+{
+	"extends": ["next/core-web-vitals", "next/typescript", "prettier"],
+	"plugins": ["unused-imports"],
+	"rules": {
+		"react/no-unescaped-entities": "off",
+		"@typescript-eslint/no-empty-object-type": "off",
+		"no-useless-escape": "off",
+		"no-unused-vars": "warn",
+		"@typescript-eslint/no-unsafe-function-type": "off",
+		"@typescript-eslint/no-unused-vars": [
+			"warn",
+			{
+				"vars": "all",
+				"varsIgnorePattern": "^_|processedData|^data|^page",
+				"args": "after-used",
+				"argsIgnorePattern": "^_"
+			}
+		],
+		"@typescript-eslint/no-explicit-any": "warn",
+		"@typescript-eslint/no-unused-expressions": "warn",
+		"unused-imports/no-unused-imports": "warn",
+		"unused-imports/no-unused-vars": [
+			"warn",
+			{
+				"vars": "all",
+				"args": "after-used",
+				"argsIgnorePattern": "^_"
+			}
+		],
+		// React Hook "React.useCallback" is called conditionally. React Hooks must be called in the exact same order in every component render
+		"react-hooks/rules-of-hooks": "off",
+		"react-hooks/exhaustive-deps": "warn",
+		"no-var": "off",
+		"prefer-const": "off"
+	}
+}

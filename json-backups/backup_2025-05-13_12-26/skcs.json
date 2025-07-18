@@ -1,0 +1,1476 @@
+{
+  "database": "skcs",
+  "exportedAt": "2025-05-13T06:26:55.281Z",
+  "collections": {
+    "Result": [],
+    "FeeItem": [
+      {
+        "_id": "67ce4fbfed7c1cef2a6a986e",
+        "name": "Admission Fee",
+        "amount": 500,
+        "frequency": "one-time",
+        "lateFeeEnabled": true,
+        "createdAt": "2025-03-10T02:34:39.319Z",
+        "updatedAt": "2025-03-10T02:36:41.995Z",
+        "feeStructureId": "67ce4fbfed7c1cef2a6a986d",
+        "lateFeeAmount": 97,
+        "lateFeeFrequency": null
+      },
+      {
+        "_id": "67ce4fbfed7c1cef2a6a986f",
+        "name": "Session Fee",
+        "amount": 500,
+        "frequency": "one-time",
+        "lateFeeEnabled": true,
+        "createdAt": "2025-03-10T02:34:39.319Z",
+        "updatedAt": "2025-03-10T02:36:41.995Z",
+        "feeStructureId": "67ce4fbfed7c1cef2a6a986d",
+        "lateFeeAmount": 99,
+        "lateFeeFrequency": null
+      },
+      {
+        "_id": "67ce4fbfed7c1cef2a6a9870",
+        "name": "Monthly Fee",
+        "amount": 600,
+        "frequency": "monthly",
+        "lateFeeEnabled": true,
+        "createdAt": "2025-03-10T02:34:39.319Z",
+        "updatedAt": "2025-03-10T02:36:41.995Z",
+        "feeStructureId": "67ce4fbfed7c1cef2a6a986d",
+        "lateFeeAmount": 100,
+        "lateFeeFrequency": null
+      },
+      {
+        "_id": "67ce4fbfed7c1cef2a6a9871",
+        "name": " Annually Exam Fee",
+        "amount": 300,
+        "frequency": "annually",
+        "lateFeeEnabled": true,
+        "createdAt": "2025-03-10T02:34:39.319Z",
+        "updatedAt": "2025-03-10T02:36:41.995Z",
+        "feeStructureId": "67ce4fbfed7c1cef2a6a986d",
+        "lateFeeAmount": 100,
+        "lateFeeFrequency": null
+      },
+      {
+        "_id": "67ce4fbfed7c1cef2a6a9872",
+        "name": "Monthiy Exam Fee",
+        "amount": 200,
+        "frequency": "monthly",
+        "lateFeeEnabled": true,
+        "createdAt": "2025-03-10T02:34:39.319Z",
+        "updatedAt": "2025-03-10T02:36:41.995Z",
+        "feeStructureId": "67ce4fbfed7c1cef2a6a986d",
+        "lateFeeAmount": 100,
+        "lateFeeFrequency": null
+      },
+      {
+        "_id": "67ce50d4ed7c1cef2a6a9874",
+        "name": "Admission Fee",
+        "amount": 500,
+        "frequency": "one-time",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:39:16.031Z",
+        "updatedAt": "2025-03-10T02:39:16.031Z",
+        "feeStructureId": "67ce50d4ed7c1cef2a6a9873"
+      },
+      {
+        "_id": "67ce50d4ed7c1cef2a6a9875",
+        "name": "Session Fee",
+        "amount": 500,
+        "frequency": "one-time",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:39:16.031Z",
+        "updatedAt": "2025-03-10T02:39:16.031Z",
+        "feeStructureId": "67ce50d4ed7c1cef2a6a9873"
+      },
+      {
+        "_id": "67ce50d4ed7c1cef2a6a9876",
+        "name": "Monthly Fee",
+        "amount": 500,
+        "frequency": "monthly",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:39:16.031Z",
+        "updatedAt": "2025-03-10T02:39:16.031Z",
+        "feeStructureId": "67ce50d4ed7c1cef2a6a9873"
+      },
+      {
+        "_id": "67ce50d4ed7c1cef2a6a9877",
+        "name": " Annually Exam Fee",
+        "amount": 300,
+        "frequency": "annually",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:39:16.031Z",
+        "updatedAt": "2025-03-10T02:39:16.031Z",
+        "feeStructureId": "67ce50d4ed7c1cef2a6a9873"
+      },
+      {
+        "_id": "67ce50d4ed7c1cef2a6a9878",
+        "name": "Monthiy Exam Fee",
+        "amount": 200,
+        "frequency": "monthly",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:39:16.031Z",
+        "updatedAt": "2025-03-10T02:39:16.031Z",
+        "feeStructureId": "67ce50d4ed7c1cef2a6a9873"
+      },
+      {
+        "_id": "67ce5133ed7c1cef2a6a987a",
+        "name": "Admission Fee",
+        "amount": 500,
+        "frequency": "one-time",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:40:51.729Z",
+        "updatedAt": "2025-03-10T02:40:51.729Z",
+        "feeStructureId": "67ce5133ed7c1cef2a6a9879"
+      },
+      {
+        "_id": "67ce5133ed7c1cef2a6a987b",
+        "name": "Session Fee",
+        "amount": 500,
+        "frequency": "one-time",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:40:51.729Z",
+        "updatedAt": "2025-03-10T02:40:51.729Z",
+        "feeStructureId": "67ce5133ed7c1cef2a6a9879"
+      },
+      {
+        "_id": "67ce5133ed7c1cef2a6a987c",
+        "name": "Monthly Fee",
+        "amount": 500,
+        "frequency": "monthly",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:40:51.729Z",
+        "updatedAt": "2025-03-10T02:40:51.729Z",
+        "feeStructureId": "67ce5133ed7c1cef2a6a9879"
+      },
+      {
+        "_id": "67ce5133ed7c1cef2a6a987d",
+        "name": " Annually Exam Fee",
+        "amount": 300,
+        "frequency": "annually",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:40:51.729Z",
+        "updatedAt": "2025-03-10T02:40:51.729Z",
+        "feeStructureId": "67ce5133ed7c1cef2a6a9879"
+      },
+      {
+        "_id": "67ce5133ed7c1cef2a6a987e",
+        "name": "Monthiy Exam Fee",
+        "amount": 200,
+        "frequency": "monthly",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:40:51.729Z",
+        "updatedAt": "2025-03-10T02:40:51.729Z",
+        "feeStructureId": "67ce5133ed7c1cef2a6a9879"
+      },
+      {
+        "_id": "67ce51b4ed7c1cef2a6a9880",
+        "name": "Admission Fee",
+        "amount": 500,
+        "frequency": "daily",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:43:00.204Z",
+        "updatedAt": "2025-03-10T02:43:00.204Z",
+        "feeStructureId": "67ce51b4ed7c1cef2a6a987f"
+      },
+      {
+        "_id": "67ce51b4ed7c1cef2a6a9881",
+        "name": "Session Fee",
+        "amount": 500,
+        "frequency": "one-time",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:43:00.204Z",
+        "updatedAt": "2025-03-10T02:43:00.204Z",
+        "feeStructureId": "67ce51b4ed7c1cef2a6a987f"
+      },
+      {
+        "_id": "67ce51b4ed7c1cef2a6a9882",
+        "name": "Monthly Fee",
+        "amount": 600,
+        "frequency": "monthly",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:43:00.204Z",
+        "updatedAt": "2025-03-10T02:43:00.204Z",
+        "feeStructureId": "67ce51b4ed7c1cef2a6a987f"
+      },
+      {
+        "_id": "67ce51b4ed7c1cef2a6a9883",
+        "name": " Annually Exam Fee",
+        "amount": 300,
+        "frequency": "annually",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:43:00.204Z",
+        "updatedAt": "2025-03-10T02:43:00.204Z",
+        "feeStructureId": "67ce51b4ed7c1cef2a6a987f"
+      },
+      {
+        "_id": "67ce51b4ed7c1cef2a6a9884",
+        "name": "Monthiy Exam Fee",
+        "amount": 200,
+        "frequency": "monthly",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:43:00.204Z",
+        "updatedAt": "2025-03-10T02:43:00.204Z",
+        "feeStructureId": "67ce51b4ed7c1cef2a6a987f"
+      },
+      {
+        "_id": "67ce5216ed7c1cef2a6a9886",
+        "name": "Admission Fee",
+        "amount": 500,
+        "frequency": "one-time",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:44:37.865Z",
+        "updatedAt": "2025-03-10T02:44:37.865Z",
+        "feeStructureId": "67ce5215ed7c1cef2a6a9885"
+      },
+      {
+        "_id": "67ce5216ed7c1cef2a6a9887",
+        "name": "Session Fee",
+        "amount": 500,
+        "frequency": "one-time",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:44:37.865Z",
+        "updatedAt": "2025-03-10T02:44:37.865Z",
+        "feeStructureId": "67ce5215ed7c1cef2a6a9885"
+      },
+      {
+        "_id": "67ce5216ed7c1cef2a6a9888",
+        "name": "Monthly Fee",
+        "amount": 700,
+        "frequency": "monthly",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:44:37.865Z",
+        "updatedAt": "2025-03-10T02:44:37.865Z",
+        "feeStructureId": "67ce5215ed7c1cef2a6a9885"
+      },
+      {
+        "_id": "67ce5216ed7c1cef2a6a9889",
+        "name": " Annually Exam Fee",
+        "amount": 300,
+        "frequency": "annually",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:44:37.865Z",
+        "updatedAt": "2025-03-10T02:44:37.865Z",
+        "feeStructureId": "67ce5215ed7c1cef2a6a9885"
+      },
+      {
+        "_id": "67ce5216ed7c1cef2a6a988a",
+        "name": "Monthiy Exam Fee",
+        "amount": 200,
+        "frequency": "monthly",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:44:37.865Z",
+        "updatedAt": "2025-03-10T02:44:37.865Z",
+        "feeStructureId": "67ce5215ed7c1cef2a6a9885"
+      },
+      {
+        "_id": "67ce525ced7c1cef2a6a988c",
+        "name": "Admission Fee",
+        "amount": 500,
+        "frequency": "one-time",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:45:48.023Z",
+        "updatedAt": "2025-03-10T02:45:48.023Z",
+        "feeStructureId": "67ce525ced7c1cef2a6a988b"
+      },
+      {
+        "_id": "67ce525ced7c1cef2a6a988d",
+        "name": "Session Fee",
+        "amount": 500,
+        "frequency": "one-time",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:45:48.023Z",
+        "updatedAt": "2025-03-10T02:45:48.023Z",
+        "feeStructureId": "67ce525ced7c1cef2a6a988b"
+      },
+      {
+        "_id": "67ce525ced7c1cef2a6a988e",
+        "name": "Monthly Fee",
+        "amount": 800,
+        "frequency": "monthly",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:45:48.023Z",
+        "updatedAt": "2025-03-10T02:45:48.023Z",
+        "feeStructureId": "67ce525ced7c1cef2a6a988b"
+      },
+      {
+        "_id": "67ce525ced7c1cef2a6a988f",
+        "name": " Annually Exam Fee",
+        "amount": 300,
+        "frequency": "annually",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:45:48.023Z",
+        "updatedAt": "2025-03-10T02:45:48.023Z",
+        "feeStructureId": "67ce525ced7c1cef2a6a988b"
+      },
+      {
+        "_id": "67ce525ced7c1cef2a6a9890",
+        "name": "Monthiy Exam Fee",
+        "amount": 200,
+        "frequency": "monthly",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:45:48.023Z",
+        "updatedAt": "2025-03-10T02:45:48.023Z",
+        "feeStructureId": "67ce525ced7c1cef2a6a988b"
+      },
+      {
+        "_id": "67ce52baed7c1cef2a6a9892",
+        "name": "Admission Fee",
+        "amount": 500,
+        "frequency": "one-time",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:47:22.551Z",
+        "updatedAt": "2025-03-10T02:47:22.551Z",
+        "feeStructureId": "67ce52baed7c1cef2a6a9891"
+      },
+      {
+        "_id": "67ce52baed7c1cef2a6a9893",
+        "name": "Session Fee",
+        "amount": 500,
+        "frequency": "one-time",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:47:22.551Z",
+        "updatedAt": "2025-03-10T02:47:22.551Z",
+        "feeStructureId": "67ce52baed7c1cef2a6a9891"
+      },
+      {
+        "_id": "67ce52baed7c1cef2a6a9894",
+        "name": "Monthly Fee",
+        "amount": 800,
+        "frequency": "monthly",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:47:22.551Z",
+        "updatedAt": "2025-03-10T02:47:22.551Z",
+        "feeStructureId": "67ce52baed7c1cef2a6a9891"
+      },
+      {
+        "_id": "67ce52baed7c1cef2a6a9895",
+        "name": " Annually Exam Fee",
+        "amount": 300,
+        "frequency": "annually",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:47:22.551Z",
+        "updatedAt": "2025-03-10T02:47:22.551Z",
+        "feeStructureId": "67ce52baed7c1cef2a6a9891"
+      },
+      {
+        "_id": "67ce52baed7c1cef2a6a9896",
+        "name": "Monthiy Exam Fee",
+        "amount": 200,
+        "frequency": "monthly",
+        "lateFeeEnabled": true,
+        "lateFeeAmount": 100,
+        "createdAt": "2025-03-10T02:47:22.551Z",
+        "updatedAt": "2025-03-10T02:47:22.551Z",
+        "feeStructureId": "67ce52baed7c1cef2a6a9891"
+      }
+    ],
+    "Class": [
+      {
+        "_id": "67acbe2fe4e20c1a990cae89",
+        "name": "Play",
+        "monthlyFee": 500,
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-02-12T15:28:45.994Z",
+        "updatedAt": "2025-02-14T08:34:14.451Z"
+      },
+      {
+        "_id": "67accf8a0509a31a18e84830",
+        "name": "Nursary",
+        "monthlyFee": 500,
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-02-12T16:42:50.425Z",
+        "updatedAt": "2025-02-14T08:34:29.479Z"
+      },
+      {
+        "_id": "67accffb0509a31a18e84834",
+        "name": "One",
+        "monthlyFee": 600,
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-02-12T16:44:43.279Z",
+        "updatedAt": "2025-02-14T08:34:57.256Z"
+      },
+      {
+        "_id": "67acd00a0509a31a18e84836",
+        "name": "Two",
+        "monthlyFee": 600,
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-02-12T16:44:58.534Z",
+        "updatedAt": "2025-02-14T08:35:10.193Z"
+      },
+      {
+        "_id": "67acd01a0509a31a18e84838",
+        "name": "Three",
+        "monthlyFee": 700,
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-02-12T16:45:14.199Z",
+        "updatedAt": "2025-02-14T08:35:21.733Z"
+      },
+      {
+        "_id": "67acd0290509a31a18e8483a",
+        "name": "Four",
+        "monthlyFee": 800,
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-02-12T16:45:29.766Z",
+        "updatedAt": "2025-02-14T08:35:34.610Z"
+      },
+      {
+        "_id": "67acd0390509a31a18e8483c",
+        "name": "Five",
+        "monthlyFee": 800,
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-02-12T16:45:45.525Z",
+        "updatedAt": "2025-02-14T08:35:44.825Z"
+      }
+    ],
+    "EmployeeAttendance": [],
+    "Exam": [
+      {
+        "_id": "67acc0f1459dee7a34c59c00",
+        "name": "final",
+        "year": "2025",
+        "marks": 100,
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-02-12T15:40:33.771Z",
+        "updatedAt": "2025-02-12T15:40:33.771Z"
+      },
+      {
+        "_id": "67b0059cd0c2d609df65c688",
+        "name": "first_term",
+        "year": "2025",
+        "marks": 100,
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-02-15T03:10:19.596Z",
+        "updatedAt": "2025-02-15T03:10:19.596Z"
+      }
+    ],
+    "StudentFeePayment": [
+      {
+        "_id": "67ce57a1ed7c1cef2a6a9899",
+        "feeItemId": "67ce5216ed7c1cef2a6a9888",
+        "amountPaid": 700,
+        "datePaid": "2025-03-10T03:08:04.908Z",
+        "studentId": "67ce574ded7c1cef2a6a9897",
+        "createdAt": "2025-03-10T03:08:17.964Z",
+        "updatedAt": "2025-03-10T03:08:17.964Z"
+      },
+      {
+        "_id": "67ce57a1ed7c1cef2a6a989a",
+        "feeItemId": "67ce5216ed7c1cef2a6a988a",
+        "amountPaid": 200,
+        "datePaid": "2025-03-10T03:08:04.908Z",
+        "studentId": "67ce574ded7c1cef2a6a9897",
+        "createdAt": "2025-03-10T03:08:17.964Z",
+        "updatedAt": "2025-03-10T03:08:17.964Z"
+      },
+      {
+        "_id": "67ce57ebed7c1cef2a6a989c",
+        "feeItemId": "67ce5216ed7c1cef2a6a9888",
+        "amountPaid": 700,
+        "datePaid": "2025-01-01T08:00:00.000Z",
+        "studentId": "67ce574ded7c1cef2a6a9897",
+        "createdAt": "2025-03-10T03:09:31.447Z",
+        "updatedAt": "2025-03-10T03:09:31.447Z"
+      },
+      {
+        "_id": "67ce57ebed7c1cef2a6a989d",
+        "feeItemId": "67ce5216ed7c1cef2a6a988a",
+        "amountPaid": 200,
+        "datePaid": "2025-01-01T08:00:00.000Z",
+        "studentId": "67ce574ded7c1cef2a6a9897",
+        "createdAt": "2025-03-10T03:09:31.447Z",
+        "updatedAt": "2025-03-10T03:09:31.447Z"
+      },
+      {
+        "_id": "67ce57fded7c1cef2a6a989f",
+        "feeItemId": "67ce5216ed7c1cef2a6a9888",
+        "amountPaid": 700,
+        "datePaid": "2025-02-02T08:00:00.000Z",
+        "studentId": "67ce574ded7c1cef2a6a9897",
+        "createdAt": "2025-03-10T03:09:49.748Z",
+        "updatedAt": "2025-03-10T03:09:49.748Z"
+      },
+      {
+        "_id": "67ce57fded7c1cef2a6a98a0",
+        "feeItemId": "67ce5216ed7c1cef2a6a988a",
+        "amountPaid": 200,
+        "datePaid": "2025-02-02T08:00:00.000Z",
+        "studentId": "67ce574ded7c1cef2a6a9897",
+        "createdAt": "2025-03-10T03:09:49.748Z",
+        "updatedAt": "2025-03-10T03:09:49.748Z"
+      }
+    ],
+    "SMSNotificationConfig": [
+      {
+        "_id": "67cdc97eed7c1cef2a6a9864",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "settings": [
+          {
+            "id": "attendance",
+            "name": "Attendance",
+            "enabled": false,
+            "description": "Send SMS for student absence/presence"
+          },
+          {
+            "id": "feeCollection",
+            "name": "Fee Collection",
+            "enabled": false,
+            "description": "Notify about fee payments and dues"
+          },
+          {
+            "id": "examResults",
+            "name": "Exam Results",
+            "enabled": false,
+            "description": "Send SMS when exam results are published"
+          },
+          {
+            "id": "duesReminder",
+            "name": "Dues Reminder",
+            "enabled": false,
+            "description": "Send reminders for outstanding dues"
+          },
+          {
+            "id": "transactionAlert",
+            "name": "Transaction Alert",
+            "enabled": false,
+            "description": "Receive a notification when a transaction is made"
+          }
+        ],
+        "createdAt": "2025-03-09T17:01:50.296Z",
+        "updatedAt": "2025-03-09T17:15:00.783Z"
+      }
+    ],
+    "Schedule": [
+      {
+        "_id": "67acd448ca694cb622635def",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "subjectId": "67acd3bbca694cb622635dea",
+        "classId": "67acd0390509a31a18e8483c",
+        "teacherId": "67acd21e0509a31a18e84840",
+        "sectionId": "67acd03a0509a31a18e8483d",
+        "startTime": "10:00",
+        "endTime": "10:40",
+        "days": [
+          "Tuesday",
+          "Thursday"
+        ],
+        "createdAt": "2025-02-12T17:03:03.149Z",
+        "updatedAt": "2025-02-12T17:03:03.149Z"
+      },
+      {
+        "_id": "67acd448ca694cb622635df0",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "subjectId": "67acd3bbca694cb622635dea",
+        "classId": "67acd0390509a31a18e8483c",
+        "teacherId": "67acd21e0509a31a18e84840",
+        "sectionId": "67acd03a0509a31a18e8483d",
+        "startTime": "10:00",
+        "endTime": "10:40",
+        "days": [
+          "Wednesday",
+          "Monday"
+        ],
+        "createdAt": "2025-02-12T17:03:03.149Z",
+        "updatedAt": "2025-02-12T17:03:03.149Z"
+      },
+      {
+        "_id": "67ad6a5ecd16e1513906ebb3",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "subjectId": "67ad6a5ecd16e1513906ebb2",
+        "classId": "67accffb0509a31a18e84834",
+        "teacherId": "67ad67529fddd477e380c848",
+        "sectionId": "67accffb0509a31a18e84835",
+        "startTime": "08:00",
+        "endTime": "21:01",
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Sunday"
+        ],
+        "createdAt": "2025-02-13T03:43:26.808Z",
+        "updatedAt": "2025-02-13T03:43:26.808Z"
+      }
+    ],
+    "StudentAttendance": [],
+    "Subject": [
+      {
+        "_id": "67acd3bbca694cb622635dea",
+        "name": "Math",
+        "classId": "67acd0390509a31a18e8483c",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-02-12T17:00:43.698Z",
+        "updatedAt": "2025-02-12T17:03:03.149Z"
+      },
+      {
+        "_id": "67ad6a5ecd16e1513906ebb2",
+        "name": "Math",
+        "classId": "67accffb0509a31a18e84834",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-02-13T03:43:26.240Z",
+        "updatedAt": "2025-02-13T03:43:26.240Z"
+      }
+    ],
+    "Fee": [],
+    "TransactionCategory": [
+      {
+        "_id": "67c42249e4767f88b8380029",
+        "value": "form_fees",
+        "label": "Form Fees",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:01.068Z",
+        "updatedAt": "2025-03-02T09:18:01.068Z"
+      },
+      {
+        "_id": "67c42249e4767f88b838002a",
+        "value": "admission_fees",
+        "label": "Admission Fees",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:01.279Z",
+        "updatedAt": "2025-03-02T09:18:01.279Z"
+      },
+      {
+        "_id": "67c42249e4767f88b838002b",
+        "value": "monthly_fees",
+        "label": "Monthly Fees",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:01.482Z",
+        "updatedAt": "2025-03-02T09:18:01.482Z"
+      },
+      {
+        "_id": "67c42249e4767f88b838002c",
+        "value": "book_fees",
+        "label": "Book",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:01.686Z",
+        "updatedAt": "2025-03-02T09:18:01.686Z"
+      },
+      {
+        "_id": "67c42249e4767f88b838002d",
+        "value": "syllabus_fees",
+        "label": "Syllabus",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:01.898Z",
+        "updatedAt": "2025-03-02T09:18:01.898Z"
+      },
+      {
+        "_id": "67c4224ae4767f88b838002e",
+        "value": "id_card_fees",
+        "label": "ID Card",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:02.099Z",
+        "updatedAt": "2025-03-02T09:18:02.099Z"
+      },
+      {
+        "_id": "67c4224ae4767f88b838002f",
+        "value": "dress_fees",
+        "label": "Dress",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:02.314Z",
+        "updatedAt": "2025-03-02T09:18:02.314Z"
+      },
+      {
+        "_id": "67c4224ae4767f88b8380030",
+        "value": "prottoyon_fees",
+        "label": "Prottoyon Fee",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:02.519Z",
+        "updatedAt": "2025-03-02T09:18:02.519Z"
+      },
+      {
+        "_id": "67c4224ae4767f88b8380031",
+        "value": "stationary_fees",
+        "label": "Stationary",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:02.731Z",
+        "updatedAt": "2025-03-02T09:18:02.731Z"
+      },
+      {
+        "_id": "67c4224ae4767f88b8380032",
+        "value": "exam_fees",
+        "label": "Examination Fees",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:02.936Z",
+        "updatedAt": "2025-03-02T09:18:02.936Z"
+      },
+      {
+        "_id": "67c4224be4767f88b8380033",
+        "value": "hostel_fees",
+        "label": "Hostel Fees",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:03.141Z",
+        "updatedAt": "2025-03-02T09:18:03.141Z"
+      },
+      {
+        "_id": "67c4224be4767f88b8380034",
+        "value": "laboratory_fees",
+        "label": "Laboratory Fees",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:03.343Z",
+        "updatedAt": "2025-03-02T09:18:03.343Z"
+      },
+      {
+        "_id": "67c4224be4767f88b8380035",
+        "value": "library_fees",
+        "label": "Library Fees",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:03.563Z",
+        "updatedAt": "2025-03-02T09:18:03.563Z"
+      },
+      {
+        "_id": "67c4224be4767f88b8380036",
+        "value": "transport_fees",
+        "label": "Transport Fees",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:03.768Z",
+        "updatedAt": "2025-03-02T09:18:03.768Z"
+      },
+      {
+        "_id": "67c4224be4767f88b8380037",
+        "value": "other_fees",
+        "label": "Other Fees",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:03.967Z",
+        "updatedAt": "2025-03-02T09:18:03.967Z"
+      },
+      {
+        "_id": "67c4224ce4767f88b8380038",
+        "value": "bank_deposit",
+        "label": "Bank Deposit",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:04.170Z",
+        "updatedAt": "2025-03-02T09:18:04.170Z"
+      },
+      {
+        "_id": "67c4224ce4767f88b8380039",
+        "value": "bank_withdrawal",
+        "label": "Bank Withdrawal",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:04.372Z",
+        "updatedAt": "2025-03-02T09:18:04.372Z"
+      },
+      {
+        "_id": "67c4224ce4767f88b838003a",
+        "value": "donations",
+        "label": "Donations & Grants",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:04.575Z",
+        "updatedAt": "2025-03-02T09:18:04.575Z"
+      },
+      {
+        "_id": "67c4224ce4767f88b838003b",
+        "value": "cafeteria_income",
+        "label": "Cafeteria Income",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:04.777Z",
+        "updatedAt": "2025-03-02T09:18:04.777Z"
+      },
+      {
+        "_id": "67c4224ce4767f88b838003c",
+        "value": "utilities",
+        "label": "Utilities",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:04.984Z",
+        "updatedAt": "2025-03-02T09:18:04.984Z"
+      },
+      {
+        "_id": "67c4224de4767f88b838003d",
+        "value": "maintenance",
+        "label": "Building Maintenance",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:05.197Z",
+        "updatedAt": "2025-03-02T09:18:05.197Z"
+      },
+      {
+        "_id": "67c4224de4767f88b838003e",
+        "value": "supplies",
+        "label": "Office Supplies",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:05.402Z",
+        "updatedAt": "2025-03-02T09:18:05.402Z"
+      },
+      {
+        "_id": "67c4224de4767f88b838003f",
+        "value": "teaching_supplies",
+        "label": "Teaching Supplies",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:05.610Z",
+        "updatedAt": "2025-03-02T09:18:05.610Z"
+      },
+      {
+        "_id": "67c4224de4767f88b8380040",
+        "value": "equipment",
+        "label": "Equipment",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:05.831Z",
+        "updatedAt": "2025-03-02T09:18:05.831Z"
+      },
+      {
+        "_id": "67c4224ee4767f88b8380041",
+        "value": "technology",
+        "label": "Technology & IT",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:06.044Z",
+        "updatedAt": "2025-03-02T09:18:06.044Z"
+      },
+      {
+        "_id": "67c4224ee4767f88b8380042",
+        "value": "library_resources",
+        "label": "Library Resources",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:06.259Z",
+        "updatedAt": "2025-03-02T09:18:06.259Z"
+      },
+      {
+        "_id": "67c4224ee4767f88b8380043",
+        "value": "sports_equipment",
+        "label": "Sports Equipment",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:06.472Z",
+        "updatedAt": "2025-03-02T09:18:06.472Z"
+      },
+      {
+        "_id": "67c4224ee4767f88b8380044",
+        "value": "marketing",
+        "label": "Marketing & Advertising",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:06.689Z",
+        "updatedAt": "2025-03-02T09:18:06.689Z"
+      },
+      {
+        "_id": "67c4224ee4767f88b8380045",
+        "value": "security",
+        "label": "Security Services",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:06.907Z",
+        "updatedAt": "2025-03-02T09:18:06.907Z"
+      },
+      {
+        "_id": "67c4224fe4767f88b8380046",
+        "value": "student_activities",
+        "label": "Student Activities",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:07.119Z",
+        "updatedAt": "2025-03-02T09:18:07.119Z"
+      },
+      {
+        "_id": "67c4224fe4767f88b8380047",
+        "value": "cleaning",
+        "label": "Cleaning Services",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:07.328Z",
+        "updatedAt": "2025-03-02T09:18:07.328Z"
+      },
+      {
+        "_id": "67c4224fe4767f88b8380048",
+        "value": "furniture",
+        "label": "Furniture",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:07.536Z",
+        "updatedAt": "2025-03-02T09:18:07.536Z"
+      },
+      {
+        "_id": "67c4224fe4767f88b8380049",
+        "value": "repairs",
+        "label": "Repairs",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:07.749Z",
+        "updatedAt": "2025-03-02T09:18:07.749Z"
+      },
+      {
+        "_id": "67c4224fe4767f88b838004a",
+        "value": "scholarships",
+        "label": "Scholarships",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:07.968Z",
+        "updatedAt": "2025-03-02T09:18:07.968Z"
+      },
+      {
+        "_id": "67c42250e4767f88b838004b",
+        "value": "miscellaneous",
+        "label": "Miscellaneous",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-02T09:18:08.183Z",
+        "updatedAt": "2025-03-02T09:18:08.183Z"
+      }
+    ],
+    "Salary": [
+      {
+        "_id": "67acd4af1da031bdf5053723",
+        "employeeId": "67acd21e0509a31a18e84840",
+        "amount": 100,
+        "month": "February",
+        "year": 2025,
+        "reason": "bonus",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-02-12T17:04:47.442Z",
+        "updatedAt": "2025-02-12T17:04:47.442Z"
+      }
+    ],
+    "FeeStructure": [
+      {
+        "_id": "67ce4fbfed7c1cef2a6a986d",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "title": "One",
+        "createdAt": "2025-03-10T02:34:39.319Z",
+        "updatedAt": "2025-03-10T02:36:41.995Z"
+      },
+      {
+        "_id": "67ce50d4ed7c1cef2a6a9873",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "title": "Play",
+        "createdAt": "2025-03-10T02:39:16.031Z",
+        "updatedAt": "2025-03-10T02:39:16.031Z"
+      },
+      {
+        "_id": "67ce5133ed7c1cef2a6a9879",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "title": "Nursary",
+        "createdAt": "2025-03-10T02:40:51.729Z",
+        "updatedAt": "2025-03-10T02:40:51.729Z"
+      },
+      {
+        "_id": "67ce51b4ed7c1cef2a6a987f",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "title": "Two",
+        "createdAt": "2025-03-10T02:43:00.204Z",
+        "updatedAt": "2025-03-10T02:43:00.204Z"
+      },
+      {
+        "_id": "67ce5215ed7c1cef2a6a9885",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "title": "Three",
+        "createdAt": "2025-03-10T02:44:37.865Z",
+        "updatedAt": "2025-03-10T02:44:37.865Z"
+      },
+      {
+        "_id": "67ce525ced7c1cef2a6a988b",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "title": "Four",
+        "createdAt": "2025-03-10T02:45:48.023Z",
+        "updatedAt": "2025-03-10T02:45:48.023Z"
+      },
+      {
+        "_id": "67ce52baed7c1cef2a6a9891",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "title": "Five",
+        "createdAt": "2025-03-10T02:47:22.551Z",
+        "updatedAt": "2025-03-10T02:47:22.551Z"
+      }
+    ],
+    "Section": [
+      {
+        "_id": "67acbe30e4e20c1a990cae8a",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "name": "A",
+        "classId": "67acbe2fe4e20c1a990cae89",
+        "createdAt": "2025-02-12T15:28:48.056Z",
+        "updatedAt": "2025-02-14T08:34:16.885Z"
+      },
+      {
+        "_id": "67accf8a0509a31a18e84831",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "name": "A",
+        "classId": "67accf8a0509a31a18e84830",
+        "createdAt": "2025-02-12T16:42:50.987Z",
+        "updatedAt": "2025-02-14T08:34:30.421Z"
+      },
+      {
+        "_id": "67accffb0509a31a18e84835",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "name": "A",
+        "classId": "67accffb0509a31a18e84834",
+        "createdAt": "2025-02-12T16:44:43.847Z",
+        "updatedAt": "2025-02-14T08:34:58.199Z"
+      },
+      {
+        "_id": "67acd00b0509a31a18e84837",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "name": "A",
+        "classId": "67acd00a0509a31a18e84836",
+        "createdAt": "2025-02-12T16:44:59.109Z",
+        "updatedAt": "2025-02-14T08:35:11.136Z"
+      },
+      {
+        "_id": "67acd01a0509a31a18e84839",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "name": "A",
+        "classId": "67acd01a0509a31a18e84838",
+        "createdAt": "2025-02-12T16:45:14.760Z",
+        "updatedAt": "2025-02-14T08:35:22.680Z"
+      },
+      {
+        "_id": "67acd02a0509a31a18e8483b",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "name": "A",
+        "classId": "67acd0290509a31a18e8483a",
+        "createdAt": "2025-02-12T16:45:30.325Z",
+        "updatedAt": "2025-02-14T08:35:35.552Z"
+      },
+      {
+        "_id": "67acd03a0509a31a18e8483d",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "name": "A",
+        "classId": "67acd0390509a31a18e8483c",
+        "createdAt": "2025-02-12T16:45:46.086Z",
+        "updatedAt": "2025-02-14T08:35:45.768Z"
+      }
+    ],
+    "Employee": [
+      {
+        "_id": "67accee60509a31a18e8482d",
+        "photo": "https://campaas.spiralvectors.com/uploads/skcs/employees/67accd194be4f.jpg",
+        "employeeId": "3001",
+        "fullName": "Shah MD Harunor Rashid",
+        "email": "naeemhasan2916@gmail.com",
+        "phone": "01713904887",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "1971-10-24T18:00:00.000Z",
+        "address": "Khoksa Masterpara, Khoksa, Kushtia",
+        "salary": 10000,
+        "role": "principal",
+        "fatherName": "Shah Md Golam Sarwar",
+        "motherName": "Mst Sufia Begum",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-02-12T16:40:06.108Z",
+        "updatedAt": "2025-02-12T16:40:06.108Z"
+      },
+      {
+        "_id": "67acd21e0509a31a18e84840",
+        "photo": "https://campaas.spiralvectors.com/uploads/skcs/employees/67acd1cfe6bcd.jpg",
+        "employeeId": "4001",
+        "fullName": "Naeem Hasan",
+        "email": "cdt.naeem2916@gmail.com",
+        "phone": "01708910232",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2003-11-09T18:00:00.000Z",
+        "address": "Khoksa Masterpara, Khoksa,Kushtia",
+        "salary": 6000,
+        "role": "teacher",
+        "fatherName": "Shah Md Harunor Rashid",
+        "motherName": "Shamsunnaher Akter Banu",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-02-12T16:53:50.642Z",
+        "updatedAt": "2025-02-12T16:59:21.772Z"
+      },
+      {
+        "_id": "67ad67529fddd477e380c848",
+        "photo": "https://placehold.co/400",
+        "employeeId": "4002",
+        "fullName": "Eka Biswas",
+        "email": "ekabiswas97@gmail.com",
+        "phone": "01611513256",
+        "religion": "islam",
+        "gender": "female",
+        "dateOfBirth": "1997-12-25T08:00:00.000Z",
+        "address": "Khoksa Masterpara, Khoksa,Kushtia ",
+        "salary": 3000,
+        "role": "teacher",
+        "fatherName": "Amorash Biswas ",
+        "motherName": "Mira Biswas",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-02-13T03:30:26.868Z",
+        "updatedAt": "2025-02-13T03:30:26.868Z"
+      }
+    ],
+    "Transaction": [
+      {
+        "_id": "67acc168459dee7a34c59c03",
+        "label": "fees by mohammad Sohan-One-A",
+        "note": "admission_fees, monthly_fees By mohammad Sohan class - One section - A",
+        "category": "admission_fees, monthly_fees",
+        "type": "income",
+        "amount": 100,
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-02-12T15:42:32.117Z",
+        "transactionBy": "skcs08.official@gmail.com"
+      },
+      {
+        "_id": "67acc1bc459dee7a34c59c05",
+        "label": "monthly_salary",
+        "note": "monthly_salary To teacher -> Korim Uddin ",
+        "category": "monthly_salary",
+        "type": "expense",
+        "amount": 1000,
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-02-12T15:43:56.930Z",
+        "transactionBy": "skcs08.official@gmail.com"
+      },
+      {
+        "_id": "67acc25d459dee7a34c59c06",
+        "label": "breakfast",
+        "note": "dfhkdjsjfs",
+        "category": "other_fees",
+        "type": "expense",
+        "amount": 20,
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-02-12T15:46:35.846Z",
+        "transactionBy": "skcs08.official@gmail.com"
+      },
+      {
+        "_id": "67acd497ca694cb622635df3",
+        "label": "fees by Nahid-Five-A",
+        "note": "monthly_fees By Nahid class - Five section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 600,
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-02-12T17:04:23.390Z",
+        "transactionBy": "skcs08.official@gmail.com"
+      },
+      {
+        "_id": "67acd4b01da031bdf5053724",
+        "label": "bonus",
+        "note": "bonus To teacher -> Naeem Hasan ",
+        "category": "bonus",
+        "type": "expense",
+        "amount": 100,
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-02-12T17:04:48.201Z",
+        "transactionBy": "skcs08.official@gmail.com"
+      },
+      {
+        "_id": "67ce57a2ed7c1cef2a6a989b",
+        "label": "Student Fee collection",
+        "note": "৳900.00 paid by Fabiha Bushra  - Three - A and roll: 2025301",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 900,
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-10T03:08:18.493Z",
+        "transactionBy": "skcs08.official@gmail.com"
+      },
+      {
+        "_id": "67ce57ebed7c1cef2a6a989e",
+        "label": "Student Fee collection",
+        "note": "৳900.00 paid by Fabiha Bushra  - Three - A and roll: 2025301",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 900,
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-10T03:09:31.925Z",
+        "transactionBy": "skcs08.official@gmail.com"
+      },
+      {
+        "_id": "67ce57feed7c1cef2a6a98a1",
+        "label": "Student Fee collection",
+        "note": "৳900.00 paid by Fabiha Bushra  - Three - A and roll: 2025301",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 900,
+        "tenantId": "67ac75675b351c7449b8180c",
+        "createdAt": "2025-03-10T03:09:50.230Z",
+        "transactionBy": "skcs08.official@gmail.com"
+      }
+    ],
+    "Student": [
+      {
+        "_id": "67ce574ded7c1cef2a6a9897",
+        "admissionDate": "2025-01-01T00:00:00.000Z",
+        "feeStructureId": "67ce5215ed7c1cef2a6a9885",
+        "photo": "https://www.student.com",
+        "fullName": "Fabiha Bushra ",
+        "email": "fabiha@gmail.com",
+        "phone": "01777444533",
+        "religion": "islam",
+        "gender": "female",
+        "dateOfBirth": "2015-10-29T07:00:00.000Z",
+        "address": "Khoksa Masterpara Khoksa Kushtia",
+        "studentId": "2025301",
+        "sectionId": "67acd01a0509a31a18e84839",
+        "classId": "67acd01a0509a31a18e84838",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "guardianName": "Rasel Ahmad",
+        "relationship": "Father",
+        "guardianPhone": "01777444533",
+        "guardianOccupation": "Service holder ",
+        "fatherName": "Rasel Ahmad",
+        "motherName": "Eka Biswas",
+        "createdAt": "2025-03-10T03:06:53.723Z",
+        "updatedAt": "2025-03-10T03:06:53.723Z"
+      },
+      {
+        "_id": "67cf134ced7c1cef2a6a9931",
+        "admissionDate": "2025-01-01T00:00:00.000Z",
+        "feeStructureId": "67ce51b4ed7c1cef2a6a987f",
+        "photo": "https://www.student.com",
+        "fullName": "Afiaya Airin Ava",
+        "email": "ava@gmail.com",
+        "phone": "017493363378",
+        "religion": "islam",
+        "gender": "female",
+        "dateOfBirth": "2017-01-30T08:00:00.000Z",
+        "address": "Khoksa kalibari hoksa kushtia",
+        "studentId": "2025202",
+        "sectionId": "67acd00b0509a31a18e84837",
+        "classId": "67acd00a0509a31a18e84836",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "guardianName": "Mahammad Alauddim Sheikh",
+        "relationship": "Father",
+        "guardianPhone": "017493363378",
+        "guardianOccupation": "Businessman",
+        "fatherName": "Mahammad Alauddim Sheikh",
+        "motherName": "Mst Sazada Bfgum",
+        "createdAt": "2025-03-10T16:29:00.882Z",
+        "updatedAt": "2025-03-10T16:29:00.882Z"
+      },
+      {
+        "_id": "67cf1806ed7c1cef2a6a9933",
+        "admissionDate": "2025-01-01T00:00:00.000Z",
+        "feeStructureId": "67ce50d4ed7c1cef2a6a9873",
+        "photo": "https://www.student.com",
+        "fullName": "Faizan Khan",
+        "email": "faizan@gmail.com",
+        "phone": "017313190072",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2020-09-16T07:00:00.000Z",
+        "address": "khoksa moragasa khoksa kushtia",
+        "studentId": "2025p05",
+        "sectionId": "67acbe30e4e20c1a990cae8a",
+        "classId": "67acbe2fe4e20c1a990cae89",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "guardianName": "Munayem ",
+        "relationship": "Father",
+        "guardianPhone": "017313190072",
+        "guardianOccupation": "Service holder ",
+        "fatherName": "Munayem ",
+        "motherName": "Shefa Khatun",
+        "createdAt": "2025-03-10T16:49:10.894Z",
+        "updatedAt": "2025-03-10T16:49:10.894Z"
+      },
+      {
+        "_id": "67cfa45ded7c1cef2a6a993b",
+        "admissionDate": "2025-01-01T00:00:00.000Z",
+        "feeStructureId": "67ce4fbfed7c1cef2a6a986d",
+        "photo": "https://www.student.com",
+        "fullName": "Ajmira Imin ",
+        "email": "irin@gmail.com",
+        "phone": "01873688644",
+        "religion": "islam",
+        "gender": "female",
+        "dateOfBirth": "2017-11-06T08:00:00.000Z",
+        "address": "Khoksa Codoki mohammodpur Khoksa Kushtia",
+        "studentId": "2025102",
+        "sectionId": "67accffb0509a31a18e84835",
+        "classId": "67accffb0509a31a18e84834",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "guardianName": "Awlad Mollah",
+        "relationship": "Father",
+        "guardianPhone": "01873688644",
+        "guardianOccupation": "Service holder ",
+        "fatherName": "Awlad Mollah",
+        "motherName": "Konika Khatun",
+        "createdAt": "2025-03-11T02:47:57.848Z",
+        "updatedAt": "2025-03-11T02:47:57.848Z"
+      },
+      {
+        "_id": "67cfa54aed7c1cef2a6a993d",
+        "admissionDate": "2025-01-01T00:00:00.000Z",
+        "feeStructureId": "67ce52baed7c1cef2a6a9891",
+        "photo": "https://www.student.com",
+        "fullName": "Md Shahariar Labib",
+        "email": "labib@gmail.com",
+        "phone": "01785614016",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2016-06-18T07:00:00.000Z",
+        "address": "khoksa Kushtia",
+        "studentId": "2025508",
+        "sectionId": "67acd03a0509a31a18e8483d",
+        "classId": "67acd0390509a31a18e8483c",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "guardianName": "Md Saiful Islam",
+        "relationship": "Father",
+        "guardianPhone": "01785614016",
+        "guardianOccupation": "Service holder ",
+        "fatherName": "Md Saiful Islam",
+        "motherName": "Mosaret Jarka Luck",
+        "createdAt": "2025-03-11T02:51:54.472Z",
+        "updatedAt": "2025-03-11T02:51:54.472Z"
+      },
+      {
+        "_id": "67cfa5fded7c1cef2a6a993f",
+        "admissionDate": "2025-01-01T00:00:00.000Z",
+        "feeStructureId": "67ce50d4ed7c1cef2a6a9873",
+        "photo": "https://www.student.com",
+        "fullName": "Sadikun Nahar Ava ",
+        "email": "nahar@gmail.com",
+        "phone": "01717405811",
+        "religion": "islam",
+        "gender": "female",
+        "dateOfBirth": "2015-11-09T08:00:00.000Z",
+        "address": "khoksa moragasa",
+        "studentId": "2025p11",
+        "sectionId": "67acbe30e4e20c1a990cae8a",
+        "classId": "67acbe2fe4e20c1a990cae89",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "guardianName": "Md Anisur Rahman",
+        "relationship": "Father",
+        "guardianPhone": "01717405811",
+        "guardianOccupation": "Service holder ",
+        "fatherName": "Md Anisur Rahman",
+        "motherName": "Mst Marzina Khatun",
+        "createdAt": "2025-03-11T02:54:53.194Z",
+        "updatedAt": "2025-03-11T02:54:53.194Z"
+      },
+      {
+        "_id": "67cfa6e7ed7c1cef2a6a9941",
+        "admissionDate": "2025-01-01T00:00:00.000Z",
+        "feeStructureId": "67ce50d4ed7c1cef2a6a9873",
+        "photo": "https://www.student.com",
+        "fullName": "Aroshi Jahan Eya ",
+        "email": "aroshi@gmail.com",
+        "phone": "01770421221",
+        "religion": "islam",
+        "gender": "female",
+        "dateOfBirth": "2020-04-06T07:00:00.000Z",
+        "address": "Khoksa Mirjapur Khoksa Kushtia",
+        "studentId": "2025p04",
+        "sectionId": "67acbe30e4e20c1a990cae8a",
+        "classId": "67acbe2fe4e20c1a990cae89",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "guardianName": "Md Alamin Hossain",
+        "relationship": "Father",
+        "guardianPhone": "01770421221",
+        "guardianOccupation": "Service holder ",
+        "fatherName": "Md Alamin Hossain",
+        "motherName": "Mst Rima Khatun ",
+        "createdAt": "2025-03-11T02:58:47.168Z",
+        "updatedAt": "2025-03-11T02:58:47.168Z"
+      },
+      {
+        "_id": "67cfa7e6ed7c1cef2a6a9943",
+        "admissionDate": "2025-01-01T00:00:00.000Z",
+        "feeStructureId": "67ce50d4ed7c1cef2a6a9873",
+        "photo": "https://www.student.com",
+        "fullName": "Taskin Tahomid Tasin",
+        "email": "taskin@gmail.com",
+        "phone": "01308670606",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2021-07-23T07:00:00.000Z",
+        "address": "Khoksa Singharia Khoksa Kushtia",
+        "studentId": "2025p06",
+        "sectionId": "67acbe30e4e20c1a990cae8a",
+        "classId": "67acbe2fe4e20c1a990cae89",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "guardianName": "Taskin Tahomid Tasin",
+        "relationship": "Father",
+        "guardianPhone": "01308670606",
+        "guardianOccupation": "Service holder ",
+        "fatherName": "Amirul Islam",
+        "motherName": "Tania Khatun",
+        "createdAt": "2025-03-11T03:03:02.399Z",
+        "updatedAt": "2025-03-11T03:03:02.399Z"
+      },
+      {
+        "_id": "67cfa8aeed7c1cef2a6a9945",
+        "admissionDate": "2025-01-01T00:00:00.000Z",
+        "feeStructureId": "67ce50d4ed7c1cef2a6a9873",
+        "photo": "https://www.student.com",
+        "fullName": "ariyan Rahman Srijon",
+        "email": "ariyan@gmail.com",
+        "phone": "01891988893",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2020-01-13T08:00:00.000Z",
+        "address": "Khoksa Osmanpur Khoksa Kushtia",
+        "studentId": "2025p08",
+        "sectionId": "67acbe30e4e20c1a990cae8a",
+        "classId": "67acbe2fe4e20c1a990cae89",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "guardianName": "Md Sujon Sheijh",
+        "relationship": "Father",
+        "guardianPhone": "01891988893",
+        "guardianOccupation": "Service holder ",
+        "fatherName": "Md Sujon Sheijh",
+        "motherName": "Shumc Parvin",
+        "createdAt": "2025-03-11T03:06:22.938Z",
+        "updatedAt": "2025-03-11T03:06:22.938Z"
+      },
+      {
+        "_id": "67cfaae8ed7c1cef2a6a9947",
+        "admissionDate": "2025-01-01T00:00:00.000Z",
+        "feeStructureId": "67ce50d4ed7c1cef2a6a9873",
+        "photo": "https://www.student.com",
+        "fullName": "Md Fairul Hosen ",
+        "email": "fairuj@gmail.com",
+        "phone": "01708032658",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2020-03-21T07:00:00.000Z",
+        "address": "Khoksa Komlapur Khoksa Kushtia",
+        "studentId": "2025p15",
+        "sectionId": "67acbe30e4e20c1a990cae8a",
+        "classId": "67acbe2fe4e20c1a990cae89",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "guardianName": "Md Faruj Hosen ",
+        "relationship": "Father",
+        "guardianPhone": "01708032658",
+        "guardianOccupation": "Service holder ",
+        "fatherName": "Md Faruj Hosen ",
+        "motherName": "Mst Juthi Khtun  ",
+        "createdAt": "2025-03-11T03:15:52.957Z",
+        "updatedAt": "2025-03-11T03:15:52.957Z"
+      },
+      {
+        "_id": "67cfb4e1ed7c1cef2a6a9953",
+        "admissionDate": "2025-01-01T00:00:00.000Z",
+        "feeStructureId": "67ce50d4ed7c1cef2a6a9873",
+        "photo": "https://www.student.com",
+        "fullName": "Safone Adnan Sahad",
+        "email": "sahad@gmail.com",
+        "phone": "019422705107",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2021-02-05T08:00:00.000Z",
+        "address": "Khoksa Hilalpur",
+        "studentId": "2025p13",
+        "sectionId": "67acbe30e4e20c1a990cae8a",
+        "classId": "67acbe2fe4e20c1a990cae89",
+        "tenantId": "67ac75675b351c7449b8180c",
+        "guardianName": "Md Sadidul Islam ",
+        "relationship": "Father",
+        "guardianPhone": "019422705107",
+        "guardianOccupation": "Service holder ",
+        "fatherName": "Md Sadidul Islam ",
+        "motherName": "Mst Salma Khatun ",
+        "createdAt": "2025-03-11T03:58:25.866Z",
+        "updatedAt": "2025-03-11T03:58:25.866Z"
+      }
+    ]
+  }
+}

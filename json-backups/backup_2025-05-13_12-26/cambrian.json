@@ -1,0 +1,1234 @@
+{
+  "database": "cambrian",
+  "exportedAt": "2025-05-13T06:26:39.705Z",
+  "collections": {
+    "Subject": [
+      {
+        "_id": "6782175dc476fc4353354534",
+        "name": "Bangla",
+        "classId": "677aa191a4bf7271542d485d",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-11T07:01:49.225Z",
+        "updatedAt": "2025-01-11T07:01:49.225Z"
+      }
+    ],
+    "StudentAttendance": [
+      {
+        "_id": "678217b7f4c2544aa7c6453b",
+        "studentId": "67821486a4ccca50551a4e45",
+        "classId": "677aa6f4a8fef66abdaabc91",
+        "sectionId": "677d1d3ab9308ddf3cbc0ebc",
+        "date": "2025-01-11",
+        "isPresent": false,
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-11T07:03:19.979Z",
+        "updatedAt": "2025-01-11T07:03:26.799Z"
+      }
+    ],
+    "TransactionCategory": [
+      {
+        "_id": "67c42223e4767f88b837ff7a",
+        "value": "form_fees",
+        "label": "Form Fees",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:23.277Z",
+        "updatedAt": "2025-03-02T09:17:23.277Z"
+      },
+      {
+        "_id": "67c42223e4767f88b837ff7b",
+        "value": "admission_fees",
+        "label": "Admission Fees",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:23.487Z",
+        "updatedAt": "2025-03-02T09:17:23.487Z"
+      },
+      {
+        "_id": "67c42223e4767f88b837ff7c",
+        "value": "monthly_fees",
+        "label": "Monthly Fees",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:23.697Z",
+        "updatedAt": "2025-03-02T09:17:23.697Z"
+      },
+      {
+        "_id": "67c42223e4767f88b837ff7d",
+        "value": "book_fees",
+        "label": "Book",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:23.903Z",
+        "updatedAt": "2025-03-02T09:17:23.903Z"
+      },
+      {
+        "_id": "67c42224e4767f88b837ff7e",
+        "value": "syllabus_fees",
+        "label": "Syllabus",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:24.115Z",
+        "updatedAt": "2025-03-02T09:17:24.115Z"
+      },
+      {
+        "_id": "67c42224e4767f88b837ff7f",
+        "value": "id_card_fees",
+        "label": "ID Card",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:24.323Z",
+        "updatedAt": "2025-03-02T09:17:24.323Z"
+      },
+      {
+        "_id": "67c42224e4767f88b837ff80",
+        "value": "dress_fees",
+        "label": "Dress",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:24.530Z",
+        "updatedAt": "2025-03-02T09:17:24.530Z"
+      },
+      {
+        "_id": "67c42224e4767f88b837ff81",
+        "value": "prottoyon_fees",
+        "label": "Prottoyon Fee",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:24.735Z",
+        "updatedAt": "2025-03-02T09:17:24.735Z"
+      },
+      {
+        "_id": "67c42224e4767f88b837ff82",
+        "value": "stationary_fees",
+        "label": "Stationary",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:24.937Z",
+        "updatedAt": "2025-03-02T09:17:24.937Z"
+      },
+      {
+        "_id": "67c42225e4767f88b837ff83",
+        "value": "exam_fees",
+        "label": "Examination Fees",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:25.144Z",
+        "updatedAt": "2025-03-02T09:17:25.144Z"
+      },
+      {
+        "_id": "67c42225e4767f88b837ff84",
+        "value": "hostel_fees",
+        "label": "Hostel Fees",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:25.355Z",
+        "updatedAt": "2025-03-02T09:17:25.355Z"
+      },
+      {
+        "_id": "67c42225e4767f88b837ff85",
+        "value": "laboratory_fees",
+        "label": "Laboratory Fees",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:25.563Z",
+        "updatedAt": "2025-03-02T09:17:25.563Z"
+      },
+      {
+        "_id": "67c42225e4767f88b837ff86",
+        "value": "library_fees",
+        "label": "Library Fees",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:25.774Z",
+        "updatedAt": "2025-03-02T09:17:25.774Z"
+      },
+      {
+        "_id": "67c42225e4767f88b837ff87",
+        "value": "transport_fees",
+        "label": "Transport Fees",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:25.991Z",
+        "updatedAt": "2025-03-02T09:17:25.991Z"
+      },
+      {
+        "_id": "67c42226e4767f88b837ff88",
+        "value": "other_fees",
+        "label": "Other Fees",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:26.198Z",
+        "updatedAt": "2025-03-02T09:17:26.198Z"
+      },
+      {
+        "_id": "67c42226e4767f88b837ff89",
+        "value": "bank_deposit",
+        "label": "Bank Deposit",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:26.407Z",
+        "updatedAt": "2025-03-02T09:17:26.407Z"
+      },
+      {
+        "_id": "67c42226e4767f88b837ff8a",
+        "value": "bank_withdrawal",
+        "label": "Bank Withdrawal",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:26.620Z",
+        "updatedAt": "2025-03-02T09:17:26.620Z"
+      },
+      {
+        "_id": "67c42226e4767f88b837ff8b",
+        "value": "donations",
+        "label": "Donations & Grants",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:26.826Z",
+        "updatedAt": "2025-03-02T09:17:26.826Z"
+      },
+      {
+        "_id": "67c42227e4767f88b837ff8c",
+        "value": "cafeteria_income",
+        "label": "Cafeteria Income",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:27.034Z",
+        "updatedAt": "2025-03-02T09:17:27.034Z"
+      },
+      {
+        "_id": "67c42227e4767f88b837ff8d",
+        "value": "utilities",
+        "label": "Utilities",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:27.244Z",
+        "updatedAt": "2025-03-02T09:17:27.244Z"
+      },
+      {
+        "_id": "67c42227e4767f88b837ff8e",
+        "value": "maintenance",
+        "label": "Building Maintenance",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:27.451Z",
+        "updatedAt": "2025-03-02T09:17:27.451Z"
+      },
+      {
+        "_id": "67c42227e4767f88b837ff8f",
+        "value": "supplies",
+        "label": "Office Supplies",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:27.660Z",
+        "updatedAt": "2025-03-02T09:17:27.660Z"
+      },
+      {
+        "_id": "67c42227e4767f88b837ff90",
+        "value": "teaching_supplies",
+        "label": "Teaching Supplies",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:27.875Z",
+        "updatedAt": "2025-03-02T09:17:27.875Z"
+      },
+      {
+        "_id": "67c42228e4767f88b837ff91",
+        "value": "equipment",
+        "label": "Equipment",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:28.086Z",
+        "updatedAt": "2025-03-02T09:17:28.086Z"
+      },
+      {
+        "_id": "67c42228e4767f88b837ff92",
+        "value": "technology",
+        "label": "Technology & IT",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:28.300Z",
+        "updatedAt": "2025-03-02T09:17:28.300Z"
+      },
+      {
+        "_id": "67c42228e4767f88b837ff93",
+        "value": "library_resources",
+        "label": "Library Resources",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:28.507Z",
+        "updatedAt": "2025-03-02T09:17:28.507Z"
+      },
+      {
+        "_id": "67c42228e4767f88b837ff94",
+        "value": "sports_equipment",
+        "label": "Sports Equipment",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:28.716Z",
+        "updatedAt": "2025-03-02T09:17:28.716Z"
+      },
+      {
+        "_id": "67c42228e4767f88b837ff95",
+        "value": "marketing",
+        "label": "Marketing & Advertising",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:28.924Z",
+        "updatedAt": "2025-03-02T09:17:28.924Z"
+      },
+      {
+        "_id": "67c42229e4767f88b837ff96",
+        "value": "security",
+        "label": "Security Services",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:29.130Z",
+        "updatedAt": "2025-03-02T09:17:29.130Z"
+      },
+      {
+        "_id": "67c42229e4767f88b837ff97",
+        "value": "student_activities",
+        "label": "Student Activities",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:29.331Z",
+        "updatedAt": "2025-03-02T09:17:29.331Z"
+      },
+      {
+        "_id": "67c42229e4767f88b837ff98",
+        "value": "cleaning",
+        "label": "Cleaning Services",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:29.540Z",
+        "updatedAt": "2025-03-02T09:17:29.540Z"
+      },
+      {
+        "_id": "67c42229e4767f88b837ff99",
+        "value": "furniture",
+        "label": "Furniture",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:29.743Z",
+        "updatedAt": "2025-03-02T09:17:29.743Z"
+      },
+      {
+        "_id": "67c42229e4767f88b837ff9a",
+        "value": "repairs",
+        "label": "Repairs",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:29.947Z",
+        "updatedAt": "2025-03-02T09:17:29.947Z"
+      },
+      {
+        "_id": "67c4222ae4767f88b837ff9b",
+        "value": "scholarships",
+        "label": "Scholarships",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:30.155Z",
+        "updatedAt": "2025-03-02T09:17:30.155Z"
+      },
+      {
+        "_id": "67c4222ae4767f88b837ff9c",
+        "value": "miscellaneous",
+        "label": "Miscellaneous",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-03-02T09:17:30.359Z",
+        "updatedAt": "2025-03-02T09:17:30.359Z"
+      }
+    ],
+    "EmployeeAttendance": [
+      {
+        "_id": "678217e3f4c2544aa7c6453c",
+        "employeeId": "678216c8f4c2544aa7c64538",
+        "date": "2025-01-11",
+        "isPresent": true,
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-11T07:04:03.777Z",
+        "updatedAt": "2025-01-11T07:04:03.777Z"
+      }
+    ],
+    "Transaction": [
+      {
+        "_id": "6782188d73c5f291560a5d7d",
+        "label": "monthly_fees",
+        "note": "monthly_fees By Jamiya Hussain class - Nursery  section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 200,
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-11T07:06:53.611Z",
+        "transactionBy": "dohasfoundation@gmail.com"
+      },
+      {
+        "_id": "678218d77afed1c358e8889e",
+        "label": "monthly_salary",
+        "note": "monthly_salary To teacher -> Dayal Shil ",
+        "category": "monthly_salary",
+        "type": "expense",
+        "amount": 6000,
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-11T07:08:07.761Z",
+        "transactionBy": "dohasfoundation@gmail.com"
+      },
+      {
+        "_id": "67821972a4d1a32ef9f7a1fd",
+        "label": "breakfast",
+        "note": "all Teacher",
+        "category": "other_fees",
+        "type": "expense",
+        "amount": 100,
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-11T07:10:42.195Z",
+        "transactionBy": "dohasfoundation@gmail.com"
+      },
+      {
+        "_id": "678295152e26b319c976392e",
+        "label": "11-01-2025",
+        "note": "Sound system ",
+        "category": "other_fees",
+        "type": "expense",
+        "amount": 7000,
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-11T15:58:13.398Z",
+        "transactionBy": "dohasfoundation@gmail.com"
+      },
+      {
+        "_id": "678295bd2e26b319c976392f",
+        "label": "11-01-2025",
+        "note": "Mokter driver - 2000/-\nPainting 2500/-\nWaring mistri-1500/-\nOthers - 1000/-",
+        "category": "other_fees",
+        "type": "expense",
+        "amount": 7000,
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-11T16:01:01.378Z",
+        "transactionBy": "dohasfoundation@gmail.com"
+      },
+      {
+        "_id": "678e558bbbac67fa1bfe6568",
+        "label": "20-01-2025",
+        "note": "গাড়ির (৩নং) \nগ্যাস-১৩০০/-\nহুজুর ও নাস্তা খরচ - ২০০০/-\nগাড়ি-নং (১) মোক্তার\nগ্যাস ৪০৫০/-\nবকশিস ৩০০/-",
+        "category": "transport_fees",
+        "type": "expense",
+        "amount": 8000,
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-20T13:54:18.127Z",
+        "transactionBy": "dohasfoundation@gmail.com"
+      },
+      {
+        "_id": "678e55eebbac67fa1bfe656a",
+        "label": "19-01-2025",
+        "note": "ডায়রী বাবদ ও খাতা বাবদ",
+        "category": "library_fees",
+        "type": "expense",
+        "amount": 19000,
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-20T13:55:58.864Z",
+        "transactionBy": "dohasfoundation@gmail.com"
+      },
+      {
+        "_id": "678e5634bbac67fa1bfe656b",
+        "label": "20-01-2025",
+        "note": "ভর্তি ও বইনখাতা",
+        "category": "admission_fees",
+        "type": "income",
+        "amount": 15140,
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-20T13:57:08.739Z",
+        "transactionBy": "dohasfoundation@gmail.com"
+      },
+      {
+        "_id": "679112d021360cfe92e1426e",
+        "label": "21-01-2025",
+        "note": " চট্টগ্রামের খরচ\nযাওয়া, কাপড়,পেপার, ষ্টেশনারী জিনিস ",
+        "category": "equipment",
+        "type": "expense",
+        "amount": 21000,
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-22T15:46:23.140Z",
+        "transactionBy": "dohasfoundation@gmail.com"
+      },
+      {
+        "_id": "67911372feff899a063fac03",
+        "label": "22-01-2025",
+        "note": "আসা\nরাউটার, মনিটর,কাপড়, প্লেইট, খাতা বাইন্ডিং ",
+        "category": "equipment",
+        "type": "expense",
+        "amount": 13000,
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-22T15:49:06.541Z",
+        "transactionBy": "dohasfoundation@gmail.com"
+      }
+    ],
+    "Class": [
+      {
+        "_id": "677aa191a4bf7271542d485d",
+        "name": "One",
+        "monthlyFee": 500,
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-05T15:13:21.165Z",
+        "updatedAt": "2025-01-07T12:24:50.752Z"
+      },
+      {
+        "_id": "677aa6f4a8fef66abdaabc91",
+        "name": "Nursery ",
+        "monthlyFee": 500,
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-05T15:36:20.463Z",
+        "updatedAt": "2025-01-07T12:25:30.177Z"
+      },
+      {
+        "_id": "677aa715a8fef66abdaabc94",
+        "name": "K.G",
+        "monthlyFee": 500,
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-05T15:36:53.400Z",
+        "updatedAt": "2025-01-07T12:27:41.551Z"
+      },
+      {
+        "_id": "677aa743a8fef66abdaabc97",
+        "name": "Two",
+        "monthlyFee": 500,
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-05T15:37:39.617Z",
+        "updatedAt": "2025-01-07T12:26:00.447Z"
+      },
+      {
+        "_id": "677aa763a8fef66abdaabc9a",
+        "name": "Three",
+        "monthlyFee": 500,
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-05T15:38:11.929Z",
+        "updatedAt": "2025-01-07T12:26:12.932Z"
+      },
+      {
+        "_id": "677aa797a8fef66abdaabc9d",
+        "name": "Four",
+        "monthlyFee": 500,
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-05T15:39:03.287Z",
+        "updatedAt": "2025-01-07T12:26:24.917Z"
+      },
+      {
+        "_id": "677aa7ada8fef66abdaabca0",
+        "name": "Five",
+        "monthlyFee": 500,
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-05T15:39:25.849Z",
+        "updatedAt": "2025-01-07T12:26:41.970Z"
+      },
+      {
+        "_id": "677aa7c5a8fef66abdaabca3",
+        "name": "Six",
+        "monthlyFee": 500,
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-05T15:39:49.466Z",
+        "updatedAt": "2025-01-07T12:26:54.878Z"
+      },
+      {
+        "_id": "677aa7fba8fef66abdaabca7",
+        "name": "Seven",
+        "monthlyFee": 500,
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-05T15:40:43.658Z",
+        "updatedAt": "2025-01-07T12:27:05.986Z"
+      },
+      {
+        "_id": "677aa814a8fef66abdaabcaa",
+        "name": "Eight",
+        "monthlyFee": 500,
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-05T15:41:08.643Z",
+        "updatedAt": "2025-01-07T12:27:18.275Z"
+      },
+      {
+        "_id": "677aa82ca8fef66abdaabcad",
+        "name": "Nine",
+        "monthlyFee": 500,
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-05T15:41:32.525Z",
+        "updatedAt": "2025-01-07T12:28:45.393Z"
+      },
+      {
+        "_id": "677aa85da8fef66abdaabcb0",
+        "name": "Ten",
+        "monthlyFee": 500,
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-05T15:42:21.430Z",
+        "updatedAt": "2025-01-07T12:28:59.631Z"
+      }
+    ],
+    "Employee": [
+      {
+        "_id": "678216c8f4c2544aa7c64538",
+        "photo": "https://campaas.spiralvectors.com/uploads/cambrian/employees/678216c201dfa.jpg",
+        "employeeId": "1001",
+        "fullName": "Dayal Shil",
+        "email": "abcd@gmail.com",
+        "phone": "01849371284",
+        "religion": "hinduism",
+        "gender": "male",
+        "dateOfBirth": "1979-07-06T18:00:00.000Z",
+        "address": "Hindu Para Bara Moheshkhali",
+        "salary": 6000,
+        "role": "teacher",
+        "fatherName": "Nirandra Shil",
+        "motherName": "Paki Shil",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-11T06:59:20.020Z",
+        "updatedAt": "2025-01-11T06:59:20.020Z"
+      },
+      {
+        "_id": "678297887e709c0db38e70a1",
+        "photo": "https://campaas.spiralvectors.com/uploads/cambrian/employees/67829701ecf24.jpg",
+        "employeeId": "EMP2025001",
+        "fullName": "M Shamsudoha ",
+        "email": "dohasfoundation@gmail.com",
+        "phone": "01552991174",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "1986-09-25T18:00:00.000Z",
+        "address": "V-panirchara, p-Hoanok, Moheshkhali,  Cox’s Bazar ",
+        "salary": 20000,
+        "role": "principal",
+        "fatherName": "Mr Late Abdussukor",
+        "motherName": "Khala Khatun ",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-11T16:08:40.719Z",
+        "updatedAt": "2025-01-11T16:08:40.719Z"
+      },
+      {
+        "_id": "6785f58ea0f0288e535e20c8",
+        "photo": "https://campaas.spiralvectors.com/uploads/cambrian/employees/6785f4b183993.jpg",
+        "employeeId": "EMP202503",
+        "fullName": "Mohammad Sohel ",
+        "email": "ranasohelbba@gmail.com",
+        "phone": "01623647461",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "1998-04-30T18:00:00.000Z",
+        "address": "3 no word,  Moheshkhali,  cox's Bazar ",
+        "salary": 5000,
+        "role": "teacher",
+        "fatherName": "Nurul Islam ",
+        "motherName": "Khadija Begum",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-14T05:26:38.915Z",
+        "updatedAt": "2025-01-14T05:26:38.915Z"
+      },
+      {
+        "_id": "678a7215ceb7fe63cf986879",
+        "photo": "https://campaas.spiralvectors.com/uploads/cambrian/employees/678a717f0d7a5.png",
+        "employeeId": "EMP202505",
+        "fullName": "Muhammad Sarwar kamal",
+        "email": "sarawarcox82@gmail.com",
+        "phone": "01881611299",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "1995-04-20T18:00:00.000Z",
+        "address": "Boro Moheshkhali,  Cox’s Bazar ",
+        "salary": 4000,
+        "role": "teacher",
+        "fatherName": "Bashir Ahmed ",
+        "motherName": "Khurshida Akter ",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-17T15:07:01.034Z",
+        "updatedAt": "2025-01-17T15:07:01.034Z"
+      },
+      {
+        "_id": "678a7389ceb7fe63cf98687c",
+        "photo": "https://campaas.spiralvectors.com/uploads/cambrian/employees/678a7243eaeb2.png",
+        "employeeId": "EMP2025006",
+        "fullName": "Md Sohel",
+        "email": "sohelsipahirpara786@gmail.com",
+        "phone": "01890499786",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2002-02-01T18:00:00.000Z",
+        "address": "Coto Moheshkhali,  Cox’s Bazar ",
+        "salary": 6000,
+        "role": "teacher",
+        "fatherName": "Shamsu doha",
+        "motherName": "Madan Sair",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-17T15:13:13.737Z",
+        "updatedAt": "2025-01-17T15:13:13.737Z"
+      },
+      {
+        "_id": "678a74a0ceb7fe63cf98687e",
+        "photo": "https://campaas.spiralvectors.com/uploads/cambrian/employees/678a73a1188e7.png",
+        "employeeId": "EMP2025004",
+        "fullName": "Shirin Akter ",
+        "email": "mdsahadat286@gmail.com",
+        "phone": "01816805655",
+        "religion": "islam",
+        "gender": "female",
+        "dateOfBirth": "1982-10-14T18:00:00.000Z",
+        "address": "Puroshova, Moheshkhali,  Cox’s Bazar ",
+        "salary": 5500,
+        "role": "teacher",
+        "fatherName": "Shkur Mridha",
+        "motherName": "Jahida Begum ",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-17T15:17:52.582Z",
+        "updatedAt": "2025-01-17T15:17:52.582Z"
+      },
+      {
+        "_id": "678d029ba745ca20ca1ae665",
+        "photo": "https://campaas.spiralvectors.com/uploads/cambrian/employees/678d01e25498d.jpg",
+        "employeeId": "EMP2025009",
+        "fullName": "Srimonta Kumar Dey",
+        "email": "srimontadey421@gmail.com",
+        "phone": "01316524602",
+        "religion": "hinduism",
+        "gender": "male",
+        "dateOfBirth": "1995-10-01T18:00:00.000Z",
+        "address": "Coto Moheshkhali,  Cox's Bazar ",
+        "salary": 5500,
+        "role": "teacher",
+        "fatherName": "Naida Bashi Dey",
+        "motherName": "Monju Rani Dey",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-19T13:48:11.362Z",
+        "updatedAt": "2025-01-19T13:48:11.362Z"
+      }
+    ],
+    "Section": [
+      {
+        "_id": "677d1d14b9308ddf3cbc0eba",
+        "name": "A",
+        "classId": "677aa191a4bf7271542d485d",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-07T12:24:52.827Z",
+        "updatedAt": "2025-01-07T12:24:52.827Z"
+      },
+      {
+        "_id": "677d1d15b9308ddf3cbc0ebb",
+        "name": "B",
+        "classId": "677aa191a4bf7271542d485d",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-07T12:24:52.827Z",
+        "updatedAt": "2025-01-07T12:24:52.827Z"
+      },
+      {
+        "_id": "677d1d3ab9308ddf3cbc0ebc",
+        "name": "A",
+        "classId": "677aa6f4a8fef66abdaabc91",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-07T12:25:30.744Z",
+        "updatedAt": "2025-01-07T12:25:30.744Z"
+      },
+      {
+        "_id": "677d1d3ab9308ddf3cbc0ebd",
+        "name": "B",
+        "classId": "677aa6f4a8fef66abdaabc91",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-07T12:25:30.744Z",
+        "updatedAt": "2025-01-07T12:25:30.744Z"
+      },
+      {
+        "_id": "677d1d4ab9308ddf3cbc0ebe",
+        "name": "A",
+        "classId": "677aa715a8fef66abdaabc94",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-07T12:25:46.175Z",
+        "updatedAt": "2025-01-07T12:27:42.113Z"
+      },
+      {
+        "_id": "677d1d4ab9308ddf3cbc0ebf",
+        "name": "B",
+        "classId": "677aa715a8fef66abdaabc94",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-07T12:25:46.175Z",
+        "updatedAt": "2025-01-07T12:27:42.113Z"
+      },
+      {
+        "_id": "677d1d59b9308ddf3cbc0ec0",
+        "name": "A",
+        "classId": "677aa743a8fef66abdaabc97",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-07T12:26:01.012Z",
+        "updatedAt": "2025-01-07T12:26:01.012Z"
+      },
+      {
+        "_id": "677d1d59b9308ddf3cbc0ec1",
+        "name": "B",
+        "classId": "677aa743a8fef66abdaabc97",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-07T12:26:01.012Z",
+        "updatedAt": "2025-01-07T12:26:01.012Z"
+      },
+      {
+        "_id": "677d1d65b9308ddf3cbc0ec2",
+        "name": "A",
+        "classId": "677aa763a8fef66abdaabc9a",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-07T12:26:13.492Z",
+        "updatedAt": "2025-01-07T12:26:13.492Z"
+      },
+      {
+        "_id": "677d1d65b9308ddf3cbc0ec3",
+        "name": "B",
+        "classId": "677aa763a8fef66abdaabc9a",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-07T12:26:13.492Z",
+        "updatedAt": "2025-01-07T12:26:13.492Z"
+      },
+      {
+        "_id": "677d1d71b9308ddf3cbc0ec4",
+        "name": "A",
+        "classId": "677aa797a8fef66abdaabc9d",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-07T12:26:25.485Z",
+        "updatedAt": "2025-01-07T12:26:25.485Z"
+      },
+      {
+        "_id": "677d1d71b9308ddf3cbc0ec5",
+        "name": "B",
+        "classId": "677aa797a8fef66abdaabc9d",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-07T12:26:25.485Z",
+        "updatedAt": "2025-01-07T12:26:25.485Z"
+      },
+      {
+        "_id": "677d1d82b9308ddf3cbc0ec6",
+        "name": "A",
+        "classId": "677aa7ada8fef66abdaabca0",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-07T12:26:42.854Z",
+        "updatedAt": "2025-01-07T12:26:42.854Z"
+      },
+      {
+        "_id": "677d1d83b9308ddf3cbc0ec7",
+        "name": "B",
+        "classId": "677aa7ada8fef66abdaabca0",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-07T12:26:42.854Z",
+        "updatedAt": "2025-01-07T12:26:42.854Z"
+      },
+      {
+        "_id": "677d1d8fb9308ddf3cbc0ec8",
+        "name": "A",
+        "classId": "677aa7c5a8fef66abdaabca3",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-07T12:26:55.441Z",
+        "updatedAt": "2025-01-07T12:26:55.441Z"
+      },
+      {
+        "_id": "677d1d8fb9308ddf3cbc0ec9",
+        "name": "B",
+        "classId": "677aa7c5a8fef66abdaabca3",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-07T12:26:55.441Z",
+        "updatedAt": "2025-01-07T12:26:55.441Z"
+      },
+      {
+        "_id": "677d1d9ab9308ddf3cbc0eca",
+        "name": "A",
+        "classId": "677aa7fba8fef66abdaabca7",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-07T12:27:06.548Z",
+        "updatedAt": "2025-01-07T12:27:06.548Z"
+      },
+      {
+        "_id": "677d1d9ab9308ddf3cbc0ecb",
+        "name": "B",
+        "classId": "677aa7fba8fef66abdaabca7",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-07T12:27:06.548Z",
+        "updatedAt": "2025-01-07T12:27:06.548Z"
+      },
+      {
+        "_id": "677d1da6b9308ddf3cbc0ecc",
+        "name": "A",
+        "classId": "677aa814a8fef66abdaabcaa",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-07T12:27:18.836Z",
+        "updatedAt": "2025-01-07T12:27:18.836Z"
+      },
+      {
+        "_id": "677d1da7b9308ddf3cbc0ecd",
+        "name": "B",
+        "classId": "677aa814a8fef66abdaabcaa",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-07T12:27:18.836Z",
+        "updatedAt": "2025-01-07T12:27:18.836Z"
+      },
+      {
+        "_id": "677d1dbeb9308ddf3cbc0ece",
+        "name": "C",
+        "classId": "677aa715a8fef66abdaabc94",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-07T12:27:42.113Z",
+        "updatedAt": "2025-01-07T12:27:42.113Z"
+      },
+      {
+        "_id": "677d1dfdb9308ddf3cbc0ecf",
+        "name": "A",
+        "classId": "677aa82ca8fef66abdaabcad",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-07T12:28:45.954Z",
+        "updatedAt": "2025-01-07T12:28:45.954Z"
+      },
+      {
+        "_id": "677d1dfeb9308ddf3cbc0ed0",
+        "name": "B",
+        "classId": "677aa82ca8fef66abdaabcad",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-07T12:28:45.954Z",
+        "updatedAt": "2025-01-07T12:28:45.954Z"
+      },
+      {
+        "_id": "677d1e0cb9308ddf3cbc0ed1",
+        "name": "A",
+        "classId": "677aa85da8fef66abdaabcb0",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-07T12:29:00.522Z",
+        "updatedAt": "2025-01-07T12:29:00.522Z"
+      },
+      {
+        "_id": "677d1e0cb9308ddf3cbc0ed2",
+        "name": "B",
+        "classId": "677aa85da8fef66abdaabcb0",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-07T12:29:00.522Z",
+        "updatedAt": "2025-01-07T12:29:00.522Z"
+      }
+    ],
+    "Fee": [
+      {
+        "_id": "6782188c73c5f291560a5d7c",
+        "studentId": "67821486a4ccca50551a4e45",
+        "classId": "677aa6f4a8fef66abdaabc91",
+        "sectionId": "677d1d3ab9308ddf3cbc0ebc",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 200,
+        "month": "January",
+        "year": 2025,
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-11T07:06:52.474Z",
+        "updatedAt": "2025-01-11T07:06:52.474Z"
+      }
+    ],
+    "Notice": [],
+    "Salary": [
+      {
+        "_id": "678218d67afed1c358e8889d",
+        "employeeId": "678216c8f4c2544aa7c64538",
+        "amount": 6000,
+        "month": "January",
+        "year": 2025,
+        "reason": "monthly_salary",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-11T07:08:06.991Z",
+        "updatedAt": "2025-01-11T07:08:06.991Z"
+      }
+    ],
+    "Student": [
+      {
+        "_id": "67821486a4ccca50551a4e45",
+        "photo": "https://www.student.com",
+        "fullName": "Jamiya Hussain",
+        "email": "abc@gamil.com",
+        "phone": "01616567475",
+        "religion": "islam",
+        "gender": "female",
+        "dateOfBirth": "2020-03-28T18:00:00.000Z",
+        "address": "Pani Chora",
+        "monthlyFee": 500,
+        "studentId": "100",
+        "sectionId": "677d1d3ab9308ddf3cbc0ebc",
+        "classId": "677aa6f4a8fef66abdaabc91",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "guardianName": "Jamal Hosan",
+        "relationship": "Father",
+        "guardianPhone": "01616567475",
+        "guardianEmail": "abc@gamil.com",
+        "guardianOccupation": "Farmer",
+        "fatherName": "Jamal Hosan",
+        "motherName": "Shahida Aziz",
+        "createdAt": "2025-01-11T06:49:42.756Z",
+        "updatedAt": "2025-01-11T06:49:42.756Z"
+      },
+      {
+        "_id": "6785e9a99af17ad269995dc4",
+        "photo": "https://campaas.spiralvectors.com/uploads/cambrian/students/6785e650ae770.jpg",
+        "fullName": "FABLIHA IBNAT AFRA",
+        "email": "sarwarcox@gmail.com",
+        "phone": "01331682570",
+        "religion": "islam",
+        "gender": "female",
+        "dateOfBirth": "2020-05-04T18:00:00.000Z",
+        "address": "KUTUB JOM, moheskali, cox's bazar",
+        "monthlyFee": 500,
+        "studentId": "202512",
+        "sectionId": "677d1d4ab9308ddf3cbc0ebe",
+        "classId": "677aa715a8fef66abdaabc94",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "guardianName": "SONIYA SOLTANA POPI",
+        "relationship": "Mother",
+        "guardianPhone": "01331682570",
+        "guardianEmail": "sarwarcox82@gmail.com",
+        "guardianOccupation": "Business",
+        "fatherName": "JASIM  UDDIN",
+        "motherName": "SONIYA SOLTANA POPI",
+        "createdAt": "2025-01-14T04:35:51.905Z",
+        "updatedAt": "2025-01-14T04:35:51.905Z"
+      },
+      {
+        "_id": "6785ee88a36d2a705449135f",
+        "photo": "https://campaas.spiralvectors.com/uploads/cambrian/students/6785ed1d8b3d8.jpg",
+        "fullName": "JUWAIRIA",
+        "email": "sarwarcox82@gmail.com",
+        "phone": "01732160269",
+        "religion": "islam",
+        "gender": "female",
+        "dateOfBirth": "2019-06-16T18:00:00.000Z",
+        "address": "BARA BARIA, CHITALMARI, BAGERHAT.",
+        "monthlyFee": 500,
+        "studentId": "202501",
+        "sectionId": "677d1d4ab9308ddf3cbc0ebe",
+        "classId": "677aa715a8fef66abdaabc94",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "guardianName": "MD ARSHAD MUNSHI.",
+        "relationship": "MOTHER",
+        "guardianPhone": "01714 488534",
+        "guardianEmail": "sarwarcox82@gmail.com",
+        "guardianOccupation": "SERVICE HOLDER.",
+        "fatherName": "MD ARSHAD MUNSHI.",
+        "motherName": "JANNATARA",
+        "createdAt": "2025-01-14T04:56:40.391Z",
+        "updatedAt": "2025-01-14T04:56:40.391Z"
+      },
+      {
+        "_id": "678b350fe47e34ee2ffb224f",
+        "photo": "https://campaas.spiralvectors.com/uploads/cambrian/students/678b32f4159fb.jpg",
+        "fullName": "MD ABU TURAB",
+        "email": "sarwarcox'82@gamil.com",
+        "phone": "01815862740",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2020-06-06T18:00:00.000Z",
+        "address": "SHOTO MOHESH KHALI,COX'S BAZAR.",
+        "monthlyFee": 500,
+        "studentId": "202502",
+        "sectionId": "677d1d4ab9308ddf3cbc0ebe",
+        "classId": "677aa715a8fef66abdaabc94",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "guardianName": "REHENA SIDDIKA",
+        "relationship": "Mother",
+        "guardianPhone": "01815862740",
+        "guardianEmail": "sarwarcox82@gamil.com",
+        "guardianOccupation": "Business",
+        "fatherName": "MD JABAD",
+        "motherName": "REHENA  SIDDIKA",
+        "createdAt": "2025-01-18T04:58:55.997Z",
+        "updatedAt": "2025-01-18T05:01:28.418Z"
+      },
+      {
+        "_id": "678def387d421676075d9fd9",
+        "photo": "https://www.student.com",
+        "fullName": "ARWA HASSAN JAIMA ",
+        "email": "sarwarcox82@gmail.com",
+        "phone": "01826503777",
+        "religion": "islam",
+        "gender": "female",
+        "dateOfBirth": "2021-12-31T18:00:00.000Z",
+        "address": "Hoanak,maheshkhali,cox's bazar.",
+        "monthlyFee": 500,
+        "studentId": "202528",
+        "sectionId": "677d1d4ab9308ddf3cbc0ebe",
+        "classId": "677aa715a8fef66abdaabc94",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "guardianName": "SUMIYA SHARIF SHAILA ",
+        "relationship": "Mother",
+        "guardianPhone": "01826503777",
+        "guardianEmail": "sarwarcox82@gmail.com",
+        "guardianOccupation": "Housewife",
+        "fatherName": "MD KAMAL UDDIN HASSAN ",
+        "motherName": "SUMAIYA SHARIF SHAILA ",
+        "createdAt": "2025-01-20T06:37:44.284Z",
+        "updatedAt": "2025-01-20T06:37:44.284Z"
+      },
+      {
+        "_id": "678df0da7d421676075d9fdc",
+        "photo": "https://www.student.com",
+        "fullName": "RAIHAN  AL SABIT",
+        "email": "sarwarcox82@gmail.com",
+        "phone": "01687484262",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2019-12-06T18:00:00.000Z",
+        "address": "Sirajganj, paurasava, sirajganj sadar, sirajgang.",
+        "monthlyFee": 500,
+        "studentId": "202522",
+        "sectionId": "677d1d4ab9308ddf3cbc0ebe",
+        "classId": "677aa715a8fef66abdaabc94",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "guardianName": "RIMI KATUN ",
+        "relationship": "Mother",
+        "guardianPhone": "01687484262",
+        "guardianEmail": "sarwarcox82@gmail.com",
+        "guardianOccupation": "Housewife",
+        "fatherName": "RASHEDUL HASAN",
+        "motherName": "RIMI KHATUN",
+        "createdAt": "2025-01-20T06:44:42.587Z",
+        "updatedAt": "2025-01-20T06:44:42.587Z"
+      },
+      {
+        "_id": "678df4de7d421676075d9fdf",
+        "photo": "https://campaas.spiralvectors.com/uploads/cambrian/students/678df3a58c9d4.jpg",
+        "fullName": "ADIBA",
+        "email": "sarwarcox82@gmail.com",
+        "phone": "01816028662",
+        "religion": "islam",
+        "gender": "female",
+        "dateOfBirth": "2018-08-10T18:00:00.000Z",
+        "address": "Munshir dail,( word no-02), Boro mohesh khali , mohesh khali ,cox's bazar.",
+        "monthlyFee": 500,
+        "studentId": "202510",
+        "sectionId": "677d1d4ab9308ddf3cbc0ebe",
+        "classId": "677aa715a8fef66abdaabc94",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "guardianName": "RUKSANA AKTER ",
+        "relationship": "Mother",
+        "guardianPhone": "01816028662",
+        "guardianEmail": "sarwarcox82@gmail.com",
+        "guardianOccupation": "Business",
+        "fatherName": "MD NURUL ALAM ",
+        "motherName": "RUKSANA AKTER ",
+        "createdAt": "2025-01-20T07:01:50.276Z",
+        "updatedAt": "2025-01-20T07:03:52.184Z"
+      },
+      {
+        "_id": "678f17b2038473d837fd708f",
+        "photo": "https://campaas.spiralvectors.com/uploads/cambrian/students/678f161c67617.jpg",
+        "fullName": "SAFIA TOL JANNAT DBOHA ",
+        "email": "sarwarcox82@gmail.com",
+        "phone": "01855055755",
+        "religion": "islam",
+        "gender": "female",
+        "dateOfBirth": "2018-11-19T18:00:00.000Z",
+        "address": "Bara mahesh khali, mahesh  khali, cox's bazar.",
+        "monthlyFee": 500,
+        "studentId": "202531",
+        "sectionId": "677d1d4ab9308ddf3cbc0ebe",
+        "classId": "677aa715a8fef66abdaabc94",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "guardianName": "SALEH AHMAD",
+        "relationship": "Father",
+        "guardianPhone": "01855055755",
+        "guardianEmail": "sarwarcox82@gmail.com",
+        "guardianOccupation": "Business",
+        "fatherName": "SALEH AHMAD ",
+        "motherName": "PARVIN AKTER ",
+        "createdAt": "2025-01-21T03:42:40.726Z",
+        "updatedAt": "2025-01-21T03:42:40.726Z"
+      },
+      {
+        "_id": "678f1b0139b3baeb4bf01527",
+        "photo": "https://www.student.com",
+        "fullName": "AKHIR EITEAM ABRAR",
+        "email": "sarwarcox82@gmail.com",
+        "phone": "01747251289",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2018-11-11T18:00:00.000Z",
+        "address": "Mohesh khali puorosova , mohesh khali, cox's  bazar.",
+        "monthlyFee": 500,
+        "studentId": "202517",
+        "sectionId": "677d1d4ab9308ddf3cbc0ebe",
+        "classId": "677aa715a8fef66abdaabc94",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "guardianName": "KHAIRUL AMIN ",
+        "relationship": "Father",
+        "guardianPhone": "01747251289",
+        "guardianEmail": "sarwarcox82@gmail.com",
+        "guardianOccupation": "Business",
+        "fatherName": "KHAIRUL AMIN ",
+        "motherName": "SADEKA BEGUM",
+        "createdAt": "2025-01-21T03:56:49.574Z",
+        "updatedAt": "2025-01-21T03:56:49.574Z"
+      },
+      {
+        "_id": "678f1ca06bcabc78b7810616",
+        "photo": "https://www.student.com",
+        "fullName": "SABIT UDDIN RUJDAN ",
+        "email": "sarwarcox82@gmail.com",
+        "phone": "01839645007",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2019-04-05T18:00:00.000Z",
+        "address": "Mahesh khali, paurashava, mahesh khali, cox's bazar .",
+        "monthlyFee": 500,
+        "studentId": "202516",
+        "sectionId": "677d1d4ab9308ddf3cbc0ebe",
+        "classId": "677aa715a8fef66abdaabc94",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "guardianName": "Homayun uddin rukan ",
+        "relationship": "Father",
+        "guardianPhone": "01839645007",
+        "guardianEmail": "sarwarcox82@gmail.com",
+        "guardianOccupation": "Busines",
+        "fatherName": "HOMAYUN UDDIN RUKAN ",
+        "motherName": "AFROAZ JAHAN MITU ",
+        "createdAt": "2025-01-21T04:03:44.400Z",
+        "updatedAt": "2025-01-21T04:03:44.400Z"
+      },
+      {
+        "_id": "678f1e73e26e10b13136b1d2",
+        "photo": "https://campaas.spiralvectors.com/uploads/cambrian/students/678f1d012d134.jpg",
+        "fullName": "AHNAF KARIM MAHIR ",
+        "email": "sarwarcox82@gmail.com",
+        "phone": "01830783575",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2019-06-30T18:00:00.000Z",
+        "address": "Shoto mahesh khali ,mahesh khali, cox's bazar.",
+        "monthlyFee": 500,
+        "studentId": "202505",
+        "sectionId": "677d1d4ab9308ddf3cbc0ebe",
+        "classId": "677aa715a8fef66abdaabc94",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "guardianName": "ABDUL KARIM",
+        "relationship": "Father",
+        "guardianPhone": "01830783585",
+        "guardianEmail": "sarwarcox82@gmail.com",
+        "guardianOccupation": "Business",
+        "fatherName": "AVDUL KARIM ",
+        "motherName": "KHURSHEDA AKTHER",
+        "createdAt": "2025-01-21T04:11:31.904Z",
+        "updatedAt": "2025-01-21T04:11:31.904Z"
+      },
+      {
+        "_id": "678f207f4feee1502c38194e",
+        "photo": "https://campaas.spiralvectors.com/uploads/cambrian/students/678f1f39cfe67.jpg",
+        "fullName": "IRISHAM AHSAN MUAJ",
+        "email": "sarwarcox82@gmail.com",
+        "phone": "01308798011",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2020-02-14T18:00:00.000Z",
+        "address": "Mahesh khali , paouro shova , mahesh khali, cox's bazar.",
+        "monthlyFee": 500,
+        "studentId": "202506",
+        "sectionId": "677d1d4ab9308ddf3cbc0ebe",
+        "classId": "677aa715a8fef66abdaabc94",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "guardianName": "Saiful Ahsan miskat",
+        "relationship": "Father",
+        "guardianPhone": "01308798011",
+        "guardianEmail": "sarwarcox82@gmail.com",
+        "guardianOccupation": "Business",
+        "fatherName": "SAIFUL AHSAN MISKAT ",
+        "motherName": "FARVIN AKTER ",
+        "createdAt": "2025-01-21T04:20:14.955Z",
+        "updatedAt": "2025-01-21T04:20:14.955Z"
+      }
+    ],
+    "Schedule": [
+      {
+        "_id": "6782175dc476fc4353354535",
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "subjectId": "6782175dc476fc4353354534",
+        "classId": "677aa191a4bf7271542d485d",
+        "teacherId": "678216c8f4c2544aa7c64538",
+        "sectionId": "677d1d14b9308ddf3cbc0eba",
+        "startTime": "08:00",
+        "endTime": "08:45",
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Sunday"
+        ],
+        "createdAt": "2025-01-11T07:01:49.818Z",
+        "updatedAt": "2025-01-11T07:01:49.818Z"
+      }
+    ],
+    "Exam": [
+      {
+        "_id": "6782180af4c2544aa7c6453d",
+        "name": "final",
+        "year": "2025",
+        "marks": 100,
+        "tenantId": "6779d564beae3375c30e6c9d",
+        "createdAt": "2025-01-11T07:04:41.257Z",
+        "updatedAt": "2025-01-11T07:04:41.257Z"
+      }
+    ]
+  }
+}

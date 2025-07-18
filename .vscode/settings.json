@@ -1,0 +1,10 @@
+{
+	"github-actions.workflows.pinned.workflows": [".github/workflows/deploy.yml"],
+	"spellright.language": ["en"],
+	"spellright.documentTypes": ["markdown", "plaintext", "mdx"],
+	"spellright.parserByClass": {
+		"mdx": {
+			"parser": "markdown"
+		}
+	}
+}

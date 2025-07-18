@@ -1,0 +1,385 @@
+{
+  "database": "mathz",
+  "exportedAt": "2025-05-13T06:26:48.420Z",
+  "collections": {
+    "Subject": [],
+    "Student": [],
+    "TransactionCategory": [
+      {
+        "_id": "681f824642f634342648374c",
+        "value": "laptopn",
+        "label": "Laptopn",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "createdAt": "2025-05-10T16:43:50.964Z",
+        "updatedAt": "2025-05-10T16:43:50.964Z"
+      }
+    ],
+    "Class": [
+      {
+        "_id": "68200ae10b677378d6897059",
+        "name": "SIX ",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "createdAt": "2025-05-11T02:26:40.890Z",
+        "updatedAt": "2025-05-11T02:26:40.890Z"
+      },
+      {
+        "_id": "68200bb93aec8d30f988a0da",
+        "name": "EIGHT ",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "createdAt": "2025-05-11T02:30:17.441Z",
+        "updatedAt": "2025-05-11T02:30:17.441Z"
+      },
+      {
+        "_id": "68200bdd3aec8d30f988a0dd",
+        "name": "NINE ",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "createdAt": "2025-05-11T02:30:53.597Z",
+        "updatedAt": "2025-05-11T02:30:53.597Z"
+      },
+      {
+        "_id": "68200bf83aec8d30f988a0e0",
+        "name": "TEN ",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "createdAt": "2025-05-11T02:31:20.992Z",
+        "updatedAt": "2025-05-11T02:31:20.992Z"
+      },
+      {
+        "_id": "68200cbc0b677378d6897063",
+        "name": "SEVEN",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "createdAt": "2025-05-11T02:34:36.159Z",
+        "updatedAt": "2025-05-11T02:34:36.159Z"
+      }
+    ],
+    "SMSNotificationConfig": [
+      {
+        "_id": "681f827516bbc922fd05f771",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "settings": [
+          {
+            "id": "attendance",
+            "name": "Attendance",
+            "enabled": false,
+            "description": "Send SMS for student absence/presence"
+          },
+          {
+            "id": "feeCollection",
+            "name": "Fee Collection",
+            "enabled": false,
+            "description": "Notify about fee payments and dues"
+          },
+          {
+            "id": "examResults",
+            "name": "Exam Results",
+            "enabled": false,
+            "description": "Send SMS when exam results are published"
+          },
+          {
+            "id": "duesReminder",
+            "name": "Dues Reminder",
+            "enabled": false,
+            "description": "Send reminders for outstanding dues"
+          },
+          {
+            "id": "transactionAlert",
+            "name": "Transaction Alert",
+            "enabled": false,
+            "description": "Receive a notification when a transaction is made"
+          }
+        ],
+        "createdAt": "2025-05-10T16:44:37.438Z",
+        "updatedAt": "2025-05-10T16:45:21.185Z"
+      }
+    ],
+    "LastStudentId": [
+      {
+        "_id": "681f7fb342f6343426483730",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "studentId": "MAT-101",
+        "createdAt": "2025-05-10T16:32:51.871Z",
+        "updatedAt": "2025-05-10T16:32:51.871Z"
+      }
+    ],
+    "Transaction": [],
+    "Employee": [],
+    "Schedule": [],
+    "StudentAttendance": [],
+    "StudentFeePayment": [],
+    "FeeStructure": [
+      {
+        "_id": "682037d3fefe47a914785868",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "title": "Class Seve",
+        "createdAt": "2025-05-11T05:38:26.227Z",
+        "updatedAt": "2025-05-11T05:38:26.227Z"
+      },
+      {
+        "_id": "68203d020c06285791d24043",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "title": "Class Seven",
+        "createdAt": "2025-05-11T06:00:34.293Z",
+        "updatedAt": "2025-05-11T06:00:34.293Z"
+      },
+      {
+        "_id": "68203d650c06285791d24048",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "title": "Class Eight ",
+        "createdAt": "2025-05-11T06:02:13.276Z",
+        "updatedAt": "2025-05-11T06:02:13.276Z"
+      },
+      {
+        "_id": "682091ee38662147716db843",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "title": "Class Eight",
+        "createdAt": "2025-05-11T12:02:54.839Z",
+        "updatedAt": "2025-05-11T12:02:54.839Z"
+      },
+      {
+        "_id": "6820df766e04b8b388ec42b1",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "title": "Class Nine",
+        "createdAt": "2025-05-11T17:33:42.750Z",
+        "updatedAt": "2025-05-11T17:33:42.750Z"
+      },
+      {
+        "_id": "6820dfbe6e04b8b388ec42b3",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "title": "Class Nine",
+        "createdAt": "2025-05-11T17:34:54.238Z",
+        "updatedAt": "2025-05-11T17:34:54.238Z"
+      },
+      {
+        "_id": "6820e029a2aa0b7e871b3506",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "title": "Class Ten",
+        "createdAt": "2025-05-11T17:36:41.831Z",
+        "updatedAt": "2025-05-11T17:36:41.831Z"
+      },
+      {
+        "_id": "6820e07ba2aa0b7e871b3508",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "title": "Class Ten ",
+        "createdAt": "2025-05-11T17:38:03.031Z",
+        "updatedAt": "2025-05-11T17:38:42.091Z"
+      },
+      {
+        "_id": "6820e1cda2aa0b7e871b350a",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "title": "Class- Six",
+        "createdAt": "2025-05-11T17:43:41.331Z",
+        "updatedAt": "2025-05-11T17:43:41.331Z"
+      },
+      {
+        "_id": "6820e1eda2aa0b7e871b350c",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "title": "Class- Six",
+        "createdAt": "2025-05-11T17:44:13.553Z",
+        "updatedAt": "2025-05-11T17:44:13.553Z"
+      }
+    ],
+    "Exam": [],
+    "Result": [],
+    "FeeItem": [
+      {
+        "_id": "682037d3fefe47a914785869",
+        "name": "Monthly fee",
+        "amount": 500,
+        "frequency": "monthly",
+        "lateFeeEnabled": false,
+        "feeStructureId": "682037d3fefe47a914785868",
+        "createdAt": "2025-05-11T05:38:26.227Z",
+        "updatedAt": "2025-05-11T05:38:26.227Z"
+      },
+      {
+        "_id": "68203d020c06285791d24044",
+        "name": "Monthly fee",
+        "amount": 300,
+        "frequency": "monthly",
+        "lateFeeEnabled": false,
+        "feeStructureId": "68203d020c06285791d24043",
+        "createdAt": "2025-05-11T06:00:34.293Z",
+        "updatedAt": "2025-05-11T06:00:34.293Z"
+      },
+      {
+        "_id": "68203d650c06285791d24049",
+        "name": "Monthly fee",
+        "amount": 500,
+        "frequency": "monthly",
+        "lateFeeEnabled": false,
+        "feeStructureId": "68203d650c06285791d24048",
+        "createdAt": "2025-05-11T06:02:13.276Z",
+        "updatedAt": "2025-05-11T06:02:13.276Z"
+      },
+      {
+        "_id": "682091ef38662147716db844",
+        "name": "Monthly fee",
+        "amount": 300,
+        "frequency": "monthly",
+        "lateFeeEnabled": false,
+        "feeStructureId": "682091ee38662147716db843",
+        "createdAt": "2025-05-11T12:02:54.839Z",
+        "updatedAt": "2025-05-11T12:02:54.839Z"
+      },
+      {
+        "_id": "6820df766e04b8b388ec42b2",
+        "name": "Monthly fee",
+        "amount": 500,
+        "frequency": "monthly",
+        "lateFeeEnabled": false,
+        "feeStructureId": "6820df766e04b8b388ec42b1",
+        "createdAt": "2025-05-11T17:33:42.750Z",
+        "updatedAt": "2025-05-11T17:33:42.750Z"
+      },
+      {
+        "_id": "6820dfbe6e04b8b388ec42b4",
+        "name": "Monthly fee",
+        "amount": 300,
+        "frequency": "monthly",
+        "lateFeeEnabled": false,
+        "feeStructureId": "6820dfbe6e04b8b388ec42b3",
+        "createdAt": "2025-05-11T17:34:54.238Z",
+        "updatedAt": "2025-05-11T17:34:54.238Z"
+      },
+      {
+        "_id": "6820e02aa2aa0b7e871b3507",
+        "name": "Monthly fee",
+        "amount": 500,
+        "frequency": "monthly",
+        "lateFeeEnabled": false,
+        "feeStructureId": "6820e029a2aa0b7e871b3506",
+        "createdAt": "2025-05-11T17:36:41.831Z",
+        "updatedAt": "2025-05-11T17:36:41.831Z"
+      },
+      {
+        "_id": "6820e07ba2aa0b7e871b3509",
+        "name": "Monthly fee",
+        "amount": 300,
+        "frequency": "monthly",
+        "lateFeeEnabled": false,
+        "feeStructureId": "6820e07ba2aa0b7e871b3508",
+        "createdAt": "2025-05-11T17:38:03.031Z",
+        "updatedAt": "2025-05-11T17:38:42.091Z",
+        "lateFeeAmount": null,
+        "lateFeeFrequency": null
+      },
+      {
+        "_id": "6820e1cda2aa0b7e871b350b",
+        "name": "Monthly fee",
+        "amount": 500,
+        "frequency": "monthly",
+        "lateFeeEnabled": false,
+        "feeStructureId": "6820e1cda2aa0b7e871b350a",
+        "createdAt": "2025-05-11T17:43:41.331Z",
+        "updatedAt": "2025-05-11T17:43:41.331Z"
+      },
+      {
+        "_id": "6820e1eda2aa0b7e871b350d",
+        "name": "Monthly fee",
+        "amount": 300,
+        "frequency": "monthly",
+        "lateFeeEnabled": false,
+        "feeStructureId": "6820e1eda2aa0b7e871b350c",
+        "createdAt": "2025-05-11T17:44:13.553Z",
+        "updatedAt": "2025-05-11T17:44:13.553Z"
+      }
+    ],
+    "FeeMonthAssociation": [
+      {
+        "_id": "681f801042f6343426483736",
+        "paymentId": "681f800f42f6343426483735",
+        "feeMonth": "2025-01-15T18:00:00.000Z",
+        "createdAt": "2025-05-10T16:34:23.850Z",
+        "updatedAt": "2025-05-10T16:34:23.850Z"
+      },
+      {
+        "_id": "681f801142f6343426483738",
+        "paymentId": "681f801042f6343426483737",
+        "feeMonth": "2025-02-10T18:00:00.000Z",
+        "createdAt": "2025-05-10T16:34:23.850Z",
+        "updatedAt": "2025-05-10T16:34:23.850Z"
+      }
+    ],
+    "Section": [
+      {
+        "_id": "68200ae20b677378d689705a",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "name": "A",
+        "classId": "68200ae10b677378d6897059",
+        "createdAt": "2025-05-11T02:26:42.389Z",
+        "updatedAt": "2025-05-11T02:26:42.389Z"
+      },
+      {
+        "_id": "68200ae20b677378d689705b",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "name": "B",
+        "classId": "68200ae10b677378d6897059",
+        "createdAt": "2025-05-11T02:26:42.389Z",
+        "updatedAt": "2025-05-11T02:26:42.389Z"
+      },
+      {
+        "_id": "68200bb93aec8d30f988a0db",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "name": "A",
+        "classId": "68200bb93aec8d30f988a0da",
+        "createdAt": "2025-05-11T02:30:17.999Z",
+        "updatedAt": "2025-05-11T02:30:17.999Z"
+      },
+      {
+        "_id": "68200bb93aec8d30f988a0dc",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "name": "B",
+        "classId": "68200bb93aec8d30f988a0da",
+        "createdAt": "2025-05-11T02:30:17.999Z",
+        "updatedAt": "2025-05-11T02:30:17.999Z"
+      },
+      {
+        "_id": "68200bde3aec8d30f988a0de",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "name": "A",
+        "classId": "68200bdd3aec8d30f988a0dd",
+        "createdAt": "2025-05-11T02:30:54.174Z",
+        "updatedAt": "2025-05-11T02:30:54.174Z"
+      },
+      {
+        "_id": "68200bde3aec8d30f988a0df",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "name": "B",
+        "classId": "68200bdd3aec8d30f988a0dd",
+        "createdAt": "2025-05-11T02:30:54.174Z",
+        "updatedAt": "2025-05-11T02:30:54.174Z"
+      },
+      {
+        "_id": "68200bf93aec8d30f988a0e1",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "name": "A",
+        "classId": "68200bf83aec8d30f988a0e0",
+        "createdAt": "2025-05-11T02:31:21.551Z",
+        "updatedAt": "2025-05-11T02:31:21.551Z"
+      },
+      {
+        "_id": "68200bf93aec8d30f988a0e2",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "name": "B",
+        "classId": "68200bf83aec8d30f988a0e0",
+        "createdAt": "2025-05-11T02:31:21.551Z",
+        "updatedAt": "2025-05-11T02:31:21.551Z"
+      },
+      {
+        "_id": "68200cbc0b677378d6897064",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "name": "A",
+        "classId": "68200cbc0b677378d6897063",
+        "createdAt": "2025-05-11T02:34:36.716Z",
+        "updatedAt": "2025-05-11T02:34:36.716Z"
+      },
+      {
+        "_id": "68200cbc0b677378d6897065",
+        "tenantId": "681b8ea471d2f9dae5947cdf",
+        "name": "B",
+        "classId": "68200cbc0b677378d6897063",
+        "createdAt": "2025-05-11T02:34:36.716Z",
+        "updatedAt": "2025-05-11T02:34:36.716Z"
+      }
+    ]
+  }
+}

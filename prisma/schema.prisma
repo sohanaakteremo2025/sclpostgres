@@ -1,0 +1,1318 @@
+// ======================
+// ENUMS
+// ======================
+enum UserRole {
+  SUPER_ADMIN
+  ADMIN
+  STUDENT
+  TEACHER
+  PRINCIPAL
+  ACCOUNTANT
+  LIBRARIAN
+  SUPERVISOR
+  STAFF
+  WORKER
+  EMPLOYEE
+  SECURITY
+  IT
+  MARKETING
+  HR
+}
+
+enum BillingFrequency {
+  ONE_TIME
+  MONTHLY
+  YEARLY
+}
+
+enum PaymentMethod {
+  CASH
+  BKASH
+  NAGAD
+  ROCKET
+  MOBILE_BANKING
+  SHURJOPAY
+  BANK
+  CARD
+  OTHER
+}
+
+enum AccountType {
+  CASH
+  BKASH
+  NAGAD
+  ROCKET
+  BANK
+  CARD
+  MOBILE_BANKING
+  SHURJOPAY
+  OTHER
+}
+
+enum TransactionType {
+  INCOME
+  EXPENSE
+  DEPOSIT
+  WITHDRAWAL
+  FUND_TRANSFER
+}
+
+enum SMSOrderStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+enum SubjectType {
+  COMPULSORY
+  ELECTIVE
+  OPTIONAL
+}
+
+enum SessionStatus {
+  UPCOMING
+  ONGOING
+  ENDED
+}
+
+enum StudentStatus {
+  ACTIVE
+  INACTIVE
+}
+
+enum Gender {
+  MALE
+  FEMALE
+  OTHER
+}
+
+enum Religion {
+  ISLAM
+  CHRISTIAN
+  HINDU
+  BUDDHIST
+  OTHER
+}
+
+enum WeekDay {
+  MONDAY
+  TUESDAY
+  WEDNESDAY
+  THURSDAY
+  FRIDAY
+  SATURDAY
+  SUNDAY
+}
+
+enum ResultStatus {
+  PENDING
+  COMPLETED
+}
+
+enum FeeFrequency {
+  ONE_TIME
+  MONTHLY
+  SEMESTER
+  ANNUAL
+  QUARTERLY
+  WEEKLY
+  DAILY
+}
+
+enum LateFeeFrequency {
+  ONE_TIME
+  DAILY
+  WEEKLY
+  MONTHLY
+  QUARTERLY
+  ANNUAL
+}
+
+enum WaiverType {
+  PERCENTAGE
+  FIXED
+}
+
+enum FeeType {
+  ADMISSION
+  MONTHLY
+  EXAM
+}
+
+enum FeeStatus {
+  PENDING
+  PAID
+}
+
+enum FeeItemStatus {
+  ACTIVE
+  INACTIVE
+}
+
+enum SalaryAdjustmentType {
+  BONUS
+  DEDUCTION
+  ALLOWANCE
+}
+
+enum AttendanceStatus {
+  PRESENT
+  ABSENT
+  LATE
+  LEAVE
+  HOLIDAY
+}
+
+enum TenantStatus {
+  ACTIVE
+  INACTIVE
+  SUSPENDED
+}
+
+enum UserStatus {
+  ACTIVE
+  INACTIVE
+  BANNED
+}
+
+enum DueAdjustmentType {
+  DISCOUNT
+  WAIVER
+  FINE
+  LATE_FEE
+}
+
+enum BillingType {
+  FIXED
+  PER_STUDENT
+}
+
+enum BillingStatus {
+  ACTIVE
+  INACTIVE
+}
+
+enum DueItemStatus {
+  PENDING
+  PARTIAL
+  PAID
+  OVERDUE
+  WAIVED
+}
+
+enum EnrollmentStatus {
+  ENROLLED
+  PASSED
+  FAILED
+  REPEATED
+  TRANSFERRED
+  DROPPED
+}
+
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "rhel-openssl-3.0.x"]
+}
+
+generator zod {
+  provider = "node ./prisma/zod-generator.js"
+  output   = "../lib/zod"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+//! user account related models
+model User {
+  id       String     @id @default(uuid())
+  photo    String?
+  name     String
+  email    String     @unique
+  password String
+  role     UserRole
+  status   UserStatus @default(ACTIVE)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relations
+  tenantId String?
+  tenant   Tenant? @relation(fields: [tenantId], references: [id], onDelete: SetNull, onUpdate: Cascade)
+  logs     Log[]
+
+  @@index([email])
+}
+
+//! Tenant related models
+model Tenant {
+  id        String       @id @default(uuid())
+  logo      String
+  name      String
+  email     String
+  phone     String
+  address   String
+  domain    String       @unique
+  status    TenantStatus @default(ACTIVE)
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+
+  // relations
+  messages              TenantMessage[]
+  users                 User[]
+  billings              TenantBilling[]
+  transactions          TenantTransaction[]
+  students              Student[]
+  employees             TenantEmployee[]
+  classes               Class[]
+  exams                 Exam[]
+  notices               Notice[]
+  feeStructures         FeeStructure[]
+  transactionCategories TransactionCategory[]
+  accounts              TenantAccount[]
+  billingSchedules      TenantBillingSchedule[]
+  sessions              AcademicSession[]
+  salaryStructures      TenantSalaryStructure[]
+  shifts                Shift[]
+  sMSOrders             SMSOrder[]
+  sMSCredits            SMSCredit[]
+  studentDue            StudentDue[]
+  section               Section[]
+  subject               Subject[]
+  classRoutine          ClassRoutine[]
+  examSchedule          ExamSchedule[]
+  examResult            ExamResult[]
+  studentAttendance     StudentAttendance[]
+  employeeAttendance    EmployeeAttendance[]
+  dueItem               DueItem[]
+  dueAdjustment         DueAdjustment[]
+  studentPayment        StudentPayment[]
+  paymentTransaction    PaymentTransaction[]
+  studentEnrollments    StudentEnrollment[]
+  examType              ExamType[]
+  examComponent         ExamComponent[]
+  examComponentResult   ExamComponentResult[]
+  examGroup             ExamGroup[]
+  gradingScale          GradingScale[]
+  resultPublish         ResultPublish[]
+  resultAuditLog        ResultAuditLog[]
+  discountCategories    DiscountCategory[]
+  feeItemCategories     FeeItemCategory[]
+
+  @@index([domain, id])
+}
+
+model TenantMessage {
+  id        String   @id @default(uuid())
+  author    String
+  title     String
+  message   String
+  photo     String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relation
+  tenantId String
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+}
+
+model TenantBilling {
+  id     String        @id @default(uuid())
+  method PaymentMethod
+  amount Decimal       @db.Decimal(10, 2)
+  trxId  String
+  reason String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relation
+  tenantId String
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+}
+
+model TenantBillingSchedule {
+  id          String           @id @default(uuid())
+  label       String
+  frequency   BillingFrequency // "ONE_TIME", "MONTHLY", "YEARLY"
+  billingType BillingType // "FIXED", "PER_STUDENT"
+  amount      Decimal          @db.Decimal(10, 2)
+  nextDueDate DateTime
+  status      BillingStatus    @default(ACTIVE)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relation
+  tenantId String
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+}
+
+model TenantTransaction {
+  id            String          @id @default(uuid())
+  label         String // Short title like "Monthly Fee", "Domain Renewal"
+  amount        Decimal
+  note          String? // Optional detailed note or description
+  type          TransactionType
+  transactionBy String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relation
+  tenantId String
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  categoryId String?
+  category   TransactionCategory? @relation(fields: [categoryId], references: [id])
+
+  accountId String?
+  account   TenantAccount? @relation(fields: [accountId], references: [id])
+
+  @@index([tenantId])
+}
+
+model TenantEmployee {
+  id          String         @id @default(uuid())
+  photo       String?
+  name        String
+  email       String
+  phone       String
+  religion    Religion       @default(ISLAM)
+  gender      Gender         @default(MALE)
+  status      EmployeeStatus @default(ACTIVE)
+  role        EmployeeRole   @default(EMPLOYEE)
+  dateOfBirth String
+  address     String
+  designation String
+  nationalId  String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relations
+  employeeAttendances EmployeeAttendance[]
+  routines            ClassRoutine[]
+  examSchedules       ExamSchedule[]
+
+  tenantId  String
+  tenant    Tenant            @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  salaryDue TenantSalaryDue[]
+
+  @@unique([email, tenantId])
+  @@index([tenantId])
+}
+
+enum EmployeeRole {
+  TEACHER
+  PRINCIPAL
+  ADMIN
+  ACCOUNTANT
+  LIBRARIAN
+  SUPERVISOR
+  STAFF
+  WORKER
+  EMPLOYEE
+  SECURITY
+  IT
+  MARKETING
+  HR
+}
+
+enum EmployeeStatus {
+  ACTIVE
+  INACTIVE
+}
+
+//! Notice related models
+// TODO: add resources (pdf, image)
+model Notice {
+  id      String @id @default(uuid())
+  title   String
+  content String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relations
+  tenantId String
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId])
+}
+
+//! Salary related models
+model TenantSalaryStructure {
+  id    String @id @default(uuid())
+  title String // Title of the salary structure
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relations
+  salaries TenantSalaryItem[]
+  tenantId String
+  tenant   Tenant             @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId])
+}
+
+model TenantSalaryItem {
+  id     String  @id @default(uuid())
+  title  String
+  amount Decimal @db.Decimal(10, 2)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relations
+  salaryStructureId String
+  salaryStructure   TenantSalaryStructure @relation(fields: [salaryStructureId], references: [id], onDelete: Cascade)
+
+  @@index([salaryStructureId])
+}
+
+model TenantSalaryDue {
+  id String @id @default(uuid())
+
+  amount Decimal @db.Decimal(10, 2)
+  month  Int
+  year   Int
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relations
+  employeeId String
+  employee   TenantEmployee  @relation(fields: [employeeId], references: [id], onDelete: Cascade)
+  dueItems   SalaryDueItem[]
+
+  @@index([employeeId])
+}
+
+model SalaryDueItem {
+  id     String  @id @default(uuid())
+  title  String
+  amount Decimal @db.Decimal(10, 2)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relations
+  dueId       String
+  due         TenantSalaryDue    @relation(fields: [dueId], references: [id], onDelete: Cascade)
+  adjustments SalaryAdjustment[]
+}
+
+model SalaryAdjustment {
+  id        String               @id @default(uuid())
+  amount    Decimal
+  type      SalaryAdjustmentType
+  createdAt DateTime             @default(now())
+  updatedAt DateTime             @updatedAt
+
+  // relations
+  dueItemId String
+  dueItem   SalaryDueItem @relation(fields: [dueItemId], references: [id], onDelete: Cascade)
+}
+
+//! Student related models
+model Student {
+  id            String        @id @default(uuid())
+  // personal info
+  photo         String?
+  name          String
+  roll          String
+  email         String
+  phone         String
+  dateOfBirth   DateTime
+  gender        Gender        @default(MALE)
+  address       String
+  religion      Religion      @default(ISLAM)
+  // academic info
+  admissionDate DateTime?     @default(now())
+  studentId     String
+  // family info
+  fatherName    String
+  motherName    String
+  guardianPhone String
+  // default
+  status        StudentStatus @default(ACTIVE)
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  //relations
+  sessionId String
+  session   AcademicSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+
+  studentDues StudentDue[]
+
+  feeStructureId String?
+  feeStructure   FeeStructure? @relation(fields: [feeStructureId], references: [id], onDelete: Cascade)
+
+  sectionId String
+  section   Section @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+
+  classId String
+  class   Class  @relation(fields: [classId], references: [id], onDelete: Cascade)
+
+  results     ExamResult[]
+  attendances StudentAttendance[]
+
+  tenantId            String
+  tenant              Tenant                @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  paymentTransactions PaymentTransaction[]
+  enrollments         StudentEnrollment[]
+  examComponentResult ExamComponentResult[]
+
+  @@unique([roll, sectionId, tenantId])
+}
+
+model StudentEnrollment {
+  id        String           @id @default(uuid())
+  roll      String
+  status    EnrollmentStatus @default(ENROLLED)
+  joinDate  DateTime         @default(now())
+  leaveDate DateTime?
+  note      String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relations
+  promotedFromId String?
+  promotedFrom   StudentEnrollment?  @relation("PromotionHistory", fields: [promotedFromId], references: [id])
+  promotedTo     StudentEnrollment[] @relation("PromotionHistory")
+
+  tenantId String
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  studentId String
+  student   Student @relation(fields: [studentId], references: [id], onDelete: Cascade)
+
+  classId String
+  class   Class  @relation(fields: [classId], references: [id], onDelete: Cascade)
+
+  sectionId String
+  section   Section @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+
+  sessionId String
+  session   AcademicSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+
+  @@unique([studentId, sessionId, classId, sectionId])
+  @@index([studentId, sessionId])
+  @@index([classId, sectionId, sessionId])
+  @@index([tenantId])
+}
+
+model AcademicSession {
+  id        String        @id @default(uuid())
+  title     String
+  startDate DateTime
+  endDate   DateTime
+  status    SessionStatus @default(UPCOMING)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relations
+  tenantId String
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  students           Student[]
+  exams              Exam[]
+  studentEnrollments StudentEnrollment[]
+  ExamGroup          ExamGroup[]
+
+  @@unique([title, tenantId])
+}
+
+//! Class related models
+model Class {
+  id        String    @id @default(uuid())
+  name      String
+  sections  Section[]
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  // relations
+  tenantId String
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  subjects           Subject[]
+  students           Student[]
+  routines           ClassRoutine[]
+  examSchedules      ExamSchedule[]
+  studentEnrollments StudentEnrollment[]
+
+  @@unique([name, tenantId])
+}
+
+model Section {
+  id        String   @id @default(uuid())
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relations
+  tenantId           String
+  tenant             Tenant              @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  classId            String
+  class              Class               @relation(fields: [classId], references: [id], onDelete: Cascade)
+  students           Student[]
+  examSchedules      ExamSchedule[]
+  routines           ClassRoutine[]
+  subjects           Subject[]
+  studentEnrollments StudentEnrollment[]
+
+  @@unique([name, classId])
+}
+
+model Subject {
+  id        String       @id @default(uuid())
+  name      String
+  code      String?
+  type      SubjectType?
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+
+  // relations
+  tenantId String
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  classId String
+  class   Class  @relation(fields: [classId], references: [id], onDelete: Cascade)
+
+  sectionId String? // if null, it is a common subject for all sections
+  section   Section? @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+
+  examSchedules ExamSchedule[]
+  routines      ClassRoutine[]
+
+  @@unique([name, classId])
+}
+
+model ClassRoutine {
+  id        String  @id @default(uuid())
+  dayOfWeek WeekDay
+  startTime Int
+  endTime   Int
+  room      String? // optional: for room number
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relations
+  tenantId String
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  classId String
+  class   Class  @relation(fields: [classId], references: [id], onDelete: Cascade)
+
+  sectionId String?
+  section   Section? @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+
+  subjectId String
+  subject   Subject @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+
+  teacherId String?
+  teacher   TenantEmployee? @relation(fields: [teacherId], references: [id])
+
+  @@unique([sectionId, dayOfWeek, startTime])
+}
+
+// Exam types (Midterm, Final, Quiz, etc.)
+model ExamType {
+  id     String @id @default(uuid())
+  name   String // "Midterm", "Final", "Quiz"
+  weight Float  @default(1.0)
+
+  tenantId String
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  exams    Exam[]
+
+  @@unique([name, tenantId])
+}
+
+// Main exam container
+model Exam {
+  id        String   @id @default(uuid())
+  title     String
+  startDate DateTime
+  endDate   DateTime
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relations
+  examTypeId String
+  examType   ExamType @relation(fields: [examTypeId], references: [id], onDelete: Cascade)
+
+  sessionId String
+  session   AcademicSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+
+  tenantId String
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  schedules ExamSchedule[]
+
+  @@unique([title, sessionId, examTypeId])
+}
+
+// Individual subject exams
+model ExamSchedule {
+  id        String   @id @default(uuid())
+  date      DateTime
+  startTime Int
+  endTime   Int
+  room      String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relations
+  examId String
+  exam   Exam   @relation(fields: [examId], references: [id], onDelete: Cascade)
+
+  classId String
+  class   Class  @relation(fields: [classId], references: [id], onDelete: Cascade)
+
+  sectionId String?
+  section   Section? @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+
+  subjectId String
+  subject   Subject @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+
+  invigilators TenantEmployee[]
+
+  tenantId String
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  // Components and results
+  components    ExamComponent[]
+  results       ExamResult[]
+  resultPublish ResultPublish[]
+
+  @@unique([examId, sectionId, subjectId])
+}
+
+// Exam components (Theory, Practical, Viva, etc.)
+model ExamComponent {
+  id       String @id @default(uuid())
+  name     String // "Theory", "Practical", "Viva"
+  maxMarks Int
+  order    Int    @default(1) // Display order
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relations
+  examScheduleId String
+  examSchedule   ExamSchedule @relation(fields: [examScheduleId], references: [id], onDelete: Cascade)
+
+  tenantId String
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  componentResults ExamComponentResult[]
+
+  @@unique([examScheduleId, name])
+}
+
+// Student results for each component
+model ExamComponentResult {
+  id            String  @id @default(uuid())
+  obtainedMarks Int
+  isAbsent      Boolean @default(false)
+  remarks       String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relations
+  examComponentId String
+  examComponent   ExamComponent @relation(fields: [examComponentId], references: [id], onDelete: Cascade)
+
+  studentId String
+  student   Student @relation(fields: [studentId], references: [id], onDelete: Cascade)
+
+  examResultId String
+  examResult   ExamResult @relation(fields: [examResultId], references: [id], onDelete: Cascade)
+
+  tenantId       String
+  tenant         Tenant           @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  ResultAuditLog ResultAuditLog[]
+
+  @@unique([examComponentId, studentId])
+}
+
+// Main student exam result (auto-calculated from components)
+model ExamResult {
+  id            String  @id @default(uuid())
+  obtainedMarks Int // Sum of all component marks
+  totalMarks    Int // Sum of all component max marks
+  percentage    Float? // Auto-calculated
+  grade         String? // Auto-calculated
+  isAbsent      Boolean @default(false)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relations
+  examScheduleId String
+  examSchedule   ExamSchedule @relation(fields: [examScheduleId], references: [id], onDelete: Cascade)
+
+  studentId String
+  student   Student @relation(fields: [studentId], references: [id], onDelete: Cascade)
+
+  tenantId String
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  componentResults ExamComponentResult[]
+
+  @@unique([examScheduleId, studentId])
+}
+
+model ExamGroup {
+  id   String @id @default(uuid())
+  name String // e.g., "Semester 1"
+
+  // relations
+  sessionId String
+  session   AcademicSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  tenantId  String
+  tenant    Tenant          @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  exams     ExamGroupItem[]
+}
+
+model ExamGroupItem {
+  id            String  @id @default(uuid())
+  examId        String
+  studentId     String
+  tenantId      String
+  totalMarks    Int
+  obtainedMarks Int
+  grade         String?
+  isPublished   Boolean @default(false)
+
+  // relations
+  examGroupId String
+  examGroup   ExamGroup @relation(fields: [examGroupId], references: [id])
+}
+
+model GradingScale {
+  id   String @id @default(uuid())
+  name String
+
+  // relations
+  tenantId String
+  tenant   Tenant      @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  items    GradeItem[]
+}
+
+model GradeItem {
+  id             String       @id @default(uuid())
+  gradingScaleId String
+  minPercentage  Float
+  maxPercentage  Float
+  grade          String
+  gradePoint     Float?
+  gradingScale   GradingScale @relation(fields: [gradingScaleId], references: [id])
+}
+
+model ResultPublish {
+  id          String    @id @default(uuid())
+  publishedAt DateTime?
+  publishedBy String?
+
+  // relations
+  tenantId       String
+  tenant         Tenant       @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  examScheduleId String       @unique
+  examSchedule   ExamSchedule @relation(fields: [examScheduleId], references: [id], onDelete: Cascade)
+  isPublished    Boolean      @default(false)
+}
+
+model ResultAuditLog {
+  id          String   @id @default(uuid())
+  oldMarks    Int
+  newMarks    Int
+  updatedById String
+  updatedAt   DateTime @default(now())
+
+  // relations
+  tenantId String
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  examComponentResultId String
+  examComponentResult   ExamComponentResult @relation(fields: [examComponentResultId], references: [id], onDelete: Cascade)
+}
+
+//! Attendance related models
+model Shift {
+  id        String @id @default(uuid())
+  title     String // Morning, Afternoon, etc.
+  startTime Int // e.g., "08:00"
+  endTime   Int // e.g., "17:00"
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relations
+  tenantId String
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId])
+}
+
+model StudentAttendance {
+  id     String           @id @default(uuid())
+  date   DateTime
+  status AttendanceStatus @default(PRESENT)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relations
+  tenantId String
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  studentId String
+  student   Student @relation(fields: [studentId], references: [id], onDelete: Cascade)
+
+  @@index([studentId])
+}
+
+model EmployeeAttendance {
+  id     String           @id @default(uuid())
+  date   DateTime
+  status AttendanceStatus @default(PRESENT)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relations
+  tenantId String
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  employeeId String
+  employee   TenantEmployee @relation(fields: [employeeId], references: [id], onDelete: Cascade)
+
+  @@index([employeeId])
+}
+
+//! SMS related models
+// TODO: display a checkbox on UI to sent sms where possible and no sms settings needed. bulk sms is for sending due reminders
+model SMSCredit {
+  id      String @id @default(uuid())
+  credits Int
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relations
+  tenantId String @unique
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId])
+}
+
+model SMSOrder {
+  id      String         @id @default(uuid())
+  credits Int
+  amount  Decimal
+  trxId   String
+  status  SMSOrderStatus @default(PENDING)
+  method  PaymentMethod
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relations
+  tenantId String
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  @@index([tenantId])
+}
+
+//! Student fee structure related models
+model FeeStructure {
+  id    String @id @default(uuid())
+  title String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relations
+  feeItems FeeItem[]
+  tenantId String
+  tenant   Tenant    @relation(fields: [tenantId], references: [id])
+  students Student[]
+
+  @@unique([title, tenantId])
+  @@index([tenantId])
+}
+
+// this is the initial for all students. when assiging to a student, it will create student due, adjustment based on waiver and late fee
+model FeeItem {
+  id          String           @id @default(uuid())
+  name        String
+  amount      Decimal          @db.Decimal(10, 2)
+  categoryId  String?
+  category    FeeItemCategory? @relation(fields: [categoryId], references: [id])
+  description String?
+  frequency   FeeFrequency     @default(MONTHLY)
+
+  lateFeeEnabled   Boolean           @default(false)
+  lateFeeFrequency LateFeeFrequency?
+  lateFeeAmount    Decimal?          @db.Decimal(10, 2)
+  lateFeeGraceDays Int?              @default(0) // ADD: Grace period
+
+  status FeeItemStatus @default(ACTIVE)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relations
+  feeStructureId        String
+  feeStructure          FeeStructure         @relation(fields: [feeStructureId], references: [id], onDelete: Cascade)
+  TransactionCategory   TransactionCategory? @relation(fields: [transactionCategoryId], references: [id])
+  transactionCategoryId String?
+}
+
+// Its parents for fees of a month.Many feeitem/dueitem used to create student due
+model StudentDue {
+  id    String @id @default(uuid())
+  month Int
+  year  Int
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relations
+  tenantId String
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  dueItems DueItem[]
+
+  studentId String
+  student   Student @relation(fields: [studentId], references: [id], onDelete: Cascade)
+
+  @@unique([studentId, month, year])
+  @@index([studentId])
+}
+
+model DueItem {
+  id             String  @id @default(uuid())
+  title          String
+  // CHANGE: Split amounts for better tracking
+  originalAmount Decimal @db.Decimal(10, 2) // Original fee amount
+  finalAmount    Decimal @db.Decimal(10, 2) // After adjustments (calculated)
+  paidAmount     Decimal @default(0) @db.Decimal(10, 2)
+
+  description String?
+  status      DueItemStatus @default(PENDING)
+
+  categoryId String?
+  category   FeeItemCategory? @relation(fields: [categoryId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relations
+  tenantId String
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  dueId                 String
+  due                   StudentDue           @relation(fields: [dueId], references: [id], onDelete: Cascade)
+  adjustments           DueAdjustment[]
+  payments              StudentPayment[]
+  TransactionCategory   TransactionCategory? @relation(fields: [transactionCategoryId], references: [id])
+  transactionCategoryId String?
+}
+
+model FeeItemCategory {
+  id    String  @id @default(uuid())
+  title String
+  note  String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relations
+  tenantId String
+  tenant   Tenant    @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  dueItems DueItem[]
+  feeItems FeeItem[]
+}
+
+model DiscountCategory {
+  id        String   @id @default(uuid())
+  title     String
+  note      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relations
+  tenantId String
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  dueAdjustments DueAdjustment[]
+}
+
+model DueAdjustment {
+  id         String              @id @default(uuid())
+  title      String
+  amount     Decimal             @db.Decimal(10, 2) // Positive = Discount, Negative = Fine
+  type       DueAdjustmentType
+  categoryId String?
+  category   DiscountCategory?   @relation(fields: [categoryId], references: [id])
+  status     DueAdjustmentStatus @default(ACTIVE)
+  reason     String?
+  appliedBy  String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relations
+  tenantId String
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  dueItemId String
+  dueItem   DueItem @relation(fields: [dueItemId], references: [id], onDelete: Cascade)
+}
+
+enum DueAdjustmentStatus {
+  ACTIVE
+  INACTIVE
+}
+
+model PaymentTransaction {
+  id String @id @default(uuid())
+
+  // Transaction details
+  totalAmount Decimal @db.Decimal(10, 2)
+  collectedBy String? // Staff member who collected
+
+  transactionDate DateTime? @default(now())
+  printCount      Int?      @default(0)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relations
+  tenantId  String
+  tenant    Tenant           @relation(fields: [tenantId], references: [id])
+  studentId String
+  student   Student          @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  payments  StudentPayment[] // Multiple payments in this transaction
+
+  @@index([studentId])
+  @@index([transactionDate])
+}
+
+model StudentPayment {
+  id     String        @id @default(uuid())
+  amount Decimal       @db.Decimal(10, 2)
+  method PaymentMethod @default(CASH)
+  reason String?
+
+  month Int
+  year  Int
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relations
+  tenantId String
+  tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+
+  dueItemId String
+  dueItem   DueItem @relation(fields: [dueItemId], references: [id], onDelete: Cascade)
+
+  paymentTransactionId String?
+  paymentTransaction   PaymentTransaction? @relation(fields: [paymentTransactionId], references: [id], onDelete: Cascade)
+}
+
+model TenantAccount {
+  id      String      @id @default(uuid())
+  title   String
+  balance Decimal
+  type    AccountType @default(CASH)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // relation
+  tenantId     String
+  tenant       Tenant              @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  transactions TenantTransaction[]
+
+  @@unique([title, tenantId])
+  @@index([tenantId])
+}
+
+model PaymentIntent {
+  id        String  @id @default(uuid())
+  orderId   String  @unique
+  studentId String
+  amount    Decimal @db.Decimal(10, 2)
+  status    String // PENDING, COMPLETED, FAILED
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  //TODO: maybe need dueitem
+}
+
+model TransactionCategory {
+  id    String @id @default(uuid())
+  title String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relations
+  tenantId     String
+  tenant       Tenant              @relation(fields: [tenantId], references: [id], onDelete: Cascade)
+  transactions TenantTransaction[]
+  feeItems     FeeItem[]
+  dueItems     DueItem[]
+
+  @@unique([title, tenantId])
+}
+
+// Company related models
+model CompanyTransaction {
+  id            String          @id @default(uuid())
+  type          TransactionType
+  category      String
+  amount        Decimal         @db.Decimal(10, 2)
+  reason        String
+  method        PaymentMethod
+  transactionBy String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Log {
+  id        String   @id @default(cuid())
+  userId    String? // Nullable for unauthenticated logs
+  user      User?    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  action    String // e.g., 'create_student', 'assign_waiver'
+  message   String? // Optional message or status
+  level     LogLevel @default(INFO)
+  meta      Json? // Any additional structured data
+  duration  Int? // In ms, optional for performance logs
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+}
+
+enum LogLevel {
+  INFO
+  WARN
+  ERROR
+  DEBUG
+}

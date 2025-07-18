@@ -1,0 +1,3129 @@
+{
+  "database": "miim",
+  "exportedAt": "2025-05-13T06:26:49.843Z",
+  "collections": {
+    "Section": [
+      {
+        "_id": "67af29c824b2875238dd2948",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "name": "A",
+        "classId": "67af29c724b2875238dd2947",
+        "createdAt": "2025-02-14T11:32:24.419Z",
+        "updatedAt": "2025-02-14T11:32:24.419Z"
+      },
+      {
+        "_id": "67af727161fc29fbf381a16f",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "name": "A(Morning)",
+        "classId": "67af727061fc29fbf381a16e",
+        "createdAt": "2025-02-14T16:42:25.488Z",
+        "updatedAt": "2025-02-14T16:42:25.488Z"
+      },
+      {
+        "_id": "67af727161fc29fbf381a170",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "name": "B(Day)",
+        "classId": "67af727061fc29fbf381a16e",
+        "createdAt": "2025-02-14T16:42:25.488Z",
+        "updatedAt": "2025-02-14T16:42:25.488Z"
+      },
+      {
+        "_id": "67b04e0b3151998ed2cd96a7",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "name": "A",
+        "classId": "67b04e0b3151998ed2cd96a6",
+        "createdAt": "2025-02-15T08:19:23.740Z",
+        "updatedAt": "2025-02-15T08:19:23.740Z"
+      },
+      {
+        "_id": "67b04e383151998ed2cd96a9",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "name": "A",
+        "classId": "67b04e383151998ed2cd96a8",
+        "createdAt": "2025-02-15T08:20:08.572Z",
+        "updatedAt": "2025-02-15T08:20:08.572Z"
+      },
+      {
+        "_id": "67b04e513151998ed2cd96ab",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "name": "A",
+        "classId": "67b04e503151998ed2cd96aa",
+        "createdAt": "2025-02-15T08:20:33.319Z",
+        "updatedAt": "2025-02-15T08:20:33.319Z"
+      },
+      {
+        "_id": "67b04e693151998ed2cd96ad",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "name": "A",
+        "classId": "67b04e683151998ed2cd96ac",
+        "createdAt": "2025-02-15T08:20:57.170Z",
+        "updatedAt": "2025-02-15T08:20:57.170Z"
+      },
+      {
+        "_id": "67b04e7b3151998ed2cd96af",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "name": "A",
+        "classId": "67b04e7b3151998ed2cd96ae",
+        "createdAt": "2025-02-15T08:21:15.817Z",
+        "updatedAt": "2025-02-15T08:21:15.817Z"
+      },
+      {
+        "_id": "67b04e8a3151998ed2cd96b1",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "name": "A",
+        "classId": "67b04e8a3151998ed2cd96b0",
+        "createdAt": "2025-02-15T08:21:30.970Z",
+        "updatedAt": "2025-02-15T08:21:30.970Z"
+      },
+      {
+        "_id": "67b04ea53151998ed2cd96b3",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "name": "A(Boy)",
+        "classId": "67b04ea53151998ed2cd96b2",
+        "createdAt": "2025-02-15T08:21:57.699Z",
+        "updatedAt": "2025-02-15T08:21:57.699Z"
+      },
+      {
+        "_id": "67b04ebf3151998ed2cd96b5",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "name": "B(girl)",
+        "classId": "67b04ebe3151998ed2cd96b4",
+        "createdAt": "2025-02-15T08:22:23.032Z",
+        "updatedAt": "2025-02-15T08:22:23.032Z"
+      },
+      {
+        "_id": "67b04ee73151998ed2cd96b7",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "name": "A",
+        "classId": "67b04ee63151998ed2cd96b6",
+        "createdAt": "2025-02-15T08:23:03.005Z",
+        "updatedAt": "2025-02-15T08:23:03.005Z"
+      },
+      {
+        "_id": "67b04ee73151998ed2cd96b8",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "name": "B",
+        "classId": "67b04ee63151998ed2cd96b6",
+        "createdAt": "2025-02-15T08:23:03.005Z",
+        "updatedAt": "2025-02-15T08:23:03.005Z"
+      },
+      {
+        "_id": "67b04f003151998ed2cd96ba",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "name": "A",
+        "classId": "67b04f003151998ed2cd96b9",
+        "createdAt": "2025-02-15T08:23:28.802Z",
+        "updatedAt": "2025-02-15T08:24:04.558Z"
+      },
+      {
+        "_id": "67b04f003151998ed2cd96bb",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "name": "B",
+        "classId": "67b04f003151998ed2cd96b9",
+        "createdAt": "2025-02-15T08:23:28.802Z",
+        "updatedAt": "2025-02-15T08:24:04.558Z"
+      },
+      {
+        "_id": "67b04f472e9363a4c24609fc",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "name": "A",
+        "classId": "67b04f472e9363a4c24609fb",
+        "createdAt": "2025-02-15T08:24:39.987Z",
+        "updatedAt": "2025-02-15T08:24:39.987Z"
+      },
+      {
+        "_id": "67b04f582e9363a4c24609fe",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "name": "A",
+        "classId": "67b04f572e9363a4c24609fd",
+        "createdAt": "2025-02-15T08:24:56.331Z",
+        "updatedAt": "2025-02-15T08:24:56.331Z"
+      },
+      {
+        "_id": "67b34deed49608165bb840e4",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "name": "A",
+        "classId": "67b34dedd49608165bb840e3",
+        "createdAt": "2025-02-17T14:55:42.524Z",
+        "updatedAt": "2025-02-17T14:55:42.524Z"
+      },
+      {
+        "_id": "67b34efda3d428f2264a2b28",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "name": "A",
+        "classId": "67b34efda3d428f2264a2b27",
+        "createdAt": "2025-02-17T15:00:13.978Z",
+        "updatedAt": "2025-02-17T15:00:13.978Z"
+      },
+      {
+        "_id": "67b34f29a3d428f2264a2b2a",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "name": "A",
+        "classId": "67b34f28a3d428f2264a2b29",
+        "createdAt": "2025-02-17T15:00:57.370Z",
+        "updatedAt": "2025-02-17T15:00:57.370Z"
+      },
+      {
+        "_id": "67b34f3fa3d428f2264a2b2c",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "name": "A",
+        "classId": "67b34f3ea3d428f2264a2b2b",
+        "createdAt": "2025-02-17T15:01:19.478Z",
+        "updatedAt": "2025-02-17T15:01:19.478Z"
+      },
+      {
+        "_id": "67b34f65a3d428f2264a2b2e",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "name": "A",
+        "classId": "67b34f65a3d428f2264a2b2d",
+        "createdAt": "2025-02-17T15:01:57.927Z",
+        "updatedAt": "2025-02-17T15:01:57.927Z"
+      },
+      {
+        "_id": "67b34fe4a3d428f2264a2b30",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "name": "A",
+        "classId": "67b34fe3a3d428f2264a2b2f",
+        "createdAt": "2025-02-17T15:04:04.023Z",
+        "updatedAt": "2025-05-01T16:04:05.048Z"
+      }
+    ],
+    "Result": [
+      {
+        "_id": "68139ca07e301cca81672cd8",
+        "examId": "68139b477e301cca81672cd7",
+        "subjectId": "67b04d383151998ed2cd96a2",
+        "studentId": "67af2c51bf2af06c71259f2a",
+        "classId": "67af29c724b2875238dd2947",
+        "sectionId": "67af29c824b2875238dd2948",
+        "marks": 20,
+        "score": 15,
+        "comments": "",
+        "includeInResult": true,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-05-01T16:09:03.947Z",
+        "updatedAt": "2025-05-01T16:09:03.947Z"
+      },
+      {
+        "_id": "68139cc97e301cca81672cd9",
+        "examId": "68139bdc04d3a513f1f57a1a",
+        "subjectId": "67b04d383151998ed2cd96a2",
+        "studentId": "67af2c51bf2af06c71259f2a",
+        "classId": "67af29c724b2875238dd2947",
+        "sectionId": "67af29c824b2875238dd2948",
+        "marks": 80,
+        "score": 50,
+        "comments": "",
+        "includeInResult": true,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-05-01T16:09:45.630Z",
+        "updatedAt": "2025-05-01T16:09:45.630Z"
+      }
+    ],
+    "Salary": [
+      {
+        "_id": "67b042183d03ed6c69b27f7b",
+        "employeeId": "67af7181189588c594cc9cdd",
+        "amount": 5129,
+        "month": "January",
+        "year": 2025,
+        "reason": "monthly_salary",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T07:28:24.044Z",
+        "updatedAt": "2025-02-15T07:29:50.808Z"
+      },
+      {
+        "_id": "67b224177f0087811b26daca",
+        "employeeId": "67b0a62a4873ba483c50a4fa",
+        "amount": 11000,
+        "month": "January",
+        "year": 2025,
+        "reason": "monthly_salary",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-16T17:44:55.519Z",
+        "updatedAt": "2025-02-16T17:44:55.519Z"
+      }
+    ],
+    "Fee": [
+      {
+        "_id": "67af2ca0bf2af06c71259f2d",
+        "studentId": "67af2c51bf2af06c71259f2a",
+        "classId": "67af29c724b2875238dd2947",
+        "sectionId": "67af29c824b2875238dd2948",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 700,
+        "month": "January",
+        "year": 2025,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-14T11:44:31.880Z",
+        "updatedAt": "2025-02-14T11:44:31.880Z"
+      },
+      {
+        "_id": "67af4c360c021584494d0a64",
+        "studentId": "67af4ba10c021584494d0a62",
+        "classId": "67af29c724b2875238dd2947",
+        "sectionId": "67af29c824b2875238dd2948",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 600,
+        "month": "January",
+        "year": 2025,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-14T13:59:18.450Z",
+        "updatedAt": "2025-02-14T13:59:18.450Z"
+      },
+      {
+        "_id": "67b049d7cf35e20b8aafb7af",
+        "studentId": "67af6c4b189588c594cc9cd2",
+        "classId": "67af29c724b2875238dd2947",
+        "sectionId": "67af29c824b2875238dd2948",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 600,
+        "month": "January",
+        "year": 2025,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:01:27.216Z",
+        "updatedAt": "2025-02-15T08:01:27.216Z"
+      },
+      {
+        "_id": "67b04a243151998ed2cd969e",
+        "studentId": "67af4e23507649ad25e0ac55",
+        "classId": "67af29c724b2875238dd2947",
+        "sectionId": "67af29c824b2875238dd2948",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 700,
+        "month": "January",
+        "year": 2025,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:02:42.992Z",
+        "updatedAt": "2025-02-15T08:02:42.992Z"
+      },
+      {
+        "_id": "67b04a3d77a8c8fc08937871",
+        "studentId": "67af4e23507649ad25e0ac55",
+        "classId": "67af29c724b2875238dd2947",
+        "sectionId": "67af29c824b2875238dd2948",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 700,
+        "month": "February",
+        "year": 2025,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:03:09.857Z",
+        "updatedAt": "2025-02-15T08:03:09.857Z"
+      },
+      {
+        "_id": "67b04add0756382558507d61",
+        "studentId": "67af85239004080d96e18871",
+        "classId": "67af29c724b2875238dd2947",
+        "sectionId": "67af29c824b2875238dd2948",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 700,
+        "month": "January",
+        "year": 2025,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:05:49.009Z",
+        "updatedAt": "2025-02-15T08:05:49.009Z"
+      },
+      {
+        "_id": "67b04af90756382558507d64",
+        "studentId": "67af85239004080d96e18871",
+        "classId": "67af29c724b2875238dd2947",
+        "sectionId": "67af29c824b2875238dd2948",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 700,
+        "month": "February",
+        "year": 2025,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:06:17.827Z",
+        "updatedAt": "2025-02-15T08:06:17.827Z"
+      },
+      {
+        "_id": "67b04b230756382558507d66",
+        "studentId": "67af8621c92329078ea7cda2",
+        "classId": "67af29c724b2875238dd2947",
+        "sectionId": "67af29c824b2875238dd2948",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 700,
+        "month": "January",
+        "year": 2025,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:06:59.684Z",
+        "updatedAt": "2025-02-15T08:06:59.684Z"
+      },
+      {
+        "_id": "67b04b470756382558507d68",
+        "studentId": "67af8621c92329078ea7cda2",
+        "classId": "67af29c724b2875238dd2947",
+        "sectionId": "67af29c824b2875238dd2948",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 700,
+        "month": "February",
+        "year": 2025,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:07:35.478Z",
+        "updatedAt": "2025-02-15T08:07:35.478Z"
+      },
+      {
+        "_id": "67b04b790756382558507d6a",
+        "studentId": "67af6ec2189588c594cc9cd8",
+        "classId": "67af29c724b2875238dd2947",
+        "sectionId": "67af29c824b2875238dd2948",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 700,
+        "month": "February",
+        "year": 2025,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:08:25.566Z",
+        "updatedAt": "2025-02-15T08:08:25.566Z"
+      },
+      {
+        "_id": "67b0a8560c5bc181c1cd185e",
+        "studentId": "67b0a8340c5bc181c1cd185c",
+        "classId": "67b04e683151998ed2cd96ac",
+        "sectionId": "67b04e693151998ed2cd96ad",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 2200,
+        "month": "January",
+        "year": 2025,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T14:44:38.041Z",
+        "updatedAt": "2025-02-15T14:44:38.041Z"
+      },
+      {
+        "_id": "67b0aa300c5bc181c1cd1864",
+        "studentId": "67b0aa140c5bc181c1cd1862",
+        "classId": "67b04e503151998ed2cd96aa",
+        "sectionId": "67b04e513151998ed2cd96ab",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 2000,
+        "month": "January",
+        "year": 2025,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T14:52:32.833Z",
+        "updatedAt": "2025-02-15T14:52:32.833Z"
+      },
+      {
+        "_id": "67b1e4ef6130a6a16c0d32e1",
+        "studentId": "67b1e05c6130a6a16c0d32dd",
+        "classId": "67b04e383151998ed2cd96a8",
+        "sectionId": "67b04e383151998ed2cd96a9",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 1800,
+        "month": "January",
+        "year": 2025,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-16T13:15:27.072Z",
+        "updatedAt": "2025-02-16T13:15:27.072Z"
+      },
+      {
+        "_id": "67b1e8ae6130a6a16c0d32e3",
+        "studentId": "67b1e4796130a6a16c0d32df",
+        "classId": "67af727061fc29fbf381a16e",
+        "sectionId": "67af727161fc29fbf381a16f",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 1500,
+        "month": "January",
+        "year": 2025,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-16T13:31:26.141Z",
+        "updatedAt": "2025-02-16T13:31:26.141Z"
+      },
+      {
+        "_id": "67b1e9ece2b58933fb17602e",
+        "studentId": "67b1e9cfe2b58933fb17602c",
+        "classId": "67b04e0b3151998ed2cd96a6",
+        "sectionId": "67b04e0b3151998ed2cd96a7",
+        "reason": [
+          "form_fees"
+        ],
+        "amount": 1500,
+        "month": "January",
+        "year": 2025,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-16T13:36:44.870Z",
+        "updatedAt": "2025-02-16T13:36:44.870Z"
+      },
+      {
+        "_id": "67b301a6246c7104584a874e",
+        "studentId": "67b03b124ff2b07c22b4d3fa",
+        "classId": "67af29c724b2875238dd2947",
+        "sectionId": "67af29c824b2875238dd2948",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 700,
+        "month": "February",
+        "year": 2025,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-17T09:30:13.161Z",
+        "updatedAt": "2025-02-17T09:30:13.161Z"
+      },
+      {
+        "_id": "67b3311b5ac1baa8401edc83",
+        "studentId": "67b088a28fe697e96b76f168",
+        "classId": "67af727061fc29fbf381a16e",
+        "sectionId": "67af727161fc29fbf381a170",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 1250,
+        "month": "January",
+        "year": 2025,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-17T12:52:43.494Z",
+        "updatedAt": "2025-02-17T12:52:43.494Z"
+      },
+      {
+        "_id": "67b33cd1f66d54483397e989",
+        "studentId": "67b227861777eb2facae874a",
+        "classId": "67af727061fc29fbf381a16e",
+        "sectionId": "67af727161fc29fbf381a16f",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 1500,
+        "month": "January",
+        "year": 2025,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-17T13:42:41.542Z",
+        "updatedAt": "2025-02-17T13:42:41.542Z"
+      },
+      {
+        "_id": "67b33d12449956354de5a96d",
+        "studentId": "67b227861777eb2facae874a",
+        "classId": "67af727061fc29fbf381a16e",
+        "sectionId": "67af727161fc29fbf381a16f",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 1500,
+        "month": "February",
+        "year": 2025,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-17T13:43:46.495Z",
+        "updatedAt": "2025-02-17T13:43:46.495Z"
+      },
+      {
+        "_id": "67b34c81aa7686403bafded1",
+        "studentId": "67b34c5fd49608165bb840e0",
+        "classId": "67b04e683151998ed2cd96ac",
+        "sectionId": "67b04e693151998ed2cd96ad",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 2100,
+        "month": "January",
+        "year": 2025,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-17T14:49:36.306Z",
+        "updatedAt": "2025-02-17T14:49:36.306Z"
+      },
+      {
+        "_id": "67b35123a3d428f2264a2b32",
+        "studentId": "67b350e6d49608165bb840e6",
+        "classId": "67b34dedd49608165bb840e3",
+        "sectionId": "67b34deed49608165bb840e4",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 2500,
+        "month": "January",
+        "year": 2025,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-17T15:09:23.298Z",
+        "updatedAt": "2025-02-17T15:09:23.298Z"
+      },
+      {
+        "_id": "67b357f5f4f0df2312bdd0da",
+        "studentId": "67b357c5f4f0df2312bdd0d8",
+        "classId": "67b04e0b3151998ed2cd96a6",
+        "sectionId": "67b04e0b3151998ed2cd96a7",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 1500,
+        "month": "February",
+        "year": 2025,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-17T15:38:29.510Z",
+        "updatedAt": "2025-02-17T15:38:29.510Z"
+      },
+      {
+        "_id": "67b358b122b34ba6dbe41d7a",
+        "studentId": "67b357c5f4f0df2312bdd0d8",
+        "classId": "67b04e0b3151998ed2cd96a6",
+        "sectionId": "67b04e0b3151998ed2cd96a7",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 1500,
+        "month": "January",
+        "year": 2025,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-17T15:41:37.676Z",
+        "updatedAt": "2025-02-17T15:41:37.676Z"
+      },
+      {
+        "_id": "67b3e6bf1a2decc2a3c0a891",
+        "studentId": "67b3e601d5464cffd548bfbf",
+        "classId": "67b04e383151998ed2cd96a8",
+        "sectionId": "67b04e383151998ed2cd96a9",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 2200,
+        "month": "January",
+        "year": 2025,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-18T01:47:43.087Z",
+        "updatedAt": "2025-02-18T01:47:43.087Z"
+      },
+      {
+        "_id": "67b3e8dc1a2decc2a3c0a894",
+        "studentId": "67b304d1b02aaa2993da9f4a",
+        "classId": "67af727061fc29fbf381a16e",
+        "sectionId": "67af727161fc29fbf381a16f",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 2000,
+        "month": "February",
+        "year": 2025,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-18T01:56:44.899Z",
+        "updatedAt": "2025-02-18T01:56:44.899Z"
+      },
+      {
+        "_id": "67b46ddfa8b430f5698b5e71",
+        "studentId": "67b46dc1a8b430f5698b5e6f",
+        "classId": "67b04e383151998ed2cd96a8",
+        "sectionId": "67b04e383151998ed2cd96a9",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 2000,
+        "month": "January",
+        "year": 2025,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-18T11:24:15.486Z",
+        "updatedAt": "2025-02-18T11:24:15.486Z"
+      }
+    ],
+    "SMSNotificationConfig": [
+      {
+        "_id": "67bf4b7311ef7645c0c5bbfa",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "settings": [
+          {
+            "id": "attendance",
+            "name": "Attendance",
+            "enabled": false,
+            "description": "Send SMS for student absence/presence"
+          },
+          {
+            "id": "feeCollection",
+            "name": "Fee Collection",
+            "enabled": false,
+            "description": "Notify about fee payments and dues"
+          },
+          {
+            "id": "examResults",
+            "name": "Exam Results",
+            "enabled": false,
+            "description": "Send SMS when exam results are published"
+          },
+          {
+            "id": "duesReminder",
+            "name": "Dues Reminder",
+            "enabled": false,
+            "description": "Send reminders for outstanding dues"
+          },
+          {
+            "id": "transactionAlert",
+            "name": "Transaction Alert",
+            "enabled": false,
+            "description": "Receive a notification when a transaction is made"
+          }
+        ],
+        "createdAt": "2025-02-26T17:12:21.290Z",
+        "updatedAt": "2025-02-26T17:12:21.290Z"
+      }
+    ],
+    "StudentAttendance": [
+      {
+        "_id": "67af2ff01cac479af8ffb5f3",
+        "studentId": "67af2c51bf2af06c71259f2a",
+        "classId": "67af29c724b2875238dd2947",
+        "sectionId": "67af29c824b2875238dd2948",
+        "date": "2025-02-14",
+        "isPresent": false,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-14T11:58:40.710Z",
+        "updatedAt": "2025-02-14T11:58:43.727Z"
+      },
+      {
+        "_id": "67af64621600259c237c23a5",
+        "studentId": "67af4ba10c021584494d0a62",
+        "classId": "67af29c724b2875238dd2947",
+        "sectionId": "67af29c824b2875238dd2948",
+        "date": "2025-02-14",
+        "isPresent": false,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-14T15:42:26.547Z",
+        "updatedAt": "2025-02-14T15:42:26.547Z"
+      },
+      {
+        "_id": "67af64671600259c237c23a6",
+        "studentId": "67af4e23507649ad25e0ac55",
+        "classId": "67af29c724b2875238dd2947",
+        "sectionId": "67af29c824b2875238dd2948",
+        "date": "2025-02-14",
+        "isPresent": false,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-14T15:42:31.781Z",
+        "updatedAt": "2025-02-14T15:42:31.781Z"
+      },
+      {
+        "_id": "67b0bfed8e6365c2e20d9a95",
+        "studentId": "67af2c51bf2af06c71259f2a",
+        "classId": "67af29c724b2875238dd2947",
+        "sectionId": "67af29c824b2875238dd2948",
+        "date": "2025-02-15",
+        "isPresent": true,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T16:25:17.377Z",
+        "updatedAt": "2025-02-15T16:25:17.377Z"
+      },
+      {
+        "_id": "67b22234d3acbac8fe04cef8",
+        "studentId": "67af2c51bf2af06c71259f2a",
+        "classId": "67af29c724b2875238dd2947",
+        "sectionId": "67af29c824b2875238dd2948",
+        "date": "2025-02-16",
+        "isPresent": false,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-16T17:36:52.206Z",
+        "updatedAt": "2025-02-16T17:36:52.206Z"
+      }
+    ],
+    "EmployeeAttendance": [
+      {
+        "_id": "67b0520cda7d6a6b7e70d505",
+        "employeeId": "67b0513304690ca2b7e86f0a",
+        "date": "2025-02-15",
+        "isPresent": true,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:36:28.233Z",
+        "updatedAt": "2025-02-15T08:36:28.233Z"
+      },
+      {
+        "_id": "67bc29aacb9b683721d30f91",
+        "employeeId": "67af7181189588c594cc9cdd",
+        "date": "2025-02-24",
+        "isPresent": false,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-24T08:11:22.090Z",
+        "updatedAt": "2025-02-24T08:11:22.090Z"
+      },
+      {
+        "_id": "67bc29b0cb9b683721d30f92",
+        "employeeId": "67b045dabe3fb2dab465420c",
+        "date": "2025-02-24",
+        "isPresent": true,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-24T08:11:28.392Z",
+        "updatedAt": "2025-02-24T08:11:28.392Z"
+      },
+      {
+        "_id": "67bc29b5cb9b683721d30f93",
+        "employeeId": "67b047198450202a79f3d55b",
+        "date": "2025-02-24",
+        "isPresent": true,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-24T08:11:33.618Z",
+        "updatedAt": "2025-02-24T08:11:33.618Z"
+      },
+      {
+        "_id": "67bc29bbcb9b683721d30f94",
+        "employeeId": "67b04885be3fb2dab465420e",
+        "date": "2025-02-24",
+        "isPresent": true,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-24T08:11:39.939Z",
+        "updatedAt": "2025-02-24T08:11:39.939Z"
+      },
+      {
+        "_id": "67bc29becb9b683721d30f95",
+        "employeeId": "67b0513304690ca2b7e86f0a",
+        "date": "2025-02-24",
+        "isPresent": true,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-24T08:11:42.487Z",
+        "updatedAt": "2025-02-24T08:11:42.487Z"
+      },
+      {
+        "_id": "67bc29c1cb9b683721d30f96",
+        "employeeId": "67b0a62a4873ba483c50a4fa",
+        "date": "2025-02-24",
+        "isPresent": true,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-24T08:11:45.549Z",
+        "updatedAt": "2025-02-24T08:11:45.549Z"
+      },
+      {
+        "_id": "67bc29cb7fb168d75f598a51",
+        "employeeId": "67af7181189588c594cc9cdd",
+        "date": "2025-02-23",
+        "isPresent": true,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-24T08:11:55.719Z",
+        "updatedAt": "2025-02-24T08:12:06.520Z"
+      },
+      {
+        "_id": "67bc29dc7fb168d75f598a52",
+        "employeeId": "67b045dabe3fb2dab465420c",
+        "date": "2025-02-23",
+        "isPresent": true,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-24T08:12:12.132Z",
+        "updatedAt": "2025-02-24T08:12:12.132Z"
+      },
+      {
+        "_id": "67bc29de7fb168d75f598a53",
+        "employeeId": "67b047198450202a79f3d55b",
+        "date": "2025-02-23",
+        "isPresent": false,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-24T08:12:14.620Z",
+        "updatedAt": "2025-02-24T08:12:14.620Z"
+      },
+      {
+        "_id": "67bc29e37fb168d75f598a54",
+        "employeeId": "67b04885be3fb2dab465420e",
+        "date": "2025-02-23",
+        "isPresent": true,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-24T08:12:19.495Z",
+        "updatedAt": "2025-02-24T08:12:19.495Z"
+      },
+      {
+        "_id": "67bc29e67fb168d75f598a55",
+        "employeeId": "67b0513304690ca2b7e86f0a",
+        "date": "2025-02-23",
+        "isPresent": false,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-24T08:12:22.906Z",
+        "updatedAt": "2025-02-24T08:12:22.906Z"
+      },
+      {
+        "_id": "67bc29ef7fb168d75f598a56",
+        "employeeId": "67b0a62a4873ba483c50a4fa",
+        "date": "2025-02-23",
+        "isPresent": true,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-24T08:12:31.899Z",
+        "updatedAt": "2025-02-24T08:12:31.899Z"
+      },
+      {
+        "_id": "67bc2a047fb168d75f598a58",
+        "employeeId": "67af7181189588c594cc9cdd",
+        "date": "2025-02-22",
+        "isPresent": true,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-24T08:12:52.476Z",
+        "updatedAt": "2025-02-24T08:12:52.476Z"
+      },
+      {
+        "_id": "67bc2a087fb168d75f598a59",
+        "employeeId": "67b045dabe3fb2dab465420c",
+        "date": "2025-02-22",
+        "isPresent": true,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-24T08:12:56.114Z",
+        "updatedAt": "2025-02-24T08:12:56.114Z"
+      },
+      {
+        "_id": "67bc2a247fb168d75f598a5a",
+        "employeeId": "67b047198450202a79f3d55b",
+        "date": "2025-02-22",
+        "isPresent": true,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-24T08:13:24.127Z",
+        "updatedAt": "2025-02-24T08:13:24.127Z"
+      },
+      {
+        "_id": "67bc2a277fb168d75f598a5b",
+        "employeeId": "67b04885be3fb2dab465420e",
+        "date": "2025-02-22",
+        "isPresent": true,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-24T08:13:27.157Z",
+        "updatedAt": "2025-02-24T08:13:27.157Z"
+      },
+      {
+        "_id": "67bc2a2b7fb168d75f598a5c",
+        "employeeId": "67b0513304690ca2b7e86f0a",
+        "date": "2025-02-22",
+        "isPresent": false,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-24T08:13:31.879Z",
+        "updatedAt": "2025-02-24T08:13:31.879Z"
+      },
+      {
+        "_id": "67bc2a317fb168d75f598a5d",
+        "employeeId": "67b0a62a4873ba483c50a4fa",
+        "date": "2025-02-22",
+        "isPresent": false,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-24T08:13:37.235Z",
+        "updatedAt": "2025-02-24T08:13:37.235Z"
+      }
+    ],
+    "LastStudentId": [
+      {
+        "_id": "6813a699f88bb59df7846778",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "studentId": "MII-20",
+        "createdAt": "2025-05-01T16:51:37.364Z",
+        "updatedAt": "2025-05-01T16:51:37.364Z"
+      }
+    ],
+    "Schedule": [
+      {
+        "_id": "67b04d383151998ed2cd96a3",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "subjectId": "67b04d383151998ed2cd96a2",
+        "classId": "67af29c724b2875238dd2947",
+        "teacherId": "67b047198450202a79f3d55b",
+        "sectionId": "67af29c824b2875238dd2948",
+        "startTime": "10:45",
+        "endTime": "11:20",
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Saturday",
+          "Sunday"
+        ],
+        "createdAt": "2025-02-15T08:15:52.774Z",
+        "updatedAt": "2025-02-15T08:15:52.774Z"
+      },
+      {
+        "_id": "67b04dbc3151998ed2cd96a5",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "subjectId": "67b04dbb3151998ed2cd96a4",
+        "classId": "67af727061fc29fbf381a16e",
+        "teacherId": "67b04885be3fb2dab465420e",
+        "sectionId": "67af727161fc29fbf381a170",
+        "startTime": "10:45",
+        "endTime": "11:20",
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Saturday",
+          "Sunday"
+        ],
+        "createdAt": "2025-02-15T08:18:04.234Z",
+        "updatedAt": "2025-02-15T08:18:04.234Z"
+      },
+      {
+        "_id": "67b04ffa71aba80a0310cfbd",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "subjectId": "67b04ffa71aba80a0310cfbc",
+        "classId": "67af727061fc29fbf381a16e",
+        "teacherId": "67b047198450202a79f3d55b",
+        "sectionId": "67af727161fc29fbf381a170",
+        "startTime": "08:00",
+        "endTime": "08:40",
+        "days": [
+          "Tuesday",
+          "Wednesday",
+          "Monday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "createdAt": "2025-02-15T08:27:38.775Z",
+        "updatedAt": "2025-02-15T08:27:38.775Z"
+      }
+    ],
+    "Subject": [
+      {
+        "_id": "67b04d383151998ed2cd96a2",
+        "name": "Qayeda",
+        "classId": "67af29c724b2875238dd2947",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:15:52.190Z",
+        "updatedAt": "2025-02-15T08:15:52.190Z"
+      },
+      {
+        "_id": "67b04dbb3151998ed2cd96a4",
+        "name": "Arabic",
+        "classId": "67af727061fc29fbf381a16e",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:18:03.668Z",
+        "updatedAt": "2025-02-15T08:18:03.668Z"
+      },
+      {
+        "_id": "67b04ffa71aba80a0310cfbc",
+        "name": "Qayeda",
+        "classId": "67af727061fc29fbf381a16e",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:27:36.718Z",
+        "updatedAt": "2025-02-15T08:27:36.718Z"
+      }
+    ],
+    "Exam": [
+      {
+        "_id": "68139b477e301cca81672cd7",
+        "name": "1st Tutorial Examination",
+        "year": "2025",
+        "marks": 20,
+        "examType": "PARTIAL",
+        "includeInResult": true,
+        "classIds": [
+          "67af29c724b2875238dd2947",
+          "67af727061fc29fbf381a16e",
+          "67b04e0b3151998ed2cd96a6",
+          "67b04e383151998ed2cd96a8",
+          "67b04e503151998ed2cd96aa",
+          "67b04e683151998ed2cd96ac",
+          "67b04e7b3151998ed2cd96ae",
+          "67b04e8a3151998ed2cd96b0",
+          "67b04ea53151998ed2cd96b2",
+          "67b04ebe3151998ed2cd96b4",
+          "67b34efda3d428f2264a2b27",
+          "67b34f28a3d428f2264a2b29",
+          "67b34dedd49608165bb840e3",
+          "67b34f3ea3d428f2264a2b2b",
+          "67b34f65a3d428f2264a2b2d",
+          "67b34fe3a3d428f2264a2b2f"
+        ],
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-05-01T16:03:19.724Z",
+        "updatedAt": "2025-05-01T16:03:19.724Z"
+      },
+      {
+        "_id": "68139bdc04d3a513f1f57a1a",
+        "name": "1st Terminal Examination",
+        "year": "2025",
+        "marks": 80,
+        "examType": "FINAL",
+        "includeInResult": true,
+        "classIds": [
+          "67af29c724b2875238dd2947",
+          "67af727061fc29fbf381a16e",
+          "67b04e0b3151998ed2cd96a6",
+          "67b04e383151998ed2cd96a8",
+          "67b04e503151998ed2cd96aa",
+          "67b04e683151998ed2cd96ac",
+          "67b04e7b3151998ed2cd96ae",
+          "67b04e8a3151998ed2cd96b0",
+          "67b04ea53151998ed2cd96b2",
+          "67b04ebe3151998ed2cd96b4",
+          "67b34dedd49608165bb840e3",
+          "67b34efda3d428f2264a2b27",
+          "67b34f28a3d428f2264a2b29",
+          "67b34f3ea3d428f2264a2b2b",
+          "67b34f65a3d428f2264a2b2d",
+          "67b34fe3a3d428f2264a2b2f"
+        ],
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-05-01T16:05:48.699Z",
+        "updatedAt": "2025-05-01T16:05:48.699Z"
+      },
+      {
+        "_id": "68139c15e96647bccca82208",
+        "name": "2nd Tutorial Examination",
+        "year": "2025",
+        "marks": 20,
+        "examType": "PARTIAL",
+        "includeInResult": true,
+        "classIds": [
+          "67af29c724b2875238dd2947",
+          "67af727061fc29fbf381a16e",
+          "67b04e0b3151998ed2cd96a6",
+          "67b04e383151998ed2cd96a8",
+          "67b04e503151998ed2cd96aa",
+          "67b04e7b3151998ed2cd96ae",
+          "67b04e683151998ed2cd96ac",
+          "67b04e8a3151998ed2cd96b0",
+          "67b04ea53151998ed2cd96b2",
+          "67b04ebe3151998ed2cd96b4",
+          "67b34efda3d428f2264a2b27",
+          "67b34dedd49608165bb840e3",
+          "67b34f28a3d428f2264a2b29",
+          "67b34fe3a3d428f2264a2b2f",
+          "67b34f65a3d428f2264a2b2d",
+          "67b34f3ea3d428f2264a2b2b"
+        ],
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-05-01T16:06:45.847Z",
+        "updatedAt": "2025-05-01T16:06:58.440Z"
+      }
+    ],
+    "Notice": [
+      {
+        "_id": "67bf46afb67df8ea0edc6cd0",
+        "title": "১লা রমজান উপলক্ষ্যে ছুটি",
+        "type": "academic",
+        "date": "26-02-2025",
+        "content": "এত দ্বারা অত্র মাদ্রাসায় অধ্যয়ণরত সকল শিক্ষার্থী ও সংশ্লিষ্ঠ অভিভাবকদের সদয় অবগতির জন্য জানানো যাচ্ছে যে, আগামী ২ই মার্চ ২০২৫ইং রবিবার পবিত্র মাহে রমজানের ১ম দিবস ‍উপলক্ষ্যে মাদ্রাসার পাঠদান সহ যাবতীয় কার্যক্রম বন্ধ থাকবে।\n৩ই মার্চ ২০২৫ইংরেজি সোমবার হতে যথারীতি সকল কার্যক্রম চালু থাকবে ইনশা-আল্লাহ।",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-26T16:51:58.059Z",
+        "updatedAt": "2025-02-26T16:51:58.059Z"
+      }
+    ],
+    "TransactionCategory": [
+      {
+        "_id": "67c42250e4767f88b838004c",
+        "value": "form_fees",
+        "label": "Form Fees",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:08.649Z",
+        "updatedAt": "2025-03-02T09:18:08.649Z"
+      },
+      {
+        "_id": "67c42250e4767f88b838004d",
+        "value": "admission_fees",
+        "label": "Admission Fees",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:08.854Z",
+        "updatedAt": "2025-03-02T09:18:08.854Z"
+      },
+      {
+        "_id": "67c42251e4767f88b838004e",
+        "value": "monthly_fees",
+        "label": "Monthly Fees",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:09.087Z",
+        "updatedAt": "2025-03-02T09:18:09.087Z"
+      },
+      {
+        "_id": "67c42251e4767f88b838004f",
+        "value": "book_fees",
+        "label": "Book",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:09.293Z",
+        "updatedAt": "2025-03-02T09:18:09.293Z"
+      },
+      {
+        "_id": "67c42251e4767f88b8380050",
+        "value": "syllabus_fees",
+        "label": "Syllabus",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:09.510Z",
+        "updatedAt": "2025-03-02T09:18:09.510Z"
+      },
+      {
+        "_id": "67c42251e4767f88b8380051",
+        "value": "id_card_fees",
+        "label": "ID Card",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:09.709Z",
+        "updatedAt": "2025-03-02T09:18:09.709Z"
+      },
+      {
+        "_id": "67c42251e4767f88b8380052",
+        "value": "dress_fees",
+        "label": "Dress",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:09.926Z",
+        "updatedAt": "2025-03-02T09:18:09.926Z"
+      },
+      {
+        "_id": "67c42252e4767f88b8380053",
+        "value": "prottoyon_fees",
+        "label": "Prottoyon Fee",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:10.136Z",
+        "updatedAt": "2025-03-02T09:18:10.136Z"
+      },
+      {
+        "_id": "67c42252e4767f88b8380054",
+        "value": "stationary_fees",
+        "label": "Stationary",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:10.346Z",
+        "updatedAt": "2025-03-02T09:18:10.346Z"
+      },
+      {
+        "_id": "67c42252e4767f88b8380055",
+        "value": "exam_fees",
+        "label": "Examination Fees",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:10.578Z",
+        "updatedAt": "2025-03-02T09:18:10.578Z"
+      },
+      {
+        "_id": "67c42252e4767f88b8380056",
+        "value": "hostel_fees",
+        "label": "Hostel Fees",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:10.783Z",
+        "updatedAt": "2025-03-02T09:18:10.783Z"
+      },
+      {
+        "_id": "67c42252e4767f88b8380057",
+        "value": "laboratory_fees",
+        "label": "Laboratory Fees",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:10.990Z",
+        "updatedAt": "2025-03-02T09:18:10.990Z"
+      },
+      {
+        "_id": "67c42253e4767f88b8380058",
+        "value": "library_fees",
+        "label": "Library Fees",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:11.198Z",
+        "updatedAt": "2025-03-02T09:18:11.198Z"
+      },
+      {
+        "_id": "67c42253e4767f88b8380059",
+        "value": "transport_fees",
+        "label": "Transport Fees",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:11.405Z",
+        "updatedAt": "2025-03-02T09:18:11.405Z"
+      },
+      {
+        "_id": "67c42253e4767f88b838005a",
+        "value": "other_fees",
+        "label": "Other Fees",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:11.609Z",
+        "updatedAt": "2025-03-02T09:18:11.609Z"
+      },
+      {
+        "_id": "67c42253e4767f88b838005b",
+        "value": "bank_deposit",
+        "label": "Bank Deposit",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:11.841Z",
+        "updatedAt": "2025-03-02T09:18:11.841Z"
+      },
+      {
+        "_id": "67c42254e4767f88b838005c",
+        "value": "bank_withdrawal",
+        "label": "Bank Withdrawal",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:12.048Z",
+        "updatedAt": "2025-03-02T09:18:12.048Z"
+      },
+      {
+        "_id": "67c42254e4767f88b838005d",
+        "value": "donations",
+        "label": "Donations & Grants",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:12.259Z",
+        "updatedAt": "2025-03-02T09:18:12.259Z"
+      },
+      {
+        "_id": "67c42254e4767f88b838005e",
+        "value": "cafeteria_income",
+        "label": "Cafeteria Income",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:12.478Z",
+        "updatedAt": "2025-03-02T09:18:12.478Z"
+      },
+      {
+        "_id": "67c42254e4767f88b838005f",
+        "value": "utilities",
+        "label": "Utilities",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:12.696Z",
+        "updatedAt": "2025-03-02T09:18:12.696Z"
+      },
+      {
+        "_id": "67c42254e4767f88b8380060",
+        "value": "maintenance",
+        "label": "Building Maintenance",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:12.908Z",
+        "updatedAt": "2025-03-02T09:18:12.908Z"
+      },
+      {
+        "_id": "67c42255e4767f88b8380061",
+        "value": "supplies",
+        "label": "Office Supplies",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:13.122Z",
+        "updatedAt": "2025-03-02T09:18:13.122Z"
+      },
+      {
+        "_id": "67c42255e4767f88b8380062",
+        "value": "teaching_supplies",
+        "label": "Teaching Supplies",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:13.341Z",
+        "updatedAt": "2025-03-02T09:18:13.341Z"
+      },
+      {
+        "_id": "67c42255e4767f88b8380063",
+        "value": "equipment",
+        "label": "Equipment",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:13.551Z",
+        "updatedAt": "2025-03-02T09:18:13.551Z"
+      },
+      {
+        "_id": "67c42255e4767f88b8380064",
+        "value": "technology",
+        "label": "Technology & IT",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:13.762Z",
+        "updatedAt": "2025-03-02T09:18:13.762Z"
+      },
+      {
+        "_id": "67c42255e4767f88b8380065",
+        "value": "library_resources",
+        "label": "Library Resources",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:13.981Z",
+        "updatedAt": "2025-03-02T09:18:13.981Z"
+      },
+      {
+        "_id": "67c42256e4767f88b8380066",
+        "value": "sports_equipment",
+        "label": "Sports Equipment",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:14.207Z",
+        "updatedAt": "2025-03-02T09:18:14.207Z"
+      },
+      {
+        "_id": "67c42256e4767f88b8380067",
+        "value": "marketing",
+        "label": "Marketing & Advertising",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:14.418Z",
+        "updatedAt": "2025-03-02T09:18:14.418Z"
+      },
+      {
+        "_id": "67c42256e4767f88b8380068",
+        "value": "security",
+        "label": "Security Services",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:14.621Z",
+        "updatedAt": "2025-03-02T09:18:14.621Z"
+      },
+      {
+        "_id": "67c42256e4767f88b8380069",
+        "value": "student_activities",
+        "label": "Student Activities",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:14.847Z",
+        "updatedAt": "2025-03-02T09:18:14.847Z"
+      },
+      {
+        "_id": "67c42257e4767f88b838006a",
+        "value": "cleaning",
+        "label": "Cleaning Services",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:15.056Z",
+        "updatedAt": "2025-03-02T09:18:15.056Z"
+      },
+      {
+        "_id": "67c42257e4767f88b838006b",
+        "value": "furniture",
+        "label": "Furniture",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:15.272Z",
+        "updatedAt": "2025-03-02T09:18:15.272Z"
+      },
+      {
+        "_id": "67c42257e4767f88b838006c",
+        "value": "repairs",
+        "label": "Repairs",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:15.487Z",
+        "updatedAt": "2025-03-02T09:18:15.487Z"
+      },
+      {
+        "_id": "67c42257e4767f88b838006d",
+        "value": "scholarships",
+        "label": "Scholarships",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:15.706Z",
+        "updatedAt": "2025-03-02T09:18:15.706Z"
+      },
+      {
+        "_id": "67c42257e4767f88b838006e",
+        "value": "miscellaneous",
+        "label": "Miscellaneous",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-03-02T09:18:15.926Z",
+        "updatedAt": "2025-03-02T09:18:15.926Z"
+      }
+    ],
+    "FeeItem": [
+      {
+        "_id": "67ba169f3370e4a89295870e",
+        "name": "Monthly Fees",
+        "amount": 700,
+        "frequency": "monthly",
+        "lateFeeEnabled": false,
+        "feeStructureId": "67ba169f3370e4a89295870d",
+        "createdAt": "2025-02-22T18:25:34.060Z",
+        "updatedAt": "2025-02-22T18:27:13.651Z",
+        "lateFeeAmount": null,
+        "lateFeeFrequency": null
+      },
+      {
+        "_id": "67ba17243370e4a892958710",
+        "name": "Monthly Fees",
+        "amount": 600,
+        "frequency": "monthly",
+        "lateFeeEnabled": false,
+        "feeStructureId": "67ba17233370e4a89295870f",
+        "createdAt": "2025-02-22T18:27:47.997Z",
+        "updatedAt": "2025-02-22T18:27:47.997Z"
+      },
+      {
+        "_id": "67ba17eadceddb4852a62600",
+        "name": "Monthly Fees",
+        "amount": 2000,
+        "frequency": "monthly",
+        "lateFeeEnabled": false,
+        "feeStructureId": "67ba17eadceddb4852a625ff",
+        "createdAt": "2025-02-22T18:31:04.568Z",
+        "updatedAt": "2025-02-22T18:47:31.714Z",
+        "lateFeeAmount": null,
+        "lateFeeFrequency": null
+      },
+      {
+        "_id": "67ba18d937b9243bfe86e47b",
+        "name": "Form Fee",
+        "amount": 150,
+        "frequency": "one-time",
+        "lateFeeEnabled": false,
+        "feeStructureId": "67ba18d837b9243bfe86e47a",
+        "createdAt": "2025-02-22T18:35:02.556Z",
+        "updatedAt": "2025-03-04T18:35:22.889Z",
+        "lateFeeAmount": null,
+        "lateFeeFrequency": null
+      },
+      {
+        "_id": "67ba19ed3370e4a892958712",
+        "name": "Form Fee",
+        "amount": 150,
+        "frequency": "one-time",
+        "lateFeeEnabled": false,
+        "feeStructureId": "67ba19ed3370e4a892958711",
+        "createdAt": "2025-02-22T18:39:40.289Z",
+        "updatedAt": "2025-03-04T16:28:29.849Z",
+        "lateFeeAmount": null,
+        "lateFeeFrequency": null
+      },
+      {
+        "_id": "67bf3e91abcf86e1b1510276",
+        "name": "Addmission Fee",
+        "amount": 2000,
+        "frequency": "one-time",
+        "lateFeeEnabled": false,
+        "createdAt": "2025-02-26T16:17:20.063Z",
+        "updatedAt": "2025-02-26T16:17:20.063Z",
+        "feeStructureId": "67bf3e90abcf86e1b1510275"
+      },
+      {
+        "_id": "67bf3e91abcf86e1b1510277",
+        "name": "Form Fee",
+        "amount": 150,
+        "frequency": "one-time",
+        "lateFeeEnabled": false,
+        "createdAt": "2025-02-26T16:17:20.063Z",
+        "updatedAt": "2025-02-26T16:17:20.063Z",
+        "feeStructureId": "67bf3e90abcf86e1b1510275"
+      },
+      {
+        "_id": "67bf3e91abcf86e1b1510278",
+        "name": "Monthly Fee",
+        "amount": 700,
+        "frequency": "monthly",
+        "lateFeeEnabled": false,
+        "createdAt": "2025-02-26T16:17:20.063Z",
+        "updatedAt": "2025-02-26T16:17:20.063Z",
+        "feeStructureId": "67bf3e90abcf86e1b1510275"
+      },
+      {
+        "_id": "67c72a30a7ef8cd40feea3f6",
+        "feeStructureId": "67ba19ed3370e4a892958711",
+        "name": "Addmission Fee",
+        "amount": 2000,
+        "frequency": "one-time",
+        "lateFeeEnabled": false,
+        "createdAt": "2025-03-04T16:28:29.849Z",
+        "updatedAt": "2025-03-04T16:28:29.849Z"
+      },
+      {
+        "_id": "67c72a30a7ef8cd40feea3f7",
+        "feeStructureId": "67ba19ed3370e4a892958711",
+        "name": "Monthly Fee",
+        "amount": 600,
+        "frequency": "monthly",
+        "lateFeeEnabled": false,
+        "createdAt": "2025-03-04T16:28:29.849Z",
+        "updatedAt": "2025-03-04T16:28:29.849Z"
+      },
+      {
+        "_id": "67c747eccf36e9c9560ab83a",
+        "feeStructureId": "67ba18d837b9243bfe86e47a",
+        "name": "Addmission Fee",
+        "amount": 2000,
+        "frequency": "one-time",
+        "lateFeeEnabled": false,
+        "createdAt": "2025-03-04T18:35:22.889Z",
+        "updatedAt": "2025-03-04T18:35:22.889Z"
+      },
+      {
+        "_id": "67c747eccf36e9c9560ab83b",
+        "feeStructureId": "67ba18d837b9243bfe86e47a",
+        "name": "Monthly Fee",
+        "amount": 800,
+        "frequency": "monthly",
+        "lateFeeEnabled": false,
+        "createdAt": "2025-03-04T18:35:22.889Z",
+        "updatedAt": "2025-03-04T18:35:22.889Z"
+      },
+      {
+        "_id": "67c7f85a77fc649b7b329b24",
+        "name": "Form Fee",
+        "amount": 150,
+        "frequency": "one-time",
+        "lateFeeEnabled": false,
+        "createdAt": "2025-03-05T07:08:09.879Z",
+        "updatedAt": "2025-04-25T05:35:47.393Z",
+        "feeStructureId": "67c7f85977fc649b7b329b23",
+        "lateFeeAmount": null,
+        "lateFeeFrequency": null
+      },
+      {
+        "_id": "67c7f85a77fc649b7b329b25",
+        "name": "Addmission Fee",
+        "amount": 2000,
+        "frequency": "one-time",
+        "lateFeeEnabled": false,
+        "createdAt": "2025-03-05T07:08:09.879Z",
+        "updatedAt": "2025-04-25T05:35:47.393Z",
+        "feeStructureId": "67c7f85977fc649b7b329b23",
+        "lateFeeAmount": null,
+        "lateFeeFrequency": null
+      },
+      {
+        "_id": "67c7f85a77fc649b7b329b26",
+        "name": "Monthly Fee",
+        "amount": 800,
+        "frequency": "monthly",
+        "lateFeeEnabled": false,
+        "createdAt": "2025-03-05T07:08:09.879Z",
+        "updatedAt": "2025-04-25T05:35:47.393Z",
+        "feeStructureId": "67c7f85977fc649b7b329b23",
+        "lateFeeAmount": null,
+        "lateFeeFrequency": null
+      },
+      {
+        "_id": "680b21e5559724878cf8fbbd",
+        "name": "Form Fee",
+        "amount": 150,
+        "frequency": "one-time",
+        "lateFeeEnabled": false,
+        "createdAt": "2025-04-25T05:47:17.692Z",
+        "updatedAt": "2025-04-25T05:47:17.692Z",
+        "feeStructureId": "680b21e5559724878cf8fbbc"
+      },
+      {
+        "_id": "680b21e5559724878cf8fbbe",
+        "name": "Addmission Fee",
+        "amount": 2000,
+        "frequency": "one-time",
+        "lateFeeEnabled": false,
+        "createdAt": "2025-04-25T05:47:17.692Z",
+        "updatedAt": "2025-04-25T05:47:17.692Z",
+        "feeStructureId": "680b21e5559724878cf8fbbc"
+      },
+      {
+        "_id": "680b21e5559724878cf8fbbf",
+        "name": "Monthly Fee",
+        "amount": 700,
+        "frequency": "one-time",
+        "lateFeeEnabled": false,
+        "createdAt": "2025-04-25T05:47:17.692Z",
+        "updatedAt": "2025-04-25T05:47:17.692Z",
+        "feeStructureId": "680b21e5559724878cf8fbbc"
+      },
+      {
+        "_id": "680b2238987d8a6b4407af2b",
+        "name": "Form Fee",
+        "amount": 150,
+        "frequency": "one-time",
+        "lateFeeEnabled": false,
+        "createdAt": "2025-04-25T05:48:39.217Z",
+        "updatedAt": "2025-04-25T05:48:39.217Z",
+        "feeStructureId": "680b2238987d8a6b4407af2a"
+      },
+      {
+        "_id": "680b2238987d8a6b4407af2c",
+        "name": "Addmission Fee",
+        "amount": 2000,
+        "frequency": "one-time",
+        "lateFeeEnabled": false,
+        "createdAt": "2025-04-25T05:48:39.217Z",
+        "updatedAt": "2025-04-25T05:48:39.217Z",
+        "feeStructureId": "680b2238987d8a6b4407af2a"
+      },
+      {
+        "_id": "680b2238987d8a6b4407af2d",
+        "name": "Monthly Fee",
+        "amount": 600,
+        "frequency": "one-time",
+        "lateFeeEnabled": false,
+        "createdAt": "2025-04-25T05:48:39.217Z",
+        "updatedAt": "2025-04-25T05:48:39.217Z",
+        "feeStructureId": "680b2238987d8a6b4407af2a"
+      }
+    ],
+    "Student": [
+      {
+        "_id": "67af2c51bf2af06c71259f2a",
+        "photo": "https://www.student.com",
+        "fullName": "Mohammad Ayaj",
+        "email": "abc@gmail.com",
+        "phone": "01745800020",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2021-01-18T18:00:00.000Z",
+        "address": "Hazi Muslim Uddiner Bari, D.C Road, Chawkbazar,Chattogram",
+        "monthlyFee": 700,
+        "studentId": "01",
+        "sectionId": "67af29c824b2875238dd2948",
+        "classId": "67af29c724b2875238dd2947",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "guardianName": "Mst Jakiya Khatun Shumi",
+        "relationship": "Mother",
+        "guardianPhone": "01771108555",
+        "guardianEmail": "abc@gamil.com",
+        "guardianOccupation": "Busineesman",
+        "fatherName": "Md.Siyamul Hossain",
+        "motherName": "Mst. Jakiya Khatun ",
+        "createdAt": "2025-02-14T11:43:13.841Z",
+        "updatedAt": "2025-03-04T16:15:08.073Z",
+        "admissionDate": "2025-01-01T00:00:00.000Z",
+        "feeStructureId": "67bf3e90abcf86e1b1510275"
+      },
+      {
+        "_id": "67af4ba10c021584494d0a62",
+        "photo": "https://www.student.com",
+        "fullName": "Abdullah Ibne Nur",
+        "email": "Nur@gmail.com",
+        "phone": "01747120917",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2021-01-27T18:00:00.000Z",
+        "address": "Dokkin Kuler Bari, D.C Road, Chawkbazar, Chattogram",
+        "monthlyFee": 700,
+        "studentId": "02",
+        "sectionId": "67af29c824b2875238dd2948",
+        "classId": "67af29c724b2875238dd2947",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "guardianName": "Ayesha Akter",
+        "relationship": "Mother",
+        "guardianPhone": "01854666871",
+        "guardianEmail": "abc@gamil.com",
+        "guardianOccupation": "Busineesman",
+        "fatherName": "Md. Nur Hossain Jibon",
+        "motherName": "Ayesha  Akter",
+        "createdAt": "2025-02-14T13:56:49.170Z",
+        "updatedAt": "2025-02-22T19:12:26.276Z",
+        "admissionDate": "2025-01-01T00:00:00.000Z",
+        "feeStructureId": "67ba17233370e4a89295870f"
+      },
+      {
+        "_id": "67af4e23507649ad25e0ac55",
+        "photo": "https://www.student.com",
+        "fullName": "Ayesha Jannat Diha",
+        "email": "Ayesha@gmail.com",
+        "phone": "01601922177",
+        "religion": "islam",
+        "gender": "female",
+        "dateOfBirth": "2020-07-18T18:00:00.000Z",
+        "address": "Mansur Building, D.C. Road, Chawkbazar, Chattogram.",
+        "monthlyFee": 700,
+        "studentId": "03",
+        "sectionId": "67af29c824b2875238dd2948",
+        "classId": "67af29c724b2875238dd2947",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "guardianName": "Abeda Begum",
+        "relationship": "Mother",
+        "guardianPhone": "01819516099",
+        "guardianEmail": "abc@gamil.com",
+        "guardianOccupation": "Job Holder",
+        "fatherName": "Abdul Gani",
+        "motherName": "Abeda Begum",
+        "createdAt": "2025-02-14T14:07:31.747Z",
+        "updatedAt": "2025-02-22T19:05:01.069Z",
+        "admissionDate": "2025-01-01T00:00:00.000Z",
+        "feeStructureId": "67ba169f3370e4a89295870d"
+      },
+      {
+        "_id": "67af6c4b189588c594cc9cd2",
+        "photo": "https://www.student.com",
+        "fullName": "Imam Hossen Rohan",
+        "email": "Rohan@gmail.com",
+        "phone": "01816239125",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2019-06-09T18:00:00.000Z",
+        "address": "D.C. Road, Kalam Kolony, Chawkbazar, Chattogram.",
+        "monthlyFee": 700,
+        "studentId": "MII-14",
+        "sectionId": "67af29c824b2875238dd2948",
+        "classId": "67af29c724b2875238dd2947",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "guardianName": "Hossen",
+        "relationship": "Father",
+        "guardianPhone": "01816239125",
+        "guardianEmail": "abc@gamil.com",
+        "guardianOccupation": "Job Holder",
+        "fatherName": "Md. Hossen",
+        "motherName": "Mst. Hazera",
+        "createdAt": "2025-02-14T16:16:11.340Z",
+        "updatedAt": "2025-05-01T15:37:19.830Z",
+        "admissionDate": "2025-01-15T00:00:00.000Z",
+        "feeStructureId": "67bf3e90abcf86e1b1510275"
+      },
+      {
+        "_id": "67af6ec2189588c594cc9cd8",
+        "photo": "https://www.student.com",
+        "fullName": "Imadul Islam",
+        "email": "Imad@gmail.com",
+        "phone": "01629232961",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2020-06-13T18:00:00.000Z",
+        "address": "Comissionar Bari, D.C. Road, Chawkbazar, Chattogram.",
+        "monthlyFee": 700,
+        "studentId": "MII-17",
+        "sectionId": "67af29c824b2875238dd2948",
+        "classId": "67af29c724b2875238dd2947",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "guardianName": "Ariful",
+        "relationship": "Father",
+        "guardianPhone": "01605779682",
+        "guardianEmail": "abc@gamil.com",
+        "guardianOccupation": "Steel Mistri",
+        "fatherName": "Ariful Islam",
+        "motherName": "Mst.Mim Akhter",
+        "createdAt": "2025-02-14T16:26:42.872Z",
+        "updatedAt": "2025-05-01T15:50:40.907Z",
+        "admissionDate": "2025-01-21T00:00:00.000Z",
+        "feeStructureId": "67bf3e90abcf86e1b1510275"
+      },
+      {
+        "_id": "67af85239004080d96e18871",
+        "photo": "https://www.student.com",
+        "fullName": "Md. Sohail Chowdhury",
+        "email": "Sohail@gmail.com",
+        "phone": "01999848575",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2019-11-12T18:00:00.000Z",
+        "address": "472/A Raja Pukur Lane, Andorkillah, Chattogram",
+        "monthlyFee": 700,
+        "studentId": "22",
+        "sectionId": "67af29c824b2875238dd2948",
+        "classId": "67af29c724b2875238dd2947",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "guardianName": "Khairun Nesa",
+        "relationship": "Mother",
+        "guardianPhone": "01815946018",
+        "guardianEmail": "abc@gamil.com",
+        "guardianOccupation": "Job Holder",
+        "fatherName": "Md. Imtiaz Uddin",
+        "motherName": "Khairun Nesa",
+        "createdAt": "2025-02-14T18:02:11.120Z",
+        "updatedAt": "2025-02-22T19:00:36.831Z",
+        "admissionDate": "2025-01-15T00:00:00.000Z",
+        "feeStructureId": "67ba169f3370e4a89295870d"
+      },
+      {
+        "_id": "67af8621c92329078ea7cda2",
+        "photo": "https://www.student.com",
+        "fullName": "Md. Sahil Chowdhury",
+        "email": "Sahil@gmail.com",
+        "phone": "01999848575",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2021-03-01T18:00:00.000Z",
+        "address": "Raja Fukur Lane, 32No Ward, Andorkillah, Kutwali, chattogram",
+        "monthlyFee": 700,
+        "studentId": "23",
+        "sectionId": "67af29c824b2875238dd2948",
+        "classId": "67af29c724b2875238dd2947",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "guardianName": "Khairun Nesa",
+        "relationship": "Mother",
+        "guardianPhone": "01815946018",
+        "guardianEmail": "abc@gamil.com",
+        "guardianOccupation": "Job Holder",
+        "fatherName": "Imtiaz Chay",
+        "motherName": "Khairun Nesa",
+        "createdAt": "2025-02-14T18:06:25.880Z",
+        "updatedAt": "2025-02-22T18:58:26.000Z",
+        "admissionDate": "2025-01-15T00:00:00.000Z",
+        "feeStructureId": "67ba169f3370e4a89295870d"
+      },
+      {
+        "_id": "67b03b124ff2b07c22b4d3fa",
+        "photo": "https://www.student.com",
+        "fullName": "Anika Tabassum",
+        "email": "Anika@gmail.com",
+        "phone": "01765937760",
+        "religion": "islam",
+        "gender": "female",
+        "dateOfBirth": "2020-11-20T18:00:00.000Z",
+        "address": "Bismillah Vhobon, Kalam Colony, D.C road, Chawkbazar, Chattogram",
+        "monthlyFee": 700,
+        "studentId": "25",
+        "sectionId": "67af29c824b2875238dd2948",
+        "classId": "67af29c724b2875238dd2947",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "guardianName": "Md. Shihedulla",
+        "relationship": "Father",
+        "guardianPhone": "01978823502",
+        "guardianEmail": "abc@gamil.com",
+        "guardianOccupation": "Job Holder",
+        "fatherName": "Md. Shihedulla",
+        "motherName": "Lipe Akter",
+        "createdAt": "2025-02-15T06:58:26.301Z",
+        "updatedAt": "2025-02-22T18:53:25.830Z",
+        "admissionDate": "2025-02-17T00:00:00.000Z",
+        "feeStructureId": "67ba169f3370e4a89295870d"
+      },
+      {
+        "_id": "67b0a8340c5bc181c1cd185c",
+        "photo": "https://www.student.com",
+        "fullName": "Saimon Islam",
+        "email": "Saimon@gmail.com",
+        "phone": "01798089078",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2015-02-02T18:00:00.000Z",
+        "address": "goni colony, Chawkbazar, Chattogram",
+        "monthlyFee": 2300,
+        "studentId": "St2025",
+        "sectionId": "67b04e693151998ed2cd96ad",
+        "classId": "67b04e683151998ed2cd96ac",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "guardianName": "Robel",
+        "relationship": "Father",
+        "guardianPhone": "01859408340",
+        "guardianEmail": "abc@gamil.com",
+        "guardianOccupation": "Job Holder",
+        "fatherName": "Md. Robel",
+        "motherName": "Abc",
+        "createdAt": "2025-02-15T14:44:04.715Z",
+        "updatedAt": "2025-02-22T19:34:03.363Z",
+        "admissionDate": "2025-01-17T00:00:00.000Z",
+        "feeStructureId": "67ba19ed3370e4a892958711"
+      },
+      {
+        "_id": "67b0aa140c5bc181c1cd1862",
+        "photo": "https://www.student.com",
+        "fullName": "Md. Yeasin",
+        "email": "yeasin@gmail.com",
+        "phone": "01787456727",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2015-12-16T18:00:00.000Z",
+        "address": "Commissoner Bari, D.C Road, Chawkbazar, Chattogram",
+        "monthlyFee": 2000,
+        "studentId": "12",
+        "sectionId": "67b04e513151998ed2cd96ab",
+        "classId": "67b04e503151998ed2cd96aa",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "guardianName": "Kajol",
+        "relationship": "Mother",
+        "guardianPhone": "01859408340",
+        "guardianEmail": "abc@gamil.com",
+        "guardianOccupation": "Job Holder",
+        "fatherName": "Md.Morshed ",
+        "motherName": "Kajol Rekha",
+        "createdAt": "2025-02-15T14:52:04.622Z",
+        "updatedAt": "2025-02-22T18:50:35.323Z",
+        "admissionDate": "2025-01-01T00:00:00.000Z",
+        "feeStructureId": "67ba17eadceddb4852a625ff"
+      },
+      {
+        "_id": "67b46dc1a8b430f5698b5e6f",
+        "photo": "https://www.student.com",
+        "fullName": "Adib Bin Alamgir",
+        "email": "adib@gmail.com",
+        "phone": "01819490569",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2017-03-05T18:00:00.000Z",
+        "address": "Ismail Kazemi Place, D.C Road, Chawkbazar, Chattogram",
+        "monthlyFee": 2000,
+        "studentId": "1",
+        "sectionId": "67b04e383151998ed2cd96a9",
+        "classId": "67b04e383151998ed2cd96a8",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "guardianName": "Alamgir",
+        "relationship": "Father",
+        "guardianPhone": "01859408340",
+        "guardianEmail": "abc@gamil.com",
+        "guardianOccupation": "Busineesman",
+        "fatherName": "Mohammad Alamgir",
+        "motherName": "Nargis Sultana",
+        "createdAt": "2025-02-18T11:23:45.137Z",
+        "updatedAt": "2025-02-22T18:45:35.809Z",
+        "admissionDate": "2025-01-01T00:00:00.000Z",
+        "feeStructureId": "67ba18d837b9243bfe86e47a"
+      },
+      {
+        "_id": "67c72a59030ed5f70ae7ddbd",
+        "admissionDate": "2025-01-01T00:00:00.000Z",
+        "feeStructureId": "67ba19ed3370e4a892958711",
+        "photo": "https://www.student.com",
+        "fullName": "Omar Faruq Mustakim",
+        "email": "omar@gamil.com",
+        "phone": "01704899282",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2020-06-12T18:00:00.000Z",
+        "address": "D.C Road, Kalam Colony, Chawkbazar, Chattogram.",
+        "studentId": "MII-101",
+        "sectionId": "67af29c824b2875238dd2948",
+        "classId": "67af29c724b2875238dd2947",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "guardianName": "Abu Musa",
+        "relationship": "Father",
+        "guardianPhone": "01859408340",
+        "guardianOccupation": "Job Holder",
+        "fatherName": "Abu Musa",
+        "motherName": "Fatema Begum",
+        "createdAt": "2025-03-04T16:29:13.334Z",
+        "updatedAt": "2025-04-25T06:04:18.063Z"
+      },
+      {
+        "_id": "681313a9ec8ec3c59e412871",
+        "admissionDate": "2025-01-04T00:00:00.000Z",
+        "feeStructureId": "67ba169f3370e4a89295870d",
+        "photo": "https://www.student.com",
+        "fullName": "Jannatul Mawa",
+        "email": "jannatul@gamil.com",
+        "phone": "01939057996",
+        "religion": "islam",
+        "gender": "female",
+        "dateOfBirth": "2020-08-30T18:00:00.000Z",
+        "address": "kalam coloni chawkbazar, chattogram",
+        "studentId": "MII-5",
+        "sectionId": "67af29c824b2875238dd2948",
+        "classId": "67af29c724b2875238dd2947",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "guardianName": "Popi",
+        "relationship": "Mother",
+        "guardianPhone": "01859408340",
+        "guardianOccupation": "Housewife",
+        "fatherName": "Safayat Hossen",
+        "motherName": "popi begum",
+        "createdAt": "2025-05-01T06:24:41.856Z",
+        "updatedAt": "2025-05-01T06:24:41.856Z"
+      },
+      {
+        "_id": "681314cf19a432e10eddc787",
+        "admissionDate": "2025-01-05T00:00:00.000Z",
+        "feeStructureId": "67bf3e90abcf86e1b1510275",
+        "photo": "https://www.student.com",
+        "fullName": "Ismail Hossen ",
+        "email": "Ismail@gmail.com",
+        "phone": "01884062676",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2020-01-18T18:00:00.000Z",
+        "address": "Pura Colony, D.C Road, Chawkbazar, Chattogram",
+        "studentId": "MII-7",
+        "sectionId": "67af29c824b2875238dd2948",
+        "classId": "67af29c724b2875238dd2947",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "guardianName": "Kulsum",
+        "relationship": "Mother",
+        "guardianPhone": "01859408340",
+        "guardianOccupation": "Job Holder",
+        "fatherName": "Mohammad Elias",
+        "motherName": "Kulsum Begum",
+        "createdAt": "2025-05-01T06:29:35.062Z",
+        "updatedAt": "2025-05-01T06:32:10.738Z"
+      },
+      {
+        "_id": "68138ecce30019e9ce2b91fd",
+        "admissionDate": "2025-01-07T00:00:00.000Z",
+        "feeStructureId": "67ba169f3370e4a89295870d",
+        "photo": "https://www.student.com",
+        "fullName": "Eusuf Abdullah",
+        "email": "eusuf@gmail.com",
+        "phone": "01831941755",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2020-05-10T18:00:00.000Z",
+        "address": "Kalam Colony, Chawkbazar, Chattogram",
+        "studentId": "MII-9",
+        "sectionId": "67af29c824b2875238dd2948",
+        "classId": "67af29c724b2875238dd2947",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "guardianName": "avi",
+        "relationship": "Mother",
+        "guardianPhone": "01859408340",
+        "guardianOccupation": "Housewife",
+        "fatherName": "Md. Majnu",
+        "motherName": "Mst. Ovi",
+        "createdAt": "2025-05-01T15:10:04.458Z",
+        "updatedAt": "2025-05-01T15:10:04.458Z"
+      },
+      {
+        "_id": "68138fd07d89f1819a201068",
+        "admissionDate": "2025-01-07T00:00:00.000Z",
+        "feeStructureId": "67bf3e90abcf86e1b1510275",
+        "photo": "https://www.student.com",
+        "fullName": "Abdullah Bin Afnan",
+        "email": "afnan@gmail.com",
+        "phone": "01629188953",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2020-08-10T18:00:00.000Z",
+        "address": "Shohid Comissioner ar Bari, D.C Road, Chawkbazar, Chattogram",
+        "studentId": "MII-10",
+        "sectionId": "67af29c824b2875238dd2948",
+        "classId": "67af29c724b2875238dd2947",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "guardianName": "Jannatul Ferdous Mukta",
+        "relationship": "Mother",
+        "guardianPhone": "01859408340",
+        "guardianOccupation": "Housewife",
+        "fatherName": "Md. Ibrahim",
+        "motherName": "Jannatul Ferdous",
+        "createdAt": "2025-05-01T15:14:24.026Z",
+        "updatedAt": "2025-05-01T15:14:24.026Z"
+      },
+      {
+        "_id": "681391b30c6dfbdb68099415",
+        "admissionDate": "2025-01-09T00:00:00.000Z",
+        "feeStructureId": "67ba19ed3370e4a892958711",
+        "photo": "https://www.student.com",
+        "fullName": "Mohammad Abdullah",
+        "email": "Abdullah@gmaill.com",
+        "phone": "01811941706",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2019-04-09T18:00:00.000Z",
+        "address": "Sarwar Building, D.C Road, Chawkbazar, Chattogram",
+        "studentId": "MII-12",
+        "sectionId": "67af29c824b2875238dd2948",
+        "classId": "67af29c724b2875238dd2947",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "guardianName": "Gias Uddin",
+        "relationship": "Father",
+        "guardianPhone": "01859408340",
+        "guardianOccupation": "Job Holder",
+        "fatherName": "Md. Gias Uddin",
+        "motherName": "Arju Ara Begum",
+        "createdAt": "2025-05-01T15:22:27.807Z",
+        "updatedAt": "2025-05-01T15:22:27.807Z"
+      },
+      {
+        "_id": "6813961b30630844dbded297",
+        "admissionDate": "2025-01-12T00:00:00.000Z",
+        "feeStructureId": "67bf3e90abcf86e1b1510275",
+        "photo": "https://www.student.com",
+        "fullName": "Abrar Jahin",
+        "email": "madinatulinter58@gmail.com",
+        "phone": "01613777667",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2021-01-26T18:00:00.000Z",
+        "address": "Dokkin Kuler Bari, D.C Road, Chawkbazar, Chattogrm",
+        "studentId": "MII-15",
+        "sectionId": "67af29c824b2875238dd2948",
+        "classId": "67af29c724b2875238dd2947",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "guardianName": "Amin",
+        "relationship": "Father",
+        "guardianPhone": "01859408340",
+        "guardianOccupation": "Job Holder",
+        "fatherName": "Md. Amin",
+        "motherName": "Farida Akhter",
+        "createdAt": "2025-05-01T15:41:15.570Z",
+        "updatedAt": "2025-05-01T15:41:15.570Z"
+      },
+      {
+        "_id": "6813973930630844dbded29b",
+        "admissionDate": "2025-01-16T00:00:00.000Z",
+        "feeStructureId": "67bf3e90abcf86e1b1510275",
+        "photo": "https://www.student.com",
+        "fullName": "Abdullah Jabir",
+        "email": "madinatulinter58@gmail.com",
+        "phone": "01872143554",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2020-07-09T18:00:00.000Z",
+        "address": "D.C Road, Chawkbazar, Chattogram",
+        "studentId": "MII-16",
+        "sectionId": "67af29c824b2875238dd2948",
+        "classId": "67af29c724b2875238dd2947",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "guardianName": "Jasim Udding",
+        "relationship": "Father",
+        "guardianPhone": "01859408340",
+        "guardianOccupation": "Journalist",
+        "fatherName": "Jasim Uddin",
+        "motherName": "Shawlin Khanam",
+        "createdAt": "2025-05-01T15:46:01.816Z",
+        "updatedAt": "2025-05-01T15:46:01.816Z"
+      },
+      {
+        "_id": "6813994130630844dbded29e",
+        "admissionDate": "2025-01-15T00:00:00.000Z",
+        "feeStructureId": "67bf3e90abcf86e1b1510275",
+        "photo": "https://www.student.com",
+        "fullName": "Mohammad Ajwat",
+        "email": "madinatulinter58@gmail.com",
+        "phone": "01817775111",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2019-12-25T18:00:00.000Z",
+        "address": "Hafez Abdul Mutaleb Bari, Bakolia, Chawkbazar, Chattogram",
+        "studentId": "MII-18",
+        "sectionId": "67af29c824b2875238dd2948",
+        "classId": "67af29c724b2875238dd2947",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "guardianName": "Nasima Akhter",
+        "relationship": "Mother",
+        "guardianPhone": "01859408340",
+        "guardianOccupation": "Housewife",
+        "fatherName": "Jahedul Alam",
+        "motherName": "Nasim Akhter",
+        "createdAt": "2025-05-01T15:54:41.101Z",
+        "updatedAt": "2025-05-01T15:54:41.101Z"
+      },
+      {
+        "_id": "68139a6230630844dbded2a1",
+        "admissionDate": "2025-01-15T00:00:00.000Z",
+        "feeStructureId": "67bf3e90abcf86e1b1510275",
+        "photo": "https://www.student.com",
+        "fullName": "Abdul Hafiz",
+        "email": "madinatulinter58@gmail.com",
+        "phone": "01816615069",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2020-10-12T18:00:00.000Z",
+        "address": "Hafez Abdur Rahmaner Bari, Chawkbazar, Chattogram,",
+        "studentId": "MII-19",
+        "sectionId": "67af29c824b2875238dd2948",
+        "classId": "67af29c724b2875238dd2947",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "guardianName": "Fatema",
+        "relationship": "Mother",
+        "guardianPhone": "01859408340",
+        "guardianOccupation": "Housewife",
+        "fatherName": "Md. Younus",
+        "motherName": "Fatema Begum",
+        "createdAt": "2025-05-01T15:59:30.193Z",
+        "updatedAt": "2025-05-01T15:59:30.193Z"
+      },
+      {
+        "_id": "6813a698f88bb59df7846777",
+        "admissionDate": "2025-01-15T00:00:00.000Z",
+        "feeStructureId": "67ba18d837b9243bfe86e47a",
+        "photo": "https://www.student.com",
+        "fullName": "abdullah Al Nafi",
+        "email": "madinatulinter58@gmail.com",
+        "phone": "01858706507",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2020-08-04T18:00:00.000Z",
+        "address": "Jamsed Mansion, D.C Road, Chawkbazar, Chattogram",
+        "studentId": "MII-20",
+        "sectionId": "67af29c824b2875238dd2948",
+        "classId": "67af29c724b2875238dd2947",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "guardianName": "Abdullah Al Murac",
+        "relationship": "Father",
+        "guardianPhone": "01889885062",
+        "guardianOccupation": "Busineesman",
+        "fatherName": "Abdullah Al Murad",
+        "motherName": "Rageba Begum",
+        "createdAt": "2025-05-01T16:51:36.225Z",
+        "updatedAt": "2025-05-01T16:51:36.225Z"
+      }
+    ],
+    "StudentFeePayment": [
+      {
+        "_id": "67ba1b66dceddb4852a62606",
+        "feeItemId": "67ba18d937b9243bfe86e47b",
+        "amountPaid": 1800,
+        "datePaid": "2025-02-22T18:45:47.970Z",
+        "studentId": "67b46dc1a8b430f5698b5e6f",
+        "createdAt": "2025-02-22T18:45:58.122Z",
+        "updatedAt": "2025-02-22T18:45:58.122Z"
+      },
+      {
+        "_id": "67ba1d363370e4a892958713",
+        "feeItemId": "67ba169f3370e4a89295870e",
+        "amountPaid": 700,
+        "datePaid": "2025-02-22T18:53:34.114Z",
+        "studentId": "67b03b124ff2b07c22b4d3fa",
+        "createdAt": "2025-02-22T18:53:42.861Z",
+        "updatedAt": "2025-02-22T18:53:42.861Z"
+      },
+      {
+        "_id": "67ba1d7d3370e4a892958714",
+        "feeItemId": "67ba169f3370e4a89295870e",
+        "amountPaid": 700,
+        "datePaid": "2025-02-22T18:54:46.186Z",
+        "studentId": "67af6ec2189588c594cc9cd8",
+        "createdAt": "2025-02-22T18:54:53.141Z",
+        "updatedAt": "2025-02-22T18:54:53.141Z"
+      },
+      {
+        "_id": "67ba1e0e37b9243bfe86e47f",
+        "feeItemId": "67ba169f3370e4a89295870e",
+        "amountPaid": 700,
+        "datePaid": "2025-02-22T18:57:10.283Z",
+        "studentId": "67af8621c92329078ea7cda2",
+        "createdAt": "2025-02-22T18:57:18.102Z",
+        "updatedAt": "2025-02-22T18:57:18.102Z"
+      },
+      {
+        "_id": "67ba1e6737b9243bfe86e480",
+        "feeItemId": "67ba169f3370e4a89295870e",
+        "amountPaid": 700,
+        "datePaid": "2025-01-14T18:00:00.000Z",
+        "studentId": "67af8621c92329078ea7cda2",
+        "createdAt": "2025-02-22T18:58:47.102Z",
+        "updatedAt": "2025-02-22T18:58:47.102Z"
+      },
+      {
+        "_id": "67ba1ebc37b9243bfe86e481",
+        "feeItemId": "67ba169f3370e4a89295870e",
+        "amountPaid": 700,
+        "datePaid": "2025-02-22T19:00:05.786Z",
+        "studentId": "67af85239004080d96e18871",
+        "createdAt": "2025-02-22T19:00:12.073Z",
+        "updatedAt": "2025-02-22T19:00:12.073Z"
+      },
+      {
+        "_id": "67ba1ee637b9243bfe86e482",
+        "feeItemId": "67ba169f3370e4a89295870e",
+        "amountPaid": 700,
+        "datePaid": "2025-01-14T18:00:00.000Z",
+        "studentId": "67af85239004080d96e18871",
+        "createdAt": "2025-02-22T19:00:54.259Z",
+        "updatedAt": "2025-02-22T19:00:54.259Z"
+      },
+      {
+        "_id": "67ba201dcf8b4516cd3d3105",
+        "feeItemId": "67ba169f3370e4a89295870e",
+        "amountPaid": 700,
+        "datePaid": "2025-01-14T18:00:00.000Z",
+        "studentId": "67af4e23507649ad25e0ac55",
+        "createdAt": "2025-02-22T19:06:05.416Z",
+        "updatedAt": "2025-02-22T19:06:05.416Z"
+      },
+      {
+        "_id": "67ba201dcf8b4516cd3d3106",
+        "feeItemId": "67ba169f3370e4a89295870e",
+        "amountPaid": 700,
+        "datePaid": "2025-02-14T18:00:00.000Z",
+        "studentId": "67af4e23507649ad25e0ac55",
+        "createdAt": "2025-02-22T19:06:05.416Z",
+        "updatedAt": "2025-02-22T19:06:05.416Z"
+      },
+      {
+        "_id": "67ba205ccf8b4516cd3d3107",
+        "feeItemId": "67ba17243370e4a892958710",
+        "amountPaid": 600,
+        "datePaid": "2025-02-22T19:07:02.578Z",
+        "studentId": "67af6c4b189588c594cc9cd2",
+        "createdAt": "2025-02-22T19:07:08.942Z",
+        "updatedAt": "2025-02-22T19:07:08.942Z"
+      },
+      {
+        "_id": "67ba2084cf8b4516cd3d3108",
+        "feeItemId": "67ba17243370e4a892958710",
+        "amountPaid": 600,
+        "datePaid": "2025-01-14T18:00:00.000Z",
+        "studentId": "67af6c4b189588c594cc9cd2",
+        "createdAt": "2025-02-22T19:07:48.007Z",
+        "updatedAt": "2025-02-22T19:07:48.007Z"
+      },
+      {
+        "_id": "67ba21b137b9243bfe86e483",
+        "feeItemId": "67ba17243370e4a892958710",
+        "amountPaid": 600,
+        "datePaid": "2025-01-13T18:00:00.000Z",
+        "studentId": "67af4ba10c021584494d0a62",
+        "createdAt": "2025-02-22T19:12:49.317Z",
+        "updatedAt": "2025-02-22T19:12:49.317Z"
+      },
+      {
+        "_id": "67ba21f437b9243bfe86e484",
+        "feeItemId": "67ba169f3370e4a89295870e",
+        "amountPaid": 700,
+        "datePaid": "2025-01-13T18:00:00.000Z",
+        "studentId": "67af2c51bf2af06c71259f2a",
+        "createdAt": "2025-02-22T19:13:56.154Z",
+        "updatedAt": "2025-02-22T19:13:56.154Z"
+      },
+      {
+        "_id": "67ba26c2af7526533f364f27",
+        "feeItemId": "67ba19ed3370e4a892958712",
+        "amountPaid": 2200,
+        "datePaid": "2025-01-14T18:00:00.000Z",
+        "studentId": "67b0a8340c5bc181c1cd185c",
+        "createdAt": "2025-02-22T19:34:26.353Z",
+        "updatedAt": "2025-02-22T19:34:26.353Z"
+      },
+      {
+        "_id": "67bf41375712995d3a0a71e4",
+        "feeItemId": "67bf3e91abcf86e1b1510276",
+        "amountPaid": 2000,
+        "datePaid": "2025-01-01T18:00:00.000Z",
+        "studentId": "67af2c51bf2af06c71259f2a",
+        "createdAt": "2025-02-26T16:28:39.028Z",
+        "updatedAt": "2025-02-26T16:28:39.028Z"
+      },
+      {
+        "_id": "67bf41375712995d3a0a71e5",
+        "feeItemId": "67bf3e91abcf86e1b1510277",
+        "amountPaid": 150,
+        "datePaid": "2025-01-01T18:00:00.000Z",
+        "studentId": "67af2c51bf2af06c71259f2a",
+        "createdAt": "2025-02-26T16:28:39.028Z",
+        "updatedAt": "2025-02-26T16:28:39.028Z"
+      },
+      {
+        "_id": "67bf41375712995d3a0a71e6",
+        "feeItemId": "67bf3e91abcf86e1b1510278",
+        "amountPaid": 700,
+        "datePaid": "2025-01-01T18:00:00.000Z",
+        "studentId": "67af2c51bf2af06c71259f2a",
+        "createdAt": "2025-02-26T16:28:39.028Z",
+        "updatedAt": "2025-02-26T16:28:39.028Z"
+      },
+      {
+        "_id": "67bf41375712995d3a0a71e7",
+        "feeItemId": "67bf3e91abcf86e1b1510278",
+        "amountPaid": 700,
+        "datePaid": "2025-02-26T16:28:07.582Z",
+        "studentId": "67af2c51bf2af06c71259f2a",
+        "createdAt": "2025-02-26T16:28:39.028Z",
+        "updatedAt": "2025-02-26T16:28:39.028Z"
+      }
+    ],
+    "Transaction": [
+      {
+        "_id": "67af2ca1bf2af06c71259f2e",
+        "label": "fees by Mohammad Ayaz-Play-A",
+        "note": "monthly_fees By Mohammad Ayaz class - Play section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 700,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-14T11:44:33.938Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67af2eddaec85a79f656b133",
+        "label": "monthly_salary",
+        "note": "monthly_salary To teacher -> Md.Eusuf ",
+        "category": "monthly_salary",
+        "type": "expense",
+        "amount": 7000,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-14T11:54:05.104Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67af4c370c021584494d0a65",
+        "label": "fees by Abdullah Ibne Nur-Play-A",
+        "note": "monthly_fees By Abdullah Ibne Nur class - Play section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 600,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-14T13:59:19.580Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b042193d03ed6c69b27f7c",
+        "label": "monthly_salary",
+        "note": "monthly_salary To teacher -> Easmin Akhter ",
+        "category": "monthly_salary",
+        "type": "expense",
+        "amount": 5129,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T07:28:25.732Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b043dfbe3fb2dab4654209",
+        "label": "House Rent",
+        "note": "for the month of january",
+        "category": "maintenance",
+        "type": "expense",
+        "amount": 15080,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T07:35:59.611Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b04441be3fb2dab465420a",
+        "label": "House Rent",
+        "note": "House Rent for the month of january",
+        "category": "maintenance",
+        "type": "expense",
+        "amount": 11080,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T07:37:37.702Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b0447dbe3fb2dab465420b",
+        "label": "House Rent",
+        "note": "For the moth of february",
+        "category": "maintenance",
+        "type": "expense",
+        "amount": 15080,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T07:38:37.220Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b049d8cf35e20b8aafb7b0",
+        "label": "fees by Imam Hossen-Play-A",
+        "note": "monthly_fees By Imam Hossen class - Play section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 600,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:01:28.350Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b04a253151998ed2cd969f",
+        "label": "fees by Ayesha Jannat Diha-Play-A",
+        "note": "monthly_fees By Ayesha Jannat Diha class - Play section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 700,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:02:45.607Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b04a3e77a8c8fc08937872",
+        "label": "fees by Ayesha Jannat Diha-Play-A",
+        "note": "monthly_fees By Ayesha Jannat Diha class - Play section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 700,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:03:10.990Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b04ade0756382558507d62",
+        "label": "fees by Md. Sohail Chowdhury-Play-A",
+        "note": "monthly_fees By Md. Sohail Chowdhury class - Play section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 700,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:05:50.138Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b04afa0756382558507d65",
+        "label": "fees by Md. Sohail Chowdhury-Play-A",
+        "note": "monthly_fees By Md. Sohail Chowdhury class - Play section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 700,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:06:18.944Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b04b240756382558507d67",
+        "label": "fees by Md. Sahil Chowdhury-Play-A",
+        "note": "monthly_fees By Md. Sahil Chowdhury class - Play section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 700,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:07:00.800Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b04b480756382558507d69",
+        "label": "fees by Md. Sahil Chowdhury-Play-A",
+        "note": "monthly_fees By Md. Sahil Chowdhury class - Play section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 700,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:07:36.596Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b04b7a0756382558507d6b",
+        "label": "fees by Imadul Islam-Play-A",
+        "note": "monthly_fees By Imadul Islam class - Play section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 700,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:08:26.695Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b0a8570c5bc181c1cd185f",
+        "label": "fees by Saimon Islam-Four-A",
+        "note": "monthly_fees By Saimon Islam class - Four section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 2200,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T14:44:39.168Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b0aa310c5bc181c1cd1865",
+        "label": "fees by Md. Yeasin-Three-A",
+        "note": "monthly_fees By Md. Yeasin class - Three section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 2000,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T14:52:33.961Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b1e4f06130a6a16c0d32e2",
+        "label": "fees by As-ad Bin Nasir-Two-A",
+        "note": "monthly_fees By As-ad Bin Nasir class - Two section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 1800,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-16T13:15:28.194Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b1e8af6130a6a16c0d32e4",
+        "label": "fees by Nusrat Jahan-Nursery/K.G-A(Morning)",
+        "note": "monthly_fees By Nusrat Jahan class - Nursery/K.G section - A(Morning)",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 1500,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-16T13:31:27.269Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b1e9ede2b58933fb17602f",
+        "label": "fees by Mannaur Rahman Nafis-One-A",
+        "note": "form_fees By Mannaur Rahman Nafis class - One section - A",
+        "category": "form_fees",
+        "type": "income",
+        "amount": 1500,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-16T13:36:45.989Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b2219d5d8f25bbe1049257",
+        "label": "House Rent",
+        "note": "Rent for february",
+        "category": "maintenance",
+        "type": "expense",
+        "amount": 11080,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-16T17:34:21.106Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b223407f0087811b26dac6",
+        "label": "Gass bill",
+        "note": "Bill of Februay",
+        "category": "maintenance",
+        "type": "expense",
+        "amount": 2180,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-16T17:41:20.202Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b224187f0087811b26dacb",
+        "label": "monthly_salary",
+        "note": "monthly_salary To teacher -> Md. Al Ameen ",
+        "category": "monthly_salary",
+        "type": "expense",
+        "amount": 11000,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-16T17:44:56.615Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b224341c5f9fa2d4f9e15f",
+        "label": "monthly_salary",
+        "note": "monthly_salary To teacher -> Mohammad Eusuf ",
+        "category": "monthly_salary",
+        "type": "expense",
+        "amount": 7000,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-16T17:45:24.372Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b225761c5f9fa2d4f9e163",
+        "label": "Cultural Equipment",
+        "note": "",
+        "category": "equipment",
+        "type": "expense",
+        "amount": 500,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-16T17:50:46.390Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b301a7246c7104584a874f",
+        "label": "fees by Anika Tabassum-Play-A",
+        "note": "monthly_fees By Anika Tabassum class - Play section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 700,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-17T09:30:15.499Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b3311c5ac1baa8401edc84",
+        "label": "fees by Tajna Akter Mim-Nursery/K.G-B(Day)",
+        "note": "monthly_fees By Tajna Akter Mim class - Nursery/K.G section - B(Day)",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 1250,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-17T12:52:44.662Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b33cd2f66d54483397e98a",
+        "label": "fees by Adir Hossen-Nursery/K.G-A(Morning)",
+        "note": "monthly_fees By Adir Hossen class - Nursery/K.G section - A(Morning)",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 1500,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-17T13:42:42.713Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b33d13449956354de5a96e",
+        "label": "fees by Adir Hossen-Nursery/K.G-A(Morning)",
+        "note": "monthly_fees By Adir Hossen class - Nursery/K.G section - A(Morning)",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 1500,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-17T13:43:47.644Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b34c82aa7686403bafded2",
+        "label": "fees by Arafat Sani-Four-A",
+        "note": "monthly_fees By Arafat Sani class - Four section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 2100,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-17T14:49:38.939Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b35124a3d428f2264a2b33",
+        "label": "fees by Abdullah Al Fahim-Class Three(Hifz)-A",
+        "note": "monthly_fees By Abdullah Al Fahim class - Class Three(Hifz) section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 2500,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-17T15:09:24.458Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b357f6f4f0df2312bdd0db",
+        "label": "fees by Sidratul Muntaha-One-A",
+        "note": "monthly_fees By Sidratul Muntaha class - One section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 1500,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-17T15:38:30.700Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b358b222b34ba6dbe41d7b",
+        "label": "fees by Sidratul Muntaha-One-A",
+        "note": "monthly_fees By Sidratul Muntaha class - One section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 1500,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-17T15:41:38.899Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b3e6c01a2decc2a3c0a892",
+        "label": "fees by Abdur Rahman Tajbid-Two-A",
+        "note": "monthly_fees By Abdur Rahman Tajbid class - Two section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 2200,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-18T01:47:44.221Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b3e8de1a2decc2a3c0a895",
+        "label": "fees by Mohammad Nihad-Nursery/K.G-A(Morning)",
+        "note": "monthly_fees By Mohammad Nihad class - Nursery/K.G section - A(Morning)",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 2000,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-18T01:56:46.043Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67b46de0a8b430f5698b5e72",
+        "label": "fees by Adib Bin Alamgir-Two-A",
+        "note": "monthly_fees By Adib Bin Alamgir class - Two section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 2000,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-18T11:24:16.685Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67bc26d8cb9b683721d30f90",
+        "label": "Student Fee collection",
+        "note": "৳1,400.00 paid by Jannatul Ferdous - Nursery/K.G - B(Day) and roll: 11",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 1400,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-24T07:59:20.533Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "67bf41375712995d3a0a71e8",
+        "label": "Student Fee collection",
+        "note": "৳3,550.00 paid by Mohammad Ayaj - Play - A and roll: 01",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 3550,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-26T16:28:39.465Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      },
+      {
+        "_id": "6811d2595de721ab3f48cee6",
+        "label": "House Rent",
+        "note": "House Rent of the month of May 2025",
+        "category": "maintenance",
+        "type": "expense",
+        "amount": 36160,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-04-30T07:33:45.780Z",
+        "transactionBy": "madinatulinter58@gmail.com"
+      }
+    ],
+    "FeeStructure": [
+      {
+        "_id": "67ba169f3370e4a89295870d",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "title": "Play-A-700",
+        "createdAt": "2025-02-22T18:25:34.060Z",
+        "updatedAt": "2025-02-22T18:27:13.651Z"
+      },
+      {
+        "_id": "67ba17233370e4a89295870f",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "title": "Play-A-600",
+        "createdAt": "2025-02-22T18:27:47.997Z",
+        "updatedAt": "2025-02-22T18:27:47.997Z"
+      },
+      {
+        "_id": "67ba17eadceddb4852a625ff",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "title": "Three-2000",
+        "createdAt": "2025-02-22T18:31:04.568Z",
+        "updatedAt": "2025-02-22T18:47:31.714Z"
+      },
+      {
+        "_id": "67ba18d837b9243bfe86e47a",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "title": "Play Fr-Ad-Mt-150-2000-800",
+        "createdAt": "2025-02-22T18:35:02.556Z",
+        "updatedAt": "2025-03-04T18:35:22.889Z"
+      },
+      {
+        "_id": "67ba19ed3370e4a892958711",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "title": "Play Fr-Ad-Mt-150-2000-600",
+        "createdAt": "2025-02-22T18:39:40.289Z",
+        "updatedAt": "2025-03-04T16:28:29.849Z"
+      },
+      {
+        "_id": "67bf3e90abcf86e1b1510275",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "title": "Play-Ad-Fr-Mt- 2000-150-700",
+        "createdAt": "2025-02-26T16:17:20.063Z",
+        "updatedAt": "2025-02-26T16:17:20.063Z"
+      },
+      {
+        "_id": "67c7f85977fc649b7b329b23",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "title": "Nursery-Fr-Ad-Mt-150-2000-800",
+        "createdAt": "2025-03-05T07:08:09.879Z",
+        "updatedAt": "2025-04-25T05:35:47.393Z"
+      },
+      {
+        "_id": "680b21e5559724878cf8fbbc",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "title": "Nursery-Fr-Ad-Mt--150-2000-700",
+        "createdAt": "2025-04-25T05:47:17.692Z",
+        "updatedAt": "2025-04-25T05:47:17.692Z"
+      },
+      {
+        "_id": "680b2238987d8a6b4407af2a",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "title": "Nurssry-Fr-Ad-Mt-150-2000-600",
+        "createdAt": "2025-04-25T05:48:39.217Z",
+        "updatedAt": "2025-04-25T05:48:39.217Z"
+      }
+    ],
+    "Employee": [
+      {
+        "_id": "67af7181189588c594cc9cdd",
+        "photo": "https://placehold.co/400",
+        "employeeId": "EMP02",
+        "fullName": "Easmin Akhter",
+        "email": "easmin@gmail.com",
+        "phone": "01994423141",
+        "religion": "islam",
+        "gender": "female",
+        "dateOfBirth": "2005-02-05T18:00:00.000Z",
+        "address": "Mousumi Abasik, Access Road, Chawkbazar, chattogram",
+        "salary": 5600,
+        "role": "teacher",
+        "fatherName": "abc",
+        "motherName": "abc",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-14T16:38:25.659Z",
+        "updatedAt": "2025-02-16T16:52:37.534Z"
+      },
+      {
+        "_id": "67b045dabe3fb2dab465420c",
+        "photo": "https://placehold.co/400",
+        "employeeId": "EMP03",
+        "fullName": "Rabeha Sadia",
+        "email": "rabehasadi9662@gmail.com",
+        "phone": "01758389139",
+        "religion": "islam",
+        "gender": "female",
+        "dateOfBirth": "1999-02-14T18:00:00.000Z",
+        "address": "Present: Chawkbazar, Chattogram.\nParmanent: South Ksshua, Tulatoli, Satkania, Chattogram.",
+        "salary": 5500,
+        "role": "teacher",
+        "fatherName": "Jakaria Chawdhury",
+        "motherName": "Thofa Yeasmin",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T07:44:26.980Z",
+        "updatedAt": "2025-02-15T07:44:26.980Z"
+      },
+      {
+        "_id": "67b047198450202a79f3d55b",
+        "photo": "https://placehold.co/400",
+        "employeeId": "EMP04",
+        "fullName": "Ansarul Islam MIhad",
+        "email": "aimihad243@gmail.com",
+        "phone": "01704058240",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2002-02-20T18:00:00.000Z",
+        "address": "Parmanent: Kuruskul, Anowara, Chittagong\nPresent: D.C Road, Chawkbazar, Chattogram",
+        "salary": 6000,
+        "role": "teacher",
+        "fatherName": "Nurul Islam",
+        "motherName": "Amena Khatun",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T07:49:45.799Z",
+        "updatedAt": "2025-02-15T07:49:45.799Z"
+      },
+      {
+        "_id": "67b04885be3fb2dab465420e",
+        "photo": "https://placehold.co/400",
+        "employeeId": "EMP05",
+        "fullName": "Md. Raihan Uddin",
+        "email": "mdrayhanuddin311@gmail.com",
+        "phone": "01908411453",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2002-10-10T18:00:00.000Z",
+        "address": "Present: Madina Islamic International Madrasah\nParmantent: Chamadar Para, Vip Road, West Dhemsha, Satkania4386, Satkania, Chattogram.",
+        "salary": 10000,
+        "role": "teacher",
+        "fatherName": "Md. Jasim Uddin",
+        "motherName": "Hasina Begum",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T07:55:49.606Z",
+        "updatedAt": "2025-02-15T07:55:49.606Z"
+      },
+      {
+        "_id": "67b0513304690ca2b7e86f0a",
+        "photo": "https://placehold.co/400",
+        "employeeId": "Princ01",
+        "fullName": "Matiur Rahman",
+        "email": "m.r.nijamicox@gmail.com",
+        "phone": "01859408340",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "1997-02-09T18:00:00.000Z",
+        "address": "D.C. Road, Chawkbazar, Chattogram",
+        "salary": 11000,
+        "role": "principal",
+        "fatherName": "Osman Sarwar",
+        "motherName": "Hosne Ara Begum",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:32:51.981Z",
+        "updatedAt": "2025-02-15T08:32:51.981Z"
+      },
+      {
+        "_id": "67b0a62a4873ba483c50a4fa",
+        "photo": "https://placehold.co/400",
+        "employeeId": "EMP06",
+        "fullName": "Md. Al Ameen",
+        "email": "alameen@gmail.com",
+        "phone": "01602570250",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2000-02-21T18:00:00.000Z",
+        "address": "Madina Islamice International Madrasah",
+        "salary": 11000,
+        "role": "teacher",
+        "fatherName": "Abc",
+        "motherName": "Abc",
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T14:35:22.271Z",
+        "updatedAt": "2025-02-15T14:35:22.271Z"
+      }
+    ],
+    "Class": [
+      {
+        "_id": "67af29c724b2875238dd2947",
+        "name": "Play",
+        "monthlyFee": 700,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-14T11:32:23.836Z",
+        "updatedAt": "2025-02-14T11:32:23.836Z"
+      },
+      {
+        "_id": "67af727061fc29fbf381a16e",
+        "name": "Nursery/K.G",
+        "monthlyFee": 800,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-14T16:42:23.432Z",
+        "updatedAt": "2025-02-14T16:42:23.432Z"
+      },
+      {
+        "_id": "67b04e0b3151998ed2cd96a6",
+        "name": "One",
+        "monthlyFee": 800,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:19:23.179Z",
+        "updatedAt": "2025-02-15T08:19:23.179Z"
+      },
+      {
+        "_id": "67b04e383151998ed2cd96a8",
+        "name": "Two",
+        "monthlyFee": 850,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:20:08.004Z",
+        "updatedAt": "2025-02-15T08:20:08.004Z"
+      },
+      {
+        "_id": "67b04e503151998ed2cd96aa",
+        "name": "Three",
+        "monthlyFee": 850,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:20:32.759Z",
+        "updatedAt": "2025-02-15T08:20:32.759Z"
+      },
+      {
+        "_id": "67b04e683151998ed2cd96ac",
+        "name": "Four",
+        "monthlyFee": 900,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:20:56.609Z",
+        "updatedAt": "2025-02-15T08:20:56.609Z"
+      },
+      {
+        "_id": "67b04e7b3151998ed2cd96ae",
+        "name": "Five",
+        "monthlyFee": 900,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:21:15.260Z",
+        "updatedAt": "2025-02-15T08:21:15.260Z"
+      },
+      {
+        "_id": "67b04e8a3151998ed2cd96b0",
+        "name": "six",
+        "monthlyFee": 900,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:21:30.409Z",
+        "updatedAt": "2025-02-15T08:21:30.409Z"
+      },
+      {
+        "_id": "67b04ea53151998ed2cd96b2",
+        "name": "Hifz/Nazera",
+        "monthlyFee": 2000,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:21:57.140Z",
+        "updatedAt": "2025-02-15T08:21:57.140Z"
+      },
+      {
+        "_id": "67b04ebe3151998ed2cd96b4",
+        "name": "Hifz/Nazera",
+        "monthlyFee": 2000,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:22:22.466Z",
+        "updatedAt": "2025-02-15T08:22:22.466Z"
+      },
+      {
+        "_id": "67b04ee63151998ed2cd96b6",
+        "name": "Spoken English",
+        "monthlyFee": 1000,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:23:02.445Z",
+        "updatedAt": "2025-02-15T08:23:02.445Z"
+      },
+      {
+        "_id": "67b04f003151998ed2cd96b9",
+        "name": "Computer Training Course",
+        "monthlyFee": 1000,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:23:28.241Z",
+        "updatedAt": "2025-02-15T08:24:02.124Z"
+      },
+      {
+        "_id": "67b04f472e9363a4c24609fb",
+        "name": "Nahu Saraf Course",
+        "monthlyFee": 1000,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:24:39.419Z",
+        "updatedAt": "2025-02-15T08:24:39.419Z"
+      },
+      {
+        "_id": "67b04f572e9363a4c24609fd",
+        "name": "Short Course",
+        "monthlyFee": 2000,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-15T08:24:55.768Z",
+        "updatedAt": "2025-02-15T08:24:55.768Z"
+      },
+      {
+        "_id": "67b34dedd49608165bb840e3",
+        "name": "Class Three(Hifz)",
+        "monthlyFee": 2500,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-17T14:55:40.981Z",
+        "updatedAt": "2025-02-17T14:55:40.981Z"
+      },
+      {
+        "_id": "67b34efda3d428f2264a2b27",
+        "name": "Class Two(Hifz)",
+        "monthlyFee": 3000,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-17T15:00:11.911Z",
+        "updatedAt": "2025-02-17T15:00:11.911Z"
+      },
+      {
+        "_id": "67b34f28a3d428f2264a2b29",
+        "name": "Four(HIfz)",
+        "monthlyFee": 2500,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-17T15:00:56.807Z",
+        "updatedAt": "2025-02-17T15:00:56.807Z"
+      },
+      {
+        "_id": "67b34f3ea3d428f2264a2b2b",
+        "name": "Five(Hifz)",
+        "monthlyFee": 3000,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-17T15:01:18.898Z",
+        "updatedAt": "2025-02-17T15:01:18.898Z"
+      },
+      {
+        "_id": "67b34f65a3d428f2264a2b2d",
+        "name": "six(Hifz)",
+        "monthlyFee": 3000,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-17T15:01:57.347Z",
+        "updatedAt": "2025-02-17T15:01:57.347Z"
+      },
+      {
+        "_id": "67b34fe3a3d428f2264a2b2f",
+        "name": "Seven",
+        "monthlyFee": 3000,
+        "tenantId": "67ad9c7297514af28d17494b",
+        "createdAt": "2025-02-17T15:04:03.436Z",
+        "updatedAt": "2025-05-01T16:04:04.101Z"
+      }
+    ]
+  }
+}

@@ -1,0 +1,2817 @@
+{
+  "database": "evergreen",
+  "exportedAt": "2025-05-12T10:38:46.197Z",
+  "collections": {
+    "Class": [
+      {
+        "_id": "677e894208052df111874bdb",
+        "name": "Nine",
+        "monthlyFee": 201,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T14:18:42.948Z",
+        "updatedAt": "2025-02-22T03:25:11.637Z"
+      },
+      {
+        "_id": "6780f595696fda426967deba",
+        "name": "Seven",
+        "monthlyFee": 3000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-10T10:25:25.617Z",
+        "updatedAt": "2025-01-10T10:25:25.617Z"
+      },
+      {
+        "_id": "67ac919d64e31d3569da62e2",
+        "name": "Eleven",
+        "monthlyFee": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-12T12:18:37.303Z",
+        "updatedAt": "2025-02-12T12:18:37.303Z"
+      },
+      {
+        "_id": "67ad9af0765b51a755de3b64",
+        "name": "Play",
+        "monthlyFee": 1000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-13T07:10:40.388Z",
+        "updatedAt": "2025-02-13T07:10:40.388Z"
+      },
+      {
+        "_id": "67af1c17141bb851c8fe54be",
+        "name": "Play",
+        "monthlyFee": 500,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-14T10:33:58.130Z",
+        "updatedAt": "2025-02-14T10:33:58.130Z"
+      },
+      {
+        "_id": "67b0667b5bc3cdb7ace4cb65",
+        "name": "Ten",
+        "monthlyFee": 5100,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-15T10:03:38.551Z",
+        "updatedAt": "2025-02-15T10:03:38.551Z"
+      },
+      {
+        "_id": "67b066c05bc3cdb7ace4cb67",
+        "name": "Ten",
+        "monthlyFee": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-15T10:04:48.719Z",
+        "updatedAt": "2025-02-15T10:04:48.719Z"
+      },
+      {
+        "_id": "67b3845ff7f897e512930a27",
+        "name": "One",
+        "monthlyFee": 100,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-17T18:47:59.910Z",
+        "updatedAt": "2025-02-17T18:47:59.910Z"
+      },
+      {
+        "_id": "67b54ee486171e8d885578e9",
+        "name": "Ten-1",
+        "monthlyFee": 500,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-19T03:24:20.943Z",
+        "updatedAt": "2025-02-19T03:24:20.943Z"
+      }
+    ],
+    "FeeStructure": [
+      {
+        "_id": "67c6c0839c16ff783e9eb694",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "title": "Tuition fee",
+        "createdAt": "2025-03-04T08:57:39.971Z",
+        "updatedAt": "2025-03-04T08:57:39.971Z"
+      },
+      {
+        "_id": "67de6e797578eff4debdac7f",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "title": "One-ad-mt-fr-1000-500-100",
+        "createdAt": "2025-03-22T08:02:00.176Z",
+        "updatedAt": "2025-05-04T14:27:28.430Z"
+      }
+    ],
+    "EmployeeAttendance": [
+      {
+        "_id": "677ecc473693d859cb94e8ff",
+        "employeeId": "677ec7b280c9e975c1db0dc2",
+        "date": "2025-01-09",
+        "isPresent": true,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T19:04:39.105Z",
+        "updatedAt": "2025-01-08T19:04:39.105Z"
+      },
+      {
+        "_id": "677ecc493693d859cb94e900",
+        "employeeId": "677ec97516c1fe0fc1a63a0c",
+        "date": "2025-01-09",
+        "isPresent": true,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T19:04:41.680Z",
+        "updatedAt": "2025-01-08T19:04:41.680Z"
+      },
+      {
+        "_id": "677ecc4c3693d859cb94e901",
+        "employeeId": "677eca3b16c1fe0fc1a63a0e",
+        "date": "2025-01-09",
+        "isPresent": true,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T19:04:44.261Z",
+        "updatedAt": "2025-01-08T19:04:44.261Z"
+      },
+      {
+        "_id": "677ecc533693d859cb94e902",
+        "employeeId": "677ec97516c1fe0fc1a63a0c",
+        "date": "2025-01-08",
+        "isPresent": true,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T19:04:51.227Z",
+        "updatedAt": "2025-01-08T19:04:51.227Z"
+      },
+      {
+        "_id": "677ecc553693d859cb94e903",
+        "employeeId": "677ec7b280c9e975c1db0dc2",
+        "date": "2025-01-08",
+        "isPresent": true,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T19:04:53.836Z",
+        "updatedAt": "2025-01-08T19:04:53.836Z"
+      },
+      {
+        "_id": "677ecc583693d859cb94e904",
+        "employeeId": "677eca3b16c1fe0fc1a63a0e",
+        "date": "2025-01-08",
+        "isPresent": true,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T19:04:56.342Z",
+        "updatedAt": "2025-01-08T19:04:56.342Z"
+      },
+      {
+        "_id": "677ecc643693d859cb94e905",
+        "employeeId": "677ec7b280c9e975c1db0dc2",
+        "date": "2025-01-07",
+        "isPresent": false,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T19:05:08.017Z",
+        "updatedAt": "2025-01-08T19:05:08.017Z"
+      },
+      {
+        "_id": "677ecc663693d859cb94e906",
+        "employeeId": "677ec97516c1fe0fc1a63a0c",
+        "date": "2025-01-07",
+        "isPresent": true,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T19:05:10.674Z",
+        "updatedAt": "2025-01-08T19:05:10.674Z"
+      },
+      {
+        "_id": "677ecc693693d859cb94e907",
+        "employeeId": "677eca3b16c1fe0fc1a63a0e",
+        "date": "2025-01-07",
+        "isPresent": true,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T19:05:13.201Z",
+        "updatedAt": "2025-01-08T19:05:13.201Z"
+      },
+      {
+        "_id": "677ecc723693d859cb94e908",
+        "employeeId": "677ec7b280c9e975c1db0dc2",
+        "date": "2025-01-06",
+        "isPresent": true,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T19:05:22.625Z",
+        "updatedAt": "2025-01-08T19:05:22.625Z"
+      },
+      {
+        "_id": "677ecc753693d859cb94e909",
+        "employeeId": "677ec97516c1fe0fc1a63a0c",
+        "date": "2025-01-06",
+        "isPresent": false,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T19:05:25.164Z",
+        "updatedAt": "2025-01-08T19:05:25.164Z"
+      },
+      {
+        "_id": "677ecc773693d859cb94e90a",
+        "employeeId": "677eca3b16c1fe0fc1a63a0e",
+        "date": "2025-01-06",
+        "isPresent": true,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T19:05:27.717Z",
+        "updatedAt": "2025-01-08T19:05:27.717Z"
+      },
+      {
+        "_id": "678123aad8a97a9e15b67b6e",
+        "employeeId": "677ec7b280c9e975c1db0dc2",
+        "date": "2025-01-10",
+        "isPresent": false,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-10T13:42:02.872Z",
+        "updatedAt": "2025-01-10T13:42:02.872Z"
+      },
+      {
+        "_id": "678123aed8a97a9e15b67b6f",
+        "employeeId": "677ec97516c1fe0fc1a63a0c",
+        "date": "2025-01-10",
+        "isPresent": true,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-10T13:42:06.276Z",
+        "updatedAt": "2025-01-10T13:42:06.276Z"
+      },
+      {
+        "_id": "678549920ed603efbdd3942c",
+        "employeeId": "677ec7b280c9e975c1db0dc2",
+        "date": "2025-01-13",
+        "isPresent": true,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-13T17:12:50.354Z",
+        "updatedAt": "2025-01-13T17:14:07.977Z"
+      },
+      {
+        "_id": "678549940ed603efbdd3942d",
+        "employeeId": "677ec97516c1fe0fc1a63a0c",
+        "date": "2025-01-13",
+        "isPresent": false,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-13T17:12:52.876Z",
+        "updatedAt": "2025-01-13T17:14:10.674Z"
+      },
+      {
+        "_id": "678549970ed603efbdd3942e",
+        "employeeId": "677eca3b16c1fe0fc1a63a0e",
+        "date": "2025-01-13",
+        "isPresent": true,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-13T17:12:55.293Z",
+        "updatedAt": "2025-01-13T17:14:13.345Z"
+      },
+      {
+        "_id": "678549990ed603efbdd3942f",
+        "employeeId": "67815bae23fd7a394cbb1b5d",
+        "date": "2025-01-13",
+        "isPresent": true,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-13T17:12:57.780Z",
+        "updatedAt": "2025-01-13T17:12:57.780Z"
+      },
+      {
+        "_id": "67868701defe3657eb77cb35",
+        "employeeId": "677ec7b280c9e975c1db0dc2",
+        "date": "2025-01-14",
+        "isPresent": false,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-14T15:47:13.311Z",
+        "updatedAt": "2025-01-14T15:47:13.311Z"
+      },
+      {
+        "_id": "67868705defe3657eb77cb36",
+        "employeeId": "677ec97516c1fe0fc1a63a0c",
+        "date": "2025-01-14",
+        "isPresent": true,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-14T15:47:17.161Z",
+        "updatedAt": "2025-01-14T15:47:17.161Z"
+      },
+      {
+        "_id": "67b47b4f2c7611e15449ccbd",
+        "employeeId": "677ec7b280c9e975c1db0dc2",
+        "date": "2025-02-18",
+        "isPresent": false,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-18T12:21:35.275Z",
+        "updatedAt": "2025-02-18T12:21:35.275Z"
+      },
+      {
+        "_id": "67b47b512c7611e15449ccbe",
+        "employeeId": "677ec97516c1fe0fc1a63a0c",
+        "date": "2025-02-18",
+        "isPresent": true,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-18T12:21:37.971Z",
+        "updatedAt": "2025-02-18T12:21:37.971Z"
+      },
+      {
+        "_id": "67b47b532c7611e15449ccbf",
+        "employeeId": "677eca3b16c1fe0fc1a63a0e",
+        "date": "2025-02-18",
+        "isPresent": true,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-18T12:21:39.261Z",
+        "updatedAt": "2025-02-18T12:21:39.261Z"
+      },
+      {
+        "_id": "67b47b542c7611e15449ccc0",
+        "employeeId": "67815bae23fd7a394cbb1b5d",
+        "date": "2025-02-18",
+        "isPresent": true,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-18T12:21:40.551Z",
+        "updatedAt": "2025-02-18T12:21:40.551Z"
+      },
+      {
+        "_id": "67b94610aab9dc66d7050e81",
+        "employeeId": "677ec7b280c9e975c1db0dc2",
+        "date": "2025-02-22",
+        "isPresent": true,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-22T03:35:44.628Z",
+        "updatedAt": "2025-02-22T03:35:48.664Z"
+      }
+    ],
+    "FeeItem": [
+      {
+        "_id": "67c6c0849c16ff783e9eb695",
+        "name": "Tuition fee",
+        "amount": 10000,
+        "frequency": "monthly",
+        "lateFeeEnabled": false,
+        "feeStructureId": "67c6c0839c16ff783e9eb694",
+        "createdAt": "2025-03-04T08:57:39.971Z",
+        "updatedAt": "2025-03-04T08:57:39.971Z"
+      },
+      {
+        "_id": "67de6e797578eff4debdac82",
+        "name": "Monthly Fee",
+        "amount": 500,
+        "frequency": "monthly",
+        "lateFeeEnabled": false,
+        "createdAt": "2025-03-22T08:02:00.176Z",
+        "updatedAt": "2025-05-04T14:27:28.430Z",
+        "feeStructureId": "67de6e797578eff4debdac7f",
+        "waiverType": "fixed",
+        "waiverValue": 200,
+        "lateFeeAmount": null,
+        "lateFeeFrequency": null
+      },
+      {
+        "_id": "67de6e797578eff4debdac80",
+        "name": "Admission Fee",
+        "amount": 1000,
+        "frequency": "one-time",
+        "lateFeeEnabled": false,
+        "createdAt": "2025-03-22T08:02:00.176Z",
+        "updatedAt": "2025-05-04T14:27:28.430Z",
+        "feeStructureId": "67de6e797578eff4debdac7f",
+        "lateFeeAmount": null,
+        "lateFeeFrequency": null
+      },
+      {
+        "_id": "67de6e797578eff4debdac81",
+        "name": "Form Fee",
+        "amount": 100,
+        "frequency": "one-time",
+        "lateFeeEnabled": false,
+        "createdAt": "2025-03-22T08:02:00.176Z",
+        "updatedAt": "2025-05-04T14:27:28.430Z",
+        "feeStructureId": "67de6e797578eff4debdac7f",
+        "lateFeeAmount": null,
+        "lateFeeFrequency": null
+      }
+    ],
+    "LastStudentId": [
+      {
+        "_id": "681865ba97c5ecf46932da0d",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "studentId": "EVE-120",
+        "createdAt": "2025-05-05T07:16:10.602Z",
+        "updatedAt": "2025-05-05T07:16:10.602Z"
+      }
+    ],
+    "StudentAttendance": [
+      {
+        "_id": "678002ba5f6376d0827ea16e",
+        "studentId": "677f399707bd30860683d751",
+        "classId": "677e894208052df111874bdb",
+        "sectionId": "677e894308052df111874bdc",
+        "date": "2025-01-09",
+        "isPresent": true,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-09T17:09:14.098Z",
+        "updatedAt": "2025-01-09T17:09:24.328Z"
+      },
+      {
+        "_id": "678ce34438da468c0e275ed9",
+        "studentId": "677f399707bd30860683d751",
+        "classId": "677e894208052df111874bdb",
+        "sectionId": "677e894308052df111874bdc",
+        "date": "2025-01-19",
+        "isPresent": true,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-19T11:34:28.385Z",
+        "updatedAt": "2025-01-19T11:34:28.385Z"
+      },
+      {
+        "_id": "67b35d9a82031838a41306dd",
+        "studentId": "677f399707bd30860683d751",
+        "classId": "677e894208052df111874bdb",
+        "sectionId": "677e894308052df111874bdc",
+        "date": "2025-02-17",
+        "isPresent": false,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-17T16:02:34.256Z",
+        "updatedAt": "2025-02-17T16:02:37.125Z"
+      },
+      {
+        "_id": "67b5503ee096c35d8d54e7c9",
+        "studentId": "67b54fd6e096c35d8d54e7c7",
+        "classId": "67b54ee486171e8d885578e9",
+        "sectionId": "67b54ee586171e8d885578ea",
+        "date": "2025-02-19",
+        "isPresent": true,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-19T03:30:06.915Z",
+        "updatedAt": "2025-02-19T03:30:11.707Z"
+      },
+      {
+        "_id": "681359fbe67cea9a697a13d6",
+        "studentId": "67ff6e661822a1999f85bf41",
+        "classId": "677e894208052df111874bdb",
+        "sectionId": "677e894308052df111874bdc",
+        "date": "2025-05-01",
+        "isPresent": true,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-05-01T11:24:43.355Z",
+        "updatedAt": "2025-05-01T11:24:43.355Z"
+      },
+      {
+        "_id": "681e2d1d6a507f248bd4557d",
+        "studentId": "67ff6e661822a1999f85bf41",
+        "classId": "677e894208052df111874bdb",
+        "sectionId": "677e894308052df111874bdc",
+        "date": "2025-05-09",
+        "isPresent": false,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-05-09T16:28:13.926Z",
+        "updatedAt": "2025-05-09T16:28:17.327Z"
+      }
+    ],
+    "Salary": [
+      {
+        "_id": "677ece84f0ec84b94cc88ed0",
+        "employeeId": "677ec7b280c9e975c1db0dc2",
+        "amount": 1000,
+        "month": "January",
+        "year": 2025,
+        "reason": "monthly_salary",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T19:14:12.080Z",
+        "updatedAt": "2025-01-08T19:14:12.080Z"
+      },
+      {
+        "_id": "677ece9bf0ec84b94cc88ed2",
+        "employeeId": "677ec7b280c9e975c1db0dc2",
+        "amount": 1000,
+        "month": "February",
+        "year": 2025,
+        "reason": "monthly_salary",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T19:14:35.027Z",
+        "updatedAt": "2025-01-08T19:14:35.027Z"
+      },
+      {
+        "_id": "6781257ae8eca9a77ca00933",
+        "employeeId": "677ec7b280c9e975c1db0dc2",
+        "amount": 10000,
+        "month": "January",
+        "year": 2024,
+        "reason": "monthly_salary",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-10T13:49:46.527Z",
+        "updatedAt": "2025-01-10T13:49:46.527Z"
+      },
+      {
+        "_id": "67b386acd4de2ff9cc757bca",
+        "employeeId": "677ec7b280c9e975c1db0dc2",
+        "amount": 1000,
+        "month": "May",
+        "year": 2025,
+        "reason": "monthly_salary",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-17T18:57:48.401Z",
+        "updatedAt": "2025-02-17T18:57:48.401Z"
+      },
+      {
+        "_id": "67c752a948357f66ed694b74",
+        "employeeId": "677ec7b280c9e975c1db0dc2",
+        "amount": 300,
+        "month": "February",
+        "year": 2025,
+        "reason": "monthly_salary",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-04T19:21:13.614Z",
+        "updatedAt": "2025-03-04T19:21:13.614Z"
+      },
+      {
+        "_id": "67c7530526f2ce12d19207f1",
+        "employeeId": "677ec97516c1fe0fc1a63a0c",
+        "amount": 500,
+        "month": "January",
+        "year": 2025,
+        "reason": "bonus",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-04T19:22:45.530Z",
+        "updatedAt": "2025-03-04T19:22:45.530Z"
+      },
+      {
+        "_id": "67d41930e8255e0c17e322ad",
+        "employeeId": "677ec7b280c9e975c1db0dc2",
+        "amount": 5000,
+        "month": "February",
+        "year": 2025,
+        "reason": "monthly_salary",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-14T11:55:28.176Z",
+        "updatedAt": "2025-03-14T11:55:28.176Z"
+      }
+    ],
+    "StudentFeePayment": [
+      {
+        "_id": "67fe83fa7f0618c52f1583b9",
+        "studentId": "67baf79082f8905601f3f845",
+        "feeItemId": "67c6c0849c16ff783e9eb695",
+        "amountPaid": 10000,
+        "datePaid": "2025-04-10T18:00:00.000Z",
+        "createdAt": "2025-04-15T16:06:18.517Z",
+        "updatedAt": "2025-04-15T16:06:18.517Z"
+      },
+      {
+        "_id": "67ffccb41d5d065d18832bf5",
+        "studentId": "67baf79082f8905601f3f845",
+        "feeItemId": "67c6c0849c16ff783e9eb695",
+        "amountPaid": 10000,
+        "datePaid": "2025-03-04T18:00:00.000Z",
+        "createdAt": "2025-04-16T15:28:52.939Z",
+        "updatedAt": "2025-04-16T15:28:52.939Z"
+      },
+      {
+        "_id": "6810654d0a89d9d462fb2d0a",
+        "studentId": "67ff6e661822a1999f85bf41",
+        "feeItemId": "67c6c0849c16ff783e9eb695",
+        "amountPaid": 1000,
+        "datePaid": "2025-04-29T05:36:03.071Z",
+        "createdAt": "2025-04-29T05:36:13.702Z",
+        "updatedAt": "2025-04-29T05:36:13.702Z"
+      },
+      {
+        "_id": "6810687e9d37e671151d745f",
+        "studentId": "67ff6e661822a1999f85bf41",
+        "feeItemId": "67c6c0849c16ff783e9eb695",
+        "amountPaid": 5000,
+        "datePaid": "2025-04-29T05:45:00.440Z",
+        "createdAt": "2025-04-29T05:49:50.139Z",
+        "updatedAt": "2025-04-29T05:49:50.139Z"
+      },
+      {
+        "_id": "681779110a81a612b19bb925",
+        "studentId": "67fa15f3d4101c8dead91de7",
+        "feeItemId": "67de6e797578eff4debdac82",
+        "amountPaid": 500,
+        "datePaid": "2025-04-08T18:00:00.000Z",
+        "createdAt": "2025-05-04T14:26:25.487Z",
+        "updatedAt": "2025-05-04T14:26:25.487Z"
+      },
+      {
+        "_id": "681779120a81a612b19bb927",
+        "studentId": "67fa15f3d4101c8dead91de7",
+        "feeItemId": "67de6e797578eff4debdac80",
+        "amountPaid": 1000,
+        "datePaid": "2025-04-08T18:00:00.000Z",
+        "createdAt": "2025-05-04T14:26:25.487Z",
+        "updatedAt": "2025-05-04T14:26:25.487Z"
+      },
+      {
+        "_id": "681779120a81a612b19bb929",
+        "studentId": "67fa15f3d4101c8dead91de7",
+        "feeItemId": "67de6e797578eff4debdac81",
+        "amountPaid": 100,
+        "datePaid": "2025-04-08T18:00:00.000Z",
+        "createdAt": "2025-05-04T14:26:25.487Z",
+        "updatedAt": "2025-05-04T14:26:25.487Z"
+      },
+      {
+        "_id": "681779badab674821dbec25f",
+        "studentId": "67fa15f3d4101c8dead91de7",
+        "feeItemId": "67de6e797578eff4debdac82",
+        "amountPaid": 100,
+        "datePaid": "2025-05-04T14:29:05.017Z",
+        "createdAt": "2025-05-04T14:29:14.526Z",
+        "updatedAt": "2025-05-04T14:29:14.526Z"
+      },
+      {
+        "_id": "6818674e99fea0c5c8d570bd",
+        "studentId": "67baf79082f8905601f3f845",
+        "feeItemId": "67c6c0849c16ff783e9eb695",
+        "amountPaid": 5000,
+        "datePaid": "2025-05-05T07:21:25.186Z",
+        "createdAt": "2025-05-05T07:22:54.456Z",
+        "updatedAt": "2025-05-05T07:22:54.456Z"
+      },
+      {
+        "_id": "68186ef299fea0c5c8d570cc",
+        "studentId": "67baf79082f8905601f3f845",
+        "feeItemId": "67c6c0849c16ff783e9eb695",
+        "amountPaid": 5000,
+        "datePaid": "2025-05-05T07:55:24.304Z",
+        "createdAt": "2025-05-05T07:55:30.379Z",
+        "updatedAt": "2025-05-05T07:55:30.379Z"
+      },
+      {
+        "_id": "6818705a99fea0c5c8d570cf",
+        "studentId": "67baf79082f8905601f3f845",
+        "feeItemId": "67c6c0849c16ff783e9eb695",
+        "amountPaid": 5000,
+        "datePaid": "2025-05-05T08:01:23.212Z",
+        "createdAt": "2025-05-05T08:01:30.036Z",
+        "updatedAt": "2025-05-05T08:01:30.036Z"
+      }
+    ],
+    "Fee": [
+      {
+        "_id": "67ac3c640bcfe9d3397ebdd9",
+        "studentId": "677f399707bd30860683d751",
+        "classId": "677e894208052df111874bdb",
+        "sectionId": "677e894308052df111874bdc",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 100,
+        "month": "january",
+        "year": 2024,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-12T06:15:00.601Z",
+        "updatedAt": "2025-02-12T06:15:00.601Z"
+      },
+      {
+        "_id": "67ad9bff765b51a755de3b69",
+        "studentId": "67ad9b94765b51a755de3b67",
+        "classId": "67ad9af0765b51a755de3b64",
+        "sectionId": "67ad9af1765b51a755de3b65",
+        "reason": [
+          "form_fees",
+          "admission_fees",
+          "syllabus_fees",
+          "book_fees"
+        ],
+        "amount": 500,
+        "month": "january",
+        "year": 2025,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-13T07:15:11.056Z",
+        "updatedAt": "2025-02-13T07:15:11.056Z"
+      },
+      {
+        "_id": "67b06ba45bc3cdb7ace4cb6c",
+        "studentId": "67b067b35bc3cdb7ace4cb69",
+        "classId": "67b0667b5bc3cdb7ace4cb65",
+        "sectionId": "67b0667c5bc3cdb7ace4cb66",
+        "reason": [
+          "admission_fees",
+          "monthly_fees"
+        ],
+        "amount": 7100,
+        "month": "march",
+        "year": 2025,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-15T10:25:38.864Z",
+        "updatedAt": "2025-02-18T12:19:45.186Z"
+      },
+      {
+        "_id": "67b47b36762d88cfaf26cf55",
+        "studentId": "67b4643ddf08673c1f84694e",
+        "classId": "677e894208052df111874bdb",
+        "sectionId": "677e894308052df111874bdc",
+        "reason": [
+          "monthly_fees"
+        ],
+        "amount": 200,
+        "month": "June",
+        "year": 2025,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-18T12:21:10.691Z",
+        "updatedAt": "2025-02-18T12:21:10.691Z"
+      }
+    ],
+    "Section": [
+      {
+        "_id": "677e894308052df111874bdc",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "name": "A",
+        "classId": "677e894208052df111874bdb",
+        "createdAt": "2025-01-08T14:18:43.547Z",
+        "updatedAt": "2025-02-22T03:25:12.593Z"
+      },
+      {
+        "_id": "6780f596696fda426967debb",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "name": "A",
+        "classId": "6780f595696fda426967deba",
+        "createdAt": "2025-01-10T10:25:26.187Z",
+        "updatedAt": "2025-01-10T10:25:26.187Z"
+      },
+      {
+        "_id": "6780f596696fda426967debc",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "name": "B",
+        "classId": "6780f595696fda426967deba",
+        "createdAt": "2025-01-10T10:25:26.187Z",
+        "updatedAt": "2025-01-10T10:25:26.187Z"
+      },
+      {
+        "_id": "67ac919d64e31d3569da62e3",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "name": "A",
+        "classId": "67ac919d64e31d3569da62e2",
+        "createdAt": "2025-02-12T12:18:37.892Z",
+        "updatedAt": "2025-02-12T12:18:37.892Z"
+      },
+      {
+        "_id": "67ad9af1765b51a755de3b65",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "name": "A",
+        "classId": "67ad9af0765b51a755de3b64",
+        "createdAt": "2025-02-13T07:10:41.018Z",
+        "updatedAt": "2025-02-13T07:10:41.018Z"
+      },
+      {
+        "_id": "67af1c18141bb851c8fe54bf",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "name": "A",
+        "classId": "67af1c17141bb851c8fe54be",
+        "createdAt": "2025-02-14T10:34:00.233Z",
+        "updatedAt": "2025-02-14T10:34:00.233Z"
+      },
+      {
+        "_id": "67b0667c5bc3cdb7ace4cb66",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "name": "Resendential",
+        "classId": "67b0667b5bc3cdb7ace4cb65",
+        "createdAt": "2025-02-15T10:03:40.015Z",
+        "updatedAt": "2025-02-15T10:03:40.015Z"
+      },
+      {
+        "_id": "67b066c05bc3cdb7ace4cb68",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "name": "Non-Residential",
+        "classId": "67b066c05bc3cdb7ace4cb67",
+        "createdAt": "2025-02-15T10:04:48.965Z",
+        "updatedAt": "2025-02-15T10:04:48.965Z"
+      },
+      {
+        "_id": "67b38460f7f897e512930a28",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "name": "A",
+        "classId": "67b3845ff7f897e512930a27",
+        "createdAt": "2025-02-17T18:48:00.487Z",
+        "updatedAt": "2025-02-17T18:48:00.487Z"
+      },
+      {
+        "_id": "67b54ee586171e8d885578ea",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "name": "A",
+        "classId": "67b54ee486171e8d885578e9",
+        "createdAt": "2025-02-19T03:24:21.513Z",
+        "updatedAt": "2025-02-19T03:24:21.513Z"
+      }
+    ],
+    "SMSNotificationConfig": [
+      {
+        "_id": "67b36ec06596f5c28b508489",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "settings": [
+          {
+            "id": "attendance",
+            "name": "Attendance",
+            "enabled": false,
+            "description": "Send SMS for student absence/presence"
+          },
+          {
+            "id": "feeCollection",
+            "name": "Fee Collection",
+            "enabled": false,
+            "description": "Notify about fee payments and dues"
+          },
+          {
+            "id": "examResults",
+            "name": "Exam Results",
+            "enabled": false,
+            "description": "Send SMS when exam results are published"
+          },
+          {
+            "id": "duesReminder",
+            "name": "Dues Reminder",
+            "enabled": false,
+            "description": "Send reminders for outstanding dues"
+          },
+          {
+            "id": "transactionAlert",
+            "name": "Transaction Alert",
+            "enabled": false,
+            "description": "Receive a notification when a transaction is made"
+          }
+        ],
+        "createdAt": "2025-02-17T17:15:42.125Z",
+        "updatedAt": "2025-05-09T16:33:07.376Z"
+      },
+      {
+        "_id": "67b36ec16596f5c28b50848a",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "settings": [
+          {
+            "id": "attendance",
+            "name": "Attendance",
+            "enabled": false,
+            "description": "Send SMS for student absence/presence"
+          },
+          {
+            "id": "feeCollection",
+            "name": "Fee Collection",
+            "enabled": false,
+            "description": "Notify about fee payments and dues"
+          },
+          {
+            "id": "examResults",
+            "name": "Exam Results",
+            "enabled": false,
+            "description": "Send SMS when exam results are published"
+          },
+          {
+            "id": "duesReminder",
+            "name": "Dues Reminder",
+            "enabled": false,
+            "description": "Send reminders for outstanding dues"
+          },
+          {
+            "id": "transactionAlert",
+            "name": "Transaction Alert",
+            "enabled": false,
+            "description": "Receive a notification when a transaction is made"
+          }
+        ],
+        "createdAt": "2025-02-17T17:15:43.832Z",
+        "updatedAt": "2025-02-17T17:15:43.832Z"
+      }
+    ],
+    "Exam": [
+      {
+        "_id": "677ecca9443a9691e7110c37",
+        "name": "final",
+        "year": "2025",
+        "marks": 100,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T19:06:15.908Z",
+        "updatedAt": "2025-02-22T03:36:02.099Z"
+      },
+      {
+        "_id": "678123e4d8a97a9e15b67b70",
+        "name": "midterm",
+        "year": "2025",
+        "marks": 100,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-10T13:43:00.175Z",
+        "updatedAt": "2025-01-10T13:43:00.175Z"
+      },
+      {
+        "_id": "67b55082e096c35d8d54e7ca",
+        "name": "exam",
+        "year": "2025",
+        "marks": 100,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-19T03:31:14.528Z",
+        "updatedAt": "2025-02-19T03:31:14.528Z"
+      },
+      {
+        "_id": "67c81bb49547da69f4004afd",
+        "name": "Mid Term Exam",
+        "year": "2025",
+        "marks": 30,
+        "examType": "PARTIAL",
+        "includeInResult": true,
+        "classIds": [
+          "6780f595696fda426967deba",
+          "677e894208052df111874bdb",
+          "67ac919d64e31d3569da62e2",
+          "67ad9af0765b51a755de3b64"
+        ],
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-05T09:38:59.193Z",
+        "updatedAt": "2025-03-05T09:38:59.193Z"
+      }
+    ],
+    "Result": [
+      {
+        "_id": "6781245c23c07198c6869149",
+        "examId": "678123e4d8a97a9e15b67b70",
+        "subjectId": "677ecab7e207a54389451490",
+        "studentId": "677f399707bd30860683d751",
+        "classId": "677e894208052df111874bdb",
+        "sectionId": "677e894308052df111874bdc",
+        "marks": 100,
+        "score": 60,
+        "comments": "",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-10T13:45:00.640Z",
+        "updatedAt": "2025-01-10T13:45:00.640Z"
+      },
+      {
+        "_id": "67b0644584016eb49653224e",
+        "examId": "678123e4d8a97a9e15b67b70",
+        "subjectId": "677ecb34cd37da435cf53df1",
+        "studentId": "677f399707bd30860683d751",
+        "classId": "677e894208052df111874bdb",
+        "sectionId": "677e894308052df111874bdc",
+        "marks": 100,
+        "score": 77,
+        "comments": "",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-15T09:54:13.256Z",
+        "updatedAt": "2025-02-15T09:54:13.256Z"
+      }
+    ],
+    "FeeMonthAssociation": [
+      {
+        "_id": "67dc3963dedeace718fc23c3",
+        "paymentId": "67dc3963dedeace718fc23c2",
+        "feeMonth": "2025-04-04T18:00:00.000Z",
+        "createdAt": "2025-03-20T15:50:59.319Z",
+        "updatedAt": "2025-03-20T15:50:59.319Z"
+      },
+      {
+        "_id": "67dc3963dedeace718fc23c5",
+        "paymentId": "67dc3963dedeace718fc23c4",
+        "feeMonth": "2025-04-30T18:00:00.000Z",
+        "createdAt": "2025-03-20T15:50:59.319Z",
+        "updatedAt": "2025-03-20T15:50:59.319Z"
+      },
+      {
+        "_id": "67de6632ba2aa8c39e10703c",
+        "paymentId": "67de6632ba2aa8c39e10703b",
+        "feeMonth": "2025-03-22T07:26:31.796Z",
+        "createdAt": "2025-03-22T07:26:42.357Z",
+        "updatedAt": "2025-03-22T07:26:42.357Z"
+      },
+      {
+        "_id": "67de6633ba2aa8c39e10703e",
+        "paymentId": "67de6633ba2aa8c39e10703d",
+        "feeMonth": "2025-03-22T07:26:31.796Z",
+        "createdAt": "2025-03-22T07:26:42.357Z",
+        "updatedAt": "2025-03-22T07:26:42.357Z"
+      },
+      {
+        "_id": "67f8f68d5005bce0e4e71565",
+        "paymentId": "67f8f68d5005bce0e4e71564",
+        "feeMonth": "2025-01-15T18:00:00.000Z",
+        "createdAt": "2025-04-11T11:01:33.619Z",
+        "updatedAt": "2025-04-11T11:01:33.619Z"
+      },
+      {
+        "_id": "67f917175005bce0e4e71575",
+        "paymentId": "67f917175005bce0e4e71574",
+        "feeMonth": "2025-01-31T18:00:00.000Z",
+        "createdAt": "2025-04-11T13:20:23.344Z",
+        "updatedAt": "2025-04-11T13:20:23.344Z"
+      },
+      {
+        "_id": "67f917415005bce0e4e71578",
+        "paymentId": "67f917415005bce0e4e71577",
+        "feeMonth": "2025-01-31T18:00:00.000Z",
+        "createdAt": "2025-04-11T13:21:05.793Z",
+        "updatedAt": "2025-04-11T13:21:05.793Z"
+      },
+      {
+        "_id": "67f917de5005bce0e4e7157b",
+        "paymentId": "67f917de5005bce0e4e7157a",
+        "feeMonth": "2024-11-30T18:00:00.000Z",
+        "createdAt": "2025-04-11T13:23:42.713Z",
+        "updatedAt": "2025-04-11T13:23:42.713Z"
+      },
+      {
+        "_id": "67f9188f5005bce0e4e7157e",
+        "paymentId": "67f9188f5005bce0e4e7157d",
+        "feeMonth": "2024-11-30T18:00:00.000Z",
+        "createdAt": "2025-04-11T13:26:39.084Z",
+        "updatedAt": "2025-04-11T13:26:39.084Z"
+      },
+      {
+        "_id": "67fa16246d269aac5693d518",
+        "paymentId": "67fa16236d269aac5693d517",
+        "feeMonth": "2025-04-12T07:28:18.329Z",
+        "createdAt": "2025-04-12T07:28:32.870Z",
+        "updatedAt": "2025-04-12T07:28:32.870Z"
+      },
+      {
+        "_id": "67fa16226d269aac5693d514",
+        "paymentId": "67fa16226d269aac5693d513",
+        "feeMonth": "2025-04-12T07:28:18.329Z",
+        "createdAt": "2025-04-12T07:28:32.870Z",
+        "updatedAt": "2025-04-12T07:28:32.870Z"
+      },
+      {
+        "_id": "67fa16236d269aac5693d516",
+        "paymentId": "67fa16236d269aac5693d515",
+        "feeMonth": "2025-04-12T07:28:18.329Z",
+        "createdAt": "2025-04-12T07:28:32.870Z",
+        "updatedAt": "2025-04-12T07:28:32.870Z"
+      },
+      {
+        "_id": "67fca896b25467e01dc23b76",
+        "paymentId": "67fca895b25467e01dc23b75",
+        "feeMonth": "2024-12-31T18:00:00.000Z",
+        "createdAt": "2025-04-14T06:17:57.907Z",
+        "updatedAt": "2025-04-14T06:17:57.907Z"
+      },
+      {
+        "_id": "67fcbed762744319b4cd7736",
+        "paymentId": "67fcbed762744319b4cd7735",
+        "feeMonth": "2025-01-01T00:00:00.000Z",
+        "createdAt": "2025-04-14T07:52:53.723Z",
+        "updatedAt": "2025-04-14T07:52:53.723Z"
+      },
+      {
+        "_id": "67fcbefdd61837d221bb4360",
+        "paymentId": "67fcbefdd61837d221bb435f",
+        "feeMonth": "2025-02-01T00:00:00.000Z",
+        "createdAt": "2025-04-14T07:53:31.402Z",
+        "updatedAt": "2025-04-14T07:53:31.402Z"
+      },
+      {
+        "_id": "67fddb19bf9fb5fb86287162",
+        "paymentId": "67fddb19bf9fb5fb86287161",
+        "feeMonth": "2025-03-03T18:00:00.000Z",
+        "createdAt": "2025-04-15T04:05:45.042Z",
+        "updatedAt": "2025-04-15T04:05:45.042Z"
+      },
+      {
+        "_id": "67fddc1ac929d2833e1cec3e",
+        "paymentId": "67fddc19c929d2833e1cec3d",
+        "feeMonth": "2025-02-10T18:00:00.000Z",
+        "createdAt": "2025-04-15T04:10:01.706Z",
+        "updatedAt": "2025-04-15T04:10:01.706Z"
+      },
+      {
+        "_id": "67fe17276fbaa594525ec1d5",
+        "paymentId": "67fe17276fbaa594525ec1d4",
+        "feeMonth": "2025-04-15T08:21:50.498Z",
+        "createdAt": "2025-04-15T08:21:59.265Z",
+        "updatedAt": "2025-04-15T08:21:59.265Z"
+      },
+      {
+        "_id": "67fe6b04b73d893e752a5820",
+        "paymentId": "67fe6b04b73d893e752a581f",
+        "feeMonth": "2025-06-05T18:00:00.000Z",
+        "createdAt": "2025-04-15T14:19:48.686Z",
+        "updatedAt": "2025-04-15T14:19:48.686Z"
+      },
+      {
+        "_id": "67fe6b73b73d893e752a5823",
+        "paymentId": "67fe6b73b73d893e752a5822",
+        "feeMonth": "2025-08-07T18:00:00.000Z",
+        "createdAt": "2025-04-15T14:21:39.769Z",
+        "updatedAt": "2025-04-15T14:21:39.769Z"
+      },
+      {
+        "_id": "67fe6c72b73d893e752a5826",
+        "paymentId": "67fe6c71b73d893e752a5825",
+        "feeMonth": "2025-07-10T18:00:00.000Z",
+        "createdAt": "2025-04-15T14:25:53.855Z",
+        "updatedAt": "2025-04-15T14:25:53.855Z"
+      },
+      {
+        "_id": "67fe6d15b73d893e752a5829",
+        "paymentId": "67fe6d14b73d893e752a5828",
+        "feeMonth": "2025-09-11T18:00:00.000Z",
+        "createdAt": "2025-04-15T14:28:36.975Z",
+        "updatedAt": "2025-04-15T14:28:36.975Z"
+      },
+      {
+        "_id": "67fe789758b11c6ef1ba9bb1",
+        "paymentId": "67fe789758b11c6ef1ba9bb0",
+        "feeMonth": "2025-03-10T18:00:00.000Z",
+        "createdAt": "2025-04-15T15:17:43.167Z",
+        "updatedAt": "2025-04-15T15:17:43.167Z"
+      },
+      {
+        "_id": "67fe83fa7f0618c52f1583ba",
+        "paymentId": "67fe83fa7f0618c52f1583b9",
+        "feeMonth": "2025-04-10T18:00:00.000Z",
+        "createdAt": "2025-04-15T16:06:18.517Z",
+        "updatedAt": "2025-04-15T16:06:18.517Z"
+      },
+      {
+        "_id": "67ffccb51d5d065d18832bf6",
+        "paymentId": "67ffccb41d5d065d18832bf5",
+        "feeMonth": "2025-03-04T18:00:00.000Z",
+        "createdAt": "2025-04-16T15:28:52.939Z",
+        "updatedAt": "2025-04-16T15:28:52.939Z"
+      },
+      {
+        "_id": "6810654e0a89d9d462fb2d0b",
+        "paymentId": "6810654d0a89d9d462fb2d0a",
+        "feeMonth": "2025-04-29T05:36:03.071Z",
+        "createdAt": "2025-04-29T05:36:13.702Z",
+        "updatedAt": "2025-04-29T05:36:13.702Z"
+      },
+      {
+        "_id": "6810687e9d37e671151d7460",
+        "paymentId": "6810687e9d37e671151d745f",
+        "feeMonth": "2025-04-29T05:45:00.440Z",
+        "createdAt": "2025-04-29T05:49:50.139Z",
+        "updatedAt": "2025-04-29T05:49:50.139Z"
+      },
+      {
+        "_id": "6815b066cce9035bda678ea4",
+        "paymentId": "6815b066cce9035bda678ea3",
+        "feeMonth": "2025-01-06T18:00:00.000Z",
+        "createdAt": "2025-05-03T05:57:58.390Z",
+        "updatedAt": "2025-05-03T05:57:58.390Z"
+      },
+      {
+        "_id": "6815b067cce9035bda678ea6",
+        "paymentId": "6815b067cce9035bda678ea5",
+        "feeMonth": "2025-02-06T18:00:00.000Z",
+        "createdAt": "2025-05-03T05:57:58.390Z",
+        "updatedAt": "2025-05-03T05:57:58.390Z"
+      },
+      {
+        "_id": "6815b068cce9035bda678ea8",
+        "paymentId": "6815b067cce9035bda678ea7",
+        "feeMonth": "2025-03-11T18:00:00.000Z",
+        "createdAt": "2025-05-03T05:57:58.390Z",
+        "updatedAt": "2025-05-03T05:57:58.390Z"
+      },
+      {
+        "_id": "681779110a81a612b19bb926",
+        "paymentId": "681779110a81a612b19bb925",
+        "feeMonth": "2025-04-08T18:00:00.000Z",
+        "createdAt": "2025-05-04T14:26:25.487Z",
+        "updatedAt": "2025-05-04T14:26:25.487Z"
+      },
+      {
+        "_id": "681779120a81a612b19bb928",
+        "paymentId": "681779120a81a612b19bb927",
+        "feeMonth": "2025-04-08T18:00:00.000Z",
+        "createdAt": "2025-05-04T14:26:25.487Z",
+        "updatedAt": "2025-05-04T14:26:25.487Z"
+      },
+      {
+        "_id": "681779130a81a612b19bb92a",
+        "paymentId": "681779120a81a612b19bb929",
+        "feeMonth": "2025-04-08T18:00:00.000Z",
+        "createdAt": "2025-05-04T14:26:25.487Z",
+        "updatedAt": "2025-05-04T14:26:25.487Z"
+      },
+      {
+        "_id": "681779badab674821dbec260",
+        "paymentId": "681779badab674821dbec25f",
+        "feeMonth": "2025-05-04T14:29:05.017Z",
+        "createdAt": "2025-05-04T14:29:14.526Z",
+        "updatedAt": "2025-05-04T14:29:14.526Z"
+      },
+      {
+        "_id": "6818674e99fea0c5c8d570be",
+        "paymentId": "6818674e99fea0c5c8d570bd",
+        "feeMonth": "2025-05-05T07:21:25.186Z",
+        "createdAt": "2025-05-05T07:22:54.456Z",
+        "updatedAt": "2025-05-05T07:22:54.456Z"
+      },
+      {
+        "_id": "68186ef299fea0c5c8d570cd",
+        "paymentId": "68186ef299fea0c5c8d570cc",
+        "feeMonth": "2025-05-05T07:55:24.304Z",
+        "createdAt": "2025-05-05T07:55:30.379Z",
+        "updatedAt": "2025-05-05T07:55:30.379Z"
+      },
+      {
+        "_id": "6818705a99fea0c5c8d570d0",
+        "paymentId": "6818705a99fea0c5c8d570cf",
+        "feeMonth": "2025-05-05T08:01:23.212Z",
+        "createdAt": "2025-05-05T08:01:30.036Z",
+        "updatedAt": "2025-05-05T08:01:30.036Z"
+      }
+    ],
+    "Notice": [
+      {
+        "_id": "677e4c0f78b244ecb17ce42f",
+        "title": "Independence Day Celebration",
+        "type": "event",
+        "date": "01-08-2025",
+        "content": "This is to inform you that our school will celebrate Independence Day on August 16, 2025 in the school premises. The program will commence at 8:00 AM with the flag-hoisting ceremony, followed by cultural performances.\n\nAll students and staff are requested to attend in proper school uniform.",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T09:57:35.925Z",
+        "updatedAt": "2025-01-08T09:57:35.925Z"
+      }
+    ],
+    "Subject": [
+      {
+        "_id": "677ecab7e207a54389451490",
+        "name": "English",
+        "classId": "677e894208052df111874bdb",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T18:57:59.406Z",
+        "updatedAt": "2025-01-08T18:57:59.406Z"
+      },
+      {
+        "_id": "677ecb34cd37da435cf53df1",
+        "name": "Bangla",
+        "classId": "677e894208052df111874bdb",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T19:00:04.649Z",
+        "updatedAt": "2025-01-08T19:00:04.649Z"
+      },
+      {
+        "_id": "67c9c4492342b5d9ac7b726c",
+        "name": "Math",
+        "classId": "677e894208052df111874bdb",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-06T15:50:32.380Z",
+        "updatedAt": "2025-03-06T15:51:51.982Z"
+      },
+      {
+        "_id": "67c9c507281c76a8c4f52314",
+        "name": "Science",
+        "classId": "677e894208052df111874bdb",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-06T15:53:43.719Z",
+        "updatedAt": "2025-03-06T15:53:43.719Z"
+      }
+    ],
+    "Schedule": [
+      {
+        "_id": "677ecab8e207a54389451491",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "subjectId": "677ecab7e207a54389451490",
+        "classId": "677e894208052df111874bdb",
+        "teacherId": "677ec7b280c9e975c1db0dc2",
+        "sectionId": "677e894308052df111874bdc",
+        "startTime": "08:00",
+        "endTime": "08:30",
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Sunday"
+        ],
+        "createdAt": "2025-01-08T18:58:00.014Z",
+        "updatedAt": "2025-01-08T18:58:00.014Z"
+      },
+      {
+        "_id": "677ecab8e207a54389451492",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "subjectId": "677ecab7e207a54389451490",
+        "classId": "677e894208052df111874bdb",
+        "teacherId": "677ec7b280c9e975c1db0dc2",
+        "sectionId": "677e894308052df111874bdc",
+        "startTime": "08:30",
+        "endTime": "09:00",
+        "days": [
+          "Wednesday",
+          "Thursday"
+        ],
+        "createdAt": "2025-01-08T18:58:00.014Z",
+        "updatedAt": "2025-01-08T18:58:00.014Z"
+      },
+      {
+        "_id": "677ecb35cd37da435cf53df2",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "subjectId": "677ecb34cd37da435cf53df1",
+        "classId": "677e894208052df111874bdb",
+        "teacherId": "677ec97516c1fe0fc1a63a0c",
+        "sectionId": "677e894308052df111874bdc",
+        "startTime": "09:30",
+        "endTime": "10:00",
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Sunday"
+        ],
+        "createdAt": "2025-01-08T19:00:05.245Z",
+        "updatedAt": "2025-01-08T19:00:05.245Z"
+      },
+      {
+        "_id": "677ecb35cd37da435cf53df3",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "subjectId": "677ecb34cd37da435cf53df1",
+        "classId": "677e894208052df111874bdb",
+        "teacherId": "677ec97516c1fe0fc1a63a0c",
+        "sectionId": "677e894308052df111874bdc",
+        "startTime": "13:00",
+        "endTime": "13:30",
+        "days": [
+          "Wednesday",
+          "Thursday"
+        ],
+        "createdAt": "2025-01-08T19:00:05.245Z",
+        "updatedAt": "2025-01-08T19:00:05.245Z"
+      },
+      {
+        "_id": "67c9c498281c76a8c4f52312",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "subjectId": "67c9c4492342b5d9ac7b726c",
+        "classId": "677e894208052df111874bdb",
+        "teacherId": "677eca3b16c1fe0fc1a63a0e",
+        "sectionId": "677e894308052df111874bdc",
+        "startTime": "23:59",
+        "endTime": "11:30",
+        "days": [
+          "Sunday",
+          "Tuesday",
+          "Monday"
+        ],
+        "createdAt": "2025-03-06T15:51:51.982Z",
+        "updatedAt": "2025-03-06T15:51:51.982Z"
+      },
+      {
+        "_id": "67c9c498281c76a8c4f52313",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "subjectId": "67c9c4492342b5d9ac7b726c",
+        "classId": "677e894208052df111874bdb",
+        "teacherId": "677ec97516c1fe0fc1a63a0c",
+        "sectionId": "677e894308052df111874bdc",
+        "startTime": "00:00",
+        "endTime": "00:30",
+        "days": [
+          "Monday"
+        ],
+        "createdAt": "2025-03-06T15:51:51.982Z",
+        "updatedAt": "2025-03-06T15:51:51.982Z"
+      },
+      {
+        "_id": "67c9c508281c76a8c4f52315",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "subjectId": "67c9c507281c76a8c4f52314",
+        "classId": "677e894208052df111874bdb",
+        "teacherId": "677ec97516c1fe0fc1a63a0c",
+        "sectionId": "677e894308052df111874bdc",
+        "startTime": "10:00",
+        "endTime": "10:30",
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday"
+        ],
+        "createdAt": "2025-03-06T15:53:44.291Z",
+        "updatedAt": "2025-03-06T15:53:44.291Z"
+      }
+    ],
+    "TransactionCategory": [
+      {
+        "_id": "67c41c02d193c4df2c46af64",
+        "value": "syllabus",
+        "label": "Syllabus",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T08:51:14.533Z",
+        "updatedAt": "2025-03-02T08:51:14.533Z"
+      },
+      {
+        "_id": "67c4222ae4767f88b837ff9d",
+        "value": "form_fees",
+        "label": "Form Fees",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:30.668Z",
+        "updatedAt": "2025-03-02T09:17:30.668Z"
+      },
+      {
+        "_id": "67c4222ae4767f88b837ff9e",
+        "value": "admission_fees",
+        "label": "Admission Fees",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:30.881Z",
+        "updatedAt": "2025-03-02T09:17:30.881Z"
+      },
+      {
+        "_id": "67c4222be4767f88b837ff9f",
+        "value": "monthly_fees",
+        "label": "Monthly Fees",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:31.084Z",
+        "updatedAt": "2025-03-02T09:17:31.084Z"
+      },
+      {
+        "_id": "67c4222be4767f88b837ffa0",
+        "value": "book_fees",
+        "label": "Book",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:31.287Z",
+        "updatedAt": "2025-03-02T09:17:31.287Z"
+      },
+      {
+        "_id": "67c4222be4767f88b837ffa1",
+        "value": "syllabus_fees",
+        "label": "Syllabus",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:31.493Z",
+        "updatedAt": "2025-03-02T09:17:31.493Z"
+      },
+      {
+        "_id": "67c4222be4767f88b837ffa2",
+        "value": "id_card_fees",
+        "label": "ID Card",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:31.695Z",
+        "updatedAt": "2025-03-02T09:17:31.695Z"
+      },
+      {
+        "_id": "67c4222be4767f88b837ffa3",
+        "value": "dress_fees",
+        "label": "Dress",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:31.896Z",
+        "updatedAt": "2025-03-02T09:17:31.897Z"
+      },
+      {
+        "_id": "67c4222ce4767f88b837ffa4",
+        "value": "prottoyon_fees",
+        "label": "Prottoyon Fee",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:32.096Z",
+        "updatedAt": "2025-03-02T09:17:32.096Z"
+      },
+      {
+        "_id": "67c4222ce4767f88b837ffa5",
+        "value": "stationary_fees",
+        "label": "Stationary",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:32.300Z",
+        "updatedAt": "2025-03-02T09:17:32.300Z"
+      },
+      {
+        "_id": "67c4222ce4767f88b837ffa6",
+        "value": "exam_fees",
+        "label": "Examination Fees",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:32.507Z",
+        "updatedAt": "2025-03-02T09:17:32.507Z"
+      },
+      {
+        "_id": "67c4222ce4767f88b837ffa7",
+        "value": "hostel_fees",
+        "label": "Hostel Fees",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:32.713Z",
+        "updatedAt": "2025-03-02T09:17:32.713Z"
+      },
+      {
+        "_id": "67c4222ce4767f88b837ffa8",
+        "value": "laboratory_fees",
+        "label": "Laboratory Fees",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:32.922Z",
+        "updatedAt": "2025-03-02T09:17:32.922Z"
+      },
+      {
+        "_id": "67c4222de4767f88b837ffa9",
+        "value": "library_fees",
+        "label": "Library Fees",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:33.129Z",
+        "updatedAt": "2025-03-02T09:17:33.129Z"
+      },
+      {
+        "_id": "67c4222de4767f88b837ffaa",
+        "value": "transport_fees",
+        "label": "Transport Fees",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:33.341Z",
+        "updatedAt": "2025-03-02T09:17:33.341Z"
+      },
+      {
+        "_id": "67c4222de4767f88b837ffab",
+        "value": "other_fees",
+        "label": "Other Fees",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:33.545Z",
+        "updatedAt": "2025-03-02T09:17:33.545Z"
+      },
+      {
+        "_id": "67c4222de4767f88b837ffac",
+        "value": "bank_deposit",
+        "label": "Bank Deposit",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:33.744Z",
+        "updatedAt": "2025-03-02T09:17:33.744Z"
+      },
+      {
+        "_id": "67c4222de4767f88b837ffad",
+        "value": "bank_withdrawal",
+        "label": "Bank Withdrawal",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:33.956Z",
+        "updatedAt": "2025-03-02T09:17:33.956Z"
+      },
+      {
+        "_id": "67c4222ee4767f88b837ffae",
+        "value": "donations",
+        "label": "Donations & Grants",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:34.165Z",
+        "updatedAt": "2025-03-02T09:17:34.165Z"
+      },
+      {
+        "_id": "67c4222ee4767f88b837ffaf",
+        "value": "cafeteria_income",
+        "label": "Cafeteria Income",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:34.370Z",
+        "updatedAt": "2025-03-02T09:17:34.370Z"
+      },
+      {
+        "_id": "67c4222ee4767f88b837ffb0",
+        "value": "utilities",
+        "label": "Utilities",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:34.578Z",
+        "updatedAt": "2025-03-02T09:17:34.578Z"
+      },
+      {
+        "_id": "67c4222ee4767f88b837ffb1",
+        "value": "maintenance",
+        "label": "Building Maintenance",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:34.787Z",
+        "updatedAt": "2025-03-02T09:17:34.787Z"
+      },
+      {
+        "_id": "67c4222ee4767f88b837ffb2",
+        "value": "supplies",
+        "label": "Office Supplies",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:34.992Z",
+        "updatedAt": "2025-03-02T09:17:34.992Z"
+      },
+      {
+        "_id": "67c4222fe4767f88b837ffb3",
+        "value": "teaching_supplies",
+        "label": "Teaching Supplies",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:35.203Z",
+        "updatedAt": "2025-03-02T09:17:35.203Z"
+      },
+      {
+        "_id": "67c4222fe4767f88b837ffb4",
+        "value": "equipment",
+        "label": "Equipment",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:35.403Z",
+        "updatedAt": "2025-03-02T09:17:35.403Z"
+      },
+      {
+        "_id": "67c4222fe4767f88b837ffb5",
+        "value": "technology",
+        "label": "Technology & IT",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:35.605Z",
+        "updatedAt": "2025-03-02T09:17:35.605Z"
+      },
+      {
+        "_id": "67c4222fe4767f88b837ffb6",
+        "value": "library_resources",
+        "label": "Library Resources",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:35.808Z",
+        "updatedAt": "2025-03-02T09:17:35.808Z"
+      },
+      {
+        "_id": "67c42230e4767f88b837ffb7",
+        "value": "sports_equipment",
+        "label": "Sports Equipment",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:36.019Z",
+        "updatedAt": "2025-03-02T09:17:36.019Z"
+      },
+      {
+        "_id": "67c42230e4767f88b837ffb8",
+        "value": "marketing",
+        "label": "Marketing & Advertising",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:36.226Z",
+        "updatedAt": "2025-03-02T09:17:36.226Z"
+      },
+      {
+        "_id": "67c42230e4767f88b837ffb9",
+        "value": "security",
+        "label": "Security Services",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:36.434Z",
+        "updatedAt": "2025-03-02T09:17:36.434Z"
+      },
+      {
+        "_id": "67c42230e4767f88b837ffba",
+        "value": "student_activities",
+        "label": "Student Activities",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:36.639Z",
+        "updatedAt": "2025-03-02T09:17:36.639Z"
+      },
+      {
+        "_id": "67c42230e4767f88b837ffbb",
+        "value": "cleaning",
+        "label": "Cleaning Services",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:36.841Z",
+        "updatedAt": "2025-03-02T09:17:36.841Z"
+      },
+      {
+        "_id": "67c42231e4767f88b837ffbc",
+        "value": "furniture",
+        "label": "Furniture",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:37.045Z",
+        "updatedAt": "2025-03-02T09:17:37.045Z"
+      },
+      {
+        "_id": "67c42231e4767f88b837ffbd",
+        "value": "repairs",
+        "label": "Repairs",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:37.251Z",
+        "updatedAt": "2025-03-02T09:17:37.251Z"
+      },
+      {
+        "_id": "67c42231e4767f88b837ffbe",
+        "value": "scholarships",
+        "label": "Scholarships",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:37.456Z",
+        "updatedAt": "2025-03-02T09:17:37.456Z"
+      },
+      {
+        "_id": "67c42231e4767f88b837ffbf",
+        "value": "miscellaneous",
+        "label": "Miscellaneous",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-02T09:17:37.669Z",
+        "updatedAt": "2025-03-02T09:17:37.669Z"
+      }
+    ],
+    "Student": [
+      {
+        "_id": "67baf79082f8905601f3f845",
+        "photo": "https://www.student.com",
+        "fullName": "John Doe",
+        "email": "green@gmail.com",
+        "phone": "01777777777",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2021-01-31T18:00:00.000Z",
+        "address": "Green, Gree",
+        "monthlyFee": 1200,
+        "studentId": "202",
+        "sectionId": "67b38460f7f897e512930a28",
+        "classId": "67b3845ff7f897e512930a27",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "guardianName": "Mary Doe",
+        "relationship": "Mother",
+        "guardianPhone": "01777777777",
+        "guardianEmail": "green@gmail.com",
+        "guardianOccupation": "Bo",
+        "fatherName": "James Doe",
+        "motherName": "May Doe",
+        "createdAt": "2025-02-23T10:25:20.307Z",
+        "updatedAt": "2025-03-09T05:52:44.344Z",
+        "admissionDate": "2025-01-01T00:00:00.000Z",
+        "feeStructureId": "67c6c0839c16ff783e9eb694"
+      },
+      {
+        "_id": "67fa15f3d4101c8dead91de7",
+        "admissionDate": "2025-04-12T00:00:00.000Z",
+        "feeStructureId": "67de6e797578eff4debdac7f",
+        "photo": "https://www.student.com",
+        "fullName": "saad",
+        "email": "green@gmail.com",
+        "phone": "01814259902",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2025-04-11T18:00:00.000Z",
+        "address": "test, test",
+        "studentId": "EVE-10200",
+        "sectionId": "67b54ee586171e8d885578ea",
+        "classId": "67b54ee486171e8d885578e9",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "guardianName": "test",
+        "relationship": "test",
+        "guardianPhone": "01814259902",
+        "guardianOccupation": "test",
+        "fatherName": "test",
+        "motherName": "test",
+        "createdAt": "2025-04-12T07:27:47.938Z",
+        "updatedAt": "2025-04-21T06:47:43.240Z"
+      },
+      {
+        "_id": "67ff6e661822a1999f85bf41",
+        "admissionDate": "2025-04-16T00:00:00.000Z",
+        "feeStructureId": "67c6c0839c16ff783e9eb694",
+        "photo": "https://www.student.com",
+        "fullName": "fff",
+        "email": "hamid.coder.js@gmail.com",
+        "phone": "01111111111",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2025-03-31T18:00:00.000Z",
+        "address": "4000 kalamia bazar, chittagong, bangladesh.\n0000",
+        "studentId": "EVE-101",
+        "sectionId": "677e894308052df111874bdc",
+        "classId": "677e894208052df111874bdb",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "guardianName": "Hmid",
+        "relationship": "77",
+        "guardianPhone": "01978121827",
+        "guardianOccupation": "eng",
+        "fatherName": "fff",
+        "motherName": "ffff",
+        "createdAt": "2025-04-16T08:46:30.901Z",
+        "updatedAt": "2025-04-16T08:46:30.901Z"
+      },
+      {
+        "_id": "6814a533b0c71191c820b946",
+        "admissionDate": "2025-05-02T00:00:00.000Z",
+        "feeStructureId": "67c6c0839c16ff783e9eb694",
+        "photo": "https://www.student.com",
+        "fullName": "Mamun",
+        "email": "holychildjunior@gmail.com",
+        "phone": "01700000000",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2019-04-30T18:00:00.000Z",
+        "address": "Dhaka-1200",
+        "studentId": "Mk100",
+        "sectionId": "67b38460f7f897e512930a28",
+        "classId": "67b3845ff7f897e512930a27",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "guardianName": "Moni",
+        "relationship": "Maya",
+        "guardianPhone": "01200000000",
+        "guardianOccupation": "Farmer ",
+        "fatherName": "Moni",
+        "motherName": "Maya",
+        "createdAt": "2025-05-02T10:57:55.636Z",
+        "updatedAt": "2025-05-02T10:57:55.636Z"
+      },
+      {
+        "_id": "681865b997c5ecf46932da0c",
+        "admissionDate": "2025-05-05T00:00:00.000Z",
+        "feeStructureId": "67de6e797578eff4debdac7f",
+        "photo": "https://www.student.com",
+        "fullName": "ffffffff",
+        "email": "testfffffff@gmail.com",
+        "phone": "01978121827",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2025-04-29T18:00:00.000Z",
+        "address": "Chattogram, Bangladesh",
+        "studentId": "EVE-120",
+        "sectionId": "677e894308052df111874bdc",
+        "classId": "677e894208052df111874bdb",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "guardianName": "fffffffff",
+        "relationship": "ffffffff",
+        "guardianPhone": "01978121827",
+        "guardianOccupation": "engggg",
+        "fatherName": "ffffffff",
+        "motherName": "fffffff",
+        "createdAt": "2025-05-05T07:16:09.464Z",
+        "updatedAt": "2025-05-05T07:16:09.464Z"
+      }
+    ],
+    "Employee": [
+      {
+        "_id": "677ec7b280c9e975c1db0dc2",
+        "photo": "https://campaas.spiralvectors.com/uploads/evergreen/employees/677ec7adb6a72.jpg",
+        "employeeId": "101",
+        "fullName": "Mahmodul",
+        "email": "sohandev5@gmail.com",
+        "phone": "+8801842330685",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2001-01-15T18:00:00.000Z",
+        "address": "moheshkhali",
+        "salary": 1000,
+        "role": "teacher",
+        "fatherName": "Jakir",
+        "motherName": "Jamila",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T18:45:06.514Z",
+        "updatedAt": "2025-01-08T18:45:06.514Z"
+      },
+      {
+        "_id": "677ec97516c1fe0fc1a63a0c",
+        "photo": "https://campaas.spiralvectors.com/uploads/evergreen/employees/677ec8254537e.jpg",
+        "employeeId": "102",
+        "fullName": "Shamima",
+        "email": "sohandev6@gmail.com",
+        "phone": "+8801842330686",
+        "religion": "islam",
+        "gender": "female",
+        "dateOfBirth": "2010-01-06T18:00:00.000Z",
+        "address": "moheshkhali",
+        "salary": 1000,
+        "role": "teacher",
+        "fatherName": "Habib Urrahman",
+        "motherName": "Jakiya",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T18:52:37.208Z",
+        "updatedAt": "2025-01-08T18:52:37.208Z"
+      },
+      {
+        "_id": "677eca3b16c1fe0fc1a63a0e",
+        "photo": "https://campaas.spiralvectors.com/uploads/evergreen/employees/6781006872909.png",
+        "employeeId": "103",
+        "fullName": "Kamrul",
+        "email": "sohandev8@gmail.com",
+        "phone": "+8801842330688",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2010-07-14T18:00:00.000Z",
+        "address": "moheshkhali",
+        "salary": 1000,
+        "role": "teacher",
+        "fatherName": "Joynal",
+        "motherName": "Mariya",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T18:55:55.474Z",
+        "updatedAt": "2025-01-10T11:11:41.158Z"
+      },
+      {
+        "_id": "67815bae23fd7a394cbb1b5d",
+        "photo": "https://campaas.spiralvectors.com/uploads/evergreen/employees/67815baa52fe8.png",
+        "employeeId": "emp787",
+        "fullName": "Mitu Islam",
+        "email": "mitu@gmail.com",
+        "phone": "01978121827",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2016-01-06T18:00:00.000Z",
+        "address": "4000 kalamia bazar, chittagong, bangladesh.\n0000",
+        "salary": 12000,
+        "role": "accountant",
+        "fatherName": "Nurul Islam",
+        "motherName": "Ms Jahanara",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-10T17:41:02.071Z",
+        "updatedAt": "2025-01-10T17:41:02.071Z"
+      },
+      {
+        "_id": "6814e6115ad0bd5b24687d3a",
+        "photo": "https://placehold.co/400",
+        "employeeId": "1111",
+        "fullName": "mohammad Sohan",
+        "email": "decorhaven01@gmail.com",
+        "phone": "+8801842330687",
+        "religion": "islam",
+        "gender": "male",
+        "dateOfBirth": "2015-05-26T18:00:00.000Z",
+        "address": "Bangladesh",
+        "salary": 1233,
+        "role": "teacher",
+        "fatherName": "nurul islam",
+        "motherName": "Begum",
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-05-02T15:34:41.858Z",
+        "updatedAt": "2025-05-02T15:34:41.858Z"
+      }
+    ],
+    "Transaction": [
+      {
+        "_id": "677ecdbf9d01d4409c65dc3e",
+        "label": "monthly_fees",
+        "note": "monthly_fees By Korim Uddin class - Nine section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 1200,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T19:10:55.504Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "677ecdf533125d1ac34097b5",
+        "label": "monthly_fees",
+        "note": "monthly_fees By Korim Uddin class - Nine section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 1200,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T19:11:49.129Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "677ece62a80bc4668386326b",
+        "label": "monthly_fees",
+        "note": "monthly_fees By Korim Uddin class - Nine section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 600,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T19:13:38.105Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "677ece84f0ec84b94cc88ed1",
+        "label": "monthly_salary",
+        "note": "monthly_salary To teacher -> Mahmodul ",
+        "category": "monthly_salary",
+        "type": "expense",
+        "amount": 1000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T19:14:12.893Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "677ece9bf0ec84b94cc88ed3",
+        "label": "monthly_salary",
+        "note": "monthly_salary To teacher -> Mahmodul ",
+        "category": "monthly_salary",
+        "type": "expense",
+        "amount": 1000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T19:14:35.813Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "677ecf092a92970c091cf5b2",
+        "label": "breakfast",
+        "note": "All Teacher today meal",
+        "category": "teaching_supplies",
+        "type": "expense",
+        "amount": 100,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-08T19:16:25.872Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67812528d8a97a9e15b67b72",
+        "label": "monthly_fees",
+        "note": "monthly_fees By Mohammad Rofik class - Ten section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 1200,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-10T13:48:24.274Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "6781257be8eca9a77ca00934",
+        "label": "monthly_salary",
+        "note": "monthly_salary To teacher -> Mahmodul ",
+        "category": "monthly_salary",
+        "type": "expense",
+        "amount": 10000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-10T13:49:47.289Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67854bffb5d6c50230b1d511",
+        "label": "monthly_fees",
+        "note": "monthly_fees By Mohammad Rofik class - Ten section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 1200,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-13T17:23:11.131Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67854c1eb5d6c50230b1d513",
+        "label": "monthly_fees",
+        "note": "monthly_fees By Mohammad Rofik class - Ten section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 600,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-13T17:23:42.405Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "6790e349a94f5aeb59c34939",
+        "label": "monthly_fees",
+        "note": "monthly_fees By Korim Uddin class - Ten section - B",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-22T12:23:37.671Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "6790e35ca94f5aeb59c3493b",
+        "label": "form_fees",
+        "note": "form_fees By Korim Uddin class - Ten section - B",
+        "category": "form_fees",
+        "type": "income",
+        "amount": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-22T12:23:56.925Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "6790e379a94f5aeb59c3493d",
+        "label": "monthly_fees",
+        "note": "monthly_fees By Korim Uddin class - Ten section - B",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-22T12:24:25.423Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "6790e391a94f5aeb59c3493f",
+        "label": "form_fees",
+        "note": "form_fees By Korim Uddin class - Ten section - B",
+        "category": "form_fees",
+        "type": "income",
+        "amount": 500,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-22T12:24:49.744Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "6790e3eba94f5aeb59c34941",
+        "label": "exam_fees",
+        "note": "exam_fees By Korim Uddin class - Ten section - B",
+        "category": "exam_fees",
+        "type": "income",
+        "amount": 1000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-22T12:26:19.597Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "6790e404a94f5aeb59c34943",
+        "label": "other_fees",
+        "note": "other_fees By Korim Uddin class - Ten section - B",
+        "category": "other_fees",
+        "type": "income",
+        "amount": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-22T12:26:44.916Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67979dcef8f94111b9a19bbb",
+        "label": "monthly_fees",
+        "note": "monthly_fees By Jenia Akter class - Nine section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 100,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-01-27T14:53:02.828Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "679f1676d8f9f554e55b08f6",
+        "label": "Test",
+        "note": "test",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 15000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-02T06:53:42.212Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "679f1718d8f9f554e55b08f8",
+        "label": "monthly_fees",
+        "note": "monthly_fees By Mohammad Rofik class - Ten section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 1200,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-02T06:56:24.996Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "679f1776d8f9f554e55b08fa",
+        "label": "form_fees",
+        "note": "form_fees By Mohammad Rofik class - Ten section - A",
+        "category": "form_fees",
+        "type": "income",
+        "amount": 1200,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-02T06:57:58.226Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "679f19f5d8f9f554e55b08fe",
+        "label": "expense",
+        "note": "test expense",
+        "category": "marketing",
+        "type": "expense",
+        "amount": 2400,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-02T07:08:36.272Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "679f291fd8f9f554e55b0900",
+        "label": "Bank Deposit",
+        "note": "bank deposit 5000",
+        "category": "bank_deposit",
+        "type": "deposit",
+        "amount": 5000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-02T08:13:17.658Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67a4d68bd15a8827edb75fc0",
+        "label": "monthly_fees",
+        "note": "monthly_fees By Jesmin Akter class - Ten section - B",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-06T15:34:35.275Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67ab3151deac471931343d1f",
+        "label": "form_fees, admission_fees, monthly_fees",
+        "note": "form_fees, admission_fees, monthly_fees By Sakira class - Ten section - B",
+        "category": "form_fees, admission_fees, monthly_fees",
+        "type": "income",
+        "amount": 1000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-11T11:15:29.912Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67ab31c8deac471931343d21",
+        "label": "fees by Sakira-Ten-B",
+        "note": "form_fees, admission_fees, book_fees, syllabus_fees, id_card_fees, dress_fees By Sakira class - Ten section - B",
+        "category": "form_fees, admission_fees, book_fees, syllabus_fees, id_card_fees, dress_fees",
+        "type": "income",
+        "amount": 1000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-11T11:17:28.592Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67ac3c660bcfe9d3397ebdda",
+        "label": "fees by Jenia Akter-Nine-A",
+        "note": "monthly_fees By Jenia Akter class - Nine section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 100,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-12T06:15:02.231Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67ad9c00765b51a755de3b6a",
+        "label": "fees by Jamal-Play-A",
+        "note": "form_fees, admission_fees, syllabus_fees, book_fees By Jamal class - Play section - A",
+        "category": "form_fees, admission_fees, syllabus_fees, book_fees",
+        "type": "income",
+        "amount": 2610,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-13T07:15:12.228Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67af2141141bb851c8fe54c4",
+        "label": "furniture",
+        "note": "dfldsfjlkdlkfjdlfjldkfjm",
+        "category": "furniture",
+        "type": "expense",
+        "amount": 10000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-14T10:56:00.164Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67b0429b3d03ed6c69b27f7e",
+        "label": "fees by mohammad Sohan-Ten-residential",
+        "note": "admission_fees, monthly_fees, id_card_fees By mohammad Sohan class - Ten section - residential",
+        "category": "admission_fees, monthly_fees, id_card_fees",
+        "type": "income",
+        "amount": 1000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-15T07:30:35.722Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67b06ba45bc3cdb7ace4cb6d",
+        "label": "fees by Hamidul Islam-Ten-Resendential",
+        "note": "admission_fees, monthly_fees By Hamidul Islam class - Ten section - Resendential",
+        "category": "admission_fees, monthly_fees",
+        "type": "income",
+        "amount": 500,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-15T10:25:40.573Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67b38648d4de2ff9cc757bc9",
+        "label": "breakfast",
+        "note": "class breakfast",
+        "category": "other_fees",
+        "type": "expense",
+        "amount": 30,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-17T18:56:08.310Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67b386add4de2ff9cc757bcb",
+        "label": "monthly_salary",
+        "note": "monthly_salary To teacher -> Mahmodul ",
+        "category": "monthly_salary",
+        "type": "expense",
+        "amount": 1000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-17T18:57:49.175Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67b47b37762d88cfaf26cf56",
+        "label": "fees by STudent account-Nine-A",
+        "note": "monthly_fees By STudent account class - Nine section - A",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 200,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-02-18T12:21:11.892Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67c7527f733848129db296a5",
+        "label": "Student Fee collection",
+        "note": "৳2,000.00 paid by Adiba Rahman - Nine - A and roll: Student1234",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-04T19:20:31.143Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67c75290733848129db296a7",
+        "label": "Student Fee collection",
+        "note": "৳600.00 paid by Saad Rahman - Nine - A and roll: saad123",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 600,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-04T19:20:48.010Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67c752aa48357f66ed694b75",
+        "label": "monthly_salary",
+        "note": "monthly_salary To teacher -> Mahmodul ",
+        "category": "monthly_salary",
+        "type": "expense",
+        "amount": 300,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-04T19:21:14.401Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67c7530626f2ce12d19207f2",
+        "label": "bonus",
+        "note": "bonus To teacher -> Shamima ",
+        "category": "bonus",
+        "type": "expense",
+        "amount": 500,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-04T19:22:46.307Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67c82f68d9d9a3e3ca7b7636",
+        "label": "Bank demo",
+        "note": "Bank deposit demo",
+        "category": "bank_deposit",
+        "type": "deposit",
+        "amount": 5000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-05T11:03:04.025Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67c83012d9d9a3e3ca7b7637",
+        "label": "withdraw test",
+        "note": "withdraw",
+        "category": "bank_withdrawal",
+        "type": "withdrawal",
+        "amount": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-05T11:05:54.222Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67c834d8d9d9a3e3ca7b7638",
+        "label": "Income for dashboard",
+        "note": "7200",
+        "category": "cafeteria_income",
+        "type": "income",
+        "amount": 7200,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-05T11:26:16.246Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67c83509d9d9a3e3ca7b7639",
+        "label": "200 add",
+        "note": "200 add",
+        "category": "cafeteria_income",
+        "type": "income",
+        "amount": 200,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-05T11:27:05.665Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67c83585d9d9a3e3ca7b763a",
+        "label": "expense",
+        "note": "200 expense",
+        "category": "equipment",
+        "type": "expense",
+        "amount": 200,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-05T11:29:09.000Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67cc38f7b7b64e28c87fe5c9",
+        "label": "Testing",
+        "note": "Test on vps",
+        "category": "exam_fees",
+        "type": "expense",
+        "amount": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-08T12:32:55.447Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67cd2f4fed7c1cef2a6a9816",
+        "label": "Student Fee collection",
+        "note": "৳2,000.00 paid by Adiba Rahman - Nine - A and roll: Student1234",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-09T06:03:59.808Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67cf0de8ed7c1cef2a6a992f",
+        "label": "cost for students",
+        "note": "i need for students",
+        "category": "equipment",
+        "type": "withdrawal",
+        "amount": 1500,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-10T16:06:00.216Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67cf0e39ed7c1cef2a6a9930",
+        "label": "breakfast",
+        "note": "need for teacher",
+        "category": "utilities",
+        "type": "withdrawal",
+        "amount": 5,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-10T16:07:21.348Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67d417c9e8255e0c17e322aa",
+        "label": "Student Fee collection",
+        "note": "৳1,200.00 paid by রায় - Seven - B and roll: 2222",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 1200,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-14T11:49:29.937Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67d41931e8255e0c17e322ae",
+        "label": "monthly_salary",
+        "note": "monthly_salary To teacher -> Mahmodul ",
+        "category": "monthly_salary",
+        "type": "expense",
+        "amount": 5000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-14T11:55:29.135Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67d5a0a43c374570ae09bf42",
+        "label": "Student Fee collection",
+        "note": "৳2,000.00 paid by রায় - Seven - B and roll: 2222",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-15T15:45:40.495Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67d5a0d53c374570ae09bf44",
+        "label": "Student Fee collection",
+        "note": "৳2,000.00 paid by Saad Rahman - Nine - A and roll: saad123",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-15T15:46:29.420Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67d5a0fc3c374570ae09bf47",
+        "label": "Student Fee collection",
+        "note": "৳2,200.00 paid by Adiba Rahman - Nine - A and roll: Student1234",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 2200,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-15T15:47:08.207Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67d5a12a3c374570ae09bf49",
+        "label": "Student Fee collection",
+        "note": "৳2,000.00 paid by Adiba Rahman - Nine - A and roll: Student1234",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-15T15:47:54.889Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67d9b90e5258a64b38ba8210",
+        "label": "Student Fee collection",
+        "note": "৳30,000.00 paid by John Doe - One - A and roll: 202",
+        "category": "monthly_fees",
+        "type": "income",
+        "amount": 30000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-03-18T18:18:54.420Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67f90b715005bce0e4e7156b",
+        "label": "Fee payment for Saad Rahman (saad123)",
+        "note": "Payment received via ShurjoPay. Transaction ID: 67f90b70",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-04-11T12:30:41.106Z",
+        "transactionBy": "ShurjoPay"
+      },
+      {
+        "_id": "67f90d785005bce0e4e7156d",
+        "label": "Fee payment for John Doe (202)",
+        "note": "Payment received via ShurjoPay. Transaction ID: 67f90d77",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 10000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-04-11T12:39:20.265Z",
+        "transactionBy": "ShurjoPay"
+      },
+      {
+        "_id": "67f90e855005bce0e4e7156f",
+        "label": "Fee payment for Saad Rahman (saad123)",
+        "note": "Payment received via ShurjoPay. Transaction ID: 67f90e85",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-04-11T12:43:49.894Z",
+        "transactionBy": "ShurjoPay"
+      },
+      {
+        "_id": "67f90f485005bce0e4e71571",
+        "label": "Fee payment for Saad Rahman (saad123)",
+        "note": "Payment received via ShurjoPay. Transaction ID: 67f90f48",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-04-11T12:47:04.998Z",
+        "transactionBy": "ShurjoPay"
+      },
+      {
+        "_id": "67f90ff05005bce0e4e71573",
+        "label": "Fee payment for Adiba Rahman (Student1234)",
+        "note": "Payment received via ShurjoPay. Transaction ID: 67f90ff0",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-04-11T12:49:52.637Z",
+        "transactionBy": "ShurjoPay"
+      },
+      {
+        "_id": "67f917185005bce0e4e71576",
+        "label": "Fee payment for Adiba Rahman (Student1234)",
+        "note": "Payment received via ShurjoPay. Transaction ID: 67f91715",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-04-11T13:20:24.012Z",
+        "transactionBy": "ShurjoPay"
+      },
+      {
+        "_id": "67f917425005bce0e4e71579",
+        "label": "Fee payment for Adiba Rahman (Student1234)",
+        "note": "Payment received via ShurjoPay. Transaction ID: 67f91740",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-04-11T13:21:06.408Z",
+        "transactionBy": "ShurjoPay"
+      },
+      {
+        "_id": "67f917df5005bce0e4e7157c",
+        "label": "Fee payment for Saad Rahman (saad123)",
+        "note": "Payment received via ShurjoPay. Transaction ID: 67f917dd",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-04-11T13:23:43.340Z",
+        "transactionBy": "ShurjoPay"
+      },
+      {
+        "_id": "67f9188f5005bce0e4e7157f",
+        "label": "Fee payment for Saad Rahman (saad123)",
+        "note": "Payment received via ShurjoPay. Transaction ID: 67f9188d",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-04-11T13:26:39.745Z",
+        "transactionBy": "ShurjoPay"
+      },
+      {
+        "_id": "67fca896b25467e01dc23b77",
+        "label": "Fee payment for Saad Rahman (saad123)",
+        "note": "Payment received via ShurjoPay. Transaction ID: 67fca84c",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-04-14T06:17:58.671Z",
+        "transactionBy": "ShurjoPay"
+      },
+      {
+        "_id": "67fcbed862744319b4cd7737",
+        "label": "Fee payment for Adiba Rahman (Student1234)",
+        "note": "Payment received via ShurjoPay. Transaction ID: 67fcacbb",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-04-14T07:52:56.728Z",
+        "transactionBy": "ShurjoPay"
+      },
+      {
+        "_id": "67fcbefed61837d221bb4361",
+        "label": "Fee payment for Adiba Rahman (Student1234)",
+        "note": "Payment received via ShurjoPay. Transaction ID: 67fcbef8",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-04-14T07:53:34.249Z",
+        "transactionBy": "ShurjoPay"
+      },
+      {
+        "_id": "67fe6b05b73d893e752a5821",
+        "label": "Student Fee Payment",
+        "note": "Fee payment for student: John Doe - ID: 202 - One - A",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 1000,
+        "createdAt": "2025-04-15T14:19:48.686Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67fe6b74b73d893e752a5824",
+        "label": "Student Fee Payment",
+        "note": "Fee payment for student: Adiba Rahman - ID: Student1234 - Nine - A",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 2000,
+        "createdAt": "2025-04-15T14:21:39.769Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67fe6c72b73d893e752a5827",
+        "label": "Student Fee Payment",
+        "note": "Fee payment for student: Adiba Rahman - ID: Student1234 - Nine - A",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 2000,
+        "createdAt": "2025-04-15T14:25:53.855Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67fe6d15b73d893e752a582a",
+        "label": "Student Fee Payment",
+        "note": "Fee payment for student: Adiba Rahman - ID: Student1234 - Nine - A",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-04-15T14:28:36.975Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67fe789758b11c6ef1ba9bb2",
+        "label": "Student Fee Payment",
+        "note": "Fee payment for student: Adiba Rahman - ID: Student1234 - Nine - A",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 2000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-04-15T15:17:43.167Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67fe83fa7f0618c52f1583bb",
+        "label": "Student Fee Payment",
+        "note": "Fee payment for student: John Doe - ID: 202 - One - A",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 10000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-04-15T16:06:18.517Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67fe84247f0618c52f1583be",
+        "label": "Student Fee Payment",
+        "note": "Fee payment for student: John Doe - ID: 202 - One - A",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 5000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-04-15T16:06:59.920Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "67ffccb51d5d065d18832bf7",
+        "label": "Student Fee Payment",
+        "note": "Fee payment for student: John Doe - ID: 202 - One - A",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 10000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-04-16T15:28:52.939Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "6810654e0a89d9d462fb2d0c",
+        "label": "Student Fee Payment",
+        "note": "Fee payment for student: fff - ID: EVE-101 - Nine - A",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 1000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-04-29T05:36:13.702Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "6810687e9d37e671151d7461",
+        "label": "Student Fee Payment",
+        "note": "Fee payment for student: fff - ID: EVE-101 - Nine - A",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 5000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-04-29T05:49:50.139Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "6815b068cce9035bda678ea9",
+        "label": "Student Fee Payment",
+        "note": "Fee payment for student: mohammad Sohan - ID: EVE-119 - Seven - A",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 30000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-05-03T05:57:58.390Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "6815b0c53ffc931210f84788",
+        "label": "tranfer bank",
+        "note": "tranfer bank",
+        "category": "teaching_supplies",
+        "type": "deposit",
+        "amount": 10000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-05-03T05:59:33.063Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "6815b1073ffc931210f84789",
+        "label": "withdraw tk",
+        "note": "withdraw tk",
+        "category": "teaching_supplies",
+        "type": "withdrawal",
+        "amount": 7000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-05-03T06:00:39.479Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "6815b191cce9035bda678eaa",
+        "label": "withdraw tk1",
+        "note": "withdraw tk1",
+        "category": "exam_fees",
+        "type": "withdrawal",
+        "amount": 3000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-05-03T06:02:57.699Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "681775531aa2fa25e4feacdd",
+        "label": "laptop",
+        "note": ",kjkh,k",
+        "category": "book_fees",
+        "type": "withdrawal",
+        "amount": 1000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-05-04T14:10:27.553Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "681775d2419fc25eafbedee2",
+        "label": "dress_fees",
+        "note": "jojo",
+        "category": "dress_fees",
+        "type": "deposit",
+        "amount": 100000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-05-04T14:12:34.173Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "681779130a81a612b19bb92b",
+        "label": "Student Fee Payment",
+        "note": "Fee payment for student: saad - ID: EVE-10200 - Ten-1 - A",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 1600,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-05-04T14:26:25.487Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "681779bbdab674821dbec261",
+        "label": "Student Fee Payment",
+        "note": "Fee payment for student: saad - ID: EVE-10200 - Ten-1 - A",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 100,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-05-04T14:29:14.526Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "6818674f99fea0c5c8d570bf",
+        "label": "Student Fee Payment",
+        "note": "Fee payment for student: John Doe - ID: 202 - One - A",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 5000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-05-05T07:22:54.456Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "68186ef399fea0c5c8d570ce",
+        "label": "Student Fee Payment",
+        "note": "Fee payment for student: John Doe - ID: 202 - One - A",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 5000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-05-05T07:55:30.379Z",
+        "transactionBy": "green@gmail.com"
+      },
+      {
+        "_id": "6818705a99fea0c5c8d570d1",
+        "label": "Student Fee Payment",
+        "note": "Fee payment for student: John Doe - ID: 202 - One - A",
+        "category": "monthly_fee",
+        "type": "income",
+        "amount": 5000,
+        "tenantId": "677e2bd1e0c4500dd1e86cae",
+        "createdAt": "2025-05-05T08:01:30.036Z",
+        "transactionBy": "green@gmail.com"
+      }
+    ]
+  }
+}
