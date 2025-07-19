@@ -647,6 +647,25 @@ const generateStudentDues = async (
 export const createStudentService = async (input: CreateStudentInput) => {
 	return await prisma.$transaction(
 		async tx => {
+			// Convert string dates to Date objects if needed
+			const admissionDate =
+				input.admissionDate instanceof Date
+					? input.admissionDate
+					: new Date(input.admissionDate)
+
+			const dateOfBirth =
+				input.dateOfBirth instanceof Date
+					? input.dateOfBirth
+					: new Date(input.dateOfBirth)
+
+			// Validate dates
+			if (isNaN(admissionDate.getTime())) {
+				throw new Error('Invalid admission date')
+			}
+			if (isNaN(dateOfBirth.getTime())) {
+				throw new Error('Invalid date of birth')
+			}
+
 			// 1. Create the student
 			const student = await tx.student.create({
 				data: {
@@ -655,11 +674,11 @@ export const createStudentService = async (input: CreateStudentInput) => {
 					roll: input.roll,
 					email: input.email,
 					phone: input.phone,
-					dateOfBirth: input.dateOfBirth,
+					dateOfBirth: dateOfBirth, // Use converted date
 					gender: input.gender,
 					address: input.address,
 					religion: input.religion,
-					admissionDate: input.admissionDate,
+					admissionDate: admissionDate, // Use converted date
 					studentId: input.studentId,
 					fatherName: input.fatherName,
 					motherName: input.motherName,
@@ -678,7 +697,7 @@ export const createStudentService = async (input: CreateStudentInput) => {
 					tx,
 					student.id,
 					input.feeStructureId,
-					input.admissionDate,
+					admissionDate, // Pass the converted Date object
 					input.tenantId,
 				)
 			}
@@ -692,7 +711,7 @@ export const createStudentService = async (input: CreateStudentInput) => {
 					sectionId: input.sectionId,
 					sessionId: input.sessionId,
 					tenantId: input.tenantId,
-					joinDate: input.admissionDate,
+					joinDate: admissionDate, // Use converted date
 				},
 			})
 
