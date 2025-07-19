@@ -120,13 +120,27 @@ export function FormSelect<
 		return returnAsNumber ? 0 : ''
 	}
 
+	// Helper function to create unique command value
+	const createCommandValue = (option: any, index: number): string => {
+		// Create a unique identifier using value, label, and index
+		return `${option.value}|||${option.label}|||${index}`
+	}
+
+	// Helper function to parse command value back to option value
+	const parseCommandValue = (commandValue: string): string => {
+		if (commandValue === '__clear__') return '__clear__'
+		const parts = commandValue.split('|||')
+		return parts[0] || commandValue
+	}
+
 	// Normalize options to ensure all values are strings for comparison
 	const normalizedOptions = useMemo(
 		() =>
-			options?.map(option => ({
+			options?.map((option, index) => ({
 				...option,
 				value: String(option.value),
 				originalValue: option.value,
+				commandValue: createCommandValue(option, index), // Unique identifier for Command component
 			})) || [],
 		[options],
 	)
@@ -174,23 +188,24 @@ export function FormSelect<
 
 	// Handle option selection for both single and multi-select
 	const handleSelect = (
-		selectedValue: string,
+		selectedCommandValue: string,
 		onChange: (value: any) => void,
 		currentValue: any,
 	) => {
-		if (selectedValue === '__clear__') {
+		if (selectedCommandValue === '__clear__') {
 			onChange(getEmptyValue())
 			setOpen(false)
 			return
 		}
 
-		// Find the option by label to get the actual value
+		// Parse the command value to get the actual option value
+		const actualValue = parseCommandValue(selectedCommandValue)
+
+		// Find the option by the parsed value
 		const selectedOption = normalizedOptions.find(
-			opt => opt.label === selectedValue,
+			opt => opt.value === actualValue,
 		)
 		if (!selectedOption) return
-
-		const actualValue = selectedOption.value
 
 		if (!multiple) {
 			// Single select logic (existing)
@@ -268,7 +283,7 @@ export function FormSelect<
 			<div className="flex flex-wrap gap-1 mt-2">
 				{selectedOptions.map(option => (
 					<Badge
-						key={option.value}
+						key={option.commandValue} // Use unique commandValue as key
 						variant={badgeVariant}
 						className="flex items-center gap-1"
 					>
@@ -381,11 +396,11 @@ export function FormSelect<
 
 											return (
 												<CommandItem
-													key={option.value}
-													value={option.label}
-													onSelect={selectedValue =>
+													key={option.commandValue} // Use unique commandValue as key
+													value={option.commandValue} // Use unique commandValue for Command
+													onSelect={selectedCommandValue =>
 														handleSelect(
-															selectedValue,
+															selectedCommandValue,
 															controlledOnChange!,
 															controlledValue,
 														)
@@ -524,11 +539,11 @@ export function FormSelect<
 
 													return (
 														<CommandItem
-															key={option.value}
-															value={option.label}
-															onSelect={selectedValue =>
+															key={option.commandValue} // Use unique commandValue as key
+															value={option.commandValue} // Use unique commandValue for Command
+															onSelect={selectedCommandValue =>
 																handleSelect(
-																	selectedValue,
+																	selectedCommandValue,
 																	finalOnChange,
 																	finalValue,
 																)
