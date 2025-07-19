@@ -537,7 +537,7 @@ const shouldCreateDueItem = (
  * Create student due for a specific month
  */
 const createStudentDueForMonth = async (
-	tx: any,
+	tx: TransactionClient,
 	studentId: string,
 	feeItems: any[],
 	monthYear: MonthYear,
@@ -605,7 +605,7 @@ const createStudentDueForMonth = async (
  * Generate student dues from admission month to current month
  */
 const generateStudentDues = async (
-	tx: any,
+	tx: TransactionClient,
 	studentId: string,
 	feeStructureId: string,
 	admissionDate: Date,
@@ -645,77 +645,83 @@ const generateStudentDues = async (
  * Create a new student and generate dues from admission month to current month
  */
 export const createStudentService = async (input: CreateStudentInput) => {
-	return await prisma.$transaction(async tx => {
-		// 1. Create the student
-		const student = await tx.student.create({
-			data: {
-				photo: input.photo,
-				name: input.name,
-				roll: input.roll,
-				email: input.email,
-				phone: input.phone,
-				dateOfBirth: input.dateOfBirth,
-				gender: input.gender,
-				address: input.address,
-				religion: input.religion,
-				admissionDate: input.admissionDate,
-				studentId: input.studentId,
-				fatherName: input.fatherName,
-				motherName: input.motherName,
-				guardianPhone: input.guardianPhone,
-				sessionId: input.sessionId,
-				feeStructureId: input.feeStructureId,
-				sectionId: input.sectionId,
-				classId: input.classId,
-				tenantId: input.tenantId,
-			},
-		})
+	return await prisma.$transaction(
+		async tx => {
+			// 1. Create the student
+			const student = await tx.student.create({
+				data: {
+					photo: input.photo,
+					name: input.name,
+					roll: input.roll,
+					email: input.email,
+					phone: input.phone,
+					dateOfBirth: input.dateOfBirth,
+					gender: input.gender,
+					address: input.address,
+					religion: input.religion,
+					admissionDate: input.admissionDate,
+					studentId: input.studentId,
+					fatherName: input.fatherName,
+					motherName: input.motherName,
+					guardianPhone: input.guardianPhone,
+					sessionId: input.sessionId,
+					feeStructureId: input.feeStructureId,
+					sectionId: input.sectionId,
+					classId: input.classId,
+					tenantId: input.tenantId,
+				},
+			})
 
-		// 2. Generate dues if fee structure is provided
-		if (input.feeStructureId) {
-			await generateStudentDues(
+			// 2. Generate dues if fee structure is provided
+			if (input.feeStructureId) {
+				await generateStudentDues(
+					tx,
+					student.id,
+					input.feeStructureId,
+					input.admissionDate,
+					input.tenantId,
+				)
+			}
+
+			// 3. Create enrollment record
+			await tx.studentEnrollment.create({
+				data: {
+					roll: input.roll,
+					studentId: student.id,
+					classId: input.classId,
+					sectionId: input.sectionId,
+					sessionId: input.sessionId,
+					tenantId: input.tenantId,
+					joinDate: input.admissionDate,
+				},
+			})
+
+			// 4. Create user account
+			await userDB.createUser(
+				{
+					name: input.name,
+					email: input.email,
+					status: 'ACTIVE',
+					password: input.studentId,
+					role: 'STUDENT',
+					tenantId: input.tenantId,
+				},
 				tx,
-				student.id,
-				input.feeStructureId,
-				input.admissionDate,
-				input.tenantId,
 			)
-		}
 
-		// 3. Create enrollment record
-		await tx.studentEnrollment.create({
-			data: {
-				roll: input.roll,
-				studentId: student.id,
-				classId: input.classId,
-				sectionId: input.sectionId,
-				sessionId: input.sessionId,
-				tenantId: input.tenantId,
-				joinDate: input.admissionDate,
-			},
-		})
+			// cache invalidate
+			await nextjsCacheService.invalidate([
+				CACHE_KEYS.STUDENTS.TAG(input.tenantId),
+				CACHE_KEYS.STUDENT.TAG(student.id),
+			])
 
-		// 4. Create user account
-		await userDB.createUser(
-			{
-				name: input.name,
-				email: input.email,
-				status: 'ACTIVE',
-				password: input.studentId,
-				role: 'STUDENT',
-				tenantId: input.tenantId,
-			},
-			tx,
-		)
-
-		// cache invalidate
-		await nextjsCacheService.invalidate([
-			CACHE_KEYS.STUDENTS.TAG(input.tenantId),
-			CACHE_KEYS.STUDENT.TAG(student.id),
-		])
-
-		return student
-	})
+			return student
+		},
+		{
+			maxWait: 60000,
+			timeout: 60000,
+		},
+	)
 }
 
 /**
