@@ -35,7 +35,7 @@ export async function getFilteredResults(filters: ResultsFilter = {}) {
 			}
 		}
 
-		// Import prisma here to avoid top-level imports in server actions
+		// Use prisma instance
 		const { prisma } = await import('@/lib/db')
 
 		// Build the where clause based on filters
@@ -253,7 +253,7 @@ export async function getResultsStatistics(filters: Omit<ResultsFilter, 'page' |
 			}
 		}
 
-		// Import prisma here to avoid top-level imports in server actions
+		// Use prisma instance
 		const { prisma } = await import('@/lib/db')
 
 		// Build where clause for statistics (similar to above but for stats)

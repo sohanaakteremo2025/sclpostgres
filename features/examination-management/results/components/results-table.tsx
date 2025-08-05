@@ -132,7 +132,11 @@ export function ResultsTable({ results, loading, error }: ResultsTableProps) {
 				<p className="text-muted-foreground mb-4">
 					There was an error loading the exam results. Please try again.
 				</p>
-				<Button onClick={() => window.location.reload()}>
+				<Button onClick={() => {
+					if (typeof window !== 'undefined') {
+						window.location.reload()
+					}
+				}}>
 					Retry
 				</Button>
 			</div>
@@ -312,11 +316,18 @@ export function ResultsTable({ results, loading, error }: ResultsTableProps) {
 			</div>
 
 			{/* Result Details Dialog */}
-			<ResultDetailsDialog
-				result={selectedResult}
-				open={detailsOpen}
-				onOpenChange={setDetailsOpen}
-			/>
+			{selectedResult && (
+				<ResultDetailsDialog
+					result={selectedResult}
+					open={detailsOpen}
+					onOpenChange={(open) => {
+						setDetailsOpen(open)
+						if (!open) {
+							setSelectedResult(null)
+						}
+					}}
+				/>
+			)}
 		</>
 	)
 }

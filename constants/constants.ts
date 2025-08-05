@@ -262,6 +262,11 @@ export const adminMenu: MenuGroup[] = [
 						label: 'Results Entry',
 						href: '/admin/result-entry',
 					},
+					{
+						icon: 'Award',
+						label: 'Results',
+						href: '/admin/results',
+					},
 				],
 			},
 		],

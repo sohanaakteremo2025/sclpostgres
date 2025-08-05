@@ -346,11 +346,18 @@ export function ResultsGrid({ results, loading, error }: ResultsGridProps) {
 			</div>
 
 			{/* Result Details Dialog */}
-			<ResultDetailsDialog
-				result={selectedResult}
-				open={detailsOpen}
-				onOpenChange={setDetailsOpen}
-			/>
+			{selectedResult && (
+				<ResultDetailsDialog
+					result={selectedResult}
+					open={detailsOpen}
+					onOpenChange={(open) => {
+						setDetailsOpen(open)
+						if (!open) {
+							setSelectedResult(null)
+						}
+					}}
+				/>
+			)}
 		</>
 	)
 }
