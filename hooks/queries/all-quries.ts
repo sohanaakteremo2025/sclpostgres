@@ -34,6 +34,7 @@ import {
 import { EmployeeRoleSchema } from '@/lib/zod'
 import { getAllDiscountCategories } from '@/features/financial-management/dueAdjustment/api/dueAdjustment.action'
 import { getAllFeeItemCategories } from '@/features/financial-management/dueItem/api/duitem.action'
+import { getStudentsForExam } from '@/features/examination-management/results/api/result-entry.action'
 
 export function useTeachers() {
 	return useQuery({
@@ -553,4 +554,20 @@ export function useClassSectionSubjectCascade() {
 		subjectRequiresSection, // True if class is selected but no subjects available without section
 		subjectsAvailable: hasSubjects, // Subjects are ready for selection
 	}
+}
+
+// Hook for fetching students for exam result entry
+export function useStudentsForExam(classId?: string, sectionId?: string) {
+	return useQuery({
+		queryKey: ['exam-students', classId, sectionId],
+		queryFn: async () => {
+			const result = await getStudentsForExam(classId!, sectionId)
+			if (!result.success) {
+				throw new Error(result.error)
+			}
+			return result.data
+		},
+		enabled: !!classId,
+		staleTime: 5 * 60 * 1000, // 5 minutes - students can change more frequently during exam periods
+	})
 }

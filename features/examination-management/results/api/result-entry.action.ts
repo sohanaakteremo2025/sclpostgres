@@ -175,10 +175,11 @@ export async function getStudentsForExam(classId: string, sectionId?: string) {
 			whereClause.sectionId = sectionId
 		}
 
-		console.error('whereClause: ', whereClause)
+		console.log('getStudentsForExam - Input params:', { classId, sectionId, tenantId })
+		console.log('getStudentsForExam - whereClause:', whereClause)
 
 		const students = await prisma.student.findMany({
-			// where: whereClause,
+			where: whereClause,
 			select: {
 				id: true,
 				name: true,
@@ -190,6 +191,21 @@ export async function getStudentsForExam(classId: string, sectionId?: string) {
 				roll: 'asc',
 			},
 		})
+
+		console.log('getStudentsForExam - Found students:', students.length)
+		
+		// Let's also check total students in this class without status filter for debugging
+		const allStudentsInClass = await prisma.student.findMany({
+			where: {
+				classId,
+				tenantId,
+			},
+			select: {
+				id: true,
+				status: true,
+			},
+		})
+		console.log('getStudentsForExam - All students in class (any status):', allStudentsInClass.length, allStudentsInClass.map(s => s.status))
 
 		return {
 			success: true,

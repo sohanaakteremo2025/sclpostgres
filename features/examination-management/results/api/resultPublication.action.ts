@@ -2,15 +2,16 @@
 
 import { auth } from '@/auth'
 import { revalidatePath } from 'next/cache'
+import { getTenantId } from '../../../../lib/tenant'
+import { ResultPublicationRepository } from '../db/resultPublication.repository'
 import {
-	publishResultsService,
-	unpublishResultsService,
+	enterBulkResultsService,
 	getExamResultsService,
 	getResultStatisticsService,
-	enterBulkResultsService,
+	publishResultsService,
+	unpublishResultsService,
 	updateComponentResultService,
 } from '../services/result.service'
-import { ResultPublicationRepository } from '../db/resultPublication.repository'
 
 // Result Publication Actions
 export async function publishExamResults(
@@ -75,6 +76,7 @@ export async function enterBulkResults(data: {
 }) {
 	try {
 		const session = await auth()
+		const tenantId = await getTenantId()
 		if (!session?.user?.id) {
 			throw new Error('Unauthorized')
 		}
@@ -82,7 +84,7 @@ export async function enterBulkResults(data: {
 		const result = await enterBulkResultsService({
 			...data,
 			enteredBy: session.user.id,
-			tenantId: session.user.tenantId!,
+			tenantId: tenantId,
 		})
 
 		revalidatePath('/admin/exam')
@@ -194,10 +196,7 @@ export async function getResultPublication(examScheduleId: string) {
 }
 
 // Student/Parent facing actions
-export async function getStudentResults(
-	studentId: string,
-	sessionId?: string,
-) {
+export async function getStudentResults(studentId: string, sessionId?: string) {
 	try {
 		const session = await auth()
 		if (!session?.user?.tenantId) {
@@ -205,10 +204,7 @@ export async function getStudentResults(
 		}
 
 		// Additional authorization check for student/parent roles
-		if (
-			session.user.role === 'STUDENT' &&
-			session.user.id !== studentId
-		) {
+		if (session.user.role === 'STUDENT' && session.user.id !== studentId) {
 			throw new Error('Unauthorized to view other student results')
 		}
 

@@ -204,6 +204,17 @@ const validateResultInput = async (
 
 // Main result management functions
 export const enterBulkResultsService = async (input: BulkResultInput) => {
+	console.log('enterBulkResultsService - Input:', {
+		examScheduleId: input.examScheduleId,
+		tenantId: input.tenantId,
+		enteredBy: input.enteredBy,
+		resultsCount: input.results.length
+	})
+
+	if (!input.tenantId) {
+		throw new Error('Tenant ID is required')
+	}
+
 	// Validate input
 	const validationErrors = await validateResultInput(input)
 	if (validationErrors.length > 0) {
@@ -231,6 +242,20 @@ export const enterBulkResultsService = async (input: BulkResultInput) => {
 				},
 			})
 
+			// First create the main exam result with temporary data
+			const tempExamResult = await tx.examResult.create({
+				data: {
+					examScheduleId: input.examScheduleId,
+					studentId: studentResult.studentId,
+					obtainedMarks: 0, // Will be calculated after components
+					totalMarks: 0,
+					percentage: 0,
+					grade: 'TEMP',
+					isAbsent: false,
+					tenantId: input.tenantId,
+				},
+			})
+
 			// Create component results
 			const componentResults = []
 			for (const componentResult of studentResult.componentResults) {
@@ -244,7 +269,7 @@ export const enterBulkResultsService = async (input: BulkResultInput) => {
 						isAbsent: componentResult.isAbsent || false,
 						remarks: componentResult.remarks,
 						tenantId: input.tenantId,
-						examResultId: 'temp', // Will be updated after creating exam result
+						examResultId: tempExamResult.id,
 					},
 					include: {
 						examComponent: true,
@@ -253,7 +278,7 @@ export const enterBulkResultsService = async (input: BulkResultInput) => {
 				componentResults.push(created)
 			}
 
-			// Calculate and create main exam result
+			// Calculate and update the exam result with correct values
 			const calculatedResult = await calculateExamResult(
 				input.examScheduleId,
 				studentResult.studentId,
@@ -261,29 +286,20 @@ export const enterBulkResultsService = async (input: BulkResultInput) => {
 				input.tenantId,
 			)
 
-			const examResult = await tx.examResult.create({
-				data: calculatedResult,
-			})
-
-			// Update component results with correct examResultId
-			await tx.examComponentResult.updateMany({
-				where: {
-					examComponent: {
-						examScheduleId: input.examScheduleId,
-					},
-					studentId: studentResult.studentId,
-				},
+			const examResult = await tx.examResult.update({
+				where: { id: tempExamResult.id },
 				data: {
-					examResultId: examResult.id,
+					obtainedMarks: calculatedResult.obtainedMarks,
+					totalMarks: calculatedResult.totalMarks,
+					percentage: calculatedResult.percentage,
+					grade: calculatedResult.grade,
+					isAbsent: calculatedResult.isAbsent,
 				},
 			})
 
 			results.push({
 				examResult,
-				componentResults: componentResults.map(cr => ({
-					...cr,
-					examResultId: examResult.id,
-				})),
+				componentResults,
 			})
 		}
 

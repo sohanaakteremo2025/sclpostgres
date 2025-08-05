@@ -23,9 +23,13 @@ export async function enterBulkResults(data: BulkResultInput) {
 		throw new Error('Unauthorized')
 	}
 
+	if (!tenantId) {
+		throw new Error('Tenant ID not found')
+	}
+
 	return await enterBulkResultsService({
 		...data,
 		tenantId,
-		enteredBy: session?.user.name,
+		enteredBy: session.user.name || session.user.email || 'Unknown',
 	})
 }
