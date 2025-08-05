@@ -1,10 +1,11 @@
 'use server'
 
-import { ExamFormSchema } from '@/schemas'
-import { revalidatePath } from 'next/cache'
-import { getCurrentUser } from './auth.action'
-import { getSubdomainDB } from '../getSubdomainDB'
+import { getTenantId } from '@/lib/tenant'
+import { ExamFormSchema } from '@/lib/zod'
 import { Exam } from '@prisma/client'
+import { revalidatePath } from 'next/cache'
+import { getSubdomainDB } from '../getSubdomainDB'
+import { getCurrentUser } from './auth.action'
 
 export const createExam = async (data: ExamFormSchema) => {
 	const currentUser = await getCurrentUser()
@@ -28,7 +29,7 @@ export const updateExam = async (id: string, data: ExamFormSchema) => {
 			const exam = await tx.exam.update({
 				where: { id },
 				data: {
-					name: data.name,
+					title: data.name,
 					marks: data.marks,
 					year: data.year,
 				},
@@ -42,8 +43,7 @@ export const updateExam = async (id: string, data: ExamFormSchema) => {
 }
 
 export const getAllExams = async (): Promise<Exam[]> => {
-	const currentUser = await getCurrentUser()
-	const tenantId = currentUser?.tenantId
+	const tenantId = await getTenantId()
 	const prisma = await getSubdomainDB()
 	try {
 		const exams = await prisma.exam.findMany({

@@ -1,44 +1,44 @@
 import { MenuGroup } from '@/components/Sidebar/types'
 import {
-	// Admin/Management Icons
-	Building2, // For tenant/school management
-	UserCog, // For admin users/tenant admins
-	LayoutDashboard, // Keep dashboard icon
-
-	// Academic Icons
-	GraduationCap, // For students
-	Users, // For employees/staff
-	BookOpen, // For subjects (more intuitive than BookCopy)
-	CalendarRange, // For class routines/schedules
-	ClipboardCheck, // For attendance
-	Award, // For results/grades
-	PenSquare, // For exams
-	School2, // For classes
-
-	// Financial Icons
-	Receipt, // Keep for transactions
-	Wallet, // For fees management
+	Award, // For fees management
 	BadgeDollarSign, // For salary management
 
 	// Communication & Misc
-	Bell, // For notices
-
-	// Student Panel Specific
-	UserCircle, // For student profile
-	CalendarDays, // For student class schedule
-	FileSpreadsheet, // For student result view
-	ClipboardList, // For student attendance view
-	CreditCard, // For student billing
+	Bell, // For employees/staff
+	BookOpen,
+	// Admin/Management Icons
+	Building2, // For student billing
 
 	// Teacher Panel Specific
-	CalendarCheck, // For teacher schedule
+	CalendarCheck, // For student profile
+	CalendarDays, // For subjects (more intuitive than BookCopy)
+	CalendarRange, // For class routines/schedules
+	ClipboardCheck, // For student result view
+	ClipboardList, // For teacher schedule
 	ClipboardSignature, // For teacher attendance
-	Coins,
-	IdCard,
-	MessagesSquare,
+	Coins, // For student attendance view
+	CreditCard, // For student class schedule
+	FileSpreadsheet, // Keep dashboard icon
+
+	// Academic Icons
+	GraduationCap,
 	Grid2X2,
+	IdCard, // For admin users/tenant admins
+	LayoutDashboard,
+	Mail,
 	MessageSquareQuote,
-	Mail, // For teacher salaries
+	MessagesSquare, // For results/grades
+	PenSquare, // For classes
+
+	// Financial Icons
+	Receipt, // For exams
+	School2, // For notices
+
+	// Student Panel Specific
+	UserCircle, // For tenant/school management
+	UserCog, // For students
+	Users, // Keep for transactions
+	Wallet, // For fees management
 } from 'lucide-react'
 
 export const cmsMenu: MenuGroup[] = [
@@ -217,6 +217,19 @@ export const adminMenu: MenuGroup[] = [
 					},
 				],
 			},
+
+			// {
+			// 	icon: 'BadgeDollarSign',
+			// 	label: 'Salary Management',
+			// 	href: '/admin/salaries',
+			// },
+		],
+	},
+
+	// Exam Management Group
+	{
+		groupLabel: 'Exam Management',
+		menus: [
 			{
 				label: 'Exam Management',
 				icon: 'NotebookPen',
@@ -239,12 +252,18 @@ export const adminMenu: MenuGroup[] = [
 					},
 				],
 			},
-
-			// {
-			// 	icon: 'BadgeDollarSign',
-			// 	label: 'Salary Management',
-			// 	href: '/admin/salaries',
-			// },
+			{
+				label: 'Result Management',
+				icon: 'Award',
+				href: '#',
+				submenus: [
+					{
+						icon: 'Paperclip',
+						label: 'Results Entry',
+						href: '/admin/result-entry',
+					},
+				],
+			},
 		],
 	},
 
