@@ -1,7 +1,7 @@
-import { NextResponse } from 'next/server'
-import type { NextRequest } from 'next/server'
-import { getToken } from 'next-auth/jwt'
 import { UserRole } from '@prisma/client'
+import { getToken } from 'next-auth/jwt'
+import type { NextRequest } from 'next/server'
+import { NextResponse } from 'next/server'
 
 /**
  * Constants for route types and path patterns
@@ -50,6 +50,7 @@ export async function middleware(request: NextRequest): Promise<NextResponse> {
 	// Extract user information
 	const userInfo = {
 		role: token?.role as UserRole | undefined,
+		domain: token?.domain as string | undefined,
 		subdomain: token?.domain as string | undefined,
 		isAuthenticated: !!token,
 		isSuperAdmin: token?.role === UserRole.SUPER_ADMIN,
@@ -326,6 +327,16 @@ function getRoleDashboard(role: UserRole): string {
 		TEACHER: 'teacher',
 		EMPLOYEE: 'employee',
 		SUPER_ADMIN: 'admin',
+		PRINCIPAL: 'admin',
+		ACCOUNTANT: 'admin',
+		LIBRARIAN: 'admin',
+		STAFF: 'admin',
+		WORKER: 'admin',
+		SECURITY: 'admin',
+		IT: 'admin',
+		SUPERVISOR: 'admin',
+		MARKETING: 'admin',
+		HR: 'admin',
 	}
 	return dashboardMap[role] || ''
 }
@@ -346,14 +357,19 @@ function redirectToUnauthorized(request: NextRequest): NextResponse {
 }
 
 function shouldPreventTenantMismatch(
-	userInfo: { role?: UserRole; subdomain?: string; isSuperAdmin: boolean },
+	userInfo: {
+		role?: UserRole
+		domain?: string
+		subdomain?: string
+		isSuperAdmin: boolean
+	},
 	subdomain: string,
 	pathname: string,
 ): boolean {
 	return (
 		userInfo.role !== undefined &&
 		!userInfo.isSuperAdmin &&
-		userInfo.subdomain !== subdomain &&
+		(userInfo.domain || userInfo.subdomain) !== subdomain &&
 		pathname.includes(`/institution/${subdomain}/`)
 	)
 }
@@ -373,15 +389,28 @@ function rewriteSubdomainRoute(
 
 function redirectAuthenticatedUser(
 	request: NextRequest,
-	userInfo: { role?: UserRole; subdomain?: string; isSuperAdmin: boolean },
+	userInfo: {
+		role?: UserRole
+		domain?: string
+		subdomain?: string
+		isSuperAdmin: boolean
+		tenantId?: string
+	},
 ): NextResponse {
 	if (userInfo.isSuperAdmin) {
 		return NextResponse.redirect(new URL('/cms', request.url))
-	} else if (userInfo.subdomain && userInfo.role) {
-		const dashboardPath = `/institution/${
-			userInfo.subdomain
-		}/${getRoleDashboard(userInfo.role)}`
-		return NextResponse.redirect(new URL(dashboardPath, request.url))
+	} else if (userInfo.role) {
+		// Use the domain from the JWT token (which is the user's institution domain)
+		const domain = userInfo.domain || userInfo.subdomain
+
+		if (domain) {
+			const dashboardPath = `/institution/${domain}/${getRoleDashboard(userInfo.role)}`
+			return NextResponse.redirect(new URL(dashboardPath, request.url))
+		} else {
+			// If no domain is available, redirect to role-specific path without institution prefix
+			const dashboardPath = `/${getRoleDashboard(userInfo.role)}`
+			return NextResponse.redirect(new URL(dashboardPath, request.url))
+		}
 	}
 	return NextResponse.redirect(new URL('/', request.url))
 }
@@ -389,7 +418,12 @@ function redirectAuthenticatedUser(
 function handleRoleBasedAccess(
 	request: NextRequest,
 	pathname: string,
-	userInfo: { role?: UserRole; subdomain?: string; isSuperAdmin: boolean },
+	userInfo: {
+		role?: UserRole
+		domain?: string
+		subdomain?: string
+		isSuperAdmin: boolean
+	},
 ): NextResponse {
 	const isAccessingWrongDashboard =
 		(pathname.includes('/admin') && userInfo.role !== UserRole.ADMIN) ||
@@ -398,10 +432,9 @@ function handleRoleBasedAccess(
 		(pathname.includes('/employee') && userInfo.role !== UserRole.EMPLOYEE)
 
 	if (isAccessingWrongDashboard && !userInfo.isSuperAdmin) {
-		if (userInfo.subdomain && userInfo.role) {
-			const correctDashboard = `/institution/${
-				userInfo.subdomain
-			}/${getRoleDashboard(userInfo.role)}`
+		const domain = userInfo.domain || userInfo.subdomain
+		if (domain && userInfo.role) {
+			const correctDashboard = `/institution/${domain}/${getRoleDashboard(userInfo.role)}`
 			return NextResponse.redirect(new URL(correctDashboard, request.url))
 		}
 	}
