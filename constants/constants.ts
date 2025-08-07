@@ -893,4 +893,4 @@ VisionSoftwares Team`,
 	},
 }
 
-export const isRegistrationActive = false
+export const isRegistrationActive = true
