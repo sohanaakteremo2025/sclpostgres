@@ -60,9 +60,9 @@ export function ResultPublicationTable({
 
 	// Filters
 	const [searchTerm, setSearchTerm] = useState('')
-	const [selectedClass, setSelectedClass] = useState<string>('')
-	const [selectedSession, setSelectedSession] = useState<string>('')
-	const [statusFilter, setStatusFilter] = useState<string>('')
+	const [selectedClass, setSelectedClass] = useState<string>('all')
+	const [selectedSession, setSelectedSession] = useState<string>('all')
+	const [statusFilter, setStatusFilter] = useState<string>('all')
 
 	// Apply filters
 	useEffect(() => {
@@ -76,17 +76,17 @@ export function ResultPublicationTable({
 			)
 		}
 
-		if (selectedClass) {
+		if (selectedClass && selectedClass !== 'all') {
 			filtered = filtered.filter(item => item.examSchedule.class.name === selectedClass)
 		}
 
-		if (selectedSession) {
+		if (selectedSession && selectedSession !== 'all') {
 			filtered = filtered.filter(
 				item => item.examSchedule.exam.session.title === selectedSession,
 			)
 		}
 
-		if (statusFilter) {
+		if (statusFilter && statusFilter !== 'all') {
 			if (statusFilter === 'published') {
 				filtered = filtered.filter(item => item.isPublished)
 			} else if (statusFilter === 'draft') {
@@ -300,7 +300,7 @@ export function ResultPublicationTable({
 									<SelectValue placeholder="All Classes" />
 								</SelectTrigger>
 								<SelectContent>
-									<SelectItem value="">All Classes</SelectItem>
+									<SelectItem value="all">All Classes</SelectItem>
 									{classes.map(cls => (
 										<SelectItem key={cls.id} value={cls.name}>
 											{cls.name}
@@ -316,7 +316,7 @@ export function ResultPublicationTable({
 									<SelectValue placeholder="All Sessions" />
 								</SelectTrigger>
 								<SelectContent>
-									<SelectItem value="">All Sessions</SelectItem>
+									<SelectItem value="all">All Sessions</SelectItem>
 									{sessions.map(session => (
 										<SelectItem key={session.id} value={session.title}>
 											{session.title}
@@ -332,7 +332,7 @@ export function ResultPublicationTable({
 									<SelectValue placeholder="All Status" />
 								</SelectTrigger>
 								<SelectContent>
-									<SelectItem value="">All Status</SelectItem>
+									<SelectItem value="all">All Status</SelectItem>
 									<SelectItem value="published">Published</SelectItem>
 									<SelectItem value="draft">Draft</SelectItem>
 								</SelectContent>

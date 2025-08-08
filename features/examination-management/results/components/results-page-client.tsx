@@ -93,7 +93,8 @@ export function ResultsPageClient({ searchParams }: ResultsPageClientProps) {
 	const results = resultsData?.results || []
 
 	const handleFilterChange = (key: string, value: string | boolean) => {
-		setFilters(prev => ({ ...prev, [key]: value }))
+		const processedValue = typeof value === 'string' && value === 'all' ? '' : value
+		setFilters(prev => ({ ...prev, [key]: processedValue }))
 
 		// Update URL params safely
 		if (typeof window !== 'undefined') {
@@ -146,14 +147,14 @@ export function ResultsPageClient({ searchParams }: ResultsPageClientProps) {
 					{/* Filter Row */}
 					<div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-4">
 						<Select
-							value={filters.sessionId}
+							value={filters.sessionId || 'all'}
 							onValueChange={value => handleFilterChange('sessionId', value)}
 						>
 							<SelectTrigger>
 								<SelectValue placeholder="Select Session" />
 							</SelectTrigger>
 							<SelectContent>
-								<SelectItem value="">All Sessions</SelectItem>
+								<SelectItem value="all">All Sessions</SelectItem>
 								{sessions.map(session => (
 									<SelectItem key={session.value} value={session.value}>
 										{session.label}
@@ -163,14 +164,14 @@ export function ResultsPageClient({ searchParams }: ResultsPageClientProps) {
 						</Select>
 
 						<Select
-							value={filters.classId}
+							value={filters.classId || 'all'}
 							onValueChange={value => handleFilterChange('classId', value)}
 						>
 							<SelectTrigger>
 								<SelectValue placeholder="Select Class" />
 							</SelectTrigger>
 							<SelectContent>
-								<SelectItem value="">All Classes</SelectItem>
+								<SelectItem value="all">All Classes</SelectItem>
 								{classes.map(cls => (
 									<SelectItem key={cls.value} value={cls.value}>
 										{cls.label}
@@ -180,14 +181,14 @@ export function ResultsPageClient({ searchParams }: ResultsPageClientProps) {
 						</Select>
 
 						<Select
-							value={filters.examTypeId}
+							value={filters.examTypeId || 'all'}
 							onValueChange={value => handleFilterChange('examTypeId', value)}
 						>
 							<SelectTrigger>
 								<SelectValue placeholder="Exam Type" />
 							</SelectTrigger>
 							<SelectContent>
-								<SelectItem value="">All Types</SelectItem>
+								<SelectItem value="all">All Types</SelectItem>
 								{examTypes.map(type => (
 									<SelectItem key={type.value} value={type.value}>
 										{type.label}
