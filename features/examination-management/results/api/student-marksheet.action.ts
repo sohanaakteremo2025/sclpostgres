@@ -24,14 +24,14 @@ export interface StudentMarksheetData {
 			exam: {
 				title: string
 				examType: {
-					title: string
+					name: string
 				}
 				session: {
 					title: string
 				}
 			}
 			subject: {
-				title: string
+				name: string
 				code: string
 			}
 			date: string
@@ -43,7 +43,7 @@ export interface StudentMarksheetData {
 		isAbsent: boolean
 		componentResults: {
 			examComponent: {
-				title: string
+				name: string
 				maxMarks: number
 			}
 			obtainedMarks: number
@@ -242,7 +242,7 @@ export async function getStudentMarksheetData(studentId: string, sessionId?: str
 					include: {
 						examComponent: {
 							select: {
-								title: true,
+								name: true,
 								maxMarks: true,
 								order: true,
 							},
@@ -260,7 +260,7 @@ export async function getStudentMarksheetData(studentId: string, sessionId?: str
 							include: {
 								examType: {
 									select: {
-										title: true,
+										name: true,
 									},
 								},
 								session: {
@@ -273,7 +273,7 @@ export async function getStudentMarksheetData(studentId: string, sessionId?: str
 						},
 						subject: {
 							select: {
-								title: true,
+								name: true,
 								code: true,
 							},
 						},
@@ -395,7 +395,7 @@ export async function getMarksheetSummary(studentId: string, sessionId?: string)
 							select: {
 								examType: {
 									select: {
-										title: true,
+										name: true,
 									},
 								},
 							},
