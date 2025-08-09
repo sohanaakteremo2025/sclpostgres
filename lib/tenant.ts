@@ -1,10 +1,10 @@
 'use server'
 
-import { headers } from 'next/headers'
 import { prisma } from '@/lib/db'
-import { unstable_cache } from 'next/cache'
 import { TenantStatus } from '@prisma/client'
-import { notFound, redirect } from 'next/navigation'
+import { unstable_cache } from 'next/cache'
+import { headers } from 'next/headers'
+import { notFound } from 'next/navigation'
 
 interface TenantBasic {
 	id: string
@@ -111,7 +111,12 @@ const getCachedTenantPublic = unstable_cache(
 				logo: true,
 				name: true,
 				domain: true,
+				address: true,
+				phone: true,
+				email: true,
 				status: true,
+				createdAt: true,
+				updatedAt: true,
 			},
 		})
 

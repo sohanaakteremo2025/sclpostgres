@@ -20,7 +20,7 @@ import { dueItemDB } from '@/features/financial-management/dueItem/db/duitem.rep
 import { nextjsCacheService } from '@/lib/cache/nextjs-cache.service'
 import { CACHE_KEYS } from '@/constants/cache'
 import Decimal from 'decimal.js'
-import { getMonthsBetween } from '@/utils/get-months-between-dates'
+import { getMonthsBetween, getMonthsFromDateToCurrent } from '@/utils/get-months-between-dates'
 import { generateLateFeeAdjustment } from '@/utils/late-fee-utils'
 import { TransactionClient } from '@/types'
 import { dueAdjustmentDB } from '@/features/financial-management/dueAdjustment/db/dueAdjustment.repository'
@@ -464,39 +464,13 @@ interface MonthYear {
 
 /**
  * Calculate all months between admission date and current date
+ * Uses the utility function from utils/get-months-between-dates.ts
  */
 const calculateMonthsBetween = (
 	admissionDate: Date,
 	currentDate: Date,
 ): MonthYear[] => {
-	const months: MonthYear[] = []
-
-	// Start from admission month
-	let currentMonth = admissionDate.getMonth() // 0-based (0 = January)
-	let currentYear = admissionDate.getFullYear()
-
-	// End at current month
-	const endMonth = currentDate.getMonth()
-	const endYear = currentDate.getFullYear()
-
-	while (
-		currentYear < endYear ||
-		(currentYear === endYear && currentMonth <= endMonth)
-	) {
-		months.push({
-			month: currentMonth + 1, // Convert to 1-based (1 = January)
-			year: currentYear,
-		})
-
-		// Move to next month
-		currentMonth++
-		if (currentMonth > 11) {
-			currentMonth = 0
-			currentYear++
-		}
-	}
-
-	return months
+	return getMonthsBetween(admissionDate, currentDate)
 }
 
 /**
