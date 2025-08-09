@@ -106,6 +106,25 @@ export function StudentMarksheetDialog({
 		{} as Record<string, typeof marksheetData.results>,
 	)
 
+	// Get all unique components across all results for consistent table headers
+	const getAllComponents = (results: typeof marksheetData.results) => {
+		const componentsMap = new Map<string, { name: string; maxMarks: number }>()
+		
+		results.forEach(result => {
+			result.componentResults.forEach(cr => {
+				const key = cr.examComponent.name
+				if (!componentsMap.has(key)) {
+					componentsMap.set(key, {
+						name: cr.examComponent.name,
+						maxMarks: cr.examComponent.maxMarks
+					})
+				}
+			})
+		})
+		
+		return Array.from(componentsMap.values()).sort((a, b) => a.name.localeCompare(b.name))
+	}
+
 	return (
 		<Dialog open={open} onOpenChange={onOpenChange}>
 			<DialogContent className="max-w-6xl max-h-[90vh] overflow-hidden flex flex-col">
@@ -394,101 +413,81 @@ export function StudentMarksheetDialog({
 
 								{/* Results Table */}
 								{Object.entries(groupedResults || {}).map(
-									([examType, results]) => (
-										<div key={examType} className="mb-6">
-											<div className="overflow-hidden border border-black">
-												<table className="main-table w-full border-collapse">
-													<thead>
-														<tr className="bg-yellow-100">
-															<th
-																rowSpan={2}
-																className="border border-black p-2 text-center font-bold"
-															>
-																Subject
-															</th>
-															<th
-																colSpan={4}
-																className="border border-black p-2 text-center font-bold"
-															>
-																{examType} Exam
-															</th>
-															<th
-																rowSpan={2}
-																className="border border-black p-2 text-center font-bold"
-															>
-																Highest Marks
-															</th>
-															<th
-																rowSpan={2}
-																className="border border-black p-2 text-center font-bold"
-															>
-																Total Marks
-															</th>
-															<th
-																rowSpan={2}
-																className="border border-black p-2 text-center font-bold"
-															>
-																Letter Grade
-															</th>
-															<th
-																rowSpan={2}
-																className="border border-black p-2 text-center font-bold"
-															>
-																Grade Point
-															</th>
-														</tr>
-														<tr className="bg-yellow-100">
-															<th className="border border-black p-2 text-center font-bold">
-																Full Marks
-															</th>
-															<th className="border border-black p-2 text-center font-bold">
-																CQ
-															</th>
-															<th className="border border-black p-2 text-center font-bold">
-																MCQ
-															</th>
-															<th className="border border-black p-2 text-center font-bold">
-																Practical
-															</th>
-														</tr>
-													</thead>
+									([examType, results]) => {
+										const components = getAllComponents(results)
+										const dynamicColSpan = components.length + 1 // +1 for "Full Marks" column
+										
+										return (
+											<div key={examType} className="mb-6">
+												<div className="overflow-hidden border border-black">
+													<table className="main-table w-full border-collapse">
+														<thead>
+															<tr className="bg-yellow-100">
+																<th
+																	rowSpan={2}
+																	className="border border-black p-2 text-center font-bold"
+																>
+																	Subject
+																</th>
+																<th
+																	colSpan={dynamicColSpan}
+																	className="border border-black p-2 text-center font-bold"
+																>
+																	{examType} Exam
+																</th>
+																<th
+																	rowSpan={2}
+																	className="border border-black p-2 text-center font-bold"
+																>
+																	Highest Marks
+																</th>
+																<th
+																	rowSpan={2}
+																	className="border border-black p-2 text-center font-bold"
+																>
+																	Total Marks
+																</th>
+																<th
+																	rowSpan={2}
+																	className="border border-black p-2 text-center font-bold"
+																>
+																	Letter Grade
+																</th>
+																<th
+																	rowSpan={2}
+																	className="border border-black p-2 text-center font-bold"
+																>
+																	Grade Point
+																</th>
+															</tr>
+															<tr className="bg-yellow-100">
+																<th className="border border-black p-2 text-center font-bold">
+																	Full Marks
+																</th>
+																{components.map((component) => (
+																	<th
+																		key={component.name}
+																		className="border border-black p-2 text-center font-bold"
+																	>
+																		{component.name}
+																	</th>
+																))}
+															</tr>
+														</thead>
 													<tbody>
 														{results.map((result, index) => {
-															const cqMarks =
-																result.componentResults.find(
-																	cr =>
-																		cr.examComponent.name
-																			.toLowerCase()
-																			.includes('creative') ||
-																		cr.examComponent.name
-																			.toLowerCase()
-																			.includes('cq'),
-																)?.obtainedMarks || '-'
-															const mcqMarks =
-																result.componentResults.find(
-																	cr =>
-																		cr.examComponent.name
-																			.toLowerCase()
-																			.includes('mcq') ||
-																		cr.examComponent.name
-																			.toLowerCase()
-																			.includes('multiple'),
-																)?.obtainedMarks || '-'
-															const practicalMarks =
-																result.componentResults.find(
-																	cr =>
-																		cr.examComponent.name
-																			.toLowerCase()
-																			.includes('practical') ||
-																		cr.examComponent.name
-																			.toLowerCase()
-																			.includes('lab'),
-																)?.obtainedMarks || '-'
-
 															// Use our grading function for consistent grading
 															const gradeInfo = result.isAbsent
 																? { grade: 'F', gradePoint: 0 }
 																: getGradeFromPercentage(result.percentage)
+
+															// Create a map of component results for easy lookup
+															const componentResultsMap = new Map(
+																result.componentResults.map(cr => [
+																	cr.examComponent.name,
+																	cr
+																])
+															)
 
 															return (
 																<tr
@@ -503,15 +502,19 @@ export function StudentMarksheetDialog({
 																	<td className="border border-black p-2 text-center">
 																		{result.totalMarks}
 																	</td>
-																	<td className="border border-black p-2 text-center">
-																		{result.isAbsent ? '-' : cqMarks}
-																	</td>
-																	<td className="border border-black p-2 text-center">
-																		{result.isAbsent ? '-' : mcqMarks}
-																	</td>
-																	<td className="border border-black p-2 text-center">
-																		{result.isAbsent ? '-' : practicalMarks}
-																	</td>
+																	{components.map((component) => {
+																		const componentResult = componentResultsMap.get(component.name)
+																		const marks = componentResult?.obtainedMarks || 0
+																		
+																		return (
+																			<td 
+																				key={component.name}
+																				className="border border-black p-2 text-center"
+																			>
+																				{result.isAbsent ? '-' : marks}
+																			</td>
+																		)
+																	})}
 																	<td className="border border-black p-2 text-center font-semibold text-blue-600">
 																		{Math.ceil(result.totalMarks * 0.85)}
 																	</td>
@@ -544,7 +547,7 @@ export function StudentMarksheetDialog({
 															<td className="border border-black p-2 text-center font-semibold">
 																Total Exam Marks
 																<br />
-																{marksheetData.results.reduce(
+																{results.reduce(
 																	(sum, result) => sum + result.totalMarks,
 																	0,
 																)}
@@ -552,17 +555,17 @@ export function StudentMarksheetDialog({
 															<td className="border border-black p-2 text-center font-semibold">
 																Obtained Total Marks
 																<br />
-																{marksheetData.results.reduce(
+																{results.reduce(
 																	(sum, result) => sum + result.obtainedMarks,
 																	0,
 																)}{' '}
 																(
 																{(
-																	(marksheetData.results.reduce(
+																	(results.reduce(
 																		(sum, result) => sum + result.obtainedMarks,
 																		0,
 																	) /
-																		marksheetData.results.reduce(
+																		results.reduce(
 																			(sum, result) => sum + result.totalMarks,
 																			0,
 																		)) *
@@ -574,7 +577,7 @@ export function StudentMarksheetDialog({
 																GPA
 																<br />
 																{(
-																	marksheetData.results.reduce(
+																	results.reduce(
 																		(sum, result) => {
 																			const gradeInfo = result.isAbsent
 																				? { gradePoint: 0 }
@@ -584,7 +587,7 @@ export function StudentMarksheetDialog({
 																			return sum + gradeInfo.gradePoint
 																		},
 																		0,
-																	) / marksheetData.results.length
+																	) / results.length
 																).toFixed(2)}
 															</td>
 															<td className="border border-black p-2 text-center font-semibold">
@@ -592,7 +595,7 @@ export function StudentMarksheetDialog({
 																<br />
 																{(() => {
 																	const gpa =
-																		marksheetData.results.reduce(
+																		results.reduce(
 																			(sum, result) => {
 																				const gradeInfo = result.isAbsent
 																					? { gradePoint: 0 }
@@ -602,7 +605,7 @@ export function StudentMarksheetDialog({
 																				return sum + gradeInfo.gradePoint
 																			},
 																			0,
-																		) / marksheetData.results.length
+																		) / results.length
 																	return getGradeFromPercentage(gpa * 20).grade // Convert GPA back to percentage for grade lookup
 																})()}
 															</td>
@@ -611,8 +614,8 @@ export function StudentMarksheetDialog({
 												</table>
 											</div>
 										</div>
-									),
-								)}
+									)
+								})
 
 								{/* Signature Section */}
 								<div className="flex justify-between items-end mt-8 pt-4">
