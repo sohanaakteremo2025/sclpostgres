@@ -615,7 +615,7 @@ export function StudentMarksheetDialog({
 											</div>
 										</div>
 									)
-								})
+								})}
 
 								{/* Signature Section */}
 								<div className="flex justify-between items-end mt-8 pt-4">
