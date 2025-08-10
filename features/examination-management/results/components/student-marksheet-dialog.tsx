@@ -109,20 +109,22 @@ export function StudentMarksheetDialog({
 	// Get all unique components across all results for consistent table headers
 	const getAllComponents = (results: typeof marksheetData.results) => {
 		const componentsMap = new Map<string, { name: string; maxMarks: number }>()
-		
+
 		results.forEach(result => {
 			result.componentResults.forEach(cr => {
 				const key = cr.examComponent.name
 				if (!componentsMap.has(key)) {
 					componentsMap.set(key, {
 						name: cr.examComponent.name,
-						maxMarks: cr.examComponent.maxMarks
+						maxMarks: cr.examComponent.maxMarks,
 					})
 				}
 			})
 		})
-		
-		return Array.from(componentsMap.values()).sort((a, b) => a.name.localeCompare(b.name))
+
+		return Array.from(componentsMap.values()).sort((a, b) =>
+			a.name.localeCompare(b.name),
+		)
 	}
 
 	return (
@@ -138,7 +140,7 @@ export function StudentMarksheetDialog({
 				<div className="flex-1 overflow-auto">
 					<PrintWrapper
 						buttonText="Print Marksheet"
-						buttonClass="bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 rounded-md font-medium"
+						buttonClass="bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 rounded-md font-medium mt-4"
 						buttonPosition="top"
 						documentTitle={`Marksheet-${student.name}-${student.roll}`}
 						pageStyle={`
@@ -151,6 +153,7 @@ export function StudentMarksheetDialog({
 									-webkit-print-color-adjust: exact;
 									color-adjust: exact;
 									margin: 0;
+									margin-top: 15mm;
 									padding: 0;
 									font-family: Arial, sans-serif;
 									font-size: 12px;
@@ -230,19 +233,19 @@ export function StudentMarksheetDialog({
 								<div className="mb-4">
 									<div className="flex items-start justify-between mb-4 w-full">
 										{/* School Logo and Name */}
-										<div className="flex items-center space-x-4 w-24 h-24">
+										<div className="flex items-center space-x-4 flex-1">
 											{tenantData?.logo ? (
 												<img
 													src={tenantData.logo}
 													alt="School Logo"
-													className="school-logo-dialog md:school-logo object-contain w-24 h-24"
+													className="school-logo-dialog md:school-logo object-contain w-24 h-24 flex-shrink-0"
 												/>
 											) : (
-												<div className="school-logo-dialog md:school-logo border border-gray-400 bg-gray-100 flex items-center justify-center">
+												<div className="school-logo-dialog md:school-logo border border-gray-400 bg-gray-100 flex items-center justify-center flex-shrink-0">
 													<GraduationCap className="h-8 w-8 text-gray-400" />
 												</div>
 											)}
-											<div className="text-left">
+											<div className="text-left flex-1 max-w-md">
 												<h1 className="text-xl font-bold text-gray-800 mb-1">
 													{tenantData?.name || 'School Management System'}
 												</h1>
@@ -416,7 +419,7 @@ export function StudentMarksheetDialog({
 									([examType, results]) => {
 										const components = getAllComponents(results)
 										const dynamicColSpan = components.length + 1 // +1 for "Full Marks" column
-										
+
 										return (
 											<div key={examType} className="mb-6">
 												<div className="overflow-hidden border border-black">
@@ -464,7 +467,7 @@ export function StudentMarksheetDialog({
 																<th className="border border-black p-2 text-center font-bold">
 																	Full Marks
 																</th>
-																{components.map((component) => (
+																{components.map(component => (
 																	<th
 																		key={component.name}
 																		className="border border-black p-2 text-center font-bold"
@@ -474,155 +477,153 @@ export function StudentMarksheetDialog({
 																))}
 															</tr>
 														</thead>
-													<tbody>
-														{results.map((result, index) => {
-															// Use our grading function for consistent grading
-															const gradeInfo = result.isAbsent
-																? { grade: 'F', gradePoint: 0 }
-																: getGradeFromPercentage(result.percentage)
+														<tbody>
+															{results.map((result, index) => {
+																// Use our grading function for consistent grading
+																const gradeInfo = result.isAbsent
+																	? { grade: 'F', gradePoint: 0 }
+																	: getGradeFromPercentage(result.percentage)
 
-															// Create a map of component results for easy lookup
-															const componentResultsMap = new Map(
-																result.componentResults.map(cr => [
-																	cr.examComponent.name,
-																	cr
-																])
-															)
+																// Create a map of component results for easy lookup
+																const componentResultsMap = new Map(
+																	result.componentResults.map(cr => [
+																		cr.examComponent.name,
+																		cr,
+																	]),
+																)
 
-															return (
-																<tr
-																	key={result.id}
-																	className={
-																		index % 2 === 0 ? 'bg-white' : 'bg-gray-50'
-																	}
-																>
-																	<td className="border border-black p-2">
-																		{result.examSchedule.subject.name}
-																	</td>
-																	<td className="border border-black p-2 text-center">
-																		{result.totalMarks}
-																	</td>
-																	{components.map((component) => {
-																		const componentResult = componentResultsMap.get(component.name)
-																		const marks = componentResult?.obtainedMarks || 0
-																		
-																		return (
-																			<td 
-																				key={component.name}
-																				className="border border-black p-2 text-center"
-																			>
-																				{result.isAbsent ? '-' : marks}
-																			</td>
-																		)
-																	})}
-																	<td className="border border-black p-2 text-center font-semibold text-blue-600">
-																		{Math.ceil(result.totalMarks * 0.85)}
-																	</td>
-																	<td className="border border-black p-2 text-center font-semibold">
-																		{result.isAbsent
-																			? '-'
-																			: result.obtainedMarks}
-																	</td>
-																	<td className="border border-black p-2 text-center font-bold">
-																		{gradeInfo.grade}
-																	</td>
-																	<td className="border border-black p-2 text-center">
-																		{gradeInfo.gradePoint}
-																	</td>
-																</tr>
-															)
-														})}
-													</tbody>
-												</table>
-											</div>
+																return (
+																	<tr
+																		key={result.id}
+																		className={
+																			index % 2 === 0
+																				? 'bg-white'
+																				: 'bg-gray-50'
+																		}
+																	>
+																		<td className="border border-black p-2">
+																			{result.examSchedule.subject.name}
+																		</td>
+																		<td className="border border-black p-2 text-center">
+																			{result.totalMarks}
+																		</td>
+																		{components.map(component => {
+																			const componentResult =
+																				componentResultsMap.get(component.name)
+																			const marks =
+																				componentResult?.obtainedMarks || 0
 
-											{/* Summary Table */}
-											<div className="mt-4">
-												<table className="w-full border border-black">
-													<tbody>
-														<tr className="bg-teal-100">
-															<td className="border border-black p-2 font-bold text-center">
-																Summary
-															</td>
-															<td className="border border-black p-2 text-center font-semibold">
-																Total Exam Marks
-																<br />
-																{results.reduce(
-																	(sum, result) => sum + result.totalMarks,
-																	0,
-																)}
-															</td>
-															<td className="border border-black p-2 text-center font-semibold">
-																Obtained Total Marks
-																<br />
-																{results.reduce(
-																	(sum, result) => sum + result.obtainedMarks,
-																	0,
-																)}{' '}
-																(
-																{(
-																	(results.reduce(
+																			return (
+																				<td
+																					key={component.name}
+																					className="border border-black p-2 text-center"
+																				>
+																					{result.isAbsent ? '-' : marks}
+																				</td>
+																			)
+																		})}
+																		<td className="border border-black p-2 text-center font-semibold text-blue-600">
+																			{Math.ceil(result.totalMarks * 0.85)}
+																		</td>
+																		<td className="border border-black p-2 text-center font-semibold">
+																			{result.isAbsent
+																				? '-'
+																				: result.obtainedMarks}
+																		</td>
+																		<td className="border border-black p-2 text-center font-bold">
+																			{gradeInfo.grade}
+																		</td>
+																		<td className="border border-black p-2 text-center">
+																			{gradeInfo.gradePoint}
+																		</td>
+																	</tr>
+																)
+															})}
+														</tbody>
+													</table>
+												</div>
+
+												{/* Summary Table */}
+												<div className="mt-4">
+													<table className="w-full border border-black">
+														<tbody>
+															<tr className="bg-teal-100">
+																<td className="border border-black p-2 font-bold text-center">
+																	Summary
+																</td>
+																<td className="border border-black p-2 text-center font-semibold">
+																	Total Exam Marks
+																	<br />
+																	{results.reduce(
+																		(sum, result) => sum + result.totalMarks,
+																		0,
+																	)}
+																</td>
+																<td className="border border-black p-2 text-center font-semibold">
+																	Obtained Total Marks
+																	<br />
+																	{results.reduce(
 																		(sum, result) => sum + result.obtainedMarks,
 																		0,
-																	) /
-																		results.reduce(
-																			(sum, result) => sum + result.totalMarks,
+																	)}{' '}
+																	(
+																	{(
+																		(results.reduce(
+																			(sum, result) =>
+																				sum + result.obtainedMarks,
 																			0,
-																		)) *
-																	100
-																).toFixed(2)}
-																%)
-															</td>
-															<td className="border border-black p-2 text-center font-semibold">
-																GPA
-																<br />
-																{(
-																	results.reduce(
-																		(sum, result) => {
+																		) /
+																			results.reduce(
+																				(sum, result) =>
+																					sum + result.totalMarks,
+																				0,
+																			)) *
+																		100
+																	).toFixed(2)}
+																	%)
+																</td>
+																<td className="border border-black p-2 text-center font-semibold">
+																	GPA
+																	<br />
+																	{(
+																		results.reduce((sum, result) => {
 																			const gradeInfo = result.isAbsent
 																				? { gradePoint: 0 }
 																				: getGradeFromPercentage(
 																						result.percentage,
 																					)
 																			return sum + gradeInfo.gradePoint
-																		},
-																		0,
-																	) / results.length
-																).toFixed(2)}
-															</td>
-															<td className="border border-black p-2 text-center font-semibold">
-																Letter Grade
-																<br />
-																{(() => {
-																	const gpa =
-																		results.reduce(
-																			(sum, result) => {
+																		}, 0) / results.length
+																	).toFixed(2)}
+																</td>
+																<td className="border border-black p-2 text-center font-semibold">
+																	Letter Grade
+																	<br />
+																	{(() => {
+																		const gpa =
+																			results.reduce((sum, result) => {
 																				const gradeInfo = result.isAbsent
 																					? { gradePoint: 0 }
 																					: getGradeFromPercentage(
 																							result.percentage,
 																						)
 																				return sum + gradeInfo.gradePoint
-																			},
-																			0,
-																		) / results.length
-																	return getGradeFromPercentage(gpa * 20).grade // Convert GPA back to percentage for grade lookup
-																})()}
-															</td>
-														</tr>
-													</tbody>
-												</table>
+																			}, 0) / results.length
+																		return getGradeFromPercentage(gpa * 20)
+																			.grade // Convert GPA back to percentage for grade lookup
+																	})()}
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
 											</div>
-										</div>
-									)
-								})}
+										)
+									},
+								)}
 
 								{/* Signature Section */}
-								<div className="flex justify-between items-end mt-8 pt-4">
-									<div className="text-center">
-										<div className="w-32 border-b border-gray-600 mb-1"></div>
-										<p className="text-xs text-gray-600">Class Teacher</p>
-									</div>
+								<div className="flex justify-end items-end mt-8 pt-4">
 									<div className="text-center">
 										<div className="w-32 border-b border-gray-600 mb-1"></div>
 										<p className="text-xs text-gray-600">Head Master</p>
