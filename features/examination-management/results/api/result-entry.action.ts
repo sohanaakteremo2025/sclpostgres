@@ -3,6 +3,8 @@
 import { auth } from '@/auth'
 import { getTenantId } from '@/lib/tenant'
 import { cleanErrorMessage } from '@/utils/clean-prisma-error'
+import { CACHE_KEYS } from '@/constants/cache'
+import { revalidateTag } from 'next/cache'
 import {
 	getExamResultsService,
 	getResultStatisticsService,
@@ -32,6 +34,11 @@ export async function publishResults(examScheduleId: string) {
 			notifyParents: false, // Can be made configurable
 		})
 
+		// Invalidate related caches
+		revalidateTag(CACHE_KEYS.EXAM_SCHEDULES.TAG(tenantId))
+		revalidateTag(CACHE_KEYS.EXAM_RESULTS.TAG(tenantId))
+		revalidateTag(CACHE_KEYS.EXAM_SCHEDULE.TAG(examScheduleId))
+
 		return {
 			success: true,
 			message: 'Results published successfully',
@@ -49,6 +56,7 @@ export async function publishResults(examScheduleId: string) {
 // Unpublish results for an exam schedule
 export async function unpublishResults(examScheduleId: string) {
 	try {
+		const tenantId = await getTenantId()
 		const session = await auth()
 
 		if (!session?.user) {
@@ -62,6 +70,11 @@ export async function unpublishResults(examScheduleId: string) {
 			examScheduleId,
 			session.user.name || session.user.email || 'Unknown',
 		)
+
+		// Invalidate related caches
+		revalidateTag(CACHE_KEYS.EXAM_SCHEDULES.TAG(tenantId))
+		revalidateTag(CACHE_KEYS.EXAM_RESULTS.TAG(tenantId))
+		revalidateTag(CACHE_KEYS.EXAM_SCHEDULE.TAG(examScheduleId))
 
 		return {
 			success: true,
@@ -127,6 +140,7 @@ export async function updateComponentResult(
 	remarks?: string,
 ) {
 	try {
+		const tenantId = await getTenantId()
 		const session = await auth()
 
 		if (!session?.user) {
@@ -142,6 +156,10 @@ export async function updateComponentResult(
 			session.user.id || session.user.email || 'Unknown',
 			remarks,
 		)
+
+		// Invalidate related caches
+		revalidateTag(CACHE_KEYS.EXAM_SCHEDULES.TAG(tenantId))
+		revalidateTag(CACHE_KEYS.EXAM_RESULTS.TAG(tenantId))
 
 		return {
 			success: true,

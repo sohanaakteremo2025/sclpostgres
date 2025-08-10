@@ -15,6 +15,8 @@ interface BulkResultInput {
 import { getTenantId } from '@/lib/tenant'
 import { enterBulkResultsService } from '../services/result.service'
 import { auth } from '@/auth'
+import { CACHE_KEYS } from '@/constants/cache'
+import { revalidateTag } from 'next/cache'
 
 export async function enterBulkResults(data: BulkResultInput) {
 	const tenantId = await getTenantId()
@@ -27,9 +29,16 @@ export async function enterBulkResults(data: BulkResultInput) {
 		throw new Error('Tenant ID not found')
 	}
 
-	return await enterBulkResultsService({
+	const result = await enterBulkResultsService({
 		...data,
 		tenantId,
 		enteredBy: session.user.name || session.user.email || 'Unknown',
 	})
+
+	// Invalidate related caches after entering results
+	revalidateTag(CACHE_KEYS.EXAM_SCHEDULES.TAG(tenantId))
+	revalidateTag(CACHE_KEYS.EXAM_RESULTS.TAG(tenantId))
+	revalidateTag(CACHE_KEYS.EXAM_SCHEDULE.TAG(data.examScheduleId))
+
+	return result
 }
