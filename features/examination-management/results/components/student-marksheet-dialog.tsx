@@ -373,11 +373,11 @@ export function StudentMarksheetDialog({
 										</div>
 										<div className="flex">
 											<span className="font-semibold w-32">Father's Name:</span>
-											<span>{student.fatherName || '-'}</span>
+											<span>{marksheetData?.fatherName || '-'}</span>
 										</div>
 										<div className="flex">
 											<span className="font-semibold w-32">Mother's Name:</span>
-											<span>{student.motherName || '-'}</span>
+											<span>{marksheetData?.motherName || '-'}</span>
 										</div>
 										<div className="flex">
 											<span className="font-semibold w-32">Year:</span>

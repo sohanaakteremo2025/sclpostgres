@@ -359,19 +359,6 @@ function HeroCarousel({ tenant }: { tenant: Tenant }) {
 					/>
 				))}
 			</div>
-
-			{/* Achievement Badge */}
-			<div className="absolute bottom-8 right-8 bg-white/95 backdrop-blur-md rounded-xl shadow-2xl p-4 border border-white/30 z-10">
-				<div className="flex items-center space-x-3">
-					<div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center shadow-md">
-						<Award className="w-6 h-6 text-primary" />
-					</div>
-					<div>
-						<p className="font-semibold text-gray-900">Excellence Award</p>
-						<p className="text-sm text-gray-600">Best Institution</p>
-					</div>
-				</div>
-			</div>
 		</div>
 	)
 }

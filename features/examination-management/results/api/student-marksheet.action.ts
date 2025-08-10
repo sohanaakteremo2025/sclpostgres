@@ -6,16 +6,18 @@ import { prisma } from '@/lib/db'
 
 export interface StudentMarksheetData {
 	id: string
-	title: string
+	name: string
 	roll: string
 	photo?: string
+	fatherName?: string
+	motherName?: string
 	class: {
 		id: string
-		title: string
+		name: string
 	}
 	section?: {
 		id: string
-		title: string
+		name: string
 	}
 	results: {
 		id: string
@@ -99,6 +101,8 @@ export async function getStudentsForMarksheet(filters: {
 				roll: true,
 				photo: true,
 				studentId: true,
+				fatherName: true,
+				motherName: true,
 				enrollments: {
 					where: {
 						...(filters.classId && { classId: filters.classId }),
@@ -145,6 +149,8 @@ export async function getStudentsForMarksheet(filters: {
 				roll: student.roll,
 				photo: student.photo,
 				studentId: student.studentId,
+				fatherName: student.fatherName,
+				motherName: student.motherName,
 				class: enrollment?.class || null,
 				section: enrollment?.section || null,
 				session: enrollment?.session || null,
@@ -185,6 +191,8 @@ export async function getStudentMarksheetData(studentId: string, sessionId?: str
 				roll: true,
 				photo: true,
 				studentId: true,
+				fatherName: true,
+				motherName: true,
 				enrollments: {
 					where: {
 						...(sessionId && { sessionId }),
@@ -338,6 +346,8 @@ export async function getStudentMarksheetData(studentId: string, sessionId?: str
 			name: student.name,
 			roll: student.roll,
 			photo: student.photo,
+			fatherName: student.fatherName,
+			motherName: student.motherName,
 			class: student.enrollments[0]?.class || { id: '', name: 'Unknown' },
 			section: student.enrollments[0]?.section,
 			results: transformedResults,
