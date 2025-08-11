@@ -465,12 +465,35 @@ interface MonthYear {
 /**
  * Calculate all months between admission date and current date
  * Uses the utility function from utils/get-months-between-dates.ts
+ * Ensures dates are properly normalized to avoid timezone issues
  */
 const calculateMonthsBetween = (
 	admissionDate: Date,
 	currentDate: Date,
 ): MonthYear[] => {
-	return getMonthsBetween(admissionDate, currentDate)
+	// Normalize dates to avoid timezone issues by setting to local midnight
+	const normalizedAdmissionDate = new Date(
+		admissionDate.getFullYear(),
+		admissionDate.getMonth(),
+		admissionDate.getDate()
+	)
+	const normalizedCurrentDate = new Date(
+		currentDate.getFullYear(),
+		currentDate.getMonth(),
+		currentDate.getDate()
+	)
+	
+	console.log('Calculating months between:', {
+		originalAdmission: admissionDate.toISOString(),
+		normalizedAdmission: normalizedAdmissionDate.toISOString(),
+		originalCurrent: currentDate.toISOString(),
+		normalizedCurrent: normalizedCurrentDate.toISOString()
+	})
+	
+	const result = getMonthsBetween(normalizedAdmissionDate, normalizedCurrentDate)
+	console.log('Months to create dues for:', result)
+	
+	return result
 }
 
 /**
@@ -482,27 +505,37 @@ const shouldCreateDueItem = (
 	admissionMonth: number,
 	admissionYear: number,
 ): boolean => {
+	console.log(`  Checking frequency: ${frequency} for month ${monthYear.month}/${monthYear.year}, admission: ${admissionMonth}/${admissionYear}`)
+	
 	switch (frequency) {
 		case 'MONTHLY':
 			return true
 		case 'YEARLY':
-			// Create yearly fees only in January or admission month
-			return (
-				monthYear.month === 1 ||
-				(monthYear.month === admissionMonth && monthYear.year === admissionYear)
-			)
+		case 'ANNUAL':
+		case 'ANNUALLY': // Handle variations
+			// Create yearly fees in:
+			// 1. Admission month of admission year (first year)
+			// 2. January of subsequent years
+			const isAdmissionMonth = monthYear.month === admissionMonth && monthYear.year === admissionYear
+			const isJanuaryOfLaterYear = monthYear.month === 1 && monthYear.year > admissionYear
+			const result = isAdmissionMonth || isJanuaryOfLaterYear
+			console.log(`    Yearly fee: isAdmissionMonth=${isAdmissionMonth}, isJanuaryOfLaterYear=${isJanuaryOfLaterYear}, result=${result}`)
+			return result
 		case 'QUARTERLY':
 			// Create quarterly fees in Jan, Apr, Jul, Oct
 			return [1, 4, 7, 10].includes(monthYear.month)
 		case 'SEMESTER':
+		case 'SEMESTERLY': // Handle variations
 			// Create semester fees in Jan and Jul
 			return [1, 7].includes(monthYear.month)
 		case 'ONE_TIME':
-			// One-time fees are created only in the admission month
+		case 'ONETIME': // Handle variations
+			// One-time fees are created only in the admission month and year
 			return (
 				monthYear.month === admissionMonth && monthYear.year === admissionYear
 			)
 		default:
+			console.log(`    Unknown frequency: ${frequency}, defaulting to false`)
 			return false
 	}
 }
@@ -530,12 +563,15 @@ const createStudentDueForMonth = async (
 	})
 
 	if (existingDue) {
+		console.log(`Due already exists for month ${monthYear.month}/${monthYear.year}, skipping`)
 		return // Skip if already exists
 	}
 
 	// Get admission month and year for one-time fee logic
 	const admissionMonth = admissionDate.getMonth() + 1 // Convert to 1-based
 	const admissionYear = admissionDate.getFullYear()
+	
+	console.log(`Creating due for month ${monthYear.month}/${monthYear.year}, admission: ${admissionMonth}/${admissionYear}`)
 
 	// Create student due
 	const studentDue = await tx.studentDue.create({
@@ -547,6 +583,8 @@ const createStudentDueForMonth = async (
 		},
 	})
 
+	let dueItemsCreated = 0
+	
 	// Create due items based on fee structure
 	for (const feeItem of feeItems) {
 		// Check if this due item should be created for this month
@@ -556,6 +594,8 @@ const createStudentDueForMonth = async (
 			admissionMonth,
 			admissionYear,
 		)
+
+		console.log(`Fee item "${feeItem.name}" (${feeItem.frequency}) for ${monthYear.month}/${monthYear.year}: shouldCreate = ${shouldCreate}`)
 
 		if (shouldCreate) {
 			await tx.dueItem.create({
@@ -571,8 +611,11 @@ const createStudentDueForMonth = async (
 					transactionCategoryId: feeItem.transactionCategoryId,
 				},
 			})
+			dueItemsCreated++
 		}
 	}
+	
+	console.log(`Created ${dueItemsCreated} due items for month ${monthYear.month}/${monthYear.year}`)
 }
 
 /**
@@ -585,6 +628,14 @@ const generateStudentDues = async (
 	admissionDate: Date,
 	tenantId: string,
 ) => {
+	console.log('Generating student dues for:', { studentId, feeStructureId, admissionDate: admissionDate.toISOString() })
+	
+	// Validate admission date is not in the future
+	const now = new Date()
+	if (admissionDate > now) {
+		throw new Error('Admission date cannot be in the future')
+	}
+	
 	// Get fee structure with fee items
 	const feeStructure = await tx.feeStructure.findUnique({
 		where: { id: feeStructureId },
@@ -599,11 +650,20 @@ const generateStudentDues = async (
 		throw new Error('Fee structure not found or has no active fee items')
 	}
 
+	console.log('Found fee structure with items:', feeStructure.feeItems.map(item => ({
+		name: item.name,
+		frequency: item.frequency,
+		amount: item.amount
+	})))
+
 	// Calculate months from admission to current
 	const monthsToGenerate = calculateMonthsBetween(admissionDate, new Date())
 
+	console.log(`Generating dues for ${monthsToGenerate.length} months`)
+
 	// Generate dues for each month
 	for (const monthYear of monthsToGenerate) {
+		console.log(`Creating due for month: ${monthYear.month}/${monthYear.year}`)
 		await createStudentDueForMonth(
 			tx,
 			studentId,

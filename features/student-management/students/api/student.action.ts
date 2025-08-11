@@ -18,7 +18,27 @@ import { getTenantId } from '@/lib/tenant'
 
 export const createStudent = async (data: CreateStudentInput) => {
 	const tenantId = await getTenantId()
-	const admissionDate = data.admissionDate || new Date()
+	
+	// Handle admission date - default to today if not provided
+	let admissionDate: Date
+	if (data.admissionDate) {
+		admissionDate = new Date(data.admissionDate)
+		// Validate admission date
+		if (isNaN(admissionDate.getTime())) {
+			throw new Error('Invalid admission date provided')
+		}
+	} else {
+		admissionDate = new Date()
+	}
+	
+	// Ensure admission date is not in the future
+	const now = new Date()
+	if (admissionDate > now) {
+		throw new Error('Admission date cannot be in the future')
+	}
+	
+	console.log('Creating student with admission date:', admissionDate.toISOString())
+	
 	return await createStudentService({ ...data, admissionDate, tenantId })
 }
 
