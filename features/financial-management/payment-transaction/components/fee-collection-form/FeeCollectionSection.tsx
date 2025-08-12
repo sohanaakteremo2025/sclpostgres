@@ -7,9 +7,11 @@ import {
 	useStudentDues,
 } from '@/hooks/queries/all-quries'
 import { HandCoins, Loader2, AlertCircle } from 'lucide-react'
-import React, { useState, useMemo } from 'react'
+import React, { useState, useMemo, useEffect } from 'react'
 import { z } from 'zod'
 import { Alert, AlertDescription } from '@/components/ui/alert'
+import { ensureStudentDuesUpToDateAction } from '@/features/financial-management/student-dues/api/auto-dues.action'
+import { useToast } from '@/hooks/use-toast'
 
 const SelectionSchema = z.object({
 	classId: z.string(),
@@ -19,6 +21,8 @@ const SelectionSchema = z.object({
 
 export default function FeeCollectionSection() {
 	const [selectedStudentId, setSelectedStudentId] = useState<string>('')
+	const [isGeneratingDues, setIsGeneratingDues] = useState(false)
+	const { toast } = useToast()
 
 	const {
 		classes,
@@ -64,8 +68,39 @@ export default function FeeCollectionSection() {
 		setSelectedSectionId(sectionId)
 	}
 
-	const handleStudentChange = (studentId: string) => {
+	const handleStudentChange = async (studentId: string) => {
 		setSelectedStudentId(studentId)
+		
+		// Auto-generate missing dues when a student is selected
+		if (studentId) {
+			setIsGeneratingDues(true)
+			try {
+				const result = await ensureStudentDuesUpToDateAction(studentId)
+				if (result.success && result.data.needsUpdate && result.data.result?.success) {
+					toast({
+						title: 'Dues Updated',
+						description: `Generated ${result.data.result.duesCreated} missing dues for this student`,
+					})
+					// Refetch student dues to show updated data
+					await refetchStudentDues()
+				} else if (result.success && result.data.needsUpdate && result.data.result && !result.data.result.success) {
+					toast({
+						title: 'Warning',
+						description: result.data.result.message,
+						variant: 'destructive',
+					})
+				}
+			} catch (error) {
+				console.error('Error generating dues:', error)
+				toast({
+					title: 'Error',
+					description: 'Failed to generate missing dues',
+					variant: 'destructive',
+				})
+			} finally {
+				setIsGeneratingDues(false)
+			}
+		}
 	}
 
 	// Handle success callback from fee collection form
@@ -172,8 +207,16 @@ export default function FeeCollectionSection() {
 				</FormProvider>
 			</CardWrapper>
 
+			{/* Loading state for dues generation */}
+			{selectedStudentId && isGeneratingDues && (
+				<div className="flex items-center justify-center py-8">
+					<Loader2 className="w-6 h-6 animate-spin" />
+					<span className="ml-2">Generating missing dues...</span>
+				</div>
+			)}
+
 			{/* Loading state for student dues */}
-			{selectedStudentId && isLoadingStudentDues && (
+			{selectedStudentId && isLoadingStudentDues && !isGeneratingDues && (
 				<div className="flex items-center justify-center py-8">
 					<Loader2 className="w-6 h-6 animate-spin" />
 					<span className="ml-2">Loading student dues...</span>
@@ -181,7 +224,7 @@ export default function FeeCollectionSection() {
 			)}
 
 			{/* Fee Collection Form */}
-			{selectedStudentId && studentDues && !isLoadingStudentDues && (
+			{selectedStudentId && studentDues && !isLoadingStudentDues && !isGeneratingDues && (
 				<div className="mt-6">
 					<MultiMonthFeeCollectionForm
 						dues={studentDues as any}

@@ -4,6 +4,7 @@ import { queryModel } from '@/components/prisma-data-table'
 import { StudentsTable } from '@/features/student-management/students/components/student-table'
 import { getTenantId } from '@/lib/tenant'
 import { CACHE_KEYS } from '@/constants/cache'
+import { generateMissingDuesForAllStudents } from '@/features/financial-management/student-dues/services/auto-dues-generation.service'
 
 interface StudentPageProps {
 	searchParams: Promise<SearchParams>
@@ -12,6 +13,16 @@ interface StudentPageProps {
 export default async function StudentPage({ searchParams }: StudentPageProps) {
 	const searchParamsData = await searchParams
 	const tenantId = await getTenantId()
+
+	// Auto-generate missing dues for all students when admin visits students page
+	try {
+		const duesGenResult = await generateMissingDuesForAllStudents(tenantId)
+		if (duesGenResult.studentsUpdated > 0) {
+			console.log(`Auto-generated dues for ${duesGenResult.studentsUpdated} students (${duesGenResult.totalDuesCreated} total dues created)`)
+		}
+	} catch (error) {
+		console.error('Error auto-generating dues:', error)
+	}
 
 	const dataPromise = queryModel({
 		model: 'student',
