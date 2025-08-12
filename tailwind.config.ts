@@ -1,6 +1,5 @@
 import type { Config } from 'tailwindcss'
 import animatePlugin from 'tailwindcss-animate'
-import { nextui } from '@nextui-org/theme'
 
 const config: Config = {
 	darkMode: ['class'],
@@ -9,7 +8,6 @@ const config: Config = {
 		'./features/**/*.{js,ts,jsx,tsx,mdx}',
 		'./components/**/*.{js,ts,jsx,tsx,mdx}',
 		'./app/**/*.{js,ts,jsx,tsx,mdx}',
-		'./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
 	],
 	theme: {
 		container: {
@@ -99,7 +97,7 @@ const config: Config = {
 			},
 		},
 	},
-	plugins: [nextui(), animatePlugin], // Removed `require()`
+	plugins: [animatePlugin]
 }
 
 export default config

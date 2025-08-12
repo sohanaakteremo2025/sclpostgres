@@ -1,6 +1,6 @@
 import React from 'react'
 import { Logo } from '@/components/logo'
-import { ThemeSwitch } from '@/components/theme-switch'
+import { ThemeToggle } from '@/components/theme-toggle'
 import { HamburgerMenuIcon } from '@radix-ui/react-icons'
 import { UserButton } from '../auth/user-button'
 
@@ -62,7 +62,7 @@ const Header = React.memo(function Header({
 
 				<div className="flex items-center gap-3 2xsm:gap-7">
 					<ul className="flex items-center gap-2 2xsm:gap-4">
-						<ThemeSwitch />
+						<ThemeToggle />
 					</ul>
 					<UserButton />
 				</div>

@@ -17,6 +17,11 @@ export async function GET(
 
 		const { tenantId } = await params
 
+		// Validate tenantId
+		if (!tenantId || tenantId.trim() === '') {
+			return NextResponse.json({ error: 'Invalid tenant ID' }, { status: 400 })
+		}
+
 		// Check cache first
 		const cacheKey = `billing:${tenantId}`
 		const cached = billingCache.get(cacheKey)
@@ -43,6 +48,21 @@ export async function GET(
 				nextDueDate: 'asc',
 			},
 		})
+
+		// If no billing schedules exist, return default status
+		if (!billingSchedules || billingSchedules.length === 0) {
+			const defaultStatus = {
+				isOverdue: false,
+				daysOverdue: 0,
+				overdueSchedules: [],
+				totalOverdueAmount: 0,
+			}
+			
+			// Cache the result
+			billingCache.set(cacheKey, defaultStatus)
+			
+			return NextResponse.json(defaultStatus)
+		}
 
 		const now = new Date()
 		const overdueSchedules = billingSchedules

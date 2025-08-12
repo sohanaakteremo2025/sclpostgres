@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import CmsLoginButton from '@/components/auth/login-button'
-import { ThemeSwitch } from '@/components/theme-switch'
+import { ThemeToggle } from '@/components/theme-toggle'
 
 export default function Header() {
 	return (
@@ -24,7 +24,7 @@ export default function Header() {
 					</Link>
 				</nav>
 				<div className="flex items-center space-x-4">
-					<ThemeSwitch />
+					<ThemeToggle />
 					<CmsLoginButton />
 				</div>
 			</div>

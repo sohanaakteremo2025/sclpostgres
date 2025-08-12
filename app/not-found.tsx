@@ -1,26 +1,9 @@
 'use client'
-// app/not-found.tsx
+
 import React from 'react'
-import {
-	Home,
-	Search,
-	BookOpen,
-	Users,
-	MessageCircle,
-	ArrowLeft,
-	GraduationCap,
-	Building2,
-	Phone,
-	Mail,
-} from 'lucide-react'
+import { Home, Search, MessageCircle, ArrowLeft, Phone, Mail } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import {
-	Card,
-	CardContent,
-	CardDescription,
-	CardHeader,
-	CardTitle,
-} from '@/components/ui/card'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Separator } from '@/components/ui/separator'
 import Link from 'next/link'
 

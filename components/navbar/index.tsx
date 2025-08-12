@@ -7,8 +7,7 @@ import { Logo } from '@/components/logo'
 import Link from 'next/link'
 import { LogIn } from 'lucide-react'
 import { useUser } from '@/context/user-context'
-import { ThemeSwitch } from '../theme-switch'
-import InstallPWAButton from '../install-pwa-app'
+import { ThemeToggle } from '../theme-toggle'
 
 export function Navbar() {
 	const [isScrolled, setIsScrolled] = React.useState(false)
@@ -43,9 +42,8 @@ export function Navbar() {
 						<NavLinks />
 					</div>
 					<div>
-						<ThemeSwitch />
+						<ThemeToggle />
 					</div>
-					<InstallPWAButton />
 					{user ? (
 						<Link href="/dashboard" className="lg:block">
 							<button className="bg-emerald-600 hover:bg-emerald-700 text-white md:px-6 md:py-2 rounded-lg font-medium transition-colors flex items-center gap-2">

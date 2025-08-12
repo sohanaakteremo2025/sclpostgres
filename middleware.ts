@@ -59,12 +59,12 @@ export async function middleware(request: NextRequest): Promise<NextResponse> {
 	}
 
 	// Check tenant billing status
-	if (subdomain && userInfo.isTenantAdmin && pathname.includes('/admin')) {
+	if (subdomain && userInfo.isTenantAdmin && pathname.includes('/admin') && userInfo.tenantId) {
 		const response = await checkTenantBilling(
 			request,
 			subdomain,
 			pathname,
-			userInfo.tenantId || '',
+			userInfo.tenantId,
 		)
 		if (response) {
 			return response
@@ -171,6 +171,12 @@ async function checkTenantBilling(
 	}
 
 	try {
+		// Validate tenantId before making API call
+		if (!tenantId || tenantId.trim() === '') {
+			console.error('No tenantId provided for billing check')
+			return null
+		}
+
 		// Make internal API call to check billing status
 		const billingResponse = await fetch(
 			`${request.nextUrl.origin}/api/billing/check/${tenantId}`,
@@ -185,7 +191,7 @@ async function checkTenantBilling(
 		)
 
 		if (!billingResponse.ok) {
-			console.error('Failed to check billing status in middleware')
+			console.error(`Failed to check billing status in middleware: ${billingResponse.status} - ${billingResponse.statusText}`)
 			return null // Allow access on API failure
 		}
 
