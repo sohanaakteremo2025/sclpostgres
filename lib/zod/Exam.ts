@@ -1,10 +1,12 @@
 import { z } from 'zod'
+import { ExamStatusSchema } from './schemas'
 
 export const ExamSchema = z.object({
   id: z.string(),
   title: z.string(),
   startDate: z.date(),
   endDate: z.date(),
+  status: ExamStatusSchema,
   createdAt: z.date(),
   updatedAt: z.date(),
   examTypeId: z.string(),

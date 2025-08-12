@@ -42,6 +42,9 @@ export type WeekDay = z.infer<typeof WeekDaySchema>
 export const ResultStatusSchema = z.enum(['PENDING', 'COMPLETED'])
 export type ResultStatus = z.infer<typeof ResultStatusSchema>
 
+export const ExamStatusSchema = z.enum(['SCHEDULED', 'ONGOING', 'COMPLETED', 'CANCELLED'])
+export type ExamStatus = z.infer<typeof ExamStatusSchema>
+
 export const FeeFrequencySchema = z.enum(['ONE_TIME', 'MONTHLY', 'SEMESTER', 'ANNUAL', 'QUARTERLY', 'WEEKLY', 'DAILY'])
 export type FeeFrequency = z.infer<typeof FeeFrequencySchema>
 

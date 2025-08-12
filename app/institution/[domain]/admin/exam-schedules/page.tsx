@@ -6,6 +6,8 @@ import { getTenantId } from '@/lib/tenant'
 import { queryModel } from '@/components/prisma-data-table'
 import { CACHE_KEYS } from '@/constants/cache'
 import ExamScheduleTable from '@/features/examination-management/examSchedules/components/exam-schedule-table'
+import OrganizedExamSchedules from '@/features/examination-management/examSchedules/components/organized-exam-schedules'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 
 export default async function ExamSchedulePage({
 	searchParams,
@@ -71,8 +73,19 @@ export default async function ExamSchedulePage({
 		},
 	})
 	return (
-		<CardWrapper title="Exam Schedule" description="Add new exam schedule">
-			<ExamScheduleTable dataPromise={dataPromise} />
+		<CardWrapper title="Exam Schedules" description="Manage exam schedules and track completion">
+			<Tabs defaultValue="organized" className="w-full">
+				<TabsList className="grid w-full grid-cols-2">
+					<TabsTrigger value="organized">Organized View</TabsTrigger>
+					<TabsTrigger value="table">Table View</TabsTrigger>
+				</TabsList>
+				<TabsContent value="organized" className="mt-6">
+					<OrganizedExamSchedules />
+				</TabsContent>
+				<TabsContent value="table" className="mt-6">
+					<ExamScheduleTable dataPromise={dataPromise} />
+				</TabsContent>
+			</Tabs>
 		</CardWrapper>
 	)
 }

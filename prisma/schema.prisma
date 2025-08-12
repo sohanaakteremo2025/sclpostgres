@@ -109,6 +109,13 @@ enum ResultStatus {
   COMPLETED
 }
 
+enum ExamStatus {
+  SCHEDULED
+  ONGOING
+  COMPLETED
+  CANCELLED
+}
+
 enum FeeFrequency {
   ONE_TIME
   MONTHLY
@@ -741,6 +748,7 @@ model Exam {
   title     String
   startDate DateTime
   endDate   DateTime
+  status    ExamStatus @default(SCHEDULED)
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
